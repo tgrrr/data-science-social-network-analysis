@@ -1,0 +1,30 @@
+# https://developer.github.com/v4/explorer/
+# Example query to pull commit info from Tensorflow repo from 20/09/19
+
+{
+  repository(name: "tensorflow", owner: "tensorflow") {
+    ref(qualifiedName: "master") {
+      target {
+        ... on Commit {
+          history(since:"2019-09-20T00:00:00Z") {
+            edges {
+              node {
+                messageHeadline
+                message
+                author {
+              		user{
+                    id
+                    login
+                  }
+                  name
+                  email
+                  date
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

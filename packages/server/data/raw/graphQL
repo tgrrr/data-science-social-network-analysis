@@ -1,7 +1,7 @@
 # https://developer.github.com/v4/explorer/
 # Only latest 100 commits are returned
 
-# Repos
+# Repo ideas
 # name: "tensorflow", owner: "tensorflow"
 # name: "keras", owner: "keras-team"
 # name: "scikit-learn", owner: "scikit-learn"

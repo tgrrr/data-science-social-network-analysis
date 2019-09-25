@@ -7,11 +7,11 @@
 # name: "scikit-learn", owner: "scikit-learn"
 # name: "ipython", owner: "ipython"
 # name: "spark", owner: "apache"
-# name: "django", "owner: "django"
-# name: "scikit-learn", owner: "scikit-learn"
+# name: "django", owner: :django"
 # name: "tidyverse", owner: "tidyverse"
 # name: "linux", owner: "torvalds"
 # name: "node", owner: "nodejs"
+# name: "ggplot2", owner: "tidyverse" 
  
 
 {

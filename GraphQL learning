@@ -12,13 +12,29 @@
                 messageHeadline
                 message
                 author {
-              		user{
+                  user {
                     id
                     login
                   }
                   name
                   email
                   date
+                }
+                comments(first: 10) {
+                  edges {
+                    node {
+                      bodyText
+                      createdAt
+                      reactions(first:10) {
+                        edges {
+                          node {
+                            content
+                            createdAt
+                          }
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }

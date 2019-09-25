@@ -1,0 +1,1842 @@
+{
+  "data": {
+    "repository": {
+      "ref": {
+        "target": {
+          "history": {
+            "edges": [
+              {
+                "node": {
+                  "messageHeadline": "Removed some outdated backwards compatibility imports and misleading …",
+                  "message": "Removed some outdated backwards compatibility imports and misleading comments.\n\nEmptyResultSet moved in 46509cf13dbf049f75077981c29ef2c60b5a96ab.\nFieldDoesNotExist moved in 8958170755b37ce346ae5257c1000bd936faa3b0.\nBoundField and pretty_name moved in 8550161e531a603d57723850fb09c4c9b7ca60b9.\nEMPTY_VALUES moved in 471596fc1afcb9c6258d317c619eaf5fd394e797.\nBaseRunserverCommand moved in 5c53e30607014163872e89c221b206992a9acfef.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYxNDEzOTA=",
+                      "login": "atombrella"
+                    },
+                    "name": "Mads Jensen",
+                    "email": "mje@inducks.org",
+                    "date": "2019-07-18T08:13:01.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #27910 -- Doc'd support for enumeration types serialization in m…",
+                  "message": "Refs #27910 -- Doc'd support for enumeration types serialization in migrations.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-24T13:03:40.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #30350 -- Doc'd support for range serialization in migrations.",
+                  "message": "Refs #30350 -- Doc'd support for range serialization in migrations.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-24T12:58:04.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Updated the default cache key transformation in documentation.",
+                  "message": "Updated the default cache key transformation in documentation.\n\nFollow up to 6c69de80bdcd2744bc64cb933c2d863dd5e74a33.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5NzgxNA==",
+                      "login": "tubaman"
+                    },
+                    "name": "Ryan Nowakowski",
+                    "email": "tubaman@fattuba.com",
+                    "date": "2019-09-24T05:42:43.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #29444 -- Removed redundant DatabaseFeatures.can_return_multiple…",
+                  "message": "Refs #29444 -- Removed redundant DatabaseFeatures.can_return_multiple_columns_from_insert.\n\nUnnecessary since b31e63879eb5d9717e9f890401f7222e4f00c910.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-24T10:32:26.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #29444 -- Allowed returning multiple fields from INSERT stateme…",
+                  "message": "Fixed #29444 -- Allowed returning multiple fields from INSERT statements on Oracle.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzI4OTA=",
+                      "login": "codingjoe"
+                    },
+                    "name": "Johannes Hoppe",
+                    "email": "info@johanneshoppe.com",
+                    "date": "2019-09-14T14:50:14.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #26601 -- Used new-style middlewares in documentation.",
+                  "message": "Refs #26601 -- Used new-style middlewares in documentation.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE0MzE5Mg==",
+                      "login": "claudep"
+                    },
+                    "name": "Claude Paroz",
+                    "email": "claude@2xlibre.net",
+                    "date": "2019-09-24T09:58:17.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30796 -- Prevented select_related() from mutating a queryset o…",
+                  "message": "Fixed #30796 -- Prevented select_related() from mutating a queryset on chaining.\n\nThanks Darren Maki for the report.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjkyOTM=",
+                      "login": "charettes"
+                    },
+                    "name": "Simon Charette",
+                    "email": "simon.charette@zapier.com",
+                    "date": "2019-09-23T15:51:43.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30732 -- Doc'd that SameSite cookies flags can affect xframe_o…",
+                  "message": "Fixed #30732 -- Doc'd that SameSite cookies flags can affect xframe_options_exempt.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcyMjgxNw==",
+                      "login": "jezeniel"
+                    },
+                    "name": "Jezeniel Zapanta",
+                    "email": "jezeniel.zapanta@gmail.com",
+                    "date": "2019-09-16T18:13:06.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #13296 -- Fixed ordering by Options.order_with_respect_to after…",
+                  "message": "Fixed #13296 -- Fixed ordering by Options.order_with_respect_to after deleting objects.\n\nThanks Simon Meers for the original patch.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMxMjI0NDI=",
+                      "login": "hramezani"
+                    },
+                    "name": "Hasan Ramezani",
+                    "email": "hasan.r67@gmail.com",
+                    "date": "2019-08-30T10:28:18.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #29915 -- Added support for values with hyphens to pattern look…",
+                  "message": "Fixed #29915 -- Added support for values with hyphens to pattern lookups for UUIDField on backends without UUID datatype.\n\nSupport hyphens in iexact, contains, icontains, startswith, istartswith,\nendswith and iendswith UUIDField filters on backends without UUID\ndatatype.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE4NDMyMDI=",
+                      "login": "Ian-Foote"
+                    },
+                    "name": "Ian Foote",
+                    "email": "python@ian.feete.org",
+                    "date": "2018-11-12T19:20:35.000Z"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #29915 -- Doc'd limitation of using pattern lookups with UUIDFie…",
+                  "message": "Refs #29915 -- Doc'd limitation of using pattern lookups with UUIDField on PostgreSQL.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-19T13:03:25.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #29915 -- Added tests for using pattern lookups with values with…",
+                  "message": "Refs #29915 -- Added tests for using pattern lookups with values without hyphens for UUIDField.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE4NDMyMDI=",
+                      "login": "Ian-Foote"
+                    },
+                    "name": "Ian Foote",
+                    "email": "python@ian.feete.org",
+                    "date": "2019-09-19T12:36:15.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed typo in docs/ref/settings.txt.",
+                  "message": "Fixed typo in docs/ref/settings.txt.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-23T08:17:58.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Dropped obsolete mimetype kwarg in csrf test view",
+                  "message": "Dropped obsolete mimetype kwarg in csrf test view",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE0MzE5Mg==",
+                      "login": "claudep"
+                    },
+                    "name": "Claude Paroz",
+                    "email": "claude@2xlibre.net",
+                    "date": "2019-09-21T20:44:55.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #28622 -- Clarified security implications of PASSWORD_RESET_TIME…",
+                  "message": "Refs #28622 -- Clarified security implications of PASSWORD_RESET_TIMEOUT.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYyNzQ1",
+                      "login": "spookylukey"
+                    },
+                    "name": "Luke Plant",
+                    "email": "L.Plant.98@cantab.net",
+                    "date": "2019-09-20T13:07:34.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #28622 -- Allowed specifying password reset link expiration in …",
+                  "message": "Fixed #28622 -- Allowed specifying password reset link expiration in seconds and deprecated PASSWORD_RESET_TIMEOUT_DAYS.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMxMjI0NDI=",
+                      "login": "hramezani"
+                    },
+                    "name": "Hasan Ramezani",
+                    "email": "hasan.r67@gmail.com",
+                    "date": "2019-08-23T17:14:07.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30771 -- Fixed exact lookup against queries with selected colu…",
+                  "message": "Fixed #30771 -- Fixed exact lookup against queries with selected columns.\n\nUse pre-existing select fields (and thereby GROUP BY fields) from\nsubquery if they were specified, instead of always defaulting to pk.\n\nThanks Aur Saraf for the report and Simon Charette for guidance.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ5MjYwMDQ=",
+                      "login": "jhtimmins"
+                    },
+                    "name": "James Timmins",
+                    "email": "jameshtimmins@gmail.com",
+                    "date": "2019-09-19T19:20:40.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30786 -- Used CONVERT_TZ to check if the time zone definitions…",
+                  "message": "Fixed #30786 -- Used CONVERT_TZ to check if the time zone definitions are installed on MySQL.\n\nReplaced a timezone check in the MySQL backend with one that doesn't\nrequire access to the mysql.time_zone database.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM2NDg5NTc3",
+                      "login": "recvfrom"
+                    },
+                    "name": "Andrew",
+                    "email": "36489577+recvfrom@users.noreply.github.com",
+                    "date": "2019-09-19T22:23:33.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #27462 -- Clarifed pk_set difference in m2m_changed signal rece…",
+                  "message": "Fixed #27462 -- Clarifed pk_set difference in m2m_changed signal receivers for add() and remove().\n\nThank you to Mariusz Felisiak for review.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY0Njg2",
+                      "login": "carltongibson"
+                    },
+                    "name": "Carlton Gibson",
+                    "email": "carlton.gibson@noumenal.es",
+                    "date": "2019-09-18T16:08:56.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #27462 -- Added tests of pk_set in m2m_changed signal receivers …",
+                  "message": "Refs #27462 -- Added tests of pk_set in m2m_changed signal receivers for repeated add/remove calls.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY0Njg2",
+                      "login": "carltongibson"
+                    },
+                    "name": "Carlton Gibson",
+                    "email": "carlton.gibson@noumenal.es",
+                    "date": "2019-09-18T15:34:16.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30772 -- Optimized make_template_fragment_key().",
+                  "message": "Fixed #30772 -- Optimized make_template_fragment_key().\n\nRemoved usage of urllib.quote(), unnecessary since cbbe60c7fc39fa8ff75554bd90104eaad6924bb1.\nUsed hasher's .update() on key fragments.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwNzAyMDY=",
+                      "login": "danthedeckie"
+                    },
+                    "name": "Daniel Fairhead",
+                    "email": "danthedeckie@gmail.com",
+                    "date": "2019-09-11T22:12:35.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30776 -- Restored max length validation on AuthenticationForm.…",
+                  "message": "Fixed #30776 -- Restored max length validation on AuthenticationForm.UsernameField.\n\nRegression in 5ceaf14686ce626404afb6a5fbd3d8286410bf13.\n\nThanks gopackgo90 for the report and Mariusz Felisiak for tests.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI0OTIyNQ==",
+                      "login": "smjreynolds"
+                    },
+                    "name": "Sam Reynolds",
+                    "email": "sam@smjr.co.uk",
+                    "date": "2019-09-17T15:21:50.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30725 -- Fixed width of DateTimeField inputs in admin tabular …",
+                  "message": "Fixed #30725 -- Fixed width of DateTimeField inputs in admin tabular inline.\n\n\"width\" of DateTimeField inputs in admin tabular inline wasn't set\r\ncorrectly what caused displaying too small inputs with responsive CSS\r\nwhen timezone warning wasn't present.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1Mjc4NTEy",
+                      "login": "minho42"
+                    },
+                    "name": "Min ho Kim",
+                    "email": "minho42@gmail.com",
+                    "date": "2019-09-17T22:30:33.000+10:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30758 -- Made RangeFields use multiple hidden inputs for initi…",
+                  "message": "Fixed #30758 -- Made RangeFields use multiple hidden inputs for initial data.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIyMDA0NzAz",
+                      "login": "nasirhjafri"
+                    },
+                    "name": "Nasir Hussain",
+                    "email": "nasirhjafri@gmail.com",
+                    "date": "2019-09-16T22:29:13.000+05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #30758 -- Added more tests for postgres.forms.ranges.",
+                  "message": "Refs #30758 -- Added more tests for postgres.forms.ranges.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIyMDA0NzAz",
+                      "login": "nasirhjafri"
+                    },
+                    "name": "Nasir Hussain",
+                    "email": "nasirhjafri@gmail.com",
+                    "date": "2019-09-16T19:08:30.000+05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #29376 -- Allowed hiding \"Save and Add Another\" button in admin.",
+                  "message": "Fixed #29376 -- Allowed hiding \"Save and Add Another\" button in admin.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMxMjI0NDI=",
+                      "login": "hramezani"
+                    },
+                    "name": "Hasan Ramezani",
+                    "email": "hasan.r67@gmail.com",
+                    "date": "2019-08-29T16:29:55.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30775 -- Added admonition about missing imports to \"Running te…",
+                  "message": "Fixed #30775 -- Added admonition about missing imports to \"Running tests\" section in tutorial 5.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgxMzczMg==",
+                      "login": "glasnt"
+                    },
+                    "name": "Katie McLaughlin",
+                    "email": "katie@glasnt.com",
+                    "date": "2019-09-14T12:47:15.000+10:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30769 -- Fixed a crash when filtering against a subquery JSON/…",
+                  "message": "Fixed #30769 -- Fixed a crash when filtering against a subquery JSON/HStoreField annotation.\n\nThis was a regression introduced by 7deeabc7c7526786df6894429ce89a9c4b614086\nto address CVE-2019-14234.\n\nThanks Tim Kleinschmidt for the report and Mariusz for the tests.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjkyOTM=",
+                      "login": "charettes"
+                    },
+                    "name": "Simon Charette",
+                    "email": "simon.charette@zapier.com",
+                    "date": "2019-09-15T23:25:50.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Added stub release notes for 1.11.25 and 2.1.13.",
+                  "message": "Added stub release notes for 1.11.25 and 2.1.13.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-16T07:37:47.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #29823 -- Doc'd limitation of DecimalField on SQLite.",
+                  "message": "Fixed #29823 -- Doc'd limitation of DecimalField on SQLite.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE0MzE5Mg==",
+                      "login": "claudep"
+                    },
+                    "name": "Claude Paroz",
+                    "email": "claude@2xlibre.net",
+                    "date": "2019-09-08T23:25:53.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed typos in docs/ref/settings.txt.",
+                  "message": "Fixed typos in docs/ref/settings.txt.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY1MzAzMQ==",
+                      "login": "falkben"
+                    },
+                    "name": "Ben Falk",
+                    "email": "falk.ben@gmail.com",
+                    "date": "2019-09-13T14:36:35.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #27910 -- Improved documentation for model field choice enumerat…",
+                  "message": "Refs #27910 -- Improved documentation for model field choice enumeration types.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NTU1ODI=",
+                      "login": "pope1ni"
+                    },
+                    "name": "Nick Pope",
+                    "email": "nick.pope@flightdataservices.com",
+                    "date": "2019-09-13T14:37:41.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Added PBKDF2 hasher iteration increase to 3.0 release notes.",
+                  "message": "Added PBKDF2 hasher iteration increase to 3.0 release notes.\n\nRefs 06670015f7e55a8be8137dbd95b7f4c536c3782b",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY0Njg2",
+                      "login": "carltongibson"
+                    },
+                    "name": "Carlton Gibson",
+                    "email": "carlton.gibson@noumenal.es",
+                    "date": "2019-09-12T11:48:41.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Increased the default PBKDF2 iterations for Django 3.1.",
+                  "message": "Increased the default PBKDF2 iterations for Django 3.1.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY0Njg2",
+                      "login": "carltongibson"
+                    },
+                    "name": "Carlton Gibson",
+                    "email": "carlton.gibson@noumenal.es",
+                    "date": "2019-09-12T11:46:37.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Expanded notes on alphas in release How-to.",
+                  "message": "Expanded notes on alphas in release How-to.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY0Njg2",
+                      "login": "carltongibson"
+                    },
+                    "name": "Carlton Gibson",
+                    "email": "carlton.gibson@noumenal.es",
+                    "date": "2019-09-12T10:35:19.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #27338 -- Added tests for altering CharField with primary_key=Tr…",
+                  "message": "Refs #27338 -- Added tests for altering CharField with primary_key=True to AutoField on PostgreSQL.\n\nFixed in 91b2bc3e70be2632baad86488fb03cf02848b5b6.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-11T13:40:49.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #30591 -- Fixed too long identifier crash in migrations.test_ope…",
+                  "message": "Refs #30591 -- Fixed too long identifier crash in migrations.test_operations on MySQL 8.0.16+.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-11T12:20:16.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30591 -- Fixed recreation of foreign key constraints on MySQL …",
+                  "message": "Fixed #30591 -- Fixed recreation of foreign key constraints on MySQL when altering type of referenced unique field.\n\nThanks Mariusz Felisiak for tests and Matthijs Kooijman for\ninvestigation and initial patch.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg4NDEyODI=",
+                      "login": "uadnan"
+                    },
+                    "name": "Adnan Umer",
+                    "email": "u.adnan@outlook.com",
+                    "date": "2019-08-22T14:46:17.000+05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Used Statement in PostGISSchemaEditor._create_index_sql().",
+                  "message": "Used Statement in PostGISSchemaEditor._create_index_sql().",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYxNDEzOTA=",
+                      "login": "atombrella"
+                    },
+                    "name": "Mads Jensen",
+                    "email": "mje@inducks.org",
+                    "date": "2019-09-11T07:51:31.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Advanced deprecation warnings for Django 3.1.",
+                  "message": "Advanced deprecation warnings for Django 3.1.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-07T19:44:23.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #14357 -- Made Meta.ordering not affect GROUP BY queries.",
+                  "message": "Refs #14357 -- Made Meta.ordering not affect GROUP BY queries.\n\nPer deprecation timeline.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-07T19:28:19.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #30037 -- Required the RemoteUserBackend.configure_user() to hav…",
+                  "message": "Refs #30037 -- Required the RemoteUserBackend.configure_user() to have request as the first positional argument.\n\nPer deprecation timeline.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-07T15:58:49.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #28478 -- Removed support for TestCase's allow_database_queries …",
+                  "message": "Refs #28478 -- Removed support for TestCase's allow_database_queries and multi_db per deprecation timeline.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-07T11:57:46.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #28606 -- Removed CachedStaticFilesStorage per deprecation timel…",
+                  "message": "Refs #28606 -- Removed CachedStaticFilesStorage per deprecation timeline.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-06T13:40:59.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #29703 -- Removed QuerySetPaginator alias per deprecation timeline.",
+                  "message": "Refs #29703 -- Removed QuerySetPaginator alias per deprecation timeline.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-06T08:07:20.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #29546 -- Removed django.utils.timezone.FixedOffset per deprecat…",
+                  "message": "Refs #29546 -- Removed django.utils.timezone.FixedOffset per deprecation timeline.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-06T07:59:06.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #29817 -- Removed settings.FILE_CHARSET per deprecation timeline.",
+                  "message": "Refs #29817 -- Removed settings.FILE_CHARSET per deprecation timeline.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-05T16:25:30.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #29598 -- Removed FloatRangeField per deprecation timeline.",
+                  "message": "Refs #29598 -- Removed FloatRangeField per deprecation timeline.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-05T16:10:21.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Removed versionadded/changed annotations for 2.2.",
+                  "message": "Removed versionadded/changed annotations for 2.2.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-05T15:07:12.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Added stub release notes for 3.1.",
+                  "message": "Added stub release notes for 3.1.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-05T14:46:01.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Bumped version; master is now 3.1 pre-alpha.",
+                  "message": "Bumped version; master is now 3.1 pre-alpha.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-05T14:15:25.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Updated man page for 3.0 alpha release.",
+                  "message": "Updated man page for 3.0 alpha release.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY0Njg2",
+                      "login": "carltongibson"
+                    },
+                    "name": "Carlton Gibson",
+                    "email": "carlton.gibson@noumenal.es",
+                    "date": "2019-09-10T10:10:50.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30754 -- Prevented inclusion of aliases in partial index condi…",
+                  "message": "Fixed #30754 -- Prevented inclusion of aliases in partial index conditions.\n\nSQLite doesn't repoint table aliases in partial index conditions on table\nrename which breaks the documented table alteration procedure.\n\nThanks Pēteris Caune for the report.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjkyOTM=",
+                      "login": "charettes"
+                    },
+                    "name": "Simon Charette",
+                    "email": "charette.s@gmail.com",
+                    "date": "2019-09-08T20:31:43.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Finalised release notes for 3.0 alpha release.",
+                  "message": "Finalised release notes for 3.0 alpha release.\n\n* Removed empty sections\n* Corrected some typos and wrapping errors.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY0Njg2",
+                      "login": "carltongibson"
+                    },
+                    "name": "Carlton Gibson",
+                    "email": "carlton.gibson@noumenal.es",
+                    "date": "2019-09-10T09:58:42.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #28107 -- Added DatabaseFeatures.allows_group_by_selected_pks_o…",
+                  "message": "Fixed #28107 -- Added DatabaseFeatures.allows_group_by_selected_pks_on_model() to allow enabling optimization for unmanaged models.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyMDEwOA==",
+                      "login": "Tasssadar"
+                    },
+                    "name": "Vojtech Bocek",
+                    "email": "vojtech.bocek@avast.com",
+                    "date": "2019-07-29T16:40:27.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #28107 -- Doc'd how to subclass an existing database engine.",
+                  "message": "Refs #28107 -- Doc'd how to subclass an existing database engine.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyMDEwOA==",
+                      "login": "Tasssadar"
+                    },
+                    "name": "Vojtech Bocek",
+                    "email": "vojtech.bocek@avast.com",
+                    "date": "2019-09-09T14:01:01.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #29406 -- Added support for Referrer-Policy header.",
+                  "message": "Fixed #29406 -- Added support for Referrer-Policy header.\n\nThanks to James Bennett for the initial implementation.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NTU1ODI=",
+                      "login": "pope1ni"
+                    },
+                    "name": "Nick Pope",
+                    "email": "nick.pope@flightdataservices.com",
+                    "date": "2019-03-21T21:33:41.000Z"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #30426 -- Moved release notes into separate security section.",
+                  "message": "Refs #30426 -- Moved release notes into separate security section.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NTU1ODI=",
+                      "login": "pope1ni"
+                    },
+                    "name": "Nick Pope",
+                    "email": "nick.pope@flightdataservices.com",
+                    "date": "2019-09-02T00:19:16.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Standardized links for headers in security middleware documentation.",
+                  "message": "Standardized links for headers in security middleware documentation.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NTU1ODI=",
+                      "login": "pope1ni"
+                    },
+                    "name": "Nick Pope",
+                    "email": "nick.pope@flightdataservices.com",
+                    "date": "2019-03-24T21:26:04.000Z"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #29444 -- Allowed returning multiple fields from INSERT statemen…",
+                  "message": "Refs #29444 -- Allowed returning multiple fields from INSERT statements on PostgreSQL.\n\nThanks Florian Apolloner, Tim Graham, Simon Charette, Nick Pope, and\nMariusz Felisiak for reviews.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzI4OTA=",
+                      "login": "codingjoe"
+                    },
+                    "name": "Johannes Hoppe",
+                    "email": "info@johanneshoppe.com",
+                    "date": "2019-07-24T08:42:41.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #29444 -- Fixed DateField constructor in db.backends.oracle.util…",
+                  "message": "Refs #29444 -- Fixed DateField constructor in db.backends.oracle.utils.InsertVar.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzI4OTA=",
+                      "login": "codingjoe"
+                    },
+                    "name": "Johannes Hoppe",
+                    "email": "info@johanneshoppe.com",
+                    "date": "2019-07-24T08:41:32.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30757 -- Added a system check to ensure max_length fits the lo…",
+                  "message": "Fixed #30757 -- Added a system check to ensure max_length fits the longest choice.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NTU1ODI=",
+                      "login": "pope1ni"
+                    },
+                    "name": "Nick Pope",
+                    "email": "nick.pope@flightdataservices.com",
+                    "date": "2019-09-04T09:21:08.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30767 -- Improved references to deployment documentation.",
+                  "message": "Fixed #30767 -- Improved references to deployment documentation.\n\n* Increased tocdepth to expose more complexity of topics.\r\n* Ensured deployment checklist is linked on main doc page.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgxMzczMg==",
+                      "login": "glasnt"
+                    },
+                    "name": "Katie McLaughlin",
+                    "email": "katie@glasnt.com",
+                    "date": "2019-09-09T18:02:33.000+10:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30426 -- Changed X_FRAME_OPTIONS setting default to DENY.",
+                  "message": "Fixed #30426 -- Changed X_FRAME_OPTIONS setting default to DENY.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE0MzE5Mg==",
+                      "login": "claudep"
+                    },
+                    "name": "Claude Paroz",
+                    "email": "claude@2xlibre.net",
+                    "date": "2019-09-07T09:52:10.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Updated translation catalogs",
+                  "message": "Updated translation catalogs",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE0MzE5Mg==",
+                      "login": "claudep"
+                    },
+                    "name": "Claude Paroz",
+                    "email": "claude@2xlibre.net",
+                    "date": "2019-09-08T17:35:32.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30573 -- Rephrased documentation to avoid words that minimise …",
+                  "message": "Fixed #30573 -- Rephrased documentation to avoid words that minimise the involved difficulty.\n\nThis patch does not remove all occurrences of the words in question.\nRather, I went through all of the occurrences of the words listed\nbelow, and judged if they a) suggested the reader had some kind of\nknowledge/experience, and b) if they added anything of value (including\ntone of voice, etc). I left most of the words alone. I looked at the\nfollowing words:\n\n- simply/simple\n- easy/easier/easiest\n- obvious\n- just\n- merely\n- straightforward\n- ridiculous\n\nThanks to Carlton Gibson for guidance on how to approach this issue, and\nto Tim Bell for providing the idea. But the enormous lion's share of\nthanks go to Adam Johnson for his patient and helpful review.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2NTc1NDc=",
+                      "login": "rixx"
+                    },
+                    "name": "Tobias Kunze",
+                    "email": "r@rixx.de",
+                    "date": "2019-06-17T16:54:55.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed DatabaseFeatures.can_introspect_check_constraints on MariaDB < …",
+                  "message": "Fixed DatabaseFeatures.can_introspect_check_constraints on MariaDB < 10.2.22, 10.3.0 - 10.3.9.\n\nRegression in e2c6a0858d7d9ad85eda353076a5b46608b704a9.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-06T11:53:54.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30763 -- Fixed management commands when using required mutuall…",
+                  "message": "Fixed #30763 -- Fixed management commands when using required mutually exclusive groups.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMxMjI0NDI=",
+                      "login": "hramezani"
+                    },
+                    "name": "Hasan Ramezani",
+                    "email": "hasan.r67@gmail.com",
+                    "date": "2019-09-05T23:45:56.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Moved release note for refs #30158 from deprecated to backwards incom…",
+                  "message": "Moved release note for refs #30158 from deprecated to backwards incompatible changes.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-05T15:56:52.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed typo in docs/internals/contributing/writing-documentation.txt.",
+                  "message": "Fixed typo in docs/internals/contributing/writing-documentation.txt.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-05T14:06:46.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #30573 -- Noted to avoid \"simple\" & co. in Writing Style guide.",
+                  "message": "Refs #30573 -- Noted to avoid \"simple\" & co. in Writing Style guide.\n\nCo-authored-by: Tobias Kunze <r@rixx.de>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY0Njg2",
+                      "login": "carltongibson"
+                    },
+                    "name": "Carlton Gibson",
+                    "email": "carlton.gibson@noumenal.es",
+                    "date": "2019-09-05T09:54:01.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30750 -- Added support for check constraints on MySQL 8.0.16+.",
+                  "message": "Fixed #30750 -- Added support for check constraints on MySQL 8.0.16+.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-04T16:54:27.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Made SchemaTests.test_alter_db_table_case run only on backends where …",
+                  "message": "Made SchemaTests.test_alter_db_table_case run only on backends where table names are case-insensitive.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMxMjI0NDI=",
+                      "login": "hramezani"
+                    },
+                    "name": "Hasan Ramezani",
+                    "email": "hasan.r67@gmail.com",
+                    "date": "2019-09-05T08:56:17.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #27910 -- Added enumeration helpers for use in Field.choices.",
+                  "message": "Fixed #27910 -- Added enumeration helpers for use in Field.choices.\n\nThese classes can serve as a base class for user enums, supporting\ntranslatable human-readable names, or names automatically inferred\nfrom the enum member name.\n\nAdditional properties make it easy to access the list of names, values\nand display labels.\n\nThanks to the following for ideas and reviews:\n\nCarlton Gibson, Fran Hrženjak, Ian Foote, Mariusz Felisiak, Shai Berger.\n\nCo-authored-by: Shai Berger <shai@platonix.com>\nCo-authored-by: Nick Pope <nick.pope@flightdataservices.com>\nCo-authored-by: Mariusz Felisiak <felisiak.mariusz@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyOTE4Nw==",
+                      "login": "shaib"
+                    },
+                    "name": "Shai Berger",
+                    "email": "shai@platonix.com",
+                    "date": "2018-12-31T19:57:35.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #29714 -- Allowed using ExceptionReporter subclass with AdminEm…",
+                  "message": "Fixed #29714 -- Allowed using ExceptionReporter subclass with AdminEmailHandler.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIyMDA0NzAz",
+                      "login": "nasirhjafri"
+                    },
+                    "name": "Nasir Hussain",
+                    "email": "nasirhjafri@gmail.com",
+                    "date": "2019-02-24T20:10:14.000+05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Changed example git clone URLs to use HTTPS.",
+                  "message": "Changed example git clone URLs to use HTTPS.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1Mjc4NTEy",
+                      "login": "minho42"
+                    },
+                    "name": "Min ho Kim",
+                    "email": "minho42@gmail.com",
+                    "date": "2019-09-04T16:11:22.000+10:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Added stub release notes for 2.2.6.",
+                  "message": "Added stub release notes for 2.2.6.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-04T08:02:32.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30691 -- Made migrations autodetector find dependencies for fo…",
+                  "message": "Fixed #30691 -- Made migrations autodetector find dependencies for foreign keys altering.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMyMjI2NTk4",
+                      "login": "Dart-net"
+                    },
+                    "name": "Viktor Lomakin",
+                    "email": "vl.dart.py@gmail.com",
+                    "date": "2019-09-03T13:42:04.000+03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #29444 -- Made db.backends.oracle.utils.InsertVar use str as def…",
+                  "message": "Refs #29444 -- Made db.backends.oracle.utils.InsertVar use str as default.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzI4OTA=",
+                      "login": "codingjoe"
+                    },
+                    "name": "Johannes Hoppe",
+                    "email": "info@johanneshoppe.com",
+                    "date": "2019-07-24T08:39:45.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30747 -- Renamed is_safe_url() to url_has_allowed_host_and_sch…",
+                  "message": "Fixed #30747 -- Renamed is_safe_url() to url_has_allowed_host_and_scheme().",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY0Njg2",
+                      "login": "carltongibson"
+                    },
+                    "name": "Carlton Gibson",
+                    "email": "carlton.gibson@noumenal.es",
+                    "date": "2019-08-14T17:39:21.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30739 -- Fixed exclusion of multi-valued lookup against outer …",
+                  "message": "Fixed #30739 -- Fixed exclusion of multi-valued lookup against outer rhs.\n\nOuterRef right hand sides have to be nested, just like F rhs have to,\nduring the subquery pushdown split_exclude performs to ensure they are\nresolved against the outer query aliases.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjkyOTM=",
+                      "login": "charettes"
+                    },
+                    "name": "Simon Charette",
+                    "email": "simon.charette@zapier.com",
+                    "date": "2019-09-01T14:35:27.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #28442 -- Adjusted related lookups handling of expression rhs.",
+                  "message": "Refs #28442 -- Adjusted related lookups handling of expression rhs.\n\nExpressions should never be prepared as other Lookup.get_prep_lookup\nimplementations hint at by returning early on the presence of the\nresolve_expression attribute.\n\nThe previous solution was only handling lookups against related fields\npointing at AutoFields and would break for foreign keys to other fields.\n\nIt was also causing bidirectional coupling between model fields and\nexpressions which the method level import of OuterRef was a symptom of.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjkyOTM=",
+                      "login": "charettes"
+                    },
+                    "name": "Simon Charette",
+                    "email": "simon.charette@zapier.com",
+                    "date": "2019-09-01T14:25:28.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #29379 -- Moved autocomplete attribute to UsernameField.",
+                  "message": "Refs #29379 -- Moved autocomplete attribute to UsernameField.\n\nMoving the autocomplete attribute into UsernameField allows this to work\r\nfor custom forms making use of UsernameField, removes some duplication\r\nin the code, and keeps consistency with the autocapitalize attribute\r\nthat is already defined on UsernameField.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NTU1ODI=",
+                      "login": "pope1ni"
+                    },
+                    "name": "Nick Pope",
+                    "email": "nick.pope@flightdataservices.com",
+                    "date": "2019-09-02T09:50:56.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Added release dates for 2.2.5, 2.1.12, and 1.11.24.",
+                  "message": "Added release dates for 2.2.5, 2.1.12, and 1.11.24.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-09-02T07:43:51.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30738 -- Fixed typo in docs/ref/forms/widgets.txt.",
+                  "message": "Fixed #30738 -- Fixed typo in docs/ref/forms/widgets.txt.\n\nThanks Emmanuel Cazenave for the report.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYyODExMTE=",
+                      "login": "Oktosha"
+                    },
+                    "name": "Daria Kolodzey",
+                    "email": "dkolodzey@ya.ru",
+                    "date": "2019-08-31T11:58:41.000+03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #30736 -- Added missing versionadded annotations for Storage.get…",
+                  "message": "Refs #30736 -- Added missing versionadded annotations for Storage.get_alternative_name().\n\nThanks Simon Charette for the report.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-08-31T07:14:44.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30731 -- Fixed handling trailing groups in simplify_regex().",
+                  "message": "Fixed #30731 -- Fixed handling trailing groups in simplify_regex().\n\nPreviously simplify_regex() didn't handle trailing groups for regexp\nwithout the end of string character (\"$\").",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQzNTY0NzE=",
+                      "login": "n2ygk"
+                    },
+                    "name": "Alan Crosswell",
+                    "email": "alan@columbia.edu",
+                    "date": "2019-08-29T13:15:46.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30736 -- Added Storage.get_alternative_name() to allow customi…",
+                  "message": "Fixed #30736 -- Added Storage.get_alternative_name() to allow customization.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI1MTY0NTk4",
+                      "login": "yukihira1992"
+                    },
+                    "name": "yukihira1992",
+                    "email": "hirayama@cancerscan.jp",
+                    "date": "2019-08-29T01:17:07.000+09:00"
+                  },
+                  "comments": {
+                    "edges": [
+                      {
+                        "node": {
+                          "bodyText": "Should this be in a ::versionadded section?",
+                          "createdAt": "2019-08-31T04:29:29Z",
+                          "reactions": {
+                            "edges": []
+                          }
+                        }
+                      },
+                      {
+                        "node": {
+                          "bodyText": "Ditto?",
+                          "createdAt": "2019-08-31T04:29:36Z",
+                          "reactions": {
+                            "edges": []
+                          }
+                        }
+                      },
+                      {
+                        "node": {
+                          "bodyText": "Yes, good catch, thanks 👍 Fixed in 6201141.",
+                          "createdAt": "2019-08-31T05:39:43Z",
+                          "reactions": {
+                            "edges": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #18763 -- Added ModelBackend/UserManager.with_perm() methods.",
+                  "message": "Fixed #18763 -- Added ModelBackend/UserManager.with_perm() methods.\n\nCo-authored-by: Nick Pope <nick.pope@flightdataservices.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2MzM4",
+                      "login": "berkerpeksag"
+                    },
+                    "name": "Berker Peksag",
+                    "email": "berker.peksag@gmail.com",
+                    "date": "2016-08-25T19:26:18.000+03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Removed unneeded * markers from parameter names.",
+                  "message": "Removed unneeded * markers from parameter names.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY0Njg2",
+                      "login": "carltongibson"
+                    },
+                    "name": "Carlton Gibson",
+                    "email": "carlton.gibson@noumenal.es",
+                    "date": "2019-08-29T12:07:11.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30066 -- Enabled super user creation without email and password",
+                  "message": "Fixed #30066 -- Enabled super user creation without email and password",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ2ODYyOTI=",
+                      "login": "MisterRios"
+                    },
+                    "name": "daniel a rios",
+                    "email": "misterrios@gmail.com",
+                    "date": "2019-06-14T11:12:08.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Converted auth test to use subTest().",
+                  "message": "Converted auth test to use subTest().",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY0Njg2",
+                      "login": "carltongibson"
+                    },
+                    "name": "Carlton Gibson",
+                    "email": "carlton.gibson@noumenal.es",
+                    "date": "2019-08-29T10:58:24.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #25367 -- Simplified OrderBy and Lookup by using Case() instead …",
+                  "message": "Refs #25367 -- Simplified OrderBy and Lookup by using Case() instead of RawSQL() on Oracle.\n\nFollow up to efa1908f662c19038a944129c81462485c4a9fe8.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-08-29T11:56:12.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #25367 -- Allowed boolean expressions in QuerySet.filter() and …",
+                  "message": "Fixed #25367 -- Allowed boolean expressions in QuerySet.filter() and exclude().\n\nThis allows using expressions that have an output_field that is a\nBooleanField to be used directly in a queryset filters, or in the\nWhen() clauses of a Case() expression.\n\nThanks Josh Smeaton, Tim Graham, Simon Charette, Mariusz Felisiak, and\nAdam Johnson for reviews.\n\nCo-Authored-By: NyanKiyoshi <hello@vanille.bid>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIzNDEx",
+                      "login": "schinckel"
+                    },
+                    "name": "Matthew Schinckel",
+                    "email": "matt@schinckel.net",
+                    "date": "2017-02-27T19:31:52.000+10:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Used skipUnlessDBFeature instead of checking vendor in test_filtering…",
+                  "message": "Used skipUnlessDBFeature instead of checking vendor in test_filtering_on_annotate_that_uses_q.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-08-29T09:40:34.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Added tests for raising an error when passing non-boolean expression …",
+                  "message": "Added tests for raising an error when passing non-boolean expression to When().",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NjU4ODU=",
+                      "login": "felixxm"
+                    },
+                    "name": "Mariusz Felisiak",
+                    "email": "felisiak.mariusz@gmail.com",
+                    "date": "2019-08-29T09:29:46.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Adjusted subprocess.run() calls to use arg list, rather than string.",
+                  "message": "Adjusted subprocess.run() calls to use arg list, rather than string. \n\nThe Python docs recommend passing a sequence to subprocess.run() when\r\npossible. Doing so allows for automatic escaping and quoting of\r\narguments.\r\n\r\nhttps://docs.python.org/3/library/subprocess.html#frequently-used-arguments\r\n\r\n> args is required for all calls and should be a string, or a sequence\r\n> of program arguments. Providing a sequence of arguments is generally\r\n> preferred, as it allows the module to take care of any required\r\n> escaping and quoting of arguments (e.g. to permit spaces in file\r\n> names).\r\n\r\nAlso removed `shell=True` where unnecessary.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM0NzYzNA==",
+                      "login": "jdufresne"
+                    },
+                    "name": "Jon Dufresne",
+                    "email": "jon.dufresne@gmail.com",
+                    "date": "2019-08-28T01:19:30.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Refs #27795 -- Removed an unnecessary force_bytes() call in uri_to_ir…",
+                  "message": "Refs #27795 -- Removed an unnecessary force_bytes() call in uri_to_iri().\n\nThe value returned from urllib.parse.quote() is always a string, so can\r\nsafely call .encode().",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM0NzYzNA==",
+                      "login": "jdufresne"
+                    },
+                    "name": "Jon Dufresne",
+                    "email": "jon.dufresne@gmail.com",
+                    "date": "2019-08-28T00:20:46.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed #30733 -- Doc'd that datetime lookups require time zone definit…",
+                  "message": "Fixed #30733 -- Doc'd that datetime lookups require time zone definitions in the database.\n\nNote was missing for date, year, iso_year, week, time, hour, minute,\nand second lookups.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM2NDg5NTc3",
+                      "login": "recvfrom"
+                    },
+                    "name": "Andrew",
+                    "email": "36489577+recvfrom@users.noreply.github.com",
+                    "date": "2019-08-27T17:37:24.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1811 @@
+{
+  "data": {
+    "repository": {
+      "ref": {
+        "target": {
+          "history": {
+            "edges": [
+              {
+                "node": {
+                  "messageHeadline": "fix #13341 math_ops to K (#13342)",
+                  "message": "fix #13341 math_ops to K (#13342)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE4NDk5NTk=",
+                      "login": "djstrong"
+                    },
+                    "name": "djstrong",
+                    "email": "djstrong@gmail.com",
+                    "date": "2019-09-20T19:49:38.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Correct spelling mistake (#13339)",
+                  "message": "Correct spelling mistake (#13339)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5NTg5MDY=",
+                      "login": "shivdhar"
+                    },
+                    "name": "Shiv Dhar",
+                    "email": "shivdhar@gmail.com",
+                    "date": "2019-09-20T23:19:03.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge branch 'master' of github.com:keras-team/keras",
+                  "message": "Merge branch 'master' of github.com:keras-team/keras",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-18T17:03:55.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix thread safety issue",
+                  "message": "Fix thread safety issue",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-18T17:03:43.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add a link to the metrics document (#13334)",
+                  "message": "Add a link to the metrics document (#13334)\n\nLink to the metrics document(/metrics) was missing in 'Compilation' section. Added one just as other explained arguments.",
+                  "author": {
+                    "user": null,
+                    "name": "Junyoung Kim",
+                    "email": "pathfinder21c@gmail.com",
+                    "date": "2019-09-19T05:35:54.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update README",
+                  "message": "Update README",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-17T10:01:48.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix deprecation warnings related to TF v1",
+                  "message": "Fix deprecation warnings related to TF v1",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-16T13:47:46.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix sequence timeout deadlock (#13322)",
+                  "message": "Fix sequence timeout deadlock (#13322)\n\n* Add a test for deadlock after sequence worker timeout\r\n\r\n* Call task_done even if the task timeouted\r\n\r\n* catch dead worker warning\r\n\r\n* fix line length\r\n\r\n* Increase deadlock detection timeout to prevent flakiness",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2NzQ1OTY=",
+                      "login": "andreyz4k"
+                    },
+                    "name": "Andrey Zakharevich",
+                    "email": "andreyzakharevich@gmail.com",
+                    "date": "2019-09-15T20:49:14.000+03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Added messages about the future of multi-backend Keras. (#13315)",
+                  "message": "Added messages about the future of multi-backend Keras. (#13315)\n\n* Added comments about the future of Keras.\r\n\r\n* Changed msg.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyODkxNjkx",
+                      "login": "gabrieldemarmiesse"
+                    },
+                    "name": "Gabriel de Marmiesse",
+                    "email": "gabrieldemarmiesse@gmail.com",
+                    "date": "2019-09-15T07:40:35.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "#13239 Improved documentation for EarlyStopping/ReduceLROnPlateau, ta…",
+                  "message": "#13239 Improved documentation for EarlyStopping/ReduceLROnPlateau, take validation_freq into account. (#13240)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ3NDk3NTU=",
+                      "login": "hendriks73"
+                    },
+                    "name": "Hendrik Schreiber",
+                    "email": "hs@tagtraum.com",
+                    "date": "2019-09-12T19:23:49.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge branch 'master' of github.com:keras-team/keras",
+                  "message": "Merge branch 'master' of github.com:keras-team/keras",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-11T16:53:43.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix Travis SSL issue.",
+                  "message": "Fix Travis SSL issue.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-11T16:53:24.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Complete the docs by adding data to multi-input/output example (#12775)",
+                  "message": "Complete the docs by adding data to multi-input/output example (#12775)\n\n* Complete the docs by adding data to multi-input/output example\r\n\r\n* Add seed for reproducibility",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMzgxMzYx",
+                      "login": "Bharat123rox"
+                    },
+                    "name": "Bharat Raghunathan",
+                    "email": "bharatraghunthan9767@gmail.com",
+                    "date": "2019-09-12T03:07:02.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Added batch_normalization in the numpy backend. (#11556)",
+                  "message": "Added batch_normalization in the numpy backend. (#11556)\n\n* Finished the functions.\r\n\r\n* Started doing the test function.\r\n\r\n* Added the batch_normalization operation to the numpy backend.\r\n\r\n* forgot an argument",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyODkxNjkx",
+                      "login": "gabrieldemarmiesse"
+                    },
+                    "name": "Gabriel de Marmiesse",
+                    "email": "gabrieldemarmiesse@gmail.com",
+                    "date": "2019-09-11T23:25:57.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "fix in \"Layer.compute_output_shape\" description (#13210)",
+                  "message": "fix in \"Layer.compute_output_shape\" description (#13210)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2NTM4NzY1",
+                      "login": "Avi2011class"
+                    },
+                    "name": "Alexander Ivanov",
+                    "email": "avi2011class@yandex.ru",
+                    "date": "2019-09-11T23:39:39.000+03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Correct the DepthwiseConv2d docstrings - output shape (#13225)",
+                  "message": "Correct the DepthwiseConv2d docstrings - output shape (#13225)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2MTUzNzk3",
+                      "login": "keunwoochoi"
+                    },
+                    "name": "Keunwoo Choi",
+                    "email": "gnuchoi+github@gmail.com",
+                    "date": "2019-09-11T16:35:24.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "typo fixed (#13230)",
+                  "message": "typo fixed (#13230)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM5Nzk1Njg=",
+                      "login": "ArnoutDevos"
+                    },
+                    "name": "Arnout Devos",
+                    "email": "arnoutdev@gmail.com",
+                    "date": "2019-09-11T22:22:06.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update babi_rnn.py (#13263)",
+                  "message": "Update babi_rnn.py (#13263)\n\nChange line 82 so the reg exp works as it says on token above in the comment\r\nbecause else it gives - AttributeError: 'NoneType' object has no attribute 'strip'",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyNzM4MjI5",
+                      "login": "BluFalcon"
+                    },
+                    "name": "Kostas",
+                    "email": "kvogiat@gmail.com",
+                    "date": "2019-09-11T21:20:20.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update lstm_seq2seq.py(from 22% to 87% acc) (#13269)",
+                  "message": "Update lstm_seq2seq.py(from 22% to 87% acc) (#13269)\n\n* #13266 Update lstm_seq2seq.py(from 22% to 87% acc)\r\n\r\nI added the codes for applying one-hot encoding on the end of sentences about encoder_input_data, decoder_input_data, and decoder_target_data. I added an accuracy metric for model training. The original code has 22% accuracy, but the proposed code had 87% validation accuracy.\r\n\r\n* Update lstm_seq2seq.py\r\n\r\nI update code according to PEP8.\r\n\r\n* Update lstm_seq2seq.py\r\n\r\nRemove whitespace according to PEP 8.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjUwNjQ0MDg=",
+                      "login": "tykimos"
+                    },
+                    "name": "tykimos",
+                    "email": "adam.tykim@gmail.com",
+                    "date": "2019-09-12T05:19:51.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Using K.is_tensor and K.is_variable (#13307)",
+                  "message": "Using K.is_tensor and K.is_variable (#13307)\n\nis_tensor_or_variable(x) is undefined and replaced by\r\nK.is_tensor(x) or K.is_variable(x).\r\n\r\nFixes #13306.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE4MzY4MTU=",
+                      "login": "shoeffner"
+                    },
+                    "name": "Sebastian Höffner",
+                    "email": "info@sebastian-hoeffner.de",
+                    "date": "2019-09-11T22:16:43.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add back CPU to multi_gpu_utils available devices",
+                  "message": "Add back CPU to multi_gpu_utils available devices",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-10T10:13:03.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge branch 'master' of github.com:keras-team/keras",
+                  "message": "Merge branch 'master' of github.com:keras-team/keras\n\n# Conflicts:\n#\tkeras/backend/tensorflow_backend.py",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-09T16:18:20.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update coverage threshold",
+                  "message": "Update coverage threshold",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-09T15:44:30.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix py2 test",
+                  "message": "Fix py2 test",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-09T15:22:03.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix py2 test",
+                  "message": "Fix py2 test",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-09T15:08:21.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Skip metric tests for CNTK",
+                  "message": "Skip metric tests for CNTK",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-09T14:53:36.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix Py2 tests",
+                  "message": "Fix Py2 tests",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-09T14:51:30.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Reenable Precision and Recall with TF1",
+                  "message": "Reenable Precision and Recall with TF1",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-09T14:32:06.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Disable top_k metrics for TF1",
+                  "message": "Disable top_k metrics for TF1",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-09T14:04:19.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge branch 'pavithrasv-tf-2' into tf-2",
+                  "message": "Merge branch 'pavithrasv-tf-2' into tf-2",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-09T13:44:38.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix Theano tests.",
+                  "message": "Fix Theano tests.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-09T13:44:26.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge branch 'tf-2' of https://github.com/pavithrasv/keras into pavit…",
+                  "message": "Merge branch 'tf-2' of https://github.com/pavithrasv/keras into pavithrasv-tf-2",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-09T11:02:09.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Addressed PR comments.",
+                  "message": "Addressed PR comments.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMzI2NzU4",
+                      "login": "pavithrasv"
+                    },
+                    "name": "Pavithra Vijay",
+                    "email": "psv@google.com",
+                    "date": "2019-09-08T20:52:16.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update examples",
+                  "message": "Update examples",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-08T17:59:27.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix some bugs",
+                  "message": "Fix some bugs",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-08T12:58:19.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update examples",
+                  "message": "Update examples",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-08T12:57:55.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove deprecated example, fix conv filter example",
+                  "message": "Remove deprecated example, fix conv filter example",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-07T18:27:24.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove deprecated example script",
+                  "message": "Remove deprecated example script",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-07T17:54:08.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge branch 'tf-2' of github.com:keras-team/keras into tf-2",
+                  "message": "Merge branch 'tf-2' of github.com:keras-team/keras into tf-2",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-07T17:46:09.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix metrics reporting /  accumulation with fit_generator and evaluate…",
+                  "message": "Fix metrics reporting /  accumulation with fit_generator and evaluate_generator.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-09-07T17:44:58.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add MeanIoU metric.",
+                  "message": "Add MeanIoU metric.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMzI2NzU4",
+                      "login": "pavithrasv"
+                    },
+                    "name": "Pavithra Vijay",
+                    "email": "psv@google.com",
+                    "date": "2019-09-06T17:34:39.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add MeanIoU metric.",
+                  "message": "Add MeanIoU metric.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMzI2NzU4",
+                      "login": "pavithrasv"
+                    },
+                    "name": "Pavithra Vijay",
+                    "email": "psv@google.com",
+                    "date": "2019-09-06T17:27:50.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Adding Precision, Recall, Mean IoU part 1.",
+                  "message": "Adding Precision, Recall, Mean IoU part 1.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMzI2NzU4",
+                      "login": "pavithrasv"
+                    },
+                    "name": "Pavithra Vijay",
+                    "email": "psv@google.com",
+                    "date": "2019-09-06T12:58:38.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Adding Precision, Recall, Mean IoU part 1.",
+                  "message": "Adding Precision, Recall, Mean IoU part 1.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMzI2NzU4",
+                      "login": "pavithrasv"
+                    },
+                    "name": "Pavithra Vijay",
+                    "email": "psv@google.com",
+                    "date": "2019-09-06T12:55:23.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add SpecificityAtSensitivity metric. (#13294)",
+                  "message": "Add SpecificityAtSensitivity metric. (#13294)\n\n* Add SpecificityAtSensitivity metric.\r\n\r\n* Fixing some lint issues.\r\n\r\n* Fixing some lint issues.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMzI2NzU4",
+                      "login": "pavithrasv"
+                    },
+                    "name": "Pavithra Vijay",
+                    "email": "psv@google.com",
+                    "date": "2019-09-06T00:36:22.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Adding AUC, SensitivityAtSpecificity metrics. (#13289)",
+                  "message": "Adding AUC, SensitivityAtSpecificity metrics. (#13289)\n\n* Adding AUC, SensitivityAtSpecificity metrics.\r\n\r\n* Fixed failing test.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMzI2NzU4",
+                      "login": "pavithrasv"
+                    },
+                    "name": "Pavithra Vijay",
+                    "email": "psv@google.com",
+                    "date": "2019-09-05T15:01:40.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Adding TruePositives, TrueNegatives, FalsePositives, FalseNegatives m…",
+                  "message": "Adding TruePositives, TrueNegatives, FalsePositives, FalseNegatives metric classes. (#13280)\n\n* Adding FalsePositive metric class.\r\n\r\n* Adding TruePositives, TrueNegatives, FalseNegatives metric classes.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMzI2NzU4",
+                      "login": "pavithrasv"
+                    },
+                    "name": "Pavithra Vijay",
+                    "email": "psv@google.com",
+                    "date": "2019-09-04T14:18:59.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Reverse sign of cosine_similarity metric",
+                  "message": "Reverse sign of cosine_similarity metric",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-30T14:19:37.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add metrics CosineSimilarity, MeanAbsoluteError, MeanAbsolutePercenta…",
+                  "message": "Add metrics CosineSimilarity, MeanAbsoluteError, MeanAbsolutePercentageError, MeanSquaredError, MeanSquaredLogarithmicError, RootMeanSquaredError.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-30T13:53:00.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Adding LogCosh, Poisson, KLDivergence, crossentropy metrics. (#13271)",
+                  "message": "Adding LogCosh, Poisson, KLDivergence, crossentropy metrics. (#13271)\n\n* Adding LogCosh, Poisson, KLDivergence metrics.\r\n\r\n* Adding crossentropy  metrics.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMzI2NzU4",
+                      "login": "pavithrasv"
+                    },
+                    "name": "Pavithra Vijay",
+                    "email": "psv@google.com",
+                    "date": "2019-08-30T13:02:48.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add label conversion to hinge losses",
+                  "message": "Add label conversion to hinge losses",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-30T12:35:26.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge",
+                  "message": "Merge",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-30T11:24:50.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add metrics Hinge, SquaredHinge, CategoricalHinge",
+                  "message": "Add metrics Hinge, SquaredHinge, CategoricalHinge",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-30T11:22:08.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Adding accuracy metric classes. (#13265)",
+                  "message": "Adding accuracy metric classes. (#13265)\n\n* Adding Accuracy metric class.\r\n\r\n* Adding BinaryAccuracy metric class.\r\n\r\n* Adding CategoricalAccuracy metric class.\r\n\r\n* Adding SparseCategoricalAccuracy metric class.\r\n\r\n* Adding TopK Accuracy metric classes.\r\n\r\n* Fixed review comments",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMzI2NzU4",
+                      "login": "pavithrasv"
+                    },
+                    "name": "Pavithra Vijay",
+                    "email": "psv@google.com",
+                    "date": "2019-08-30T11:19:11.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix PEP8",
+                  "message": "Fix PEP8",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-29T17:27:59.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix theano backend",
+                  "message": "Fix theano backend",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-29T17:20:20.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add support for layer attribute tracking (loss, updates, metrics) in …",
+                  "message": "Add support for layer attribute tracking (loss, updates, metrics) in layer subclasses, and standalone weight tracking",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-29T17:06:39.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add ability for Layer to track sublayer attributes",
+                  "message": "Add ability for Layer to track sublayer attributes",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-29T11:24:42.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Disable a couple more multiprocessing tests",
+                  "message": "Disable a couple more multiprocessing tests",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T23:18:42.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Disable test that hangs Travis",
+                  "message": "Disable test that hangs Travis",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T22:55:07.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Disable flaky CNTK test",
+                  "message": "Disable flaky CNTK test",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T17:57:46.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Disable test causing Travis to hang",
+                  "message": "Disable test causing Travis to hang",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T17:29:45.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Disable CNTK SGD test",
+                  "message": "Disable CNTK SGD test",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T17:22:39.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Reduce test flakiness",
+                  "message": "Reduce test flakiness",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T17:20:52.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Disabled flaky cntk test",
+                  "message": "Disabled flaky cntk test",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T17:05:14.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Disable test that hangs Travis",
+                  "message": "Disable test that hangs Travis",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T17:04:39.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CNTK fixes",
+                  "message": "CNTK fixes",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T16:38:15.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix docs test",
+                  "message": "Fix docs test",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T16:38:08.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Disable a backend test for CNTK",
+                  "message": "Disable a backend test for CNTK",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T16:12:56.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update CI to run on TF 1.14 for TF1",
+                  "message": "Update CI to run on TF 1.14 for TF1",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T16:12:45.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix PEP8",
+                  "message": "Fix PEP8",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T15:58:28.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Only run label smoothing logic when necessary",
+                  "message": "Only run label smoothing logic when necessary",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T15:51:16.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove outdated tests",
+                  "message": "Remove outdated tests",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T15:44:59.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge branch 'master' into tf-2",
+                  "message": "Merge branch 'master' into tf-2",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T15:38:48.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Improve test syntax",
+                  "message": "Improve test syntax",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T15:35:55.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Improve exception testing in test_training",
+                  "message": "Improve exception testing in test_training",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T15:20:18.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Minor fixes",
+                  "message": "Minor fixes",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T15:17:43.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Introduces fixes for tensor equality in TF 2.0",
+                  "message": "Introduces fixes for tensor equality in TF 2.0",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T14:54:46.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix PEP8",
+                  "message": "Fix PEP8",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T13:55:41.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix metrics support in Theano",
+                  "message": "Fix metrics support in Theano",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-28T13:49:52.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add metric API changes (#13256)",
+                  "message": "Add metric API changes (#13256)\n\n* Add metric API changes part 1\r\n\r\n* Add metric API changes part 2\r\n\r\n* Update metric __call__ calls to update state and result calls\r\n\r\n* Changing metric call for output loss metric to update_state and result calls.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMzI2NzU4",
+                      "login": "pavithrasv"
+                    },
+                    "name": "Pavithra Vijay",
+                    "email": "psv@google.com",
+                    "date": "2019-08-28T13:07:06.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Documentation for `array_to_img`, `img_to_array` and `save_img` under…",
+                  "message": "Documentation for `array_to_img`, `img_to_array` and `save_img` under `preprocessing.image` #12711 (#13252)\n\n* Add docstring of `save_img()` in `keras/preprocessing/image.py`\r\n\r\nSigned-off-by: Karel Ha <mathemage@gmail.com>\r\n\r\n* Add docstring of `img_to_array()` in `keras/preprocessing/image.py`\r\n\r\nSigned-off-by: Karel Ha <mathemage@gmail.com>\r\n\r\n* Add docstring of `array_to_img()` in `keras/preprocessing/image.py`\r\n\r\nSigned-off-by: Karel Ha <mathemage@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNzM1MTQ=",
+                      "login": "mathemage"
+                    },
+                    "name": "Karel Ha",
+                    "email": "mathemage@gmail.com",
+                    "date": "2019-08-28T19:42:03.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "sync changes to _TfDeviceCaptureOp (#13255)",
+                  "message": "sync changes to _TfDeviceCaptureOp (#13255)\n\n* sync changes to _TfDeviceCaptureOp\r\n\r\n* adjust for wider compatibility",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMDg5Mjk3",
+                      "login": "robieta"
+                    },
+                    "name": "Taylor Robie",
+                    "email": "taylorrobie@google.com",
+                    "date": "2019-08-28T10:24:07.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix results tracking for metrics in multi-output case",
+                  "message": "Fix results tracking for metrics in multi-output case",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-26T10:56:18.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update optimizers for TF2. (#13246)",
+                  "message": "Update optimizers for TF2. (#13246)\n\n1. remove epsilon and decay for all optimizers\r\n2. add iterations into weight list into RMSProp, Adagrad, Adadelta,\r\nNadam",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1MjIwOTI5",
+                      "login": "tanzhenyu"
+                    },
+                    "name": "tanzhenyu",
+                    "email": "tanzheny@google.com",
+                    "date": "2019-08-25T21:02:13.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Theano fixes",
+                  "message": "Theano fixes",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-25T11:43:37.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "pep8 config in setup.cfg (#13196)",
+                  "message": "pep8 config in setup.cfg (#13196)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIyOTM4Mg==",
+                      "login": "PhilipMay"
+                    },
+                    "name": "Philip May",
+                    "email": "eniak.info@gmail.com",
+                    "date": "2019-08-25T19:11:26.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Recompute steps_per_epoch after each epoch in traingin_generator (#13…",
+                  "message": "Recompute steps_per_epoch after each epoch in traingin_generator (#13037)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIzMjM0MjY=",
+                      "login": "vikua"
+                    },
+                    "name": "Victor Kovryzhkin",
+                    "email": "vik.kovrizhkin@gmail.com",
+                    "date": "2019-08-25T20:08:51.000+03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixes",
+                  "message": "Fixes",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-25T09:19:55.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix",
+                  "message": "Fix",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-25T09:06:58.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Theano fixes",
+                  "message": "Theano fixes",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-25T09:01:17.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Make metrics compatible with Theano",
+                  "message": "Make metrics compatible with Theano",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-23T17:19:12.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Some Theano fixes.",
+                  "message": "Some Theano fixes.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-23T14:40:02.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix sklearn regressor test?",
+                  "message": "Fix sklearn regressor test?",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-21T17:58:08.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix sklearn wrapper unit test in Python 3?",
+                  "message": "Fix sklearn wrapper unit test in Python 3?",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-21T17:38:51.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Prepare 2.2.5 release.",
+                  "message": "Prepare 2.2.5 release.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-21T17:02:32.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove references to ResNeXt from docs.",
+                  "message": "Remove references to ResNeXt from docs.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxMDI1NQ==",
+                      "login": "fchollet"
+                    },
+                    "name": "François Chollet",
+                    "email": "francois.chollet@gmail.com",
+                    "date": "2019-08-21T16:06:01.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "RNN initial state: bug fix + suppress false warning (#13138)",
+                  "message": "RNN initial state: bug fix + suppress false warning (#13138)\n\n* suppress serde warning\r\n\r\n* add test\r\n\r\n* pep8\r\n\r\n* python2\r\n\r\n* theano fix\r\n\r\n* theano fix\r\n\r\n* pop before call\r\n\r\n* few fixes\r\n\r\n* fix wrappers\r\n\r\n* mooore fix",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExMDA2MDA2",
+                      "login": "farizrahman4u"
+                    },
+                    "name": "Fariz Rahman",
+                    "email": "farizrahman4u@gmail.com",
+                    "date": "2019-07-26T01:59:49.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "For better performance (#13144)",
+                  "message": "For better performance (#13144)\n\nmove self.l1 and self.l2 outside K.sum may increase the performance of calculating the norm.\r\nIn deep learning, the norm should not be very large (a large norm will make loss function useless), so move self.l1 and self.l2 outside K.sum will not cause overflow problem",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2MTMwMTc0",
+                      "login": "Neutron3529"
+                    },
+                    "name": "Neutron3529",
+                    "email": "qweytr_1@163.com",
+                    "date": "2019-07-24T06:52:02.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Allow unrolled RNNs with input_length=1 (#13078)",
+                  "message": "Allow unrolled RNNs with input_length=1 (#13078)\n\n* allow len1\r\n\r\n* add test\r\n\r\n* pep8\r\n\r\n* rem unusedvar\r\n\r\n* skip theano\r\n\r\n* typo\r\n\r\n* fix\r\n\r\n* pep8",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExMDA2MDA2",
+                      "login": "farizrahman4u"
+                    },
+                    "name": "Fariz Rahman",
+                    "email": "farizrahman4u@gmail.com",
+                    "date": "2019-07-11T04:21:15.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

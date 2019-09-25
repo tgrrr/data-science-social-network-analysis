@@ -1,0 +1,1808 @@
+{
+  "data": {
+    "repository": {
+      "ref": {
+        "target": {
+          "history": {
+            "edges": [
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29230][CORE][TEST] Fix NPE in ProcfsMetricsGetterSuite",
+                  "message": "[SPARK-29230][CORE][TEST] Fix NPE in ProcfsMetricsGetterSuite\n\n### What changes were proposed in this pull request?\n\nWhen I use `ProcfsMetricsGetterSuite for` testing, always throw out `java.lang.NullPointerException`. I think there is a problem with locating `new ProcfsMetricsGetter`, which will lead to `SparkEnv` not being initialized in time. This leads to `java.lang.NullPointerException` when the method is executed.\n\n### Why are the changes needed?\nFor test.\n\n### Does this PR introduce any user-facing change?\n\nNo\n\n### How was this patch tested?\n\nLocal testing\n\nCloses #25918 from sev7e0/dev_0924.\n\nAuthored-by: sev7e0 <sev7e0@gmail.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIxMTAyNDQy",
+                      "login": "sev7e0"
+                    },
+                    "name": "sev7e0",
+                    "email": "sev7e0@gmail.com",
+                    "date": "2019-09-24T14:09:40.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29082][CORE] Skip delegation token generation if no credential…",
+                  "message": "[SPARK-29082][CORE] Skip delegation token generation if no credentials are available\n\nThis PR is an enhanced version of https://github.com/apache/spark/pull/25805 so I've kept the original text. The problem with the original PR can be found in comment.\n\nThis situation can happen when an external system (e.g. Oozie) generates\ndelegation tokens for a Spark application. The Spark driver will then run\nagainst secured services, have proper credentials (the tokens), but no\nkerberos credentials. So trying to do things that requires a kerberos\ncredential fails.\n\nInstead, if no kerberos credentials are detected, just skip the whole\ndelegation token code.\n\nTested with an application that simulates Oozie; fails before the fix,\npasses with the fix. Also with other DT-related tests to make sure other\nfunctionality keeps working.\n\nCloses #25901 from gaborgsomogyi/SPARK-29082.\n\nAuthored-by: Gabor Somogyi <gabor.g.somogyi@gmail.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE4NTYxODIw",
+                      "login": "gaborgsomogyi"
+                    },
+                    "name": "Gabor Somogyi",
+                    "email": "gabor.g.somogyi@gmail.com",
+                    "date": "2019-09-24T11:12:26.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29229][SQL] Change the additional remote repository in Isolate…",
+                  "message": "[SPARK-29229][SQL] Change the additional remote repository in IsolatedClientLoader to google minor\n\n### What changes were proposed in this pull request?\nChange the remote repo used in IsolatedClientLoader from datanucleus to google mirror.\n\n### Why are the changes needed?\nWe need to connect the Maven repositories in IsolatedClientLoader for downloading Hive jars. The repository currently used is \"http://www.datanucleus.org/downloads/maven2\", which is [no longer maintained](http://www.datanucleus.org:15080/downloads/maven2/README.txt). This will cause downloading failure and make hive test cases flaky while Jenkins host is blocked by maven central repo.\n\n### Does this PR introduce any user-facing change?\nNo\n\n### How was this patch tested?\nExisting UT.\n\nCloses #25915 from xuanyuanking/SPARK-29229.\n\nAuthored-by: Yuanjian Li <xyliyuanjian@gmail.com>\nSigned-off-by: Wenchen Fan <wenchen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ4MzM3NjU=",
+                      "login": "xuanyuanking"
+                    },
+                    "name": "Yuanjian Li",
+                    "email": "xyliyuanjian@gmail.com",
+                    "date": "2019-09-25T00:49:50.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29095][ML] add extractInstances",
+                  "message": "[SPARK-29095][ML] add extractInstances\n\n### What changes were proposed in this pull request?\ncommon methods support extract weights\n\n### Why are the changes needed?\ntoday more and more ML algs support weighting, add this method will make impls simple\n\n### Does this PR introduce any user-facing change?\nno\n\n### How was this patch tested?\nexisting testsuites\n\nCloses #25802 from zhengruifeng/add_extractInstances.\n\nAuthored-by: zhengruifeng <ruifengz@foxmail.com>\nSigned-off-by: Sean Owen <sean.owen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjczMjIyOTI=",
+                      "login": "zhengruifeng"
+                    },
+                    "name": "zhengruifeng",
+                    "email": "ruifengz@foxmail.com",
+                    "date": "2019-09-24T09:24:10.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28292][SQL] Enable Injection of User-defined Hint",
+                  "message": "[SPARK-28292][SQL] Enable Injection of User-defined Hint\n\n### What changes were proposed in this pull request?\nMove the rule `RemoveAllHints` after the batch `Resolution`.\n\n### Why are the changes needed?\nUser-defined hints can be resolved by the rules injected via `extendedResolutionRules` or `postHocResolutionRules`.\n\n### Does this PR introduce any user-facing change?\nNo\n\n### How was this patch tested?\nAdded a test case\n\nCloses #25746 from gatorsmile/moveRemoveAllHints.\n\nAuthored-by: Xiao Li <gatorsmile@gmail.com>\nSigned-off-by: Wenchen Fan <wenchen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExNTY3MjY5",
+                      "login": "gatorsmile"
+                    },
+                    "name": "Xiao Li",
+                    "email": "gatorsmile@gmail.com",
+                    "date": "2019-09-24T18:04:17.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28678][DOC] Specify that array indices start at 1 for function…",
+                  "message": "[SPARK-28678][DOC] Specify that array indices start at 1 for function slice in R Scala Python\n\n### What changes were proposed in this pull request?\nAdded \"array indices start at 1\" in annotation to make it clear for the usage of function slice, in R Scala Python component\n\n### Why are the changes needed?\nIt will throw exception if the value stare is 0, but array indices start at 0 most of times in other scenarios.\n\n### Does this PR introduce any user-facing change?\nYes, more info provided to user.\n\n### How was this patch tested?\nNo tests added, only doc change.\n\nCloses #25704 from sheepstop/master.\n\nAuthored-by: sheepstop <yangting617@gmail.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5ODI1Mzk1",
+                      "login": "sheepstop"
+                    },
+                    "name": "sheepstop",
+                    "email": "yangting617@gmail.com",
+                    "date": "2019-09-24T18:57:54.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28527][SQL][TEST] Enable ThriftServerQueryTestSuite",
+                  "message": "[SPARK-28527][SQL][TEST] Enable ThriftServerQueryTestSuite\n\n### What changes were proposed in this pull request?\n\nThis PR enable `ThriftServerQueryTestSuite` and fix previously flaky test by:\n1. Start thriftserver in `beforeAll()`.\n2. Disable `spark.sql.hive.thriftServer.async`.\n\n### Why are the changes needed?\n\nImprove test coverage.\n\n### Does this PR introduce any user-facing change?\nNo.\n\n### How was this patch tested?\n\n```shell\nbuild/sbt \"hive-thriftserver/test-only *.ThriftServerQueryTestSuite \"  -Phive-thriftserver\nbuild/mvn -Dtest=none -DwildcardSuites=org.apache.spark.sql.hive.thriftserver.ThriftServerQueryTestSuite test  -Phive-thriftserver\n```\n\nCloses #25868 from wangyum/SPARK-28527-enable.\n\nAuthored-by: Yuming Wang <yumwang@ebay.com>\nSigned-off-by: Yuming Wang <wgyumg@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjUzOTk4NjE=",
+                      "login": "wangyum"
+                    },
+                    "name": "Yuming Wang",
+                    "email": "yumwang@ebay.com",
+                    "date": "2019-09-24T00:44:33.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29168][WEBUI] Use a unique color on selected item on timeline …",
+                  "message": "[SPARK-29168][WEBUI] Use a unique color on selected item on timeline view\n\n### What changes were proposed in this pull request?\n\nChanged color settings in .vis-timeline .vis-item.executor.vis-selected (timeline-view.css)\n\n### Why are the changes needed?\n\nIn WebUI, executor bar's color changes blue to green when you click it. It might be confused user because of the color.\n\n[ Before ]\n![before](https://user-images.githubusercontent.com/55128575/65487629-40a45f00-dee2-11e9-8974-dc7027824b52.png)\n\n[ After ]\n![after](https://user-images.githubusercontent.com/55128575/65487674-5580f280-dee2-11e9-8e70-28f4ddcf56c3.png)\n\n### Does this PR introduce any user-facing change?\n\nYes.\n\n### How was this patch tested?\n\nManually test.\n\nCloses #25846 from TomokoKomiyama/fix-js.\n\nAuthored-by: TomokoKomiyama <btkomiyamatm@oss.nttdata.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU1MTI4NTc1",
+                      "login": "TomokoKomiyama"
+                    },
+                    "name": "TomokoKomiyama",
+                    "email": "btkomiyamatm@oss.nttdata.com",
+                    "date": "2019-09-24T00:15:54.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29218][WEBUI] Increase `Show Additional Metrics` checkbox widt…",
+                  "message": "[SPARK-29218][WEBUI] Increase `Show Additional Metrics` checkbox width in StagePage\n\n### What changes were proposed in this pull request?\n\nModified widths of some checkboxes in StagePage.\n\n### Why are the changes needed?\n\nWhen we increase the font size of the browsers or the default font size is big, the labels of checkbox of `Show Additional Metrics` in `StagePage` are wrapped like as follows.\n\n![before-modified1](https://user-images.githubusercontent.com/4736016/65449180-634c5e80-de75-11e9-9f27-88f4cc1313b7.png)\n![before-modified2](https://user-images.githubusercontent.com/4736016/65449182-63e4f500-de75-11e9-96b8-46e92a61f40c.png)\n\n### Does this PR introduce any user-facing change?\n\nYes.\n\n### How was this patch tested?\n\nRun the following and visit the `Stage Detail` page. Then, increase the font size.\n```\n$ bin/spark-shell\n...\nscala> spark.range(100000).groupBy(\"id\").count.collect\n```\n\nCloses #25905 from sarutak/adjust-checkbox-width.\n\nAuthored-by: Kousuke Saruta <sarutak@oss.nttdata.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ3MzYwMTY=",
+                      "login": "sarutak"
+                    },
+                    "name": "Kousuke Saruta",
+                    "email": "sarutak@oss.nttdata.com",
+                    "date": "2019-09-23T23:57:08.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-19917][SQL] qualified partition path stored in catalog",
+                  "message": "[SPARK-19917][SQL] qualified partition path stored in catalog\n\n## What changes were proposed in this pull request?\n\npartition path should be qualified to store in catalog.\nThere are some scenes:\n1. ALTER TABLE t PARTITION(b=1) SET LOCATION '/path/x'\n   should be qualified: file:/path/x\n  **Hive 2.0.0 does not support for location without schema here.**\n```\nFAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask. {0}  is not absolute or has no scheme information.  Please specify a complete absolute uri with scheme information.\n```\n\n2. ALTER TABLE t PARTITION(b=1) SET LOCATION 'x'\n    should be qualified: file:/tablelocation/x\n  **Hive 2.0.0 does not support for relative location here.**\n3. ALTER TABLE t ADD PARTITION(b=1) LOCATION '/path/x'\n    should be qualified: file:/path/x\n   **the same with Hive 2.0.0**\n4. ALTER TABLE t ADD PARTITION(b=1) LOCATION 'x'\n     should be qualified: file:/tablelocation/x\n   **the same with Hive 2.0.0**\n\nCurrently only  ALTER TABLE t ADD PARTITION(b=1) LOCATION for hive serde table has the expected qualified path. we should make other scenes to be consist with it.\n\nAnother change is for alter table location.\n\n## How was this patch tested?\nadd / modify existing TestCases\n\nCloses #17254 from windpiger/qualifiedPartitionPath.\n\nAuthored-by: windpiger <songjun@outlook.com>\nSigned-off-by: Wenchen Fan <wenchen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyOTc5MTg1",
+                      "login": "windpiger"
+                    },
+                    "name": "windpiger",
+                    "email": "songjun@outlook.com",
+                    "date": "2019-09-24T14:48:47.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-26848][SQL][SS] Introduce new option to Kafka source: offset b…",
+                  "message": "[SPARK-26848][SQL][SS] Introduce new option to Kafka source: offset by timestamp (starting/ending)\n\n## What changes were proposed in this pull request?\n\nThis patch introduces new options \"startingOffsetsByTimestamp\" and \"endingOffsetsByTimestamp\" to set specific timestamp per topic (since we're unlikely to set the different value per partition) to let source starts reading from offsets which have equal of greater timestamp, and ends reading until offsets which have equal of greater timestamp.\n\nThe new option would be optional of course, and take preference over existing offset options.\n\n## How was this patch tested?\n\nNew unit tests added. Also manually tested basic functionality with Kafka 2.0.0 server.\n\nRunning query below\n\n```\nval df = spark.read.format(\"kafka\")\n  .option(\"kafka.bootstrap.servers\", \"localhost:9092\")\n  .option(\"subscribe\", \"spark_26848_test_v1,spark_26848_test_2_v1\")\n  .option(\"startingOffsetsByTimestamp\", \"\"\"{\"spark_26848_test_v1\": 1549669142193, \"spark_26848_test_2_v1\": 1549669240965}\"\"\")\n  .option(\"endingOffsetsByTimestamp\", \"\"\"{\"spark_26848_test_v1\": 1549669265676, \"spark_26848_test_2_v1\": 1549699265676}\"\"\")\n  .load().selectExpr(\"CAST(value AS STRING)\")\n\ndf.show()\n```\n\nwith below records (one string which number part remarks when they're put after such timestamp) in\n\ntopic `spark_26848_test_v1`\n```\nhello1 1549669142193\nworld1 1549669142193\nhellow1 1549669240965\nworld1 1549669240965\nhello1 1549669265676\nworld1 1549669265676\n```\n\ntopic `spark_26848_test_2_v1`\n\n```\nhello2 1549669142193\nworld2 1549669142193\nhello2 1549669240965\nworld2 1549669240965\nhello2 1549669265676\nworld2 1549669265676\n```\n\nthe result of `df.show()` follows:\n```\n+--------------------+\n|               value|\n+--------------------+\n|world1 1549669240965|\n|world1 1549669142193|\n|world2 1549669240965|\n|hello2 1549669240965|\n|hellow1 154966924...|\n|hello2 1549669265676|\n|hello1 1549669142193|\n|world2 1549669265676|\n+--------------------+\n```\n\nNote that endingOffsets (as well as endingOffsetsByTimestamp) are exclusive.\n\nCloses #23747 from HeartSaVioR/SPARK-26848.\n\nAuthored-by: Jungtaek Lim (HeartSaVioR) <kabhwan@gmail.com>\nSigned-off-by: Sean Owen <sean.owen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMTczMDk=",
+                      "login": "HeartSaVioR"
+                    },
+                    "name": "Jungtaek Lim (HeartSaVioR)",
+                    "email": "kabhwan@gmail.com",
+                    "date": "2019-09-23T19:25:36.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29016][BUILD] Update LICENSE and NOTICE for Hive 2.3",
+                  "message": "[SPARK-29016][BUILD] Update LICENSE and NOTICE for Hive 2.3\n\n### What changes were proposed in this pull request?\nThis PR update LICENSE and NOTICE for Hive 2.3. Hive 2.3 newly added jars:\n```\ndropwizard-metrics-hadoop-metrics2-reporter.jar\nHikariCP-2.5.1.jar\nhive-common-2.3.6.jar\nhive-llap-common-2.3.6.jar\nhive-serde-2.3.6.jar\nhive-service-rpc-2.3.6.jar\nhive-shims-0.23-2.3.6.jar\nhive-shims-2.3.6.jar\nhive-shims-common-2.3.6.jar\nhive-shims-scheduler-2.3.6.jar\nhive-storage-api-2.6.0.jar\nhive-vector-code-gen-2.3.6.jar\njavax.jdo-3.2.0-m3.jar\njson-1.8.jar\ntransaction-api-1.1.jar\nvelocity-1.5.jar\n```\n\n### Why are the changes needed?\nWe will distribute a binary release based on Hadoop 3.2 / Hive 2.3 in future.\n\n### Does this PR introduce any user-facing change?\nNo.\n\n### How was this patch tested?\nN/A\n\nCloses #25896 from wangyum/SPARK-29016.\n\nAuthored-by: Yuming Wang <yumwang@ebay.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjUzOTk4NjE=",
+                      "login": "wangyum"
+                    },
+                    "name": "Yuming Wang",
+                    "email": "yumwang@ebay.com",
+                    "date": "2019-09-23T09:19:04.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-25903][CORE] TimerTask should be synchronized on ContextBarrie…",
+                  "message": "[SPARK-25903][CORE] TimerTask should be synchronized on ContextBarrierState\n\n### What changes were proposed in this pull request?\n\nBarrierCoordinator sets up a TimerTask for a round of global sync. Currently the run method is synchronized on the created TimerTask. But to be synchronized with handleRequest, it should be synchronized on the ContextBarrierState object, not TimerTask object.\n\n### Why are the changes needed?\n\nContextBarrierState.handleRequest and TimerTask.run both access the internal status of a ContextBarrierState object. If TimerTask doesn't be synchronized on the same ContextBarrierState object, when the timer task is triggered, handleRequest still accepts new request and modify  requesters field in the ContextBarrierState object. It makes the behavior inconsistency.\n\n### Does this PR introduce any user-facing change?\n\nNo\n\n### How was this patch tested?\n\nTest locally\n\nCloses #25897 from viirya/SPARK-25903.\n\nAuthored-by: Liang-Chi Hsieh <viirya@gmail.com>\nSigned-off-by: Wenchen Fan <wenchen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY4ODU1",
+                      "login": "viirya"
+                    },
+                    "name": "Liang-Chi Hsieh",
+                    "email": "viirya@gmail.com",
+                    "date": "2019-09-24T00:13:38.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29203][SQL][TESTS] Reduce shuffle partitions in SQLQueryTestSuite",
+                  "message": "[SPARK-29203][SQL][TESTS] Reduce shuffle partitions in SQLQueryTestSuite\n\n### What changes were proposed in this pull request?\nThis PR reduce shuffle partitions from 200 to 4 in `SQLQueryTestSuite` to reduce testing time.\n\n### Why are the changes needed?\nReduce testing time.\n\n### Does this PR introduce any user-facing change?\nNo.\n\n### How was this patch tested?\nManually tested in my local:\nBefore:\n```\n...\n[info] - subquery/in-subquery/in-joins.sql (6 minutes, 19 seconds)\n[info] - subquery/in-subquery/not-in-joins.sql (2 minutes, 17 seconds)\n[info] - subquery/scalar-subquery/scalar-subquery-predicate.sql (45 seconds, 763 milliseconds)\n...\nRun completed in 1 hour, 22 minutes.\n```\nAfter:\n```\n...\n[info] - subquery/in-subquery/in-joins.sql (1 minute, 12 seconds)\n[info] - subquery/in-subquery/not-in-joins.sql (27 seconds, 541 milliseconds)\n[info] - subquery/scalar-subquery/scalar-subquery-predicate.sql (17 seconds, 360 milliseconds)\n...\nRun completed in 47 minutes.\n```\n\nCloses #25891 from wangyum/SPARK-29203.\n\nAuthored-by: Yuming Wang <yumwang@ebay.com>\nSigned-off-by: Yuming Wang <wgyumg@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjUzOTk4NjE=",
+                      "login": "wangyum"
+                    },
+                    "name": "Yuming Wang",
+                    "email": "yumwang@ebay.com",
+                    "date": "2019-09-23T08:38:40.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29036][SQL] SparkThriftServer cancel job after execute() threa…",
+                  "message": "[SPARK-29036][SQL] SparkThriftServer cancel job after execute() thread interrupted\n\n### What changes were proposed in this pull request?\nDiscuss in https://github.com/apache/spark/pull/25611\n\nIf cancel() and close() is called very quickly after the query is started, then they may both call cleanup() before Spark Jobs are started. Then sqlContext.sparkContext.cancelJobGroup(statementId) does nothing.\nBut then the execute thread can start the jobs, and only then get interrupted and exit through here. But then it will exit here, and no-one will cancel these jobs and they will keep running even though this execution has exited.\n\nSo  when execute() was interrupted by `cancel()`, when get into catch block, we should call canJobGroup again to make sure the job was canceled.\n\n### Why are the changes needed?\n\n### Does this PR introduce any user-facing change?\nNO\n\n### How was this patch tested?\nMT\n\nCloses #25743 from AngersZhuuuu/SPARK-29036.\n\nAuthored-by: angerszhu <angers.zhu@gmail.com>\nSigned-off-by: Yuming Wang <wgyumg@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ2NDg1MTIz",
+                      "login": "AngersZhuuuu"
+                    },
+                    "name": "angerszhu",
+                    "email": "angers.zhu@gmail.com",
+                    "date": "2019-09-23T05:47:25.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29177][CORE] fix zombie tasks after stage abort",
+                  "message": "[SPARK-29177][CORE] fix zombie tasks after stage abort\n\n### What changes were proposed in this pull request?\nDo task handling even the task exceeds maxResultSize configured. More details are in the jira description https://issues.apache.org/jira/browse/SPARK-29177 .\n\n### Why are the changes needed?\nWithout this patch, the zombie tasks will prevent yarn from recycle those containers running these tasks, which will affect other applications.\n\n### Does this PR introduce any user-facing change?\nNo\n\n### How was this patch tested?\nunit test and production test with a very large `SELECT` in spark thriftserver.\n\nCloses #25850 from adrian-wang/zombie.\n\nAuthored-by: Daoyuan Wang <me@daoyuan.wang>\nSigned-off-by: Wenchen Fan <wenchen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMwNzg5MTA=",
+                      "login": "adrian-wang"
+                    },
+                    "name": "Daoyuan Wang",
+                    "email": "me@daoyuan.wang",
+                    "date": "2019-09-23T19:46:01.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28892][SQL] support UPDATE in the parser and add the correspon…",
+                  "message": "[SPARK-28892][SQL] support UPDATE in the parser and add the corresponding logical plan\n\n### What changes were proposed in this pull request?\n\nThis PR supports UPDATE in the parser and add the corresponding logical plan. The SQL syntax is a standard UPDATE statement:\n```\nUPDATE tableName tableAlias SET colName=value [, colName=value]+ WHERE predicate?\n```\n\n### Why are the changes needed?\n\nWith this change, we can start to implement UPDATE in builtin sources and think about how to design the update API in DS v2.\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nNew test cases added.\n\nCloses #25626 from xianyinxin/SPARK-28892.\n\nAuthored-by: xy_xin <xianyin.xxy@alibaba-inc.com>\nSigned-off-by: Wenchen Fan <wenchen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1MDI4Njgz",
+                      "login": "xianyinxin"
+                    },
+                    "name": "xy_xin",
+                    "email": "xianyin.xxy@alibaba-inc.com",
+                    "date": "2019-09-23T19:25:56.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-25341][CORE] Support rolling back a shuffle map stage and re-g…",
+                  "message": "[SPARK-25341][CORE] Support rolling back a shuffle map stage and re-generate the shuffle files\n\nAfter the newly added shuffle block fetching protocol in #24565, we can keep this work by extending the FetchShuffleBlocks message.\n\n### What changes were proposed in this pull request?\nIn this patch, we achieve the indeterminate shuffle rerun by reusing the task attempt id(unique id within an application) in shuffle id, so that each shuffle write attempt has a different file name. For the indeterministic stage, when the stage resubmits, we'll clear all existing map status and rerun all partitions.\n\nAll changes are summarized as follows:\n- Change the mapId to mapTaskAttemptId in shuffle related id.\n- Record the mapTaskAttemptId in MapStatus.\n- Still keep mapId in ShuffleFetcherIterator for fetch failed scenario.\n- Add the determinate flag in Stage and use it in DAGScheduler and the cleaning work for the intermediate stage.\n\n### Why are the changes needed?\nThis is a follow-up work for #22112's future improvment[1]: `Currently we can't rollback and rerun a shuffle map stage, and just fail.`\n\nSpark will rerun a finished shuffle write stage while meeting fetch failures, currently, the rerun shuffle map stage will only resubmit the task for missing partitions and reuse the output of other partitions. This logic is fine in most scenarios, but for indeterministic operations(like repartition), multiple shuffle write attempts may write different data, only rerun the missing partition will lead a correctness bug. So for the shuffle map stage of indeterministic operations, we need to support rolling back the shuffle map stage and re-generate the shuffle files.\n\n### Does this PR introduce any user-facing change?\nYes, after this PR, the indeterminate stage rerun will be accepted by rerunning the whole stage. The original behavior is aborting the stage and fail the job.\n\n### How was this patch tested?\n- UT: Add UT for all changing code and newly added function.\n- Manual Test: Also providing a manual test to verify the effect.\n```\nimport scala.sys.process._\nimport org.apache.spark.TaskContext\n\nval determinateStage0 = sc.parallelize(0 until 1000 * 1000 * 100, 10)\nval indeterminateStage1 = determinateStage0.repartition(200)\nval indeterminateStage2 = indeterminateStage1.repartition(200)\nval indeterminateStage3 = indeterminateStage2.repartition(100)\nval indeterminateStage4 = indeterminateStage3.repartition(300)\nval fetchFailIndeterminateStage4 = indeterminateStage4.map { x =>\nif (TaskContext.get.attemptNumber == 0 && TaskContext.get.partitionId == 190 &&\n  TaskContext.get.stageAttemptNumber == 0) {\n  throw new Exception(\"pkill -f -n java\".!!)\n  }\n  x\n}\nval indeterminateStage5 = fetchFailIndeterminateStage4.repartition(200)\nval finalStage6 = indeterminateStage5.repartition(100).collect().distinct.length\n```\nIt's a simple job with multi indeterminate stage, it will get a wrong answer while using old Spark version like 2.2/2.3, and will be killed after #22112. With this fix, the job can retry all indeterminate stage as below screenshot and get the right result.\n![image](https://user-images.githubusercontent.com/4833765/63948434-3477de00-caab-11e9-9ed1-75abfe6d16bd.png)\n\nCloses #25620 from xuanyuanking/SPARK-25341-8.27.\n\nAuthored-by: Yuanjian Li <xyliyuanjian@gmail.com>\nSigned-off-by: Wenchen Fan <wenchen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ4MzM3NjU=",
+                      "login": "xuanyuanking"
+                    },
+                    "name": "Yuanjian Li",
+                    "email": "xyliyuanjian@gmail.com",
+                    "date": "2019-09-23T16:16:52.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29084][SQL][TESTS] Check method bytecode size in BenchmarkQuer…",
+                  "message": "[SPARK-29084][SQL][TESTS] Check method bytecode size in BenchmarkQueryTest\n\n### What changes were proposed in this pull request?\n\nThis pr proposes to check method bytecode size in `BenchmarkQueryTest`. This metric is critical for performance numbers.\n\n### Why are the changes needed?\n\nFor performance checks\n\n### Does this PR introduce any user-facing change?\n\nNo\n\n### How was this patch tested?\n\nN/A\n\nCloses #25788 from maropu/CheckMethodSize.\n\nAuthored-by: Takeshi Yamamuro <yamamuro@apache.org>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY5MjMwMw==",
+                      "login": "maropu"
+                    },
+                    "name": "Takeshi Yamamuro",
+                    "email": "yamamuro@apache.org",
+                    "date": "2019-09-22T14:47:42.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28599][SQL] Fix `Execution Time` and `Duration` column sorting…",
+                  "message": "[SPARK-28599][SQL] Fix `Execution Time` and `Duration` column sorting for ThriftServerSessionPage\n\n### What changes were proposed in this pull request?\n\nThis PR add support sorting `Execution Time` and `Duration` columns for `ThriftServerSessionPage`.\n\n### Why are the changes needed?\n\nPreviously, it's not sorted correctly.\n\n### Does this PR introduce any user-facing change?\n\nYes.\n\n### How was this patch tested?\n\nManually do the following and test sorting on those columns in the Spark Thrift Server Session Page.\n```\n$ sbin/start-thriftserver.sh\n$ bin/beeline -u jdbc:hive2://localhost:10000\n0: jdbc:hive2://localhost:10000> create table t(a int);\n+---------+--+\n| Result  |\n+---------+--+\n+---------+--+\nNo rows selected (0.521 seconds)\n0: jdbc:hive2://localhost:10000> select * from t;\n+----+--+\n| a  |\n+----+--+\n+----+--+\nNo rows selected (0.772 seconds)\n0: jdbc:hive2://localhost:10000> show databases;\n+---------------+--+\n| databaseName  |\n+---------------+--+\n| default       |\n+---------------+--+\n1 row selected (0.249 seconds)\n```\n\n**Sorted by `Execution Time` column**:\n![image](https://user-images.githubusercontent.com/5399861/65387476-53038900-dd7a-11e9-885c-fca80287f550.png)\n\n**Sorted by `Duration` column**:\n![image](https://user-images.githubusercontent.com/5399861/65387481-6e6e9400-dd7a-11e9-9318-f917247efaa8.png)\n\nCloses #25892 from wangyum/SPARK-28599.\n\nAuthored-by: Yuming Wang <yumwang@ebay.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjUzOTk4NjE=",
+                      "login": "wangyum"
+                    },
+                    "name": "Yuming Wang",
+                    "email": "yumwang@ebay.com",
+                    "date": "2019-09-22T14:12:06.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29191][TESTS][SQL] Add tag ExtendedSQLTest for SQLQueryTestSuite",
+                  "message": "[SPARK-29191][TESTS][SQL] Add tag ExtendedSQLTest for SQLQueryTestSuite\n\n### What changes were proposed in this pull request?\n\nThis PR aims to add tag `ExtendedSQLTest` for `SQLQueryTestSuite`.\nThis doesn't affect our Jenkins test coverage.\nInstead, this tag gives us an ability to parallelize them by splitting this test suite and the other suites.\n\n### Why are the changes needed?\n\n`SQLQueryTestSuite` takes 45 mins alone because it has many SQL scripts to run.\n\n<img width=\"906\" alt=\"time\" src=\"https://user-images.githubusercontent.com/9700541/65353553-4af0f100-dba2-11e9-9f2f-386742d28f92.png\">\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\n```\nbuild/sbt \"sql/test-only *.SQLQueryTestSuite\" -Dtest.exclude.tags=org.apache.spark.tags.ExtendedSQLTest\n...\n[info] SQLQueryTestSuite:\n[info] ScalaTest\n[info] Run completed in 3 seconds, 147 milliseconds.\n[info] Total number of tests run: 0\n[info] Suites: completed 1, aborted 0\n[info] Tests: succeeded 0, failed 0, canceled 0, ignored 0, pending 0\n[info] No tests were executed.\n[info] Passed: Total 0, Failed 0, Errors 0, Passed 0\n[success] Total time: 22 s, completed Sep 20, 2019 12:23:13 PM\n```\n\nCloses #25872 from dongjoon-hyun/SPARK-29191.\n\nAuthored-by: Dongjoon Hyun <dhyun@apple.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjk3MDA1NDE=",
+                      "login": "dongjoon-hyun"
+                    },
+                    "name": "Dongjoon Hyun",
+                    "email": "dhyun@apple.com",
+                    "date": "2019-09-22T13:53:21.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29162][SQL] Simplify NOT(IsNull(x)) and NOT(IsNotNull(x))",
+                  "message": "[SPARK-29162][SQL] Simplify NOT(IsNull(x)) and NOT(IsNotNull(x))\n\n### What changes were proposed in this pull request?\nRewrite\n```\nNOT isnull(x)     -> isnotnull(x)\nNOT isnotnull(x)  -> isnull(x)\n```\n\n### Why are the changes needed?\nMake LogicalPlan more readable and  useful for query canonicalization. Make same condition equal when judge query canonicalization equal\n\n### Does this PR introduce any user-facing change?\n\nNO\n\n### How was this patch tested?\n\nNewly added UTs.\n\nCloses #25878 from AngersZhuuuu/SPARK-29162.\n\nAuthored-by: angerszhu <angers.zhu@gmail.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ2NDg1MTIz",
+                      "login": "AngersZhuuuu"
+                    },
+                    "name": "angerszhu",
+                    "email": "angers.zhu@gmail.com",
+                    "date": "2019-09-22T11:17:47.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-27463][PYTHON][FOLLOW-UP] Run the tests of Cogrouped pandas UDF",
+                  "message": "[SPARK-27463][PYTHON][FOLLOW-UP] Run the tests of Cogrouped pandas UDF\n\n### What changes were proposed in this pull request?\nThis is a followup for https://github.com/apache/spark/pull/24981\nSeems we mistakenly didn't added `test_pandas_udf_cogrouped_map` into `modules.py`. So we don't have official test results against that PR.\n\n```\n...\nStarting test(python3.6): pyspark.sql.tests.test_pandas_udf\n...\nStarting test(python3.6): pyspark.sql.tests.test_pandas_udf_grouped_agg\n...\nStarting test(python3.6): pyspark.sql.tests.test_pandas_udf_grouped_map\n...\nStarting test(python3.6): pyspark.sql.tests.test_pandas_udf_scalar\n...\nStarting test(python3.6): pyspark.sql.tests.test_pandas_udf_window\nFinished test(python3.6): pyspark.sql.tests.test_pandas_udf (21s)\n...\nFinished test(python3.6): pyspark.sql.tests.test_pandas_udf_grouped_map (49s)\n...\nFinished test(python3.6): pyspark.sql.tests.test_pandas_udf_window (58s)\n...\nFinished test(python3.6): pyspark.sql.tests.test_pandas_udf_scalar (82s)\n...\nFinished test(python3.6): pyspark.sql.tests.test_pandas_udf_grouped_agg (105s)\n...\n```\n\nIf tests fail, we should revert that PR.\n\n### Why are the changes needed?\n\nRelevant tests should be ran.\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nJenkins tests.\n\nCloses #25890 from HyukjinKwon/SPARK-28840.\n\nAuthored-by: HyukjinKwon <gurwls223@apache.org>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY0Nzc3MDE=",
+                      "login": "HyukjinKwon"
+                    },
+                    "name": "HyukjinKwon",
+                    "email": "gurwls223@apache.org",
+                    "date": "2019-09-22T21:39:30.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28141][SQL] Support special date values",
+                  "message": "[SPARK-28141][SQL] Support special date values\n\n### What changes were proposed in this pull request?\n\nSupported special string values for `DATE` type. They are simply notational shorthands that will be converted to ordinary date values when read. The following string values are supported:\n- `epoch [zoneId]` - `1970-01-01`\n- `today [zoneId]` - the current date in the time zone specified by `spark.sql.session.timeZone`.\n- `yesterday [zoneId]` - the current date -1\n- `tomorrow [zoneId]` - the current date + 1\n- `now` - the date of running the current query. It has the same notion as `today`.\n\nFor example:\n```sql\nspark-sql> SELECT date 'tomorrow' - date 'yesterday';\n2\n```\n\n### Why are the changes needed?\n\nTo maintain feature parity with PostgreSQL, see [8.5.1.4. Special Values](https://www.postgresql.org/docs/12/datatype-datetime.html)\n\n### Does this PR introduce any user-facing change?\n\nPreviously, the parser fails on the special values with the error:\n```sql\nspark-sql> select date 'today';\nError in query:\nCannot parse the DATE value: today(line 1, pos 7)\n```\nAfter the changes, the special values are converted to appropriate dates:\n```sql\nspark-sql> select date 'today';\n2019-09-06\n```\n\n### How was this patch tested?\n- Added tests to `DateFormatterSuite` to check parsing special values from regular strings.\n- Tests in `DateTimeUtilsSuite` check parsing those values from `UTF8String`\n- Uncommented tests in `date.sql`\n\nCloses #25708 from MaxGekk/datetime-special-values.\n\nAuthored-by: Maxim Gekk <max.gekk@gmail.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1ODA2OTc=",
+                      "login": "MaxGekk"
+                    },
+                    "name": "Maxim Gekk",
+                    "email": "max.gekk@gmail.com",
+                    "date": "2019-09-22T17:31:33.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[CORE][MINOR] Correct a log message in DAGScheduler",
+                  "message": "[CORE][MINOR] Correct a log message in DAGScheduler\n\n### What changes were proposed in this pull request?\n\nCorrect a word in a log message.\n\n### Why are the changes needed?\n\nLog message will be more clearly.\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nTest is not needed.\n\nCloses #25880 from mdianjun/fix-a-word.\n\nAuthored-by: madianjun <madianjun@jd.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyMTIyNTQx",
+                      "login": "mdianjun"
+                    },
+                    "name": "madianjun",
+                    "email": "madianjun@jd.com",
+                    "date": "2019-09-22T17:22:37.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29200][SQL] Optimize `extract`/`date_part` for epoch",
+                  "message": "[SPARK-29200][SQL] Optimize `extract`/`date_part` for epoch\n\n### What changes were proposed in this pull request?\n\nRefactoring of the `DateTimeUtils.getEpoch()` function by avoiding decimal operations that are pretty expensive, and converting the final result to the decimal type at the end.\n\n### Why are the changes needed?\nThe changes improve performance of the `getEpoch()` method at least up to **20 times**.\nBefore:\n```\nInvoke extract for timestamp:             Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative\n------------------------------------------------------------------------------------------------------------------------\ncast to timestamp                                   256            277          33         39.0          25.6       1.0X\nEPOCH of timestamp                                23455          23550         131          0.4        2345.5       0.0X\n```\nAfter:\n```\nInvoke extract for timestamp:             Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative\n------------------------------------------------------------------------------------------------------------------------\ncast to timestamp                                   255            294          34         39.2          25.5       1.0X\nEPOCH of timestamp                                 1049           1054           9          9.5         104.9       0.2X\n```\n\n### Does this PR introduce any user-facing change?\nNo\n\n### How was this patch tested?\n\nBy existing test from `DateExpressionSuite`.\n\nCloses #25881 from MaxGekk/optimize-extract-epoch.\n\nAuthored-by: Maxim Gekk <max.gekk@gmail.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1ODA2OTc=",
+                      "login": "MaxGekk"
+                    },
+                    "name": "Maxim Gekk",
+                    "email": "max.gekk@gmail.com",
+                    "date": "2019-09-22T16:59:59.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29190][SQL] Optimize `extract`/`date_part` for the millisecond…",
+                  "message": "[SPARK-29190][SQL] Optimize `extract`/`date_part` for the milliseconds `field`\n\n### What changes were proposed in this pull request?\n\nChanged the `DateTimeUtils.getMilliseconds()` by avoiding the decimal division, and replacing it by setting scale and precision while converting microseconds to the decimal type.\n\n### Why are the changes needed?\nThis improves performance of `extract` and `date_part()` by more than **50 times**:\nBefore:\n```\nInvoke extract for timestamp:             Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative\tInvoke extract for timestamp:             Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative\n------------------------------------------------------------------------------------------------------------------------\ncast to timestamp                                   397            428          45         25.2          39.7       1.0X\nMILLISECONDS of timestamp                         36723          36761          63          0.3        3672.3       0.0X\n```\nAfter:\n```\nInvoke extract for timestamp:             Best Time(ms)   Avg Time(ms)   Stdev(ms)    Rate(M/s)   Per Row(ns)   Relative\n------------------------------------------------------------------------------------------------------------------------\ncast to timestamp                                   278            284           6         36.0          27.8       1.0X\nMILLISECONDS of timestamp                           592            606          13         16.9          59.2       0.5X\n```\n\n### Does this PR introduce any user-facing change?\nNo\n\n### How was this patch tested?\nBy existing test suite - `DateExpressionsSuite`\n\nCloses #25871 from MaxGekk/optimize-epoch-millis.\n\nLead-authored-by: Maxim Gekk <max.gekk@gmail.com>\nCo-authored-by: Dongjoon Hyun <dhyun@apple.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1ODA2OTc=",
+                      "login": "MaxGekk"
+                    },
+                    "name": "Maxim Gekk",
+                    "email": "max.gekk@gmail.com",
+                    "date": "2019-09-21T21:11:31.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29121][ML][MLLIB] Support for dot product operation on Vector(s)",
+                  "message": "[SPARK-29121][ML][MLLIB] Support for dot product operation on Vector(s)\n\n### What changes were proposed in this pull request?\n\nSupport for dot product with:\n- `ml.linalg.Vector`\n- `ml.linalg.Vectors`\n- `mllib.linalg.Vector`\n- `mllib.linalg.Vectors`\n\n### Why are the changes needed?\n\nDot product is useful for feature engineering and scoring.  BLAS routines are already there, just a wrapper is needed.\n\n### Does this PR introduce any user-facing change?\n\nNo user facing changes, just some new functionality.\n\n### How was this patch tested?\n\nTests were written and added to the appropriate `VectorSuites` classes.  They can be quickly run with:\n\n```\nsbt \"mllib-local/testOnly org.apache.spark.ml.linalg.VectorsSuite\"\nsbt \"mllib/testOnly org.apache.spark.mllib.linalg.VectorsSuite\"\n```\n\nCloses #25818 from phpisciuneri/SPARK-29121.\n\nAuthored-by: Patrick Pisciuneri <phpisciuneri@gmail.com>\nSigned-off-by: Sean Owen <sean.owen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU1MzAxNjk=",
+                      "login": "phpisciuneri"
+                    },
+                    "name": "Patrick Pisciuneri",
+                    "email": "phpisciuneri@gmail.com",
+                    "date": "2019-09-21T14:26:54.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29199][INFRA] Add linters and license/dependency checkers to G…",
+                  "message": "[SPARK-29199][INFRA] Add linters and license/dependency checkers to GitHub Action\n\n### What changes were proposed in this pull request?\n\nThis PR aims to add linters and license/dependency checkers to GitHub Action. This excludes `lint-r` intentionally because https://github.com/actions/setup-r is not ready. We can add that later when it becomes available.\n\n### Why are the changes needed?\n\nThis will help the PR reviews.\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nSee the GitHub Action result on this PR.\n\nCloses #25879 from dongjoon-hyun/SPARK-29199.\n\nAuthored-by: Dongjoon Hyun <dhyun@apple.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjk3MDA1NDE=",
+                      "login": "dongjoon-hyun"
+                    },
+                    "name": "Dongjoon Hyun",
+                    "email": "dhyun@apple.com",
+                    "date": "2019-09-21T08:13:00.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29160][CORE] Use UTF-8 explicitly for reading/writing event lo…",
+                  "message": "[SPARK-29160][CORE] Use UTF-8 explicitly for reading/writing event log file\n\n### What changes were proposed in this pull request?\n\nCredit to vanzin as he found and commented on this while reviewing #25670 - [comment](https://github.com/apache/spark/pull/25670#discussion_r325383512).\n\nThis patch proposes to specify UTF-8 explicitly while reading/writer event log file.\n\n### Why are the changes needed?\n\nThe event log file is being read/written as default character set of JVM process which may open the chance to bring some problems on reading event log files from another machines. Spark's de facto standard character set is UTF-8, so it should be explicitly set to.\n\n### Does this PR introduce any user-facing change?\n\nYes, if end users have been running Spark process with different default charset than \"UTF-8\", especially their driver JVM processes. No otherwise.\n\n### How was this patch tested?\n\nExisting UTs, as ReplayListenerSuite contains \"end-to-end\" event logging/reading tests (both uncompressed/compressed).\n\nCloses #25845 from HeartSaVioR/SPARK-29160.\n\nAuthored-by: Jungtaek Lim (HeartSaVioR) <kabhwan@gmail.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMTczMDk=",
+                      "login": "HeartSaVioR"
+                    },
+                    "name": "Jungtaek Lim (HeartSaVioR)",
+                    "email": "kabhwan@gmail.com",
+                    "date": "2019-09-21T23:59:37.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29053][WEBUI] Sort does not work on some columns",
+                  "message": "[SPARK-29053][WEBUI] Sort does not work on some columns\n\n### What changes were proposed in this pull request?\nSetting custom sort key for duration and execution time column.\n\n### Why are the changes needed?\nSorting on duration and execution time columns consider time as a string after converting into readable form which is the reason for wrong sort results as mentioned in [SPARK-29053](https://issues.apache.org/jira/browse/SPARK-29053).\n\n### Does this PR introduce any user-facing change?\nNo\n\n### How was this patch tested?\nTest manually. Screenshots are attached.\n\nAfter patch:\n**Duration**\n![Duration](https://user-images.githubusercontent.com/40591404/65339861-93cc9800-dbea-11e9-95e6-63b107a5a372.png)\n**Execution time**\n![Execution Time](https://user-images.githubusercontent.com/40591404/65339870-97601f00-dbea-11e9-9d1d-690c59bc1bde.png)\n\nCloses #25855 from amanomer/SPARK29053.\n\nAuthored-by: aman_omer <amanomer1996@gmail.com>\nSigned-off-by: Sean Owen <sean.owen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQwNTkxNDA0",
+                      "login": "amanomer"
+                    },
+                    "name": "aman_omer",
+                    "email": "amanomer1996@gmail.com",
+                    "date": "2019-09-21T07:34:04.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-19147][CORE] Gracefully handle error in task after executor is…",
+                  "message": "[SPARK-19147][CORE] Gracefully handle error in task after executor is stopped\n\n### What changes were proposed in this pull request?\n\nTransportClientFactory.createClient() is called by task and TransportClientFactory.close() is called by executor.\nWhen stop the executor, close() will set workerGroup = null, NPE will occur in createClient which generate many exception in log.\nFor exception occurs after close(), treated it as an expected Exception\nand transform it to InterruptedException which can be processed by Executor.\n\n### Why are the changes needed?\n\nThe change can reduce the exception stack trace in log file, and user won't be confused by these excepted exception.\n\n### Does this PR introduce any user-facing change?\n\nN/A\n\n### How was this patch tested?\n\nNew tests are added in TransportClientFactorySuite and ExecutorSuite\n\nCloses #25759 from colinmjj/spark-19147.\n\nAuthored-by: colinma <colinma@tencent.com>\nSigned-off-by: Sean Owen <sean.owen@databricks.com>",
+                  "author": {
+                    "user": null,
+                    "name": "colinma",
+                    "email": "colinma@tencent.com",
+                    "date": "2019-09-21T07:31:39.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29140][SQL] Handle parameters having \"array\" of javaType prope…",
+                  "message": "[SPARK-29140][SQL] Handle parameters having \"array\" of javaType properly in splitAggregateExpressions\n\n### What changes were proposed in this pull request?\n\nThis patch fixes the issue brought by [SPARK-21870](http://issues.apache.org/jira/browse/SPARK-21870): when generating code for parameter type, it doesn't consider array type in javaType. At least we have one, Spark should generate code for BinaryType as `byte[]`, but Spark create the code for BinaryType as `[B` and generated code fails compilation.\n\nBelow is the generated code which failed compilation (Line 380):\n\n```\n/* 380 */   private void agg_doAggregate_count_0([B agg_expr_1_1, boolean agg_exprIsNull_1_1, org.apache.spark.sql.catalyst.InternalRow agg_unsafeRowAggBuffer_1) throws java.io.IOException {\n/* 381 */     // evaluate aggregate function for count\n/* 382 */     boolean agg_isNull_26 = false;\n/* 383 */     long agg_value_28 = -1L;\n/* 384 */     if (!false && agg_exprIsNull_1_1) {\n/* 385 */       long agg_value_31 = agg_unsafeRowAggBuffer_1.getLong(1);\n/* 386 */       agg_isNull_26 = false;\n/* 387 */       agg_value_28 = agg_value_31;\n/* 388 */     } else {\n/* 389 */       long agg_value_33 = agg_unsafeRowAggBuffer_1.getLong(1);\n/* 390 */\n/* 391 */       long agg_value_32 = -1L;\n/* 392 */\n/* 393 */       agg_value_32 = agg_value_33 + 1L;\n/* 394 */       agg_isNull_26 = false;\n/* 395 */       agg_value_28 = agg_value_32;\n/* 396 */     }\n/* 397 */     // update unsafe row buffer\n/* 398 */     agg_unsafeRowAggBuffer_1.setLong(1, agg_value_28);\n/* 399 */   }\n```\n\nThere wasn't any test for HashAggregateExec specifically testing this, but randomized test in ObjectHashAggregateSuite could encounter this and that's why ObjectHashAggregateSuite is flaky.\n\n### Why are the changes needed?\n\nWithout the fix, generated code from HashAggregateExec may fail compilation.\n\n### Does this PR introduce any user-facing change?\n\nNo\n\n### How was this patch tested?\n\nAdded new UT. Without the fix, newly added UT fails.\n\nCloses #25830 from HeartSaVioR/SPARK-29140.\n\nAuthored-by: Jungtaek Lim (HeartSaVioR) <kabhwan@gmail.com>\nSigned-off-by: Takeshi Yamamuro <yamamuro@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMTczMDk=",
+                      "login": "HeartSaVioR"
+                    },
+                    "name": "Jungtaek Lim (HeartSaVioR)",
+                    "email": "kabhwan@gmail.com",
+                    "date": "2019-09-21T16:29:23.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28772][BUILD][MLLIB] Update breeze to 1.0",
+                  "message": "[SPARK-28772][BUILD][MLLIB] Update breeze to 1.0\n\n### What changes were proposed in this pull request?\n\nUpdate breeze dependency to 1.0.\n\n### Why are the changes needed?\n\nBreeze 1.0 supports Scala 2.13 and has a few bug fixes.\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nExisting tests.\n\nCloses #25874 from srowen/SPARK-28772.\n\nAuthored-by: Sean Owen <sean.owen@databricks.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgyMjUyMg==",
+                      "login": "srowen"
+                    },
+                    "name": "Sean Owen",
+                    "email": "sean.owen@databricks.com",
+                    "date": "2019-09-20T20:31:26.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29187][SQL] Return null from `date_part()` for the null `field`",
+                  "message": "[SPARK-29187][SQL] Return null from `date_part()` for the null `field`\n\n### What changes were proposed in this pull request?\n\nIn the PR, I propose to change behavior of the `date_part()` function in handling `null` field, and make it the same as PostgreSQL has. If `field` parameter is `null`, the function should return `null` of the `double` type as PostgreSQL does:\n```sql\n# select date_part(null, date '2019-09-20');\n date_part\n-----------\n\n(1 row)\n\n# select pg_typeof(date_part(null, date '2019-09-20'));\n    pg_typeof\n------------------\n double precision\n(1 row)\n```\n\n### Why are the changes needed?\nThe `date_part()` function was added to maintain feature parity with PostgreSQL but current behavior of the function is different in handling null as `field`.\n\n### Does this PR introduce any user-facing change?\nYes.\n\nBefore:\n```sql\nspark-sql> select date_part(null, date'2019-09-20');\nError in query: null; line 1 pos 7\n```\n\nAfter:\n```sql\nspark-sql> select date_part(null, date'2019-09-20');\nNULL\n```\n\n### How was this patch tested?\nAdd new tests to `DateFunctionsSuite for 2 cases:\n- `field` = `null`, `source` = a date literal\n- `field` = `null`, `source` = a date column\n\nCloses #25865 from MaxGekk/date_part-null.\n\nAuthored-by: Maxim Gekk <max.gekk@gmail.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1ODA2OTc=",
+                      "login": "MaxGekk"
+                    },
+                    "name": "Maxim Gekk",
+                    "email": "max.gekk@gmail.com",
+                    "date": "2019-09-20T20:28:56.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29192][TESTS] Extend BenchmarkBase to write JDK9+ results sepa…",
+                  "message": "[SPARK-29192][TESTS] Extend BenchmarkBase to write JDK9+ results separately\n\n### What changes were proposed in this pull request?\n\nThis PR aims to extend the existing benchmarks to save JDK9+ result separately.\nAll `core` module benchmark test results are added. I'll run the other test suites in another PR.\nAfter regenerating all results, we will check JDK11 performance regressions.\n\n### Why are the changes needed?\n\nFrom Apache Spark 3.0, we support both JDK8 and JDK11. We need to have a way to find the performance regression.\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nManually run the benchmark.\n\nCloses #25873 from dongjoon-hyun/SPARK-JDK11-PERF.\n\nAuthored-by: Dongjoon Hyun <dhyun@apple.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjk3MDA1NDE=",
+                      "login": "dongjoon-hyun"
+                    },
+                    "name": "Dongjoon Hyun",
+                    "email": "dhyun@apple.com",
+                    "date": "2019-09-20T19:41:25.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29144][ML] Binarizer handle sparse vectors incorrectly with ne…",
+                  "message": "[SPARK-29144][ML] Binarizer handle sparse vectors incorrectly with negative threshold\n\n### What changes were proposed in this pull request?\nif threshold<0, convert implict 0 to 1, althought this will break sparsity\n\n### Why are the changes needed?\nif `threshold<0`, current impl deal with sparse vector incorrectly.\nSee JIRA [SPARK-29144](https://issues.apache.org/jira/browse/SPARK-29144) and [Scikit-Learn's Binarizer](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.Binarizer.html) ('Threshold may not be less than 0 for operations on sparse matrices.') for details.\n\n### Does this PR introduce any user-facing change?\nno\n\n### How was this patch tested?\nadded testsuite\n\nCloses #25829 from zhengruifeng/binarizer_throw_exception_sparse_vector.\n\nAuthored-by: zhengruifeng <ruifengz@foxmail.com>\nSigned-off-by: Sean Owen <sean.owen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjczMjIyOTI=",
+                      "login": "zhengruifeng"
+                    },
+                    "name": "zhengruifeng",
+                    "email": "ruifengz@foxmail.com",
+                    "date": "2019-09-20T19:22:46.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29196][DOCS] Add JDK11 support to the document",
+                  "message": "[SPARK-29196][DOCS] Add JDK11 support to the document\n\n### What changes were proposed in this pull request?\n\nThis PRs add Java 11 version to the document.\n\n### Why are the changes needed?\n\nApache Spark 3.0.0 starts to support JDK11 officially.\n\n### Does this PR introduce any user-facing change?\n\nYes.\n\n![jdk11](https://user-images.githubusercontent.com/9700541/65364063-39204580-dbc4-11e9-982b-fc1552be2ec5.png)\n\n### How was this patch tested?\n\nManually. Doc generation.\n\nCloses #25875 from dongjoon-hyun/SPARK-29196.\n\nAuthored-by: Dongjoon Hyun <dhyun@apple.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjk3MDA1NDE=",
+                      "login": "dongjoon-hyun"
+                    },
+                    "name": "Dongjoon Hyun",
+                    "email": "dhyun@apple.com",
+                    "date": "2019-09-21T08:40:49.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29063][SQL] Modify fillValue approach to support joined dataframe",
+                  "message": "[SPARK-29063][SQL] Modify fillValue approach to support joined dataframe\n\n### What changes were proposed in this pull request?\nModify the approach in `DataFrameNaFunctions.fillValue`, the new one uses `df.withColumns` which only address the columns need to be filled. After this change, there are no more ambiguous fileds detected for joined dataframe.\n\n### Why are the changes needed?\nBefore this change, when you have a joined table that has the same field name from both original table, fillna will fail even if you specify a subset that does not include the 'ambiguous' fields.\n```\nscala> val df1 = Seq((\"f1-1\", \"f2\", null), (\"f1-2\", null, null), (\"f1-3\", \"f2\", \"f3-1\"), (\"f1-4\", \"f2\", \"f3-1\")).toDF(\"f1\", \"f2\", \"f3\")\nscala> val df2 = Seq((\"f1-1\", null, null), (\"f1-2\", \"f2\", null), (\"f1-3\", \"f2\", \"f4-1\")).toDF(\"f1\", \"f2\", \"f4\")\nscala> val df_join = df1.alias(\"df1\").join(df2.alias(\"df2\"), Seq(\"f1\"), joinType=\"left_outer\")\nscala> df_join.na.fill(\"\", cols=Seq(\"f4\"))\n\norg.apache.spark.sql.AnalysisException: Reference 'f2' is ambiguous, could be: df1.f2, df2.f2.;\n```\n\n### Does this PR introduce any user-facing change?\nYes, fillna operation will pass and give the right answer for a joined table.\n\n### How was this patch tested?\nLocal test and newly added UT.\n\nCloses #25768 from xuanyuanking/SPARK-29063.\n\nLead-authored-by: Yuanjian Li <xyliyuanjian@gmail.com>\nCo-authored-by: Xiao Li <gatorsmile@gmail.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ4MzM3NjU=",
+                      "login": "xuanyuanking"
+                    },
+                    "name": "Yuanjian Li",
+                    "email": "xyliyuanjian@gmail.com",
+                    "date": "2019-09-21T08:26:30.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-21045][PYTHON] Allow non-ascii string as an exception message …",
+                  "message": "[SPARK-21045][PYTHON] Allow non-ascii string as an exception message from python execution in Python 2\n\n### What changes were proposed in this pull request?\n\nThis PR allows non-ascii string as an exception message in Python 2 by explicitly en/decoding in case of `str` in Python 2.\n\n### Why are the changes needed?\n\nPreviously PySpark will hang when the `UnicodeDecodeError` occurs and the real exception cannot be passed to the JVM side.\n\nSee the reproducer as below:\n\n```python\ndef f():\n    raise Exception(\"中\")\nspark = SparkSession.builder.master('local').getOrCreate()\nspark.sparkContext.parallelize([1]).map(lambda x: f()).count()\n```\n\n### Does this PR introduce any user-facing change?\n\nUser may not observe hanging for the similar cases.\n\n### How was this patch tested?\n\nAdded a new test and manually checking.\n\nThis pr is based on #18324, credits should also go to dataknocker.\nTo make lint-python happy for python3, it also includes a followup fix for #25814\n\nCloses #25847 from advancedxy/python_exception_19926_and_21045.\n\nAuthored-by: Xianjin YE <advancedxy@gmail.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzUzNw==",
+                      "login": "advancedxy"
+                    },
+                    "name": "Xianjin YE",
+                    "email": "advancedxy@gmail.com",
+                    "date": "2019-09-21T08:09:19.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28937][SPARK-28936][KUBERNETES] Reduce test flakyness",
+                  "message": "[SPARK-28937][SPARK-28936][KUBERNETES] Reduce test flakyness\n\n### What changes were proposed in this pull request?\n\nSwitch from using a Thread sleep for waiting for commands to finish to just waiting for the command to finish with a watcher & improve the error messages in the SecretsTestsSuite.\n\n### Why are the changes needed?\nCurrently some of the Spark Kubernetes tests have race conditions with command execution, and the frequent use of eventually makes debugging test failures difficult.\n\n### Does this PR introduce any user-facing change?\n\nNo\n\n### How was this patch tested?\n\nExisting tests pass after removal of thread.sleep\n\nCloses #25765 from holdenk/SPARK-28937SPARK-28936-improve-kubernetes-integration-tests.\n\nAuthored-by: Holden Karau <hkarau@apple.com>\nSigned-off-by: Holden Karau <hkarau@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU5ODkz",
+                      "login": "holdenk"
+                    },
+                    "name": "Holden Karau",
+                    "email": "hkarau@apple.com",
+                    "date": "2019-09-20T10:08:16.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-27659][PYTHON] Allow PySpark to prefetch during toLocalIterator",
+                  "message": "[SPARK-27659][PYTHON] Allow PySpark to prefetch during toLocalIterator\n\n### What changes were proposed in this pull request?\n\nThis PR allows Python toLocalIterator to prefetch the next partition while the first partition is being collected. The PR also adds a demo micro bench mark in the examples directory, we may wish to keep this or not.\n\n### Why are the changes needed?\n\nIn https://issues.apache.org/jira/browse/SPARK-23961 / 5e79ae3b40b76e3473288830ab958fc4834dcb33 we changed PySpark to only pull one partition at a time. This is memory efficient, but if partitions take time to compute this can mean we're spending more time blocking.\n\n### Does this PR introduce any user-facing change?\n\nA new param is added to toLocalIterator\n\n### How was this patch tested?\n\nNew unit test inside of `test_rdd.py` checks the time that the elements are evaluated at. Another test that the results remain the same are added to `test_dataframe.py`.\n\nI also ran a micro benchmark in the examples directory `prefetch.py` which shows an improvement of ~40% in this specific use case.\n\n>\n> 19/08/16 17:11:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable\n> Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties\n> Setting default log level to \"WARN\".\n> To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).\n> Running timers:\n>\n> [Stage 32:>                                                         (0 + 1) / 1]\n> Results:\n>\n> Prefetch time:\n>\n> 100.228110831\n>\n>\n> Regular time:\n>\n> 188.341721614\n>\n>\n>\n\nCloses #25515 from holdenk/SPARK-27659-allow-pyspark-tolocalitr-to-prefetch.\n\nAuthored-by: Holden Karau <hkarau@apple.com>\nSigned-off-by: Holden Karau <hkarau@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU5ODkz",
+                      "login": "holdenk"
+                    },
+                    "name": "Holden Karau",
+                    "email": "hkarau@apple.com",
+                    "date": "2019-09-20T09:59:31.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29139][CORE][TESTS] Increase timeout to wait for executor(s) t…",
+                  "message": "[SPARK-29139][CORE][TESTS] Increase timeout to wait for executor(s) to be up in SparkContextSuite\n\n### What changes were proposed in this pull request?\n\nThis patch proposes to increase timeout to wait for executor(s) to be up in SparkContextSuite, as we observed these tests failed due to wait timeout.\n\n### Why are the changes needed?\n\nThere's some case that CI build is extremely slow which requires 3x or more time to pass the test.\n(https://issues.apache.org/jira/browse/SPARK-29139?focusedCommentId=16934034&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-16934034)\n\nAllocating higher timeout wouldn't bring additional latency, as the code checks the condition with sleeping 10 ms per loop iteration.\n\n### Does this PR introduce any user-facing change?\n\nNo\n\n### How was this patch tested?\n\nN/A, as the case is not likely to be occurred frequently.\n\nCloses #25864 from HeartSaVioR/SPARK-29139.\n\nAuthored-by: Jungtaek Lim (HeartSaVioR) <kabhwan@gmail.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMTczMDk=",
+                      "login": "HeartSaVioR"
+                    },
+                    "name": "Jungtaek Lim (HeartSaVioR)",
+                    "email": "kabhwan@gmail.com",
+                    "date": "2019-09-20T08:57:47.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[MINOR][INFRA] Use java-version instead of version for GitHub Action",
+                  "message": "[MINOR][INFRA] Use java-version instead of version for GitHub Action\n\n### What changes were proposed in this pull request?\n\nThis PR use `java-version` instead of `version` for GitHub Action. More details:\nhttps://github.com/actions/setup-java/commit/204b974cf476e9709b6fab0c59007578676321c5\nhttps://github.com/actions/setup-java/commit/ac25aeee3a8ad80e5e24d12610e451338577534f\n\n### Why are the changes needed?\n\nThe `version` property will not be supported after October 1, 2019.\n\n### Does this PR introduce any user-facing change?\nNo\n\n### How was this patch tested?\nN/A\n\nCloses #25866 from wangyum/java-version.\n\nAuthored-by: Yuming Wang <yumwang@ebay.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjUzOTk4NjE=",
+                      "login": "wangyum"
+                    },
+                    "name": "Yuming Wang",
+                    "email": "yumwang@ebay.com",
+                    "date": "2019-09-20T08:54:34.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29158][SQL][FOLLOW-UP] Create an actual test case under `src/t…",
+                  "message": "[SPARK-29158][SQL][FOLLOW-UP] Create an actual test case under `src/test` and minor documentation correction\n\n### What changes were proposed in this pull request?\n\nThis PR is a followup of https://github.com/apache/spark/pull/25838 and proposes to create an actual test case under `src/test`. Previously, compile only test existed at `src/main`.\n\nAlso, just changed the wordings in `SerializableConfiguration` just only to describe what it does (remove other words).\n\n### Why are the changes needed?\n\nTests codes should better exist in `src/test` not `src/main`. Also, it should better test a basic functionality.\n\n### Does this PR introduce any user-facing change?\n\nNo except minor doc change.\n\n### How was this patch tested?\n\nUnit test was added.\n\nCloses #25867 from HyukjinKwon/SPARK-29158.\n\nAuthored-by: HyukjinKwon <gurwls223@apache.org>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY0Nzc3MDE=",
+                      "login": "HyukjinKwon"
+                    },
+                    "name": "HyukjinKwon",
+                    "email": "gurwls223@apache.org",
+                    "date": "2019-09-20T08:52:30.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29062][SQL] Add V1_BATCH_WRITE to the TableCapabilityChecks",
+                  "message": "[SPARK-29062][SQL] Add V1_BATCH_WRITE to the TableCapabilityChecks\n\n### What changes were proposed in this pull request?\n\nCurrently the checks in the Analyzer require that V2 Tables have BATCH_WRITE defined for all tables that have V1 Write fallbacks. This is confusing as these tables may not have the V2 writer interface implemented yet. This PR adds this table capability to these checks.\n\nIn addition, this allows V2 tables to leverage the V1 APIs for DataFrameWriter.save if they do extend the V1_BATCH_WRITE capability. This way, these tables can continue to receive partitioning information and also perform checks for the existence of tables, and support all SaveModes.\n\n### Why are the changes needed?\n\nPartitioned saves through DataFrame.write are otherwise broken for V2 tables that support the V1\nwrite API.\n\n### Does this PR introduce any user-facing change?\n\nNo\n\n### How was this patch tested?\n\nV1WriteFallbackSuite\n\nCloses #25767 from brkyvz/bwcheck.\n\nAuthored-by: Burak Yavuz <brkyvz@gmail.com>\nSigned-off-by: Wenchen Fan <wenchen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjUyNDM1MTU=",
+                      "login": "brkyvz"
+                    },
+                    "name": "Burak Yavuz",
+                    "email": "brkyvz@gmail.com",
+                    "date": "2019-09-20T22:04:32.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29122][SQL] Propagate all the SQL conf to executors in SQLQuer…",
+                  "message": "[SPARK-29122][SQL] Propagate all the SQL conf to executors in SQLQueryTestSuite\n\n### What changes were proposed in this pull request?\n\nThis pr is to propagate all the SQL configurations to executors in `SQLQueryTestSuite`. When the propagation enabled in the tests, a potential bug below becomes apparent;\n```\nCREATE TABLE num_data (id int, val decimal(38,10)) USING parquet;\n....\n select sum(udf(CAST(null AS Decimal(38,0)))) from range(1,4): QueryOutput(select sum(udf(CAST(null AS Decimal(38,0)))) from range(1,4),struct<>,java.lang.IllegalArgumentException\n[info]   requirement failed: MutableProjection cannot use UnsafeRow for output data types: decimal(38,0)) (SQLQueryTestSuite.scala:380)\n```\nThe root culprit is that `InterpretedMutableProjection` has incorrect validation in the interpreter mode: `validExprs.forall { case (e, _) => UnsafeRow.isFixedLength(e.dataType) }`. This validation should be the same with the condition (`isMutable`) in `HashAggregate.supportsAggregate`: https://github.com/apache/spark/blob/master/sql/core/src/main/scala/org/apache/spark/sql/execution/aggregate/HashAggregateExec.scala#L1126\n\n### Why are the changes needed?\n\nBug fixes.\n\n### Does this PR introduce any user-facing change?\n\nNo\n\n### How was this patch tested?\n\nAdded tests in `AggregationQuerySuite`\n\nCloses #25831 from maropu/SPARK-29122.\n\nAuthored-by: Takeshi Yamamuro <yamamuro@apache.org>\nSigned-off-by: Takeshi Yamamuro <yamamuro@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY5MjMwMw==",
+                      "login": "maropu"
+                    },
+                    "name": "Takeshi Yamamuro",
+                    "email": "yamamuro@apache.org",
+                    "date": "2019-09-20T21:41:09.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29161][CORE][SQL][STREAMING] Unify default wait time for waitU…",
+                  "message": "[SPARK-29161][CORE][SQL][STREAMING] Unify default wait time for waitUntilEmpty\n\n### What changes were proposed in this pull request?\n\nThis is a follow-up of the [review comment](https://github.com/apache/spark/pull/25706#discussion_r321923311).\n\nThis patch unifies the default wait time to be 10 seconds as it would fit most of UTs (as they have smaller timeouts) and doesn't bring additional latency since it will return if the condition is met.\n\nThis patch doesn't touch the one which waits 100000 milliseconds (100 seconds), to not break anything unintentionally, though I'd rather questionable that we really need to wait for 100 seconds.\n\n### Why are the changes needed?\n\nIt simplifies the test code and get rid of various heuristic values on timeout.\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nCI build will test the patch, as it would be the best environment to test the patch (builds are running there).\n\nCloses #25837 from HeartSaVioR/MINOR-unify-default-wait-time-for-wait-until-empty.\n\nAuthored-by: Jungtaek Lim (HeartSaVioR) <kabhwan@gmail.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMTczMDk=",
+                      "login": "HeartSaVioR"
+                    },
+                    "name": "Jungtaek Lim (HeartSaVioR)",
+                    "email": "kabhwan@gmail.com",
+                    "date": "2019-09-19T23:11:54.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29158][SQL] Expose SerializableConfiguration for DataSource V2…",
+                  "message": "[SPARK-29158][SQL] Expose SerializableConfiguration for DataSource V2 developers\n\n### What changes were proposed in this pull request?\n\nCurrently the SerializableConfiguration, which makes the Hadoop configuration serializable is private. This makes it public, with a developer annotation.\n\n### Why are the changes needed?\n\nMany data source depend on the Hadoop configuration which may have specific components on the driver. Inside of Spark's own DataSourceV2 implementations this is frequently used (Parquet, Json, Orc, etc.)\n\n### Does this PR introduce any user-facing change?\n\nThis provides a new developer API.\n\n### How was this patch tested?\n\nNo new tests are added as this only exposes a previously developed & thoroughly used + tested component.\n\nCloses #25838 from holdenk/SPARK-29158-expose-serializableconfiguration-for-dsv2.\n\nAuthored-by: Holden Karau <hkarau@apple.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU5ODkz",
+                      "login": "holdenk"
+                    },
+                    "name": "Holden Karau",
+                    "email": "hkarau@apple.com",
+                    "date": "2019-09-20T14:39:24.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Revert \"[SPARK-29082][CORE] Skip delegation token generation if no cr…",
+                  "message": "Revert \"[SPARK-29082][CORE] Skip delegation token generation if no credentials are available\"\n\nThis reverts commit f32f16fd68f51a94d6adb2d01a9b2e557885e656.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjk3MDA1NDE=",
+                      "login": "dongjoon-hyun"
+                    },
+                    "name": "Dongjoon Hyun",
+                    "email": "dhyun@apple.com",
+                    "date": "2019-09-19T17:54:42.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28208][SQL][FOLLOWUP] Use `tryWithResource` pattern",
+                  "message": "[SPARK-28208][SQL][FOLLOWUP] Use `tryWithResource` pattern\n\n### What changes were proposed in this pull request?\n\nThis PR aims to use `tryWithResource` for ORC file.\n\n### Why are the changes needed?\n\nThis is a follow-up to address https://github.com/apache/spark/pull/25006#discussion_r298788206 .\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nPass the Jenkins with the existing tests.\n\nCloses #25842 from dongjoon-hyun/SPARK-28208.\n\nAuthored-by: Dongjoon Hyun <dhyun@apple.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjk3MDA1NDE=",
+                      "login": "dongjoon-hyun"
+                    },
+                    "name": "Dongjoon Hyun",
+                    "email": "dhyun@apple.com",
+                    "date": "2019-09-19T15:33:12.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28612][SQL] Add DataFrameWriterV2 API",
+                  "message": "[SPARK-28612][SQL] Add DataFrameWriterV2 API\n\n## What changes were proposed in this pull request?\n\nThis adds a new write API as proposed in the [SPIP to standardize logical plans](https://issues.apache.org/jira/browse/SPARK-23521). This new API:\n\n* Uses clear verbs to execute writes, like `append`, `overwrite`, `create`, and `replace` that correspond to the new logical plans.\n* Only creates v2 logical plans so the behavior is always consistent.\n* Does not allow table configuration options for operations that cannot change table configuration. For example, `partitionedBy` can only be called when the writer executes `create` or `replace`.\n\nHere are a few example uses of the new API:\n\n```scala\ndf.writeTo(\"catalog.db.table\").append()\ndf.writeTo(\"catalog.db.table\").overwrite($\"date\" === \"2019-06-01\")\ndf.writeTo(\"catalog.db.table\").overwritePartitions()\ndf.writeTo(\"catalog.db.table\").asParquet.create()\ndf.writeTo(\"catalog.db.table\").partitionedBy(days($\"ts\")).createOrReplace()\ndf.writeTo(\"catalog.db.table\").using(\"abc\").replace()\n```\n\n## How was this patch tested?\n\nAdded `DataFrameWriterV2Suite` that tests the new write API. Existing tests for v2 plans.\n\nCloses #25681 from rdblue/SPARK-28612-add-data-frame-writer-v2.\n\nAuthored-by: Ryan Blue <blue@apache.org>\nSigned-off-by: Burak Yavuz <brkyvz@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg3OTE1",
+                      "login": "rdblue"
+                    },
+                    "name": "Ryan Blue",
+                    "email": "blue@apache.org",
+                    "date": "2019-09-19T13:32:09.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28822][DOC][SQL] Document USE DATABASE in SQL Reference",
+                  "message": "[SPARK-28822][DOC][SQL] Document USE DATABASE in SQL Reference\n\n### What changes were proposed in this pull request?\nAdded document reference for USE databse sql command\n\n### Why are the changes needed?\nFor USE database command usage\n\n### Does this PR introduce any user-facing change?\nIt is adding the USE database sql command refernce information in the doc\n\n### How was this patch tested?\nAttached the test snap\n![image](https://user-images.githubusercontent.com/7912929/65170499-7242a380-da66-11e9-819c-76df62c86c5a.png)\n\nCloses #25572 from shivusondur/jiraUSEDaBa1.\n\nLead-authored-by: shivusondur <shivusondur@gmail.com>\nCo-authored-by: Xiao Li <gatorsmile@gmail.com>\nSigned-off-by: Xiao Li <gatorsmile@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc5MTI5Mjk=",
+                      "login": "shivusondur"
+                    },
+                    "name": "shivusondur",
+                    "email": "shivusondur@gmail.com",
+                    "date": "2019-09-19T13:04:17.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29165][SQL][TEST] Set log level of log generated code as ERROR…",
+                  "message": "[SPARK-29165][SQL][TEST] Set log level of log generated code as ERROR in case of compile error on generated code in UT\n\n### What changes were proposed in this pull request?\n\nThis patch proposes to change the log level of logging generated code in case of compile error being occurred in UT. This would help to investigate compilation issue of generated code easier, as currently we got exception message of line number but there's no generated code being logged actually (as in most cases of UT the threshold of log level is at least WARN).\n\n### Why are the changes needed?\n\nThis would help investigating issue on compilation error for generated code in UT.\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nN/A\n\nCloses #25835 from HeartSaVioR/MINOR-always-log-generated-code-on-fail-to-compile-in-unit-testing.\n\nAuthored-by: Jungtaek Lim (HeartSaVioR) <kabhwan@gmail.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMTczMDk=",
+                      "login": "HeartSaVioR"
+                    },
+                    "name": "Jungtaek Lim (HeartSaVioR)",
+                    "email": "kabhwan@gmail.com",
+                    "date": "2019-09-19T11:47:47.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[MINOR][BUILD] Fix about 15 misc build warnings",
+                  "message": "[MINOR][BUILD] Fix about 15 misc build warnings\n\n### What changes were proposed in this pull request?\n\nThis addresses about 15 miscellaneous warnings that appear in the current build.\n\n### Why are the changes needed?\n\nNo functional changes, it just slightly reduces the amount of extra warning output.\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nExisting tests, run manually.\n\nCloses #25852 from srowen/BuildWarnings.\n\nAuthored-by: Sean Owen <sean.owen@databricks.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgyMjUyMg==",
+                      "login": "srowen"
+                    },
+                    "name": "Sean Owen",
+                    "email": "sean.owen@databricks.com",
+                    "date": "2019-09-19T11:37:42.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28985][PYTHON][ML] Add common classes (JavaPredictor/JavaClass…",
+                  "message": "[SPARK-28985][PYTHON][ML] Add common classes (JavaPredictor/JavaClassificationModel/JavaProbabilisticClassifier) in PYTHON\n\n### What changes were proposed in this pull request?\n\nAdd some common classes in Python to make it have the same structure as Scala\n\n1. Scala has ClassifierParams/Classifier/ClassificationModel:\n\n```\ntrait ClassifierParams\n    extends PredictorParams with HasRawPredictionCol\n\nabstract class Classifier\n    extends Predictor with ClassifierParams {\n    def setRawPredictionCol\n}\n\nabstract class ClassificationModel\n  extends PredictionModel with ClassifierParams {\n    def setRawPredictionCol\n}\n\n```\nThis PR makes Python has the following:\n\n```\nclass JavaClassifierParams(HasRawPredictionCol, JavaPredictorParams):\n    pass\n\nclass JavaClassifier(JavaPredictor, JavaClassifierParams):\n    def setRawPredictionCol\n\nclass JavaClassificationModel(JavaPredictionModel, JavaClassifierParams):\n    def setRawPredictionCol\n```\n2. Scala has ProbabilisticClassifierParams/ProbabilisticClassifier/ProbabilisticClassificationModel:\n```\ntrait ProbabilisticClassifierParams\n    extends ClassifierParams with HasProbabilityCol with HasThresholds\n\nabstract class ProbabilisticClassifier\n    extends Classifier with ProbabilisticClassifierParams {\n    def setProbabilityCol\n    def setThresholds\n}\n\nabstract class ProbabilisticClassificationModel\n    extends ClassificationModel with ProbabilisticClassifierParams {\n    def setProbabilityCol\n    def setThresholds\n}\n```\nThis PR makes Python have the following:\n```\nclass JavaProbabilisticClassifierParams(HasProbabilityCol, HasThresholds, JavaClassifierParams):\n    pass\n\nclass JavaProbabilisticClassifier(JavaClassifier, JavaProbabilisticClassifierParams):\n    def setProbabilityCol\n    def setThresholds\n\nclass JavaProbabilisticClassificationModel(JavaClassificationModel, JavaProbabilisticClassifierParams):\n    def setProbabilityCol\n    def setThresholds\n```\n3. Scala has PredictorParams/Predictor/PredictionModel:\n```\ntrait PredictorParams extends Params\n    with HasLabelCol with HasFeaturesCol with HasPredictionCol\n\nabstract class Predictor\n    extends Estimator with PredictorParams {\n    def setLabelCol\n    def setFeaturesCol\n    def setPredictionCol\n  }\n\nabstract class PredictionModel\n    extends Model with PredictorParams {\n    def setFeaturesCol\n    def setPredictionCol\n    def numFeatures\n    def predict\n}\n```\nThis PR makes Python have the following:\n```\nclass JavaPredictorParams(HasLabelCol, HasFeaturesCol, HasPredictionCol):\n    pass\n\nclass JavaPredictor(JavaEstimator, JavaPredictorParams):\n    def setLabelCol\n    def setFeaturesCol\n    def setPredictionCol\n\nclass JavaPredictionModel(JavaModel, JavaPredictorParams):\n    def setFeaturesCol\n    def setPredictionCol\n    def numFeatures\n    def predict\n```\n\n### Why are the changes needed?\nHave parity between Python and Scala ML\n\n### Does this PR introduce any user-facing change?\nYes. Add the following changes:\n\n```\nLinearSVCModel\n\n- get/setFeatureCol\n- get/setPredictionCol\n- get/setLabelCol\n- get/setRawPredictionCol\n- predict\n```\n\n```\nLogisticRegressionModel\nDecisionTreeClassificationModel\nRandomForestClassificationModel\nGBTClassificationModel\nNaiveBayesModel\nMultilayerPerceptronClassificationModel\n\n- get/setFeatureCol\n- get/setPredictionCol\n- get/setLabelCol\n- get/setRawPredictionCol\n- get/setProbabilityCol\n- predict\n```\n```\nLinearRegressionModel\nIsotonicRegressionModel\nDecisionTreeRegressionModel\nRandomForestRegressionModel\nGBTRegressionModel\nAFTSurvivalRegressionModel\nGeneralizedLinearRegressionModel\n\n- get/setFeatureCol\n- get/setPredictionCol\n- get/setLabelCol\n- predict\n```\n\n### How was this patch tested?\nAdd a few doc tests.\n\nCloses #25776 from huaxingao/spark-28985.\n\nAuthored-by: Huaxin Gao <huaxing@us.ibm.com>\nSigned-off-by: Sean Owen <sean.owen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzNTkyMjU4",
+                      "login": "huaxingao"
+                    },
+                    "name": "Huaxin Gao",
+                    "email": "huaxing@us.ibm.com",
+                    "date": "2019-09-19T08:17:25.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29159][BUILD] Increase ReservedCodeCacheSize to 1G",
+                  "message": "[SPARK-29159][BUILD] Increase ReservedCodeCacheSize to 1G\n\n### What changes were proposed in this pull request?\n\nThis PR aims to increase the JVM CodeCacheSize from 0.5G to 1G.\n\n### Why are the changes needed?\n\nAfter upgrading to `Scala 2.12.10`, the following is observed during building.\n```\n2019-09-18T20:49:23.5030586Z OpenJDK 64-Bit Server VM warning: CodeCache is full. Compiler has been disabled.\n2019-09-18T20:49:23.5032920Z OpenJDK 64-Bit Server VM warning: Try increasing the code cache size using -XX:ReservedCodeCacheSize=\n2019-09-18T20:49:23.5034959Z CodeCache: size=524288Kb used=521399Kb max_used=521423Kb free=2888Kb\n2019-09-18T20:49:23.5035472Z  bounds [0x00007fa62c000000, 0x00007fa64c000000, 0x00007fa64c000000]\n2019-09-18T20:49:23.5035781Z  total_blobs=156549 nmethods=155863 adapters=592\n2019-09-18T20:49:23.5036090Z  compilation: disabled (not enough contiguous free space left)\n```\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nManually check the Jenkins or GitHub Action build log (which should not have the above).\n\nCloses #25836 from dongjoon-hyun/SPARK-CODE-CACHE-1G.\n\nAuthored-by: Dongjoon Hyun <dhyun@apple.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjk3MDA1NDE=",
+                      "login": "dongjoon-hyun"
+                    },
+                    "name": "Dongjoon Hyun",
+                    "email": "dhyun@apple.com",
+                    "date": "2019-09-19T00:24:15.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28989][SQL] Add a SQLConf `spark.sql.ansi.enabled`",
+                  "message": "[SPARK-28989][SQL] Add a SQLConf `spark.sql.ansi.enabled`\n\n### What changes were proposed in this pull request?\nCurrently, there are new configurations for compatibility with ANSI SQL:\n\n* `spark.sql.parser.ansi.enabled`\n* `spark.sql.decimalOperations.nullOnOverflow`\n* `spark.sql.failOnIntegralTypeOverflow`\nThis PR is to add new configuration `spark.sql.ansi.enabled` and remove the 3 options above. When the configuration is true, Spark tries to conform to the ANSI SQL specification. It will be disabled by default.\n\n### Why are the changes needed?\n\nMake it simple and straightforward.\n\n### Does this PR introduce any user-facing change?\n\nThe new features for ANSI compatibility will be set via one configuration `spark.sql.ansi.enabled`.\n\n### How was this patch tested?\n\nExisting unit tests.\n\nCloses #25693 from gengliangwang/ansiEnabled.\n\nLead-authored-by: Gengliang Wang <gengliang.wang@databricks.com>\nCo-authored-by: Xiao Li <gatorsmile@gmail.com>\nSigned-off-by: Xiao Li <gatorsmile@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTc5MzI=",
+                      "login": "gengliangwang"
+                    },
+                    "name": "Gengliang Wang",
+                    "email": "gengliang.wang@databricks.com",
+                    "date": "2019-09-18T22:30:28.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29141][SQL][TEST] Use SqlBasedBenchmark in SQL benchmarks",
+                  "message": "[SPARK-29141][SQL][TEST] Use SqlBasedBenchmark in SQL benchmarks\n\n### What changes were proposed in this pull request?\n\nRefactored SQL-related benchmark and made them depend on `SqlBasedBenchmark`. In particular, creation of Spark session are moved into `override def getSparkSession: SparkSession`.\n\n### Why are the changes needed?\n\nThis should simplify maintenance of SQL-based benchmarks by reducing the number of dependencies. In the future, it should be easier to refactor & extend all SQL benchmarks by changing only one trait. Finally, all SQL-based benchmarks will look uniformly.\n\n### Does this PR introduce any user-facing change?\nNo\n\n### How was this patch tested?\n\nBy running the modified benchmarks.\n\nCloses #25828 from MaxGekk/sql-benchmarks-refactoring.\n\nLead-authored-by: Maxim Gekk <max.gekk@gmail.com>\nCo-authored-by: Dongjoon Hyun <dongjoon@apache.org>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1ODA2OTc=",
+                      "login": "MaxGekk"
+                    },
+                    "name": "Maxim Gekk",
+                    "email": "max.gekk@gmail.com",
+                    "date": "2019-09-18T17:52:23.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28683][BUILD] Upgrade Scala to 2.12.10",
+                  "message": "[SPARK-28683][BUILD] Upgrade Scala to 2.12.10\n\n## What changes were proposed in this pull request?\n\nThis PR upgrade Scala to **2.12.10**.\n\nRelease notes:\n- Fix regression in large string interpolations with non-String typed splices\n- Revert \"Generate shallower ASTs in pattern translation\"\n- Fix regression in classpath when JARs have 'a.b' entries beside 'a/b'\n\n- Faster compiler: 5–10% faster since 2.12.8\n- Improved compatibility with JDK 11, 12, and 13\n- Experimental support for build pipelining and outline type checking\n\nMore details:\nhttps://github.com/scala/scala/releases/tag/v2.12.10\nhttps://github.com/scala/scala/releases/tag/v2.12.9\n\n## How was this patch tested?\n\nExisting tests\n\nCloses #25404 from wangyum/SPARK-28683.\n\nAuthored-by: Yuming Wang <yumwang@ebay.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjUzOTk4NjE=",
+                      "login": "wangyum"
+                    },
+                    "name": "Yuming Wang",
+                    "email": "yumwang@ebay.com",
+                    "date": "2019-09-18T13:30:36.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29082][CORE] Skip delegation token generation if no credential…",
+                  "message": "[SPARK-29082][CORE] Skip delegation token generation if no credentials are available\n\nThis situation can happen when an external system (e.g. Oozie) generates\ndelegation tokens for a Spark application. The Spark driver will then run\nagainst secured services, have proper credentials (the tokens), but no\nkerberos credentials. So trying to do things that requires a kerberos\ncredential fails.\n\nInstead, if no kerberos credentials are detected, just skip the whole\ndelegation token code.\n\nTested with an application that simulates Oozie; fails before the fix,\npasses with the fix. Also with other DT-related tests to make sure other\nfunctionality keeps working.\n\nCloses #25805 from vanzin/SPARK-29082.\n\nAuthored-by: Marcelo Vanzin <vanzin@cloudera.com>\nSigned-off-by: Marcelo Vanzin <vanzin@cloudera.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2OTQwODM=",
+                      "login": "vanzin"
+                    },
+                    "name": "Marcelo Vanzin",
+                    "email": "vanzin@cloudera.com",
+                    "date": "2019-09-18T13:30:00.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-22796][PYTHON][ML] Add multiple columns support to PySpark Qua…",
+                  "message": "[SPARK-22796][PYTHON][ML] Add multiple columns support to PySpark QuantileDiscretizer\n\n### What changes were proposed in this pull request?\nAdd multiple columns support to PySpark QuantileDiscretizer\n\n### Why are the changes needed?\nMultiple columns support for  QuantileDiscretizer was in scala side a while ago. We need to add multiple columns support to python too.\n\n### Does this PR introduce any user-facing change?\nYes. New Python is added\n\n### How was this patch tested?\nAdd doctest\n\nCloses #25812 from huaxingao/spark-22796.\n\nAuthored-by: Huaxin Gao <huaxing@us.ibm.com>\nSigned-off-by: Liang-Chi Hsieh <liangchi@uber.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzNTkyMjU4",
+                      "login": "huaxingao"
+                    },
+                    "name": "Huaxin Gao",
+                    "email": "huaxing@us.ibm.com",
+                    "date": "2019-09-18T12:16:06.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[MINOR][SS][DOCS] Adapt multiple watermark policy comment to the reality",
+                  "message": "[MINOR][SS][DOCS] Adapt multiple watermark policy comment to the reality\n\n### What changes were proposed in this pull request?\n\nPrevious comment was true for Apache Spark 2.3.0. The 2.4.0 release brought multiple watermark policy and therefore stating that the 'min' is always chosen is misleading.\n\nThis PR updates the comments about multiple watermark policy. They aren't true anymore since in case of multiple watermarks, we can configure which one will be applied to the query. This change was brought with Apache Spark 2.4.0 release.\n\n### Why are the changes needed?\n\nIt introduces some confusion about the real execution of the commented code.\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nThe tests weren't added because the change is only about the documentation level. I affirm that the contribution is my original work and that I license the work to the project under the project's open source license.\n\nCloses #25832 from bartosz25/fix_comments_multiple_watermark_policy.\n\nAuthored-by: bartosz25 <bartkonieczny@yahoo.fr>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ0MzAxMzY=",
+                      "login": "bartosz25"
+                    },
+                    "name": "bartosz25",
+                    "email": "bartkonieczny@yahoo.fr",
+                    "date": "2019-09-18T10:51:11.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28091][CORE] Extend Spark metrics system with user-defined met…",
+                  "message": "[SPARK-28091][CORE] Extend Spark metrics system with user-defined metrics using executor plugins\n\n## What changes were proposed in this pull request?\n\nThis proposes to improve Spark instrumentation by adding a hook for user-defined metrics, extending Spark’s Dropwizard/Codahale metrics system.\nThe original motivation of this work was to add instrumentation for S3 filesystem access metrics by Spark job. Currently, [[ExecutorSource]] instruments HDFS and local filesystem metrics. Rather than extending the code there, we proposes with this JIRA to add a metrics plugin system which is of more flexible and general use.\nContext: The Spark metrics system provides a large variety of metrics, see also , useful to  monitor and troubleshoot Spark workloads. A typical workflow is to sink the metrics to a storage system and build dashboards on top of that.\nHighlights:\n-\tThe metric plugin system makes it easy to implement instrumentation for S3 access by Spark jobs.\n-\tThe metrics plugin system allows for easy extensions of how Spark collects HDFS-related workload metrics. This is currently done using the Hadoop Filesystem GetAllStatistics method, which is deprecated in recent versions of Hadoop. Recent versions of Hadoop Filesystem recommend using method GetGlobalStorageStatistics, which also provides several additional metrics. GetGlobalStorageStatistics is not available in Hadoop 2.7 (had been introduced in Hadoop 2.8). Using a metric plugin for Spark would allow an easy way to “opt in” using such new API calls for those deploying suitable Hadoop versions.\n-\tWe also have the use case of adding Hadoop filesystem monitoring for a custom Hadoop compliant filesystem in use in our organization (EOS using the XRootD protocol). The metrics plugin infrastructure makes this easy to do. Others may have similar use cases.\n-\tMore generally, this method makes it straightforward to plug in Filesystem and other metrics to the Spark monitoring system. Future work on plugin implementation can address extending monitoring to measure usage of external resources (OS, filesystem, network, accelerator cards, etc), that maybe would not normally be considered general enough for inclusion in Apache Spark code, but that can be nevertheless useful for specialized use cases, tests or troubleshooting.\n\nImplementation:\nThe proposed implementation extends and modifies the work on Executor Plugin of SPARK-24918. Additionally, this is related to recent work on extending Spark executor metrics, such as SPARK-25228.\nAs discussed during the review, the implementaiton of this feature modifies the Developer API for Executor Plugins, such that the new version is incompatible with the original version in Spark 2.4.\n\n## How was this patch tested?\n\nThis modifies existing tests for ExecutorPluginSuite to adapt them to the API changes. In addition, the new funtionality for registering pluginMetrics has been manually tested running Spark on YARN and K8S clusters, in particular for monitoring S3 and for extending HDFS instrumentation with the Hadoop Filesystem “GetGlobalStorageStatistics” metrics. Executor metric plugin example and code used for testing are available, for example at: https://github.com/cerndb/SparkExecutorPlugins\n\nCloses #24901 from LucaCanali/executorMetricsPlugin.\n\nAuthored-by: Luca Canali <luca.canali@cern.ch>\nSigned-off-by: Marcelo Vanzin <vanzin@cloudera.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjUyNDMxNjI=",
+                      "login": "LucaCanali"
+                    },
+                    "name": "Luca Canali",
+                    "email": "luca.canali@cern.ch",
+                    "date": "2019-09-18T10:32:10.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28208][BUILD][SQL] Upgrade to ORC 1.5.6 including closing the …",
+                  "message": "[SPARK-28208][BUILD][SQL] Upgrade to ORC 1.5.6 including closing the ORC readers\n\n## What changes were proposed in this pull request?\n\nIt upgrades ORC from 1.5.5 to 1.5.6 and adds closes the ORC readers when they aren't used to\ncreate RecordReaders.\n\n## How was this patch tested?\n\nThe changed unit tests were run.\n\nCloses #25006 from omalley/spark-28208.\n\nLead-authored-by: Owen O'Malley <omalley@apache.org>\nCo-authored-by: Dongjoon Hyun <dhyun@apple.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIwNjUzNg==",
+                      "login": "omalley"
+                    },
+                    "name": "Owen O'Malley",
+                    "email": "omalley@apache.org",
+                    "date": "2019-09-18T09:32:43.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29030][SQL] Simplify lookupV2Relation",
+                  "message": "[SPARK-29030][SQL] Simplify lookupV2Relation\n\n## What changes were proposed in this pull request?\n\nSimplify the return type for `lookupV2Relation` which makes the 3 callers more straightforward.\n\n## How was this patch tested?\n\nExisting unit tests.\n\nCloses #25735 from jzhuge/lookupv2relation.\n\nAuthored-by: John Zhuge <jzhuge@apache.org>\nSigned-off-by: Burak Yavuz <brkyvz@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE4ODM4MTI=",
+                      "login": "jzhuge"
+                    },
+                    "name": "John Zhuge",
+                    "email": "jzhuge@apache.org",
+                    "date": "2019-09-18T09:27:11.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29105][CORE] Keep driver log file size up to date in HDFS",
+                  "message": "[SPARK-29105][CORE] Keep driver log file size up to date in HDFS\n\nHDFS doesn't update the file size reported by the NM if you just keep\nwriting to the file; this makes the SHS believe the file is inactive,\nand so it may delete it after the configured max age for log files.\n\nThis change uses hsync to keep the log file as up to date as possible\nwhen using HDFS. It also disables erasure coding by default for these\nlogs, since hsync (& friends) does not work with EC.\n\nTested with a SHS configured to aggressively clean up logs; verified\na spark-shell session kept updating the log, which was not deleted by\nthe SHS.\n\nCloses #25819 from vanzin/SPARK-29105.\n\nAuthored-by: Marcelo Vanzin <vanzin@cloudera.com>\nSigned-off-by: Marcelo Vanzin <vanzin@cloudera.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2OTQwODM=",
+                      "login": "vanzin"
+                    },
+                    "name": "Marcelo Vanzin",
+                    "email": "vanzin@cloudera.com",
+                    "date": "2019-09-18T09:11:55.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29118][ML] Avoid redundant computation in transform of GMM & GLR",
+                  "message": "[SPARK-29118][ML] Avoid redundant computation in transform of GMM & GLR\n\n### What changes were proposed in this pull request?\n1,GMM: obtaining the prediction (double) from its probabilty prediction(vector)\n2,GLR: obtaining the prediction (double) from its link prediction(double)\n\n### Why are the changes needed?\nit avoid predict twice\n\n### Does this PR introduce any user-facing change?\nno\n\n### How was this patch tested?\nexisting tests\n\nCloses #25815 from zhengruifeng/gmm_transform_opt.\n\nAuthored-by: zhengruifeng <ruifengz@foxmail.com>\nSigned-off-by: Sean Owen <sean.owen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjczMjIyOTI=",
+                      "login": "zhengruifeng"
+                    },
+                    "name": "zhengruifeng",
+                    "email": "ruifengz@foxmail.com",
+                    "date": "2019-09-18T09:41:02.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29101][SQL] Fix count API for csv file when DROPMALFORMED mode…",
+                  "message": "[SPARK-29101][SQL] Fix count API for csv file when DROPMALFORMED mode is selected\n\n### What changes were proposed in this pull request?\n#DataSet\nfruit,color,price,quantity\napple,red,1,3\nbanana,yellow,2,4\norange,orange,3,5\nxxx\n\nThis PR aims to fix the below\n```\nscala> spark.conf.set(\"spark.sql.csv.parser.columnPruning.enabled\", false)\nscala> spark.read.option(\"header\", \"true\").option(\"mode\", \"DROPMALFORMED\").csv(\"fruit.csv\").count\nres1: Long = 4\n```\n\nThis is caused by the issue [SPARK-24645](https://issues.apache.org/jira/browse/SPARK-24645).\nSPARK-24645 issue can also be solved by [SPARK-25387](https://issues.apache.org/jira/browse/SPARK-25387)\n\n### Why are the changes needed?\n\nSPARK-24645 caused this regression, so reverted the code as it can also be solved by SPARK-25387\n\n### Does this PR introduce any user-facing change?\nNo,\n\n### How was this patch tested?\nAdded UT, and also tested the bug SPARK-24645\n\n**SPARK-24645 regression**\n![image](https://user-images.githubusercontent.com/35216143/65067957-4c08ff00-d9a5-11e9-8d43-a4a23a61e8b8.png)\n\nCloses #25820 from sandeep-katta/SPARK-29101.\n\nAuthored-by: sandeep katta <sandeep.katta2007@gmail.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM1MjE2MTQz",
+                      "login": "sandeep-katta"
+                    },
+                    "name": "sandeep katta",
+                    "email": "sandeep.katta2007@gmail.com",
+                    "date": "2019-09-18T23:33:13.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-19926][PYSPARK] make captured exception from JVM side user fri…",
+                  "message": "[SPARK-19926][PYSPARK] make captured exception from JVM side user friendly\n\n### What changes were proposed in this pull request?\nThe str of `CapaturedException` is now returned by str(self.desc) rather than repr(self.desc), which is more user-friendly. It also handles unicode under python2 specially.\n\n### Why are the changes needed?\nThis is an improvement, and makes exception more human readable in python side.\n\n### Does this PR introduce any user-facing change?\nBefore this pr,  select `中文字段` throws exception something likes below:\n\n```\nTraceback (most recent call last):\n  File \"/Users/advancedxy/code_workspace/github/spark/python/pyspark/sql/tests/test_utils.py\", line 34, in test_capture_user_friendly_exception\n    raise e\nAnalysisException: u\"cannot resolve '`\\u4e2d\\u6587\\u5b57\\u6bb5`' given input columns: []; line 1 pos 7;\\n'Project ['\\u4e2d\\u6587\\u5b57\\u6bb5]\\n+- OneRowRelation\\n\"\n```\n\nafter this pr:\n```\nTraceback (most recent call last):\n  File \"/Users/advancedxy/code_workspace/github/spark/python/pyspark/sql/tests/test_utils.py\", line 34, in test_capture_user_friendly_exception\n    raise e\nAnalysisException: cannot resolve '`中文字段`' given input columns: []; line 1 pos 7;\n'Project ['中文字段]\n+- OneRowRelation\n\n```\n### How was this patch\nAdd a new test to verify unicode are correctly converted and manual checks for thrown exceptions.\n\nThis pr's credits should go to uncleGen and is based on https://github.com/apache/spark/pull/17267\n\nCloses #25814 from advancedxy/python_exception_19926_and_21045.\n\nAuthored-by: Xianjin YE <advancedxy@gmail.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzUzNw==",
+                      "login": "advancedxy"
+                    },
+                    "name": "Xianjin YE",
+                    "email": "advancedxy@gmail.com",
+                    "date": "2019-09-18T23:32:10.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29012][SQL] Support special timestamp values",
+                  "message": "[SPARK-29012][SQL] Support special timestamp values\n\n### What changes were proposed in this pull request?\n\nSupported special string values for `TIMESTAMP` type. They are simply notational shorthands that will be converted to ordinary timestamp values when read. The following string values are supported:\n- `epoch [zoneId]` - `1970-01-01 00:00:00+00 (Unix system time zero)`\n- `today [zoneId]` - midnight today.\n- `yesterday [zoneId]` -midnight yesterday\n- `tomorrow [zoneId]` - midnight tomorrow\n- `now` - current query start time.\n\nFor example:\n```sql\nspark-sql> SELECT timestamp 'tomorrow';\n2019-09-07 00:00:00\n```\n\n### Why are the changes needed?\n\nTo maintain feature parity with PostgreSQL, see [8.5.1.4. Special Values](https://www.postgresql.org/docs/12/datatype-datetime.html)\n\n### Does this PR introduce any user-facing change?\n\nPreviously, the parser fails on the special values with the error:\n```sql\nspark-sql> select timestamp 'today';\nError in query:\nCannot parse the TIMESTAMP value: today(line 1, pos 7)\n```\nAfter the changes, the special values are converted to appropriate dates:\n```sql\nspark-sql> select timestamp 'today';\n2019-09-06 00:00:00\n```\n\n### How was this patch tested?\n- Added tests to `TimestampFormatterSuite` to check parsing special values from regular strings.\n- Tests in `DateTimeUtilsSuite` check parsing those values from `UTF8String`\n- Uncommented tests in `timestamp.sql`\n\nCloses #25716 from MaxGekk/timestamp-special-values.\n\nAuthored-by: Maxim Gekk <max.gekk@gmail.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1ODA2OTc=",
+                      "login": "MaxGekk"
+                    },
+                    "name": "Maxim Gekk",
+                    "email": "max.gekk@gmail.com",
+                    "date": "2019-09-18T23:30:59.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28927][ML] Rethrow block mismatch exception in ALS when input …",
+                  "message": "[SPARK-28927][ML] Rethrow block mismatch exception in ALS when input data is nondeterministic\n\n### What changes were proposed in this pull request?\n\nFitting ALS model can be failed due to nondeterministic input data. Currently the failure is thrown by an ArrayIndexOutOfBoundsException which is not explainable for end users what is wrong in fitting.\n\nThis patch catches this exception and rethrows a more explainable one, when the input data is nondeterministic.\n\nBecause we may not exactly know the output deterministic level of RDDs produced by user code, this patch also adds a note to Scala/Python/R ALS document about the training data deterministic level.\n\n### Why are the changes needed?\n\nArrayIndexOutOfBoundsException was observed during fitting ALS model. It was caused by mismatching between in/out user/item blocks during computing ratings.\n\nIf the training RDD output is nondeterministic, when fetch failure is happened, rerun part of training RDD can produce inconsistent user/item blocks.\n\nThis patch is needed to notify users ALS fitting on nondeterministic input.\n\n### Does this PR introduce any user-facing change?\n\nYes. When fitting ALS model on nondeterministic input data, previously if rerun happens, users would see ArrayIndexOutOfBoundsException caused by mismatch between In/Out user/item blocks.\n\nAfter this patch, a SparkException with more clear message will be thrown, and original ArrayIndexOutOfBoundsException is wrapped.\n\n### How was this patch tested?\n\nTested on development cluster.\n\nCloses #25789 from viirya/als-indeterminate-input.\n\nLead-authored-by: Liang-Chi Hsieh <viirya@gmail.com>\nCo-authored-by: Liang-Chi Hsieh <liangchi@uber.com>\nSigned-off-by: Sean Owen <sean.owen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY4ODU1",
+                      "login": "viirya"
+                    },
+                    "name": "Liang-Chi Hsieh",
+                    "email": "viirya@gmail.com",
+                    "date": "2019-09-18T09:22:13.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28972][DOCS] Updating unit description in configurations, to m…",
+                  "message": "[SPARK-28972][DOCS] Updating unit description in configurations, to maintain consistency\n\n### What changes were proposed in this pull request?\nUpdating unit description in configurations, inorder to maintain consistency across configurations.\n\n### Why are the changes needed?\nthe description does not mention about suffix that can be mentioned while configuring this value.\nFor better user understanding\n\n### Does this PR introduce any user-facing change?\nyes. Doc description\n\n### How was this patch tested?\ngenerated document and checked.\n![Screenshot from 2019-09-05 11-09-17](https://user-images.githubusercontent.com/51401130/64314853-07a55880-cfce-11e9-8af0-6416a50b0188.png)\n\nCloses #25689 from PavithraRamachandran/heapsize_config.\n\nAuthored-by: Pavithra Ramachandran <pavi.rams@gmail.com>\nSigned-off-by: Sean Owen <sean.owen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjUxNDAxMTMw",
+                      "login": "PavithraRamachandran"
+                    },
+                    "name": "Pavithra Ramachandran",
+                    "email": "pavi.rams@gmail.com",
+                    "date": "2019-09-18T09:11:15.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28799][DOC] Documentation for Truncate command",
+                  "message": "[SPARK-28799][DOC] Documentation for Truncate command\n\n### What changes were proposed in this pull request?\n\nDocument TRUNCATE  statement in SQL Reference Guide.\n\n### Why are the changes needed?\nAdding documentation for SQL reference.\n\n### Does this PR introduce any user-facing change?\nyes\n\nBefore:\nThere was no documentation for this.\n\nAfter.\n![image (4)](https://user-images.githubusercontent.com/51401130/64956929-5e057780-d8a9-11e9-89a3-2d02c942b9ad.png)\n![image (5)](https://user-images.githubusercontent.com/51401130/64956942-61006800-d8a9-11e9-9767-6164eabfdc2c.png)\n\n### How was this patch tested?\n\nUsed jekyll build and serve to verify.\n\nCloses #25557 from PavithraRamachandran/truncate_doc.\n\nLead-authored-by: Pavithra Ramachandran <pavi.rams@gmail.com>\nCo-authored-by: pavithra <pavi.rams@gmail.com>\nSigned-off-by: Sean Owen <sean.owen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjUxNDAxMTMw",
+                      "login": "PavithraRamachandran"
+                    },
+                    "name": "Pavithra Ramachandran",
+                    "email": "pavi.rams@gmail.com",
+                    "date": "2019-09-18T08:44:44.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29096][SQL] The exact math method should be called only when t…",
+                  "message": "[SPARK-29096][SQL] The exact math method should be called only when there is a corresponding function in Math\n\n### What changes were proposed in this pull request?\n\n1. After https://github.com/apache/spark/pull/21599, if the option \"spark.sql.failOnIntegralTypeOverflow\" is enabled, all the Binary Arithmetic operator will used the exact version function.\nHowever, only `Add`/`Substract`/`Multiply` has a corresponding exact function in java.lang.Math . When the option \"spark.sql.failOnIntegralTypeOverflow\" is enabled, a runtime exception \"BinaryArithmetics must override either exactMathMethod or genCode\" is thrown if the other Binary Arithmetic operators are used, such as \"Divide\", \"Remainder\".\nThe exact math method should be called only when there is a corresponding function in `java.lang.Math`\n2. Revise the log output of casting to `Int`/`Short`\n3. Enable `spark.sql.failOnIntegralTypeOverflow` for pgSQL tests in `SQLQueryTestSuite`.\n\n### Why are the changes needed?\n\n1. Fix the bugs of https://github.com/apache/spark/pull/21599\n2. The test case of pgSQL intends to check the overflow of integer/long type. We should enable `spark.sql.failOnIntegralTypeOverflow`.\n\n### Does this PR introduce any user-facing change?\n\nNo\n\n### How was this patch tested?\n\nUnit test.\n\nCloses #25804 from gengliangwang/enableIntegerOverflowInSQLTest.\n\nAuthored-by: Gengliang Wang <gengliang.wang@databricks.com>\nSigned-off-by: Wenchen Fan <wenchen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTc5MzI=",
+                      "login": "gengliangwang"
+                    },
+                    "name": "Gengliang Wang",
+                    "email": "gengliang.wang@databricks.com",
+                    "date": "2019-09-18T16:59:17.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29112][YARN] Expose more details when ApplicationMaster report…",
+                  "message": "[SPARK-29112][YARN] Expose more details when ApplicationMaster reporter faces a fatal exception\n\n### What changes were proposed in this pull request?\nIn `ApplicationMaster.Reporter` thread, fatal exception information is swallowed. It's better to expose it.\nWe found our thrift server was shutdown due to a fatal exception but no useful information from log.\n\n> 19/09/16 06:59:54,498 INFO [Reporter] yarn.ApplicationMaster:54 : Final app status: FAILED, exitCode: 12, (reason: Exception was thrown 1 time(s) from Reporter thread.)\n19/09/16 06:59:54,500 ERROR [Driver] thriftserver.HiveThriftServer2:91 : Error starting HiveThriftServer2\njava.lang.InterruptedException: sleep interrupted\n        at java.lang.Thread.sleep(Native Method)\n        at org.apache.spark.sql.hive.thriftserver.HiveThriftServer2$.main(HiveThriftServer2.scala:160)\n        at org.apache.spark.sql.hive.thriftserver.HiveThriftServer2.main(HiveThriftServer2.scala)\n        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n        at java.lang.reflect.Method.invoke(Method.java:498)\n        at org.apache.spark.deploy.yarn.ApplicationMaster$$anon$4.run(ApplicationMaster.scala:708)\n\n### Does this PR introduce any user-facing change?\nNo\n\n### How was this patch tested?\nManual test\n\nCloses #25810 from LantaoJin/SPARK-29112.\n\nAuthored-by: LantaoJin <jinlantao@gmail.com>\nSigned-off-by: jerryshao <jerryshao@tencent.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE4NTM3ODA=",
+                      "login": "LantaoJin"
+                    },
+                    "name": "LantaoJin",
+                    "email": "jinlantao@gmail.com",
+                    "date": "2019-09-18T14:11:39.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29113][DOC] Fix some annotation errors and remove meaningless …",
+                  "message": "[SPARK-29113][DOC] Fix some annotation errors and remove meaningless annotations in project\n\n### What changes were proposed in this pull request?\n\nIn this PR, I fix some annotation errors and remove meaningless annotations in project.\n### Why are the changes needed?\nThere are some annotation errors and meaningless annotations in project.\n### Does this PR introduce any user-facing change?\nNo.\n### How was this patch tested?\nVerified manually.\n\nCloses #25809 from turboFei/SPARK-29113.\n\nAuthored-by: turbofei <fwang12@ebay.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY3NTc2OTI=",
+                      "login": "turboFei"
+                    },
+                    "name": "turbofei",
+                    "email": "fwang12@ebay.com",
+                    "date": "2019-09-18T13:12:18.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28930][SQL] Last Access Time value shall display 'UNKNOWN' in …",
+                  "message": "[SPARK-28930][SQL] Last Access Time value shall display 'UNKNOWN' in all clients\n\n**What changes were proposed in this pull request?**\nIssue 1 : modifications not required as these are different formats for the same info. In the case of a Spark DataFrame, null is correct.\n\nIssue 2 mentioned in JIRA Spark SQL \"desc formatted tablename\" is not showing the header # col_name,data_type,comment , seems to be the header has been removed knowingly as part of SPARK-20954.\n\nIssue 3:\nCorrected the Last Access time, the value shall display 'UNKNOWN' as currently system wont support the last access time evaluation, since hive was setting Last access time as '0' in metastore even though spark CatalogTable last access time value set as -1. this will make the validation logic of LasAccessTime where spark sets 'UNKNOWN' value if last access time value set as -1 (means not evaluated).\n\n**Does this PR introduce any user-facing change?**\nNo\n\n**How was this patch tested?**\nLocally and corrected a ut.\nAttaching the test report below\n![SPARK-28930](https://user-images.githubusercontent.com/12999161/64484908-83a1d980-d236-11e9-8062-9facf3003e5e.PNG)\n\nCloses #25720 from sujith71955/master_describe_info.\n\nAuthored-by: s71955 <sujithchacko.2010@gmail.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyOTk5MTYx",
+                      "login": "sujith71955"
+                    },
+                    "name": "s71955",
+                    "email": "sujithchacko.2010@gmail.com",
+                    "date": "2019-09-18T12:54:44.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29124][CORE] Use MurmurHash3 `bytesHash(data, seed)` instead o…",
+                  "message": "[SPARK-29124][CORE] Use MurmurHash3 `bytesHash(data, seed)` instead of `bytesHash(data)`\n\n### What changes were proposed in this pull request?\n\nThis PR changes `bytesHash(data)` API invocation with the underlaying `byteHash(data, arraySeed)` invocation.\n```scala\ndef bytesHash(data: Array[Byte]): Int = bytesHash(data, arraySeed)\n```\n\n### Why are the changes needed?\n\nThe original API is changed between Scala versions by the following commit. From Scala 2.12.9, the semantic of the function is changed. If we use the underlying form, we are safe during Scala version migration.\n- https://github.com/scala/scala/commit/846ee2b1a47014c69ebd2352d91d467be74918b5#diff-ac889f851e109fc4387cd738d52ce177\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nThis is a kind of refactoring.\n\nPass the Jenkins with the existing tests.\n\nCloses #25821 from dongjoon-hyun/SPARK-SCALA-HASH.\n\nAuthored-by: Dongjoon Hyun <dhyun@apple.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjk3MDA1NDE=",
+                      "login": "dongjoon-hyun"
+                    },
+                    "name": "Dongjoon Hyun",
+                    "email": "dhyun@apple.com",
+                    "date": "2019-09-18T10:33:03.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-27463][PYTHON] Support Dataframe Cogroup via Pandas UDFs",
+                  "message": "[SPARK-27463][PYTHON] Support Dataframe Cogroup via Pandas UDFs\n\n### What changes were proposed in this pull request?\n\nAdds a new cogroup Pandas UDF.  This allows two grouped dataframes to be cogrouped together and apply a (pandas.DataFrame, pandas.DataFrame) -> pandas.DataFrame UDF to each cogroup.\n\n**Example usage**\n\n```\nfrom pyspark.sql.functions import pandas_udf, PandasUDFType\ndf1 = spark.createDataFrame(\n   [(20000101, 1, 1.0), (20000101, 2, 2.0), (20000102, 1, 3.0), (20000102, 2, 4.0)],\n   (\"time\", \"id\", \"v1\"))\n\ndf2 = spark.createDataFrame(\n   [(20000101, 1, \"x\"), (20000101, 2, \"y\")],\n    (\"time\", \"id\", \"v2\"))\n\npandas_udf(\"time int, id int, v1 double, v2 string\", PandasUDFType.COGROUPED_MAP)\n   def asof_join(l, r):\n      return pd.merge_asof(l, r, on=\"time\", by=\"id\")\n\ndf1.groupby(\"id\").cogroup(df2.groupby(\"id\")).apply(asof_join).show()\n\n```\n\n        +--------+---+---+---+\n        |    time| id| v1| v2|\n        +--------+---+---+---+\n        |20000101|  1|1.0|  x|\n        |20000102|  1|3.0|  x|\n        |20000101|  2|2.0|  y|\n        |20000102|  2|4.0|  y|\n        +--------+---+---+---+\n\n### How was this patch tested?\n\nAdded unit test test_pandas_udf_cogrouped_map\n\nCloses #24981 from d80tb7/SPARK-27463-poc-arrow-stream.\n\nAuthored-by: Chris Martin <chris@cmartinit.co.uk>\nSigned-off-by: Bryan Cutler <cutlerb@gmail.com>",
+                  "author": {
+                    "user": null,
+                    "name": "Chris Martin",
+                    "email": "chris@cmartinit.co.uk",
+                    "date": "2019-09-17T17:13:50.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29125][INFRA] Add Hadoop 2.7 combination to GitHub Action",
+                  "message": "[SPARK-29125][INFRA] Add Hadoop 2.7 combination to GitHub Action\n\n### What changes were proposed in this pull request?\n\nUntil now, we are testing JDK8/11 with Hadoop-3.2. This PR aims to extend the test coverage for JDK8/Hadoop-2.7.\n\n### Why are the changes needed?\n\nThis will prevent Hadoop 2.7 compile/package issues at PR stage.\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nGitHub Action on this PR shows all three combinations now. And, this is irrelevant to Jenkins test.\n\nCloses #25824 from dongjoon-hyun/SPARK-29125.\n\nAuthored-by: Dongjoon Hyun <dhyun@apple.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjk3MDA1NDE=",
+                      "login": "dongjoon-hyun"
+                    },
+                    "name": "Dongjoon Hyun",
+                    "email": "dhyun@apple.com",
+                    "date": "2019-09-17T16:53:21.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29027][TESTS] KafkaDelegationTokenSuite fix when loopback cano…",
+                  "message": "[SPARK-29027][TESTS] KafkaDelegationTokenSuite fix when loopback canonical host name differs from localhost\n\n### What changes were proposed in this pull request?\n`KafkaDelegationTokenSuite` fails on different platforms with the following problem:\n```\n19/09/11 11:07:42.690 pool-1-thread-1-SendThread(localhost:44965) DEBUG ZooKeeperSaslClient: creating sasl client: Client=zkclient/localhostEXAMPLE.COM;service=zookeeper;serviceHostname=localhost.localdomain\n...\nNIOServerCxn.Factory:localhost/127.0.0.1:0: Zookeeper Server failed to create a SaslServer to interact with a client during session initiation:\njavax.security.sasl.SaslException: Failure to initialize security context [Caused by GSSException: No valid credentials provided (Mechanism level: Failed to find any Kerberos credentails)]\n\tat com.sun.security.sasl.gsskerb.GssKrb5Server.<init>(GssKrb5Server.java:125)\n\tat com.sun.security.sasl.gsskerb.FactoryImpl.createSaslServer(FactoryImpl.java:85)\n\tat javax.security.sasl.Sasl.createSaslServer(Sasl.java:524)\n\tat org.apache.zookeeper.util.SecurityUtils$2.run(SecurityUtils.java:233)\n\tat org.apache.zookeeper.util.SecurityUtils$2.run(SecurityUtils.java:229)\n\tat java.security.AccessController.doPrivileged(Native Method)\n\tat javax.security.auth.Subject.doAs(Subject.java:422)\n\tat org.apache.zookeeper.util.SecurityUtils.createSaslServer(SecurityUtils.java:228)\n\tat org.apache.zookeeper.server.ZooKeeperSaslServer.createSaslServer(ZooKeeperSaslServer.java:44)\n\tat org.apache.zookeeper.server.ZooKeeperSaslServer.<init>(ZooKeeperSaslServer.java:38)\n\tat org.apache.zookeeper.server.NIOServerCnxn.<init>(NIOServerCnxn.java:100)\n\tat org.apache.zookeeper.server.NIOServerCnxnFactory.createConnection(NIOServerCnxnFactory.java:186)\n\tat org.apache.zookeeper.server.NIOServerCnxnFactory.run(NIOServerCnxnFactory.java:227)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: GSSException: No valid credentials provided (Mechanism level: Failed to find any Kerberos credentails)\n\tat sun.security.jgss.krb5.Krb5AcceptCredential.getInstance(Krb5AcceptCredential.java:87)\n\tat sun.security.jgss.krb5.Krb5MechFactory.getCredentialElement(Krb5MechFactory.java:127)\n\tat sun.security.jgss.GSSManagerImpl.getCredentialElement(GSSManagerImpl.java:193)\n\tat sun.security.jgss.GSSCredentialImpl.add(GSSCredentialImpl.java:427)\n\tat sun.security.jgss.GSSCredentialImpl.<init>(GSSCredentialImpl.java:62)\n\tat sun.security.jgss.GSSManagerImpl.createCredential(GSSManagerImpl.java:154)\n\tat com.sun.security.sasl.gsskerb.GssKrb5Server.<init>(GssKrb5Server.java:108)\n\t... 13 more\nNIOServerCxn.Factory:localhost/127.0.0.1:0: Client attempting to establish new session at /127.0.0.1:33742\nSyncThread:0: Creating new log file: log.1\nSyncThread:0: Established session 0x100003736ae0000 with negotiated timeout 10000 for client /127.0.0.1:33742\npool-1-thread-1-SendThread(localhost:35625): Session establishment complete on server localhost/127.0.0.1:35625, sessionid = 0x100003736ae0000, negotiated timeout = 10000\npool-1-thread-1-SendThread(localhost:35625): ClientCnxn:sendSaslPacket:length=0\npool-1-thread-1-SendThread(localhost:35625): saslClient.evaluateChallenge(len=0)\npool-1-thread-1-EventThread: zookeeper state changed (SyncConnected)\nNioProcessor-1: No server entry found for kerberos principal name zookeeper/localhost.localdomainEXAMPLE.COM\nNioProcessor-1: No server entry found for kerberos principal name zookeeper/localhost.localdomainEXAMPLE.COM\nNioProcessor-1: Server not found in Kerberos database (7)\nNioProcessor-1: Server not found in Kerberos database (7)\n```\n\nThe problem reproducible if the `localhost` and `localhost.localdomain` order exhanged:\n```\n[systestgsomogyi-build spark]$ cat /etc/hosts\n127.0.0.1   localhost.localdomain localhost localhost4 localhost4.localdomain4\n::1         localhost.localdomain localhost localhost6 localhost6.localdomain6\n```\n\nThe main problem is that `ZkClient` connects to the canonical loopback address (which is not necessarily `localhost`).\n\n### Why are the changes needed?\n`KafkaDelegationTokenSuite` failed in some environments.\n\n### Does this PR introduce any user-facing change?\nNo.\n\n### How was this patch tested?\nExisting unit tests on different platforms.\n\nCloses #25803 from gaborgsomogyi/SPARK-29027.\n\nAuthored-by: Gabor Somogyi <gabor.g.somogyi@gmail.com>\nSigned-off-by: Marcelo Vanzin <vanzin@cloudera.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE4NTYxODIw",
+                      "login": "gaborgsomogyi"
+                    },
+                    "name": "Gabor Somogyi",
+                    "email": "gabor.g.somogyi@gmail.com",
+                    "date": "2019-09-17T15:30:18.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29115][SQL][TEST] Add benchmarks for make_date() and make_time…",
+                  "message": "[SPARK-29115][SQL][TEST] Add benchmarks for make_date() and make_timestamp()\n\n### What changes were proposed in this pull request?\n\nAdded new benchmarks for `make_date()` and `make_timestamp()` to detect performance issues, and figure out functions speed on foldable arguments.\n- `make_date()` is benchmarked on fully foldable arguments.\n- `make_timestamp()` is benchmarked on corner case `60.0`, foldable time fields and foldable date.\n\n### Why are the changes needed?\n\nTo find out inputs where `make_date()` and `make_timestamp()` have performance problems. This should be useful in the future optimizations of the functions and users apps.\n\n### Does this PR introduce any user-facing change?\nNo\n\n### How was this patch tested?\nBy running the benchmark and manually checking generated dates/timestamps.\n\nCloses #25813 from MaxGekk/make_datetime-benchmark.\n\nAuthored-by: Maxim Gekk <max.gekk@gmail.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1ODA2OTc=",
+                      "login": "MaxGekk"
+                    },
+                    "name": "Maxim Gekk",
+                    "email": "max.gekk@gmail.com",
+                    "date": "2019-09-17T15:09:16.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28792][SQL][DOC] Document CREATE DATABASE statement in SQL Ref…",
+                  "message": "[SPARK-28792][SQL][DOC] Document CREATE DATABASE statement in SQL Reference\n\n### What changes were proposed in this pull request?\nDocument CREATE DATABASE statement in SQL Reference Guide.\n\n### Why are the changes needed?\nCurrently Spark lacks documentation on the supported SQL constructs causing\nconfusion among users who sometimes have to look at the code to understand the\nusage. This is aimed at addressing this issue.\n\n### Does this PR introduce any user-facing change?\nYes.\n\n### Before:\nThere was no documentation for this.\n### After:\n![image](https://user-images.githubusercontent.com/29914590/65037831-290e2900-d96c-11e9-8563-92e5379c3ad1.png)\n![image](https://user-images.githubusercontent.com/29914590/64858915-55f9cd80-d646-11e9-91a9-16c52b1daa56.png)\n\n### How was this patch tested?\nManual Review and Tested using jykyll build --serve\n\nCloses #25595 from sharangk/createDbDoc.\n\nLead-authored-by: sharangk <sharan.gk@gmail.com>\nCo-authored-by: Xiao Li <gatorsmile@gmail.com>\nSigned-off-by: Xiao Li <gatorsmile@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI5OTE0NTkw",
+                      "login": "sharangk"
+                    },
+                    "name": "sharangk",
+                    "email": "sharan.gk@gmail.com",
+                    "date": "2019-09-17T14:40:08.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28814][SQL][DOC] Document SET/RESET in SQL Reference",
+                  "message": "[SPARK-28814][SQL][DOC] Document SET/RESET in SQL Reference\n\n### What changes were proposed in this pull request?\nDocument SET/REST statement in SQL Reference Guide.\n\n### Why are the changes needed?\nCurrently Spark lacks documentation on the supported SQL constructs causing\nconfusion among users who sometimes have to look at the code to understand the\nusage. This is aimed at addressing this issue.\n\n### Does this PR introduce any user-facing change?\nYes.\n\n#### Before:\nThere was no documentation for this.\n\n#### After:\n\n**SET**\n![image](https://user-images.githubusercontent.com/29914590/65037551-94a3c680-d96b-11e9-9d59-9f7af5185e06.png)\n![image](https://user-images.githubusercontent.com/29914590/64858792-fb607180-d645-11e9-8a53-8cf87a166fc1.png)\n\n**RESET**\n![image](https://user-images.githubusercontent.com/29914590/64859019-b12bc000-d646-11e9-8cb4-73dc21830067.png)\n\n### How was this patch tested?\nManual Review and Tested using jykyll build --serve\n\nCloses #25606 from sharangk/resetDoc.\n\nAuthored-by: sharangk <sharan.gk@gmail.com>\nSigned-off-by: Xiao Li <gatorsmile@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI5OTE0NTkw",
+                      "login": "sharangk"
+                    },
+                    "name": "sharangk",
+                    "email": "sharan.gk@gmail.com",
+                    "date": "2019-09-17T14:36:56.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28950][SQL] Refine the code of DELETE",
+                  "message": "[SPARK-28950][SQL] Refine the code of DELETE\n\n### What changes were proposed in this pull request?\nThis pr refines the code of DELETE, including, 1, make `whereClause` to be optional, in which case DELETE will delete all of the data of a table; 2, add more test cases; 3, some other refines.\nThis is a following-up of SPARK-28351.\n\n### Why are the changes needed?\nAn optional where clause in DELETE respects the SQL standard.\n\n### Does this PR introduce any user-facing change?\nYes. But since this is a non-released feature, this change does not have any end-user affects.\n\n### How was this patch tested?\nNew case is added.\n\nCloses #25652 from xianyinxin/SPARK-28950.\n\nAuthored-by: xy_xin <xianyin.xxy@alibaba-inc.com>\nSigned-off-by: Wenchen Fan <wenchen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1MDI4Njgz",
+                      "login": "xianyinxin"
+                    },
+                    "name": "xy_xin",
+                    "email": "xianyin.xxy@alibaba-inc.com",
+                    "date": "2019-09-18T01:14:14.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29104][CORE][TESTS] Fix PipedRDDSuite to use `eventually` to c…",
+                  "message": "[SPARK-29104][CORE][TESTS] Fix PipedRDDSuite to use `eventually` to check thread termination\n\n### What changes were proposed in this pull request?\n\n`PipedRDD` will invoke `stdinWriterThread.interrupt()` at task completion, and `obj.wait` will get `InterruptedException`. However, there exists a possibility which the thread termination gets delayed because the thread starts from `obj.wait()` with that exception. To prevent test flakiness, we need to use `eventually`. Also, This PR fixes the typo in code comment and variable name.\n\n### Why are the changes needed?\n\n```\n- stdin writer thread should be exited when task is finished *** FAILED ***\n  Some(Thread[stdin writer for List(cat),5,]) was not empty (PipedRDDSuite.scala:107)\n```\n\n- https://amplab.cs.berkeley.edu/jenkins/view/Spark%20QA%20Test%20(Dashboard)/job/spark-master-test-maven-hadoop-2.7/6867/testReport/junit/org.apache.spark.rdd/PipedRDDSuite/stdin_writer_thread_should_be_exited_when_task_is_finished/\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nManual.\n\nWe can reproduce the same failure like Jenkins if we catch `InterruptedException` and sleep longer than the `eventually` timeout inside the test code. The following is the example to reproduce it.\n```scala\nval nums = sc.makeRDD(Array(1, 2, 3, 4), 1).map { x =>\n  try {\n    obj.synchronized {\n      obj.wait() // make the thread waits here.\n    }\n  } catch {\n    case ie: InterruptedException =>\n      Thread.sleep(15000)\n      throw ie\n  }\n  x\n}\n```\n\nCloses #25808 from dongjoon-hyun/SPARK-29104.\n\nAuthored-by: Dongjoon Hyun <dhyun@apple.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjk3MDA1NDE=",
+                      "login": "dongjoon-hyun"
+                    },
+                    "name": "Dongjoon Hyun",
+                    "email": "dhyun@apple.com",
+                    "date": "2019-09-17T20:21:25.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28483][FOLLOW-UP] Fix flaky test in BarrierTaskContextSuite",
+                  "message": "[SPARK-28483][FOLLOW-UP] Fix flaky test in BarrierTaskContextSuite\n\n### What changes were proposed in this pull request?\n\nI fix the test \"barrier task killed\" which is flaky:\n\n* Split interrupt/no interrupt test into separate sparkContext. Prevent them to influence each other.\n* only check exception on partiton-0. partition-1 is hang on sleep which may throw other exception.\n\n### Why are the changes needed?\nMake test robust.\n\n### Does this PR introduce any user-facing change?\nNo.\n\n### How was this patch tested?\nN/A\n\nCloses #25799 from WeichenXu123/oss_fix_barrier_test.\n\nAuthored-by: WeichenXu <weichen.xu@databricks.com>\nSigned-off-by: WeichenXu <weichen.xu@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5MjM1OTg2",
+                      "login": "WeichenXu123"
+                    },
+                    "name": "WeichenXu",
+                    "email": "weichen.xu@databricks.com",
+                    "date": "2019-09-17T19:08:09.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28929][CORE] Spark Logging level should be INFO instead of DEB…",
+                  "message": "[SPARK-28929][CORE] Spark Logging level should be INFO instead of DEBUG in Executor Plugin API\n\n### What changes were proposed in this pull request?\n\nLog levels in Executor.scala are changed from DEBUG to INFO.\n\n### Why are the changes needed?\n\nLogging level DEBUG is too low here. These messages are simple acknowledgement for successful loading and initialization of plugins. So its better to keep them in INFO level.\n\n### Does this PR introduce any user-facing change?\n\nNo\n\n### How was this patch tested?\n\nManually tested.\n\nCloses #25634 from iRakson/ExecutorPlugin.\n\nAuthored-by: iRakson <raksonrakesh@gmail.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1MzY2ODM1",
+                      "login": "iRakson"
+                    },
+                    "name": "iRakson",
+                    "email": "raksonrakesh@gmail.com",
+                    "date": "2019-09-17T00:53:12.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29074][SQL] Optimize `date_format` for foldable `fmt`",
+                  "message": "[SPARK-29074][SQL] Optimize `date_format` for foldable `fmt`\n\n### What changes were proposed in this pull request?\n\nIn the PR, I propose to create an instance of `TimestampFormatter` only once at the initialization, and reuse it inside of `nullSafeEval()` and `doGenCode()` in the case when the `fmt` parameter is foldable.\n\n### Why are the changes needed?\n\nThe changes improve performance of the `date_format()` function.\n\nBefore:\n```\nformat date:                             Best/Avg Time(ms)    Rate(M/s)   Per Row(ns)   Relative\n------------------------------------------------------------------------------------------------\nformat date wholestage off                    7180 / 7181          1.4         718.0       1.0X\nformat date wholestage on                     7051 / 7194          1.4         705.1       1.0X\n```\n\nAfter:\n```\nformat date:                             Best/Avg Time(ms)    Rate(M/s)   Per Row(ns)   Relative\n------------------------------------------------------------------------------------------------\nformat date wholestage off                    4787 / 4839          2.1         478.7       1.0X\nformat date wholestage on                     4736 / 4802          2.1         473.6       1.0X\n```\n\n### Does this PR introduce any user-facing change?\nNo.\n\n### How was this patch tested?\n\nBy existing test suites `DateExpressionsSuite` and `DateFunctionsSuite`.\n\nCloses #25782 from MaxGekk/date_format-foldable.\n\nAuthored-by: Maxim Gekk <max.gekk@gmail.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1ODA2OTc=",
+                      "login": "MaxGekk"
+                    },
+                    "name": "Maxim Gekk",
+                    "email": "max.gekk@gmail.com",
+                    "date": "2019-09-17T16:00:10.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28996][SQL][TESTS] Add tests regarding username of HiveClient",
+                  "message": "[SPARK-28996][SQL][TESTS] Add tests regarding username of HiveClient\n\n### What changes were proposed in this pull request?\n\nThis patch proposes to add new tests to test the username of HiveClient to prevent changing the semantic unintentionally. The owner of Hive table has been changed back-and-forth, principal -> username -> principal, and looks like the change is not intentional. (Please refer [SPARK-28996](https://issues.apache.org/jira/browse/SPARK-28996) for more details.) This patch intends to prevent this.\n\nThis patch also renames previous HiveClientSuite(s) to HivePartitionFilteringSuite(s) as it was commented as TODO, as well as previous tests are too narrowed to test only partition filtering.\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nNewly added UTs.\n\nCloses #25696 from HeartSaVioR/SPARK-28996.\n\nAuthored-by: Jungtaek Lim (HeartSaVioR) <kabhwan@gmail.com>\nSigned-off-by: Wenchen Fan <wenchen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMTczMDk=",
+                      "login": "HeartSaVioR"
+                    },
+                    "name": "Jungtaek Lim (HeartSaVioR)",
+                    "email": "kabhwan@gmail.com",
+                    "date": "2019-09-17T14:04:23.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-22797][ML][PYTHON] Bucketizer support multi-column",
+                  "message": "[SPARK-22797][ML][PYTHON] Bucketizer support multi-column\n\n### What changes were proposed in this pull request?\nBucketizer support multi-column in the python side\n\n### Why are the changes needed?\nBucketizer should support multi-column like the scala side.\n\n### Does this PR introduce any user-facing change?\nyes, this PR add new Python API\n\n### How was this patch tested?\nadded testsuites\n\nCloses #25801 from zhengruifeng/20542_py.\n\nAuthored-by: zhengruifeng <ruifengz@foxmail.com>\nSigned-off-by: zhengruifeng <ruifengz@foxmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjczMjIyOTI=",
+                      "login": "zhengruifeng"
+                    },
+                    "name": "zhengruifeng",
+                    "email": "ruifengz@foxmail.com",
+                    "date": "2019-09-17T11:52:20.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29100][SQL] Fix compilation error in codegen with switch from …",
+                  "message": "[SPARK-29100][SQL] Fix compilation error in codegen with switch from InSet expression\n\n### What changes were proposed in this pull request?\n\nWhen InSet generates Java switch-based code, if the input set is empty, we don't generate switch condition, but a simple expression that is default case of original switch.\n\n### Why are the changes needed?\n\nSPARK-26205 adds an optimization to InSet that generates Java switch condition for certain cases. When the given set is empty, it is possibly that codegen causes compilation error:\n\n```\n[info] - SPARK-29100: InSet with empty input set *** FAILED *** (58 milliseconds)\n[info]   Code generation of input[0, int, true] INSET () failed:\n[info]   org.codehaus.janino.InternalCompilerException: failed to compile: org.codehaus.janino.InternalCompilerException: Compiling \"GeneratedClass\" in \"generated.java\": Compiling \"apply(java.lang.Object _i)\"; apply(java.lang.Object _i): Operand stack inconsistent at offset 45: Previous size 0, now 1\n[info]   org.codehaus.janino.InternalCompilerException: failed to compile: org.codehaus.janino.InternalCompilerException: Compiling \"GeneratedClass\" in \"generated.java\": Compiling \"apply(java.lang.Object _i)\"; apply(java.lang.Object _i): Operand stack inconsistent at offset 45: Previous size 0, now 1\n[info]         at org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator$.org$apache$spark$sql$catalyst$expressions$codegen$CodeGenerator$$doCompile(CodeGenerator.scala:1308)\n[info]         at org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator$$anon$1.load(CodeGenerator.scala:1386)\n[info]         at org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator$$anon$1.load(CodeGenerator.scala:1383)\n```\n\n### Does this PR introduce any user-facing change?\n\nYes. Previously, when users have InSet against an empty set, generated code causes compilation error. This patch fixed it.\n\n### How was this patch tested?\n\nUnit test added.\n\nCloses #25806 from viirya/SPARK-29100.\n\nAuthored-by: Liang-Chi Hsieh <viirya@gmail.com>\nSigned-off-by: Wenchen Fan <wenchen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY4ODU1",
+                      "login": "viirya"
+                    },
+                    "name": "Liang-Chi Hsieh",
+                    "email": "viirya@gmail.com",
+                    "date": "2019-09-17T11:06:10.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29008][SQL] Define an individual method for each common subexp…",
+                  "message": "[SPARK-29008][SQL] Define an individual method for each common subexpression in HashAggregateExec\n\n### What changes were proposed in this pull request?\n\nThis pr proposes to define an individual method for each common subexpression in HashAggregateExec. In the current master, the common subexpr elimination code in HashAggregateExec is expanded in a single method; https://github.com/apache/spark/blob/4664a082c2c7ac989e818958c465c72833d3ccfe/sql/core/src/main/scala/org/apache/spark/sql/execution/aggregate/HashAggregateExec.scala#L397\n\nThe method size can be too big for JIT compilation, so I believe splitting it is beneficial for performance. For example, in a query `SELECT SUM(a + b), AVG(a + b + c) FROM VALUES (1, 1, 1) t(a, b, c)`,\n\nthe current master generates;\n```\n/* 098 */   private void agg_doConsume_0(InternalRow localtablescan_row_0, int agg_expr_0_0, int agg_expr_1_0, int agg_expr_2_0) throws java.io.IOException {\n/* 099 */     // do aggregate\n/* 100 */     // common sub-expressions\n/* 101 */     int agg_value_6 = -1;\n/* 102 */\n/* 103 */     agg_value_6 = agg_expr_0_0 + agg_expr_1_0;\n/* 104 */\n/* 105 */     int agg_value_5 = -1;\n/* 106 */\n/* 107 */     agg_value_5 = agg_value_6 + agg_expr_2_0;\n/* 108 */     boolean agg_isNull_4 = false;\n/* 109 */     long agg_value_4 = -1L;\n/* 110 */     if (!false) {\n/* 111 */       agg_value_4 = (long) agg_value_5;\n/* 112 */     }\n/* 113 */     int agg_value_10 = -1;\n/* 114 */\n/* 115 */     agg_value_10 = agg_expr_0_0 + agg_expr_1_0;\n/* 116 */     // evaluate aggregate functions and update aggregation buffers\n/* 117 */     agg_doAggregate_sum_0(agg_value_10);\n/* 118 */     agg_doAggregate_avg_0(agg_value_4, agg_isNull_4);\n/* 119 */\n/* 120 */   }\n```\n\nOn the other hand, this pr generates;\n```\n/* 121 */   private void agg_doConsume_0(InternalRow localtablescan_row_0, int agg_expr_0_0, int agg_expr_1_0, int agg_expr_2_0) throws java.io.IOException {\n/* 122 */     // do aggregate\n/* 123 */     // common sub-expressions\n/* 124 */     long agg_subExprValue_0 = agg_subExpr_0(agg_expr_2_0, agg_expr_0_0, agg_expr_1_0);\n/* 125 */     int agg_subExprValue_1 = agg_subExpr_1(agg_expr_0_0, agg_expr_1_0);\n/* 126 */     // evaluate aggregate functions and update aggregation buffers\n/* 127 */     agg_doAggregate_sum_0(agg_subExprValue_1);\n/* 128 */     agg_doAggregate_avg_0(agg_subExprValue_0);\n/* 129 */\n/* 130 */   }\n```\n\nI run some micro benchmarks for this pr;\n```\n(base) maropu~:$system_profiler SPHardwareDataType\nHardware:\n    Hardware Overview:\n      Processor Name: Intel Core i5\n      Processor Speed: 2 GHz\n      Number of Processors: 1\n      Total Number of Cores: 2\n      L2 Cache (per Core): 256 KB\n      L3 Cache: 4 MB\n      Memory: 8 GB\n\n(base) maropu~:$java -version\njava version \"1.8.0_181\"\nJava(TM) SE Runtime Environment (build 1.8.0_181-b13)\nJava HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)\n\n(base) maropu~:$ /bin/spark-shell --master=local[1] --conf spark.driver.memory=8g --conf spark.sql.shurtitions=1 -v\n\nval numCols = 40\nval colExprs = \"id AS key\" +: (0 until numCols).map { i => s\"id AS _c$i\" }\nspark.range(3000000).selectExpr(colExprs: _*).createOrReplaceTempView(\"t\")\n\nval aggExprs = (2 until numCols).map { i =>\n  (0 until i).map(d => s\"_c$d\")\n    .mkString(\"AVG(\", \" + \", \")\")\n}\n\n// Drops the time of a first run then pick that of a second run\ntimer { sql(s\"SELECT ${aggExprs.mkString(\", \")} FROM t\").write.format(\"noop\").save() }\n\n// the master\nmaxCodeGen: 12957\nElapsed time: 36.309858661s\n\n// this pr\nmaxCodeGen=4184\nElapsed time: 2.399490285s\n```\n\n### Why are the changes needed?\n\nTo avoid the too-long-function issue in JVMs.\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nAdded tests in `WholeStageCodegenSuite`\n\nCloses #25710 from maropu/SplitSubexpr.\n\nAuthored-by: Takeshi Yamamuro <yamamuro@apache.org>\nSigned-off-by: Takeshi Yamamuro <yamamuro@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY5MjMwMw==",
+                      "login": "maropu"
+                    },
+                    "name": "Takeshi Yamamuro",
+                    "email": "yamamuro@apache.org",
+                    "date": "2019-09-17T11:09:55.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-23539][SS][FOLLOWUP][TESTS] Add UT to ensure existing query do…",
+                  "message": "[SPARK-23539][SS][FOLLOWUP][TESTS] Add UT to ensure existing query doesn't break with default conf of includeHeaders\n\n### What changes were proposed in this pull request?\n\nThis patch adds new UT to ensure existing query (before Spark 3.0.0) with checkpoint doesn't break with default configuration of \"includeHeaders\" being introduced via SPARK-23539.\n\nThis patch also modifies existing test which checks type of columns to also check headers column as well.\n\n### Why are the changes needed?\n\nThe patch adds missing tests which guarantees backward compatibility of the change of SPARK-23539.\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nUT passed.\n\nCloses #25792 from HeartSaVioR/SPARK-23539-FOLLOWUP.\n\nAuthored-by: Jungtaek Lim (HeartSaVioR) <kabhwan@gmail.com>\nSigned-off-by: Sean Owen <sean.owen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMTczMDk=",
+                      "login": "HeartSaVioR"
+                    },
+                    "name": "Jungtaek Lim (HeartSaVioR)",
+                    "email": "kabhwan@gmail.com",
+                    "date": "2019-09-16T15:22:04.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-26929][SQL] fix table owner use user instead of principal when…",
+                  "message": "[SPARK-26929][SQL] fix table owner use user instead of principal when create table through spark-sql or beeline\n\n…create table through spark-sql or beeline\n\n## What changes were proposed in this pull request?\n\nfix table owner use user instead of principal when create table through spark-sql\nprivate val userName = conf.getUser will get ugi's userName which is principal info, and i copy the source code into HiveClientImpl, and use ugi.getShortUserName() instead of ugi.getUserName(). The owner display correctly.\n\n## How was this patch tested?\n\n1. create a table in kerberos cluster\n2. use \"desc formatted tbName\" check owner\n\nPlease review http://spark.apache.org/contributing.html before opening a pull request.\n\nCloses #23952 from hddong/SPARK-26929-fix-table-owner.\n\nLead-authored-by: hongdd <jn_hdd@163.com>\nCo-authored-by: hongdongdong <hongdongdong@cmss.chinamobile.com>\nSigned-off-by: Marcelo Vanzin <vanzin@cloudera.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NTM3MTM0",
+                      "login": "hddong"
+                    },
+                    "name": "hongdd",
+                    "email": "jn_hdd@163.com",
+                    "date": "2019-09-16T11:07:50.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29072][CORE] Put back usage of TimeTrackingOutputStream for Un…",
+                  "message": "[SPARK-29072][CORE] Put back usage of TimeTrackingOutputStream for UnsafeShuffleWriter and SortShuffleWriter\n\n### What changes were proposed in this pull request?\nThe previous refactors of the shuffle writers using the shuffle writer plugin resulted in shuffle write metric updates - particularly write times - being lost in particular situations. This patch restores the lost metric updates.\n\n### Why are the changes needed?\nThis fixes a regression. I'm pretty sure that without this, the Spark UI will lose shuffle write time information.\n\n### Does this PR introduce any user-facing change?\nNo change from Spark 2.4. Without this, there would be a user-facing bug in Spark 3.0.\n\n### How was this patch tested?\nExisting unit tests.\n\nCloses #25780 from mccheah/fix-write-metrics.\n\nAuthored-by: mcheah <mcheah@palantir.com>\nSigned-off-by: Imran Rashid <irashid@cloudera.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5NzUzODU=",
+                      "login": "mccheah"
+                    },
+                    "name": "mcheah",
+                    "email": "mcheah@palantir.com",
+                    "date": "2019-09-16T09:08:25.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29061][SQL] Prints bytecode statistics in debugCodegen",
+                  "message": "[SPARK-29061][SQL] Prints bytecode statistics in debugCodegen\n\n### What changes were proposed in this pull request?\n\nThis pr proposes to print bytecode statistics (max class bytecode size, max method bytecode size, max constant pool size, and # of inner classes) for generated classes in debug prints, `debugCodegen`. Since these metrics are critical for codegen framework developments, I think its worth printing there. This pr intends to enable `debugCodegen` to print these metrics as following;\n```\nscala> sql(\"SELECT sum(v) FROM VALUES(1) t(v)\").debugCodegen\nFound 2 WholeStageCodegen subtrees.\n== Subtree 1 / 2 (maxClassCodeSize:2693; maxMethodCodeSize:124; maxConstantPoolSize:130(0.20% used); numInnerClasses:0) ==\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n*(1) HashAggregate(keys=[], functions=[partial_sum(cast(v#0 as bigint))], output=[sum#5L])\n+- *(1) LocalTableScan [v#0]\n\nGenerated code:\n/* 001 */ public Object generate(Object[] references) {\n/* 002 */   return new GeneratedIteratorForCodegenStage1(references);\n/* 003 */ }\n...\n```\n\n### Why are the changes needed?\n\nFor efficient developments\n\n### Does this PR introduce any user-facing change?\n\nNo\n\n### How was this patch tested?\n\nManually tested\n\nCloses #25766 from maropu/PrintBytecodeStats.\n\nAuthored-by: Takeshi Yamamuro <yamamuro@apache.org>\nSigned-off-by: Wenchen Fan <wenchen@databricks.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY5MjMwMw==",
+                      "login": "maropu"
+                    },
+                    "name": "Takeshi Yamamuro",
+                    "email": "yamamuro@apache.org",
+                    "date": "2019-09-16T21:48:07.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-28932][BUILD][FOLLOWUP] Switch to scala-library compile depend…",
+                  "message": "[SPARK-28932][BUILD][FOLLOWUP] Switch to scala-library compile dependency for JDK11\n\n### What changes were proposed in this pull request?\n\nThis is a follow-up of https://github.com/apache/spark/pull/25638 to switch `scala-library` from `test` dependency to `compile` dependency in `network-common` module.\n\n### Why are the changes needed?\n\nPreviously, we added `scala-library` as a test dependency to resolve the followings, but it was insufficient to resolve. This PR aims to switch it to compile dependency.\n```\n$ java -version\nopenjdk version \"11.0.3\" 2019-04-16\nOpenJDK Runtime Environment AdoptOpenJDK (build 11.0.3+7)\nOpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.3+7, mixed mode)\n\n$ mvn clean install -pl common/network-common -DskipTests\n...\n[INFO] --- scala-maven-plugin:4.2.0:doc-jar (attach-scaladocs)  spark-network-common_2.12 ---\nerror: fatal error: object scala in compiler mirror not found.\none error found\n[INFO] ------------------------------------------------------------------------\n[INFO] BUILD FAILURE\n```\n\n### Does this PR introduce any user-facing change?\n\nNo.\n\n### How was this patch tested?\n\nManually, run the following on JDK11.\n```\n$ mvn clean install -pl common/network-common -DskipTests\n```\n\nCloses #25800 from dongjoon-hyun/SPARK-28932-2.\n\nAuthored-by: Dongjoon Hyun <dhyun@apple.com>\nSigned-off-by: Dongjoon Hyun <dhyun@apple.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjk3MDA1NDE=",
+                      "login": "dongjoon-hyun"
+                    },
+                    "name": "Dongjoon Hyun",
+                    "email": "dhyun@apple.com",
+                    "date": "2019-09-16T00:13:07.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[SPARK-29069][SQL] ResolveInsertInto should not do table lookup",
+                  "message": "[SPARK-29069][SQL] ResolveInsertInto should not do table lookup\n\n### What changes were proposed in this pull request?\n\nIt's more clear to only do table lookup in `ResolveTables` rule (for v2 tables) and `ResolveRelations` rule (for v1 tables). `ResolveInsertInto` should only resolve the `InsertIntoStatement` with resolved relations.\n\n### Why are the changes needed?\n\nto make the code simpler\n\n### Does this PR introduce any user-facing change?\n\nno\n\n### How was this patch tested?\n\nexisting tests\n\nCloses #25774 from cloud-fan/simplify.\n\nAuthored-by: Wenchen Fan <wenchen@databricks.com>\nSigned-off-by: HyukjinKwon <gurwls223@apache.org>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMxODIwMzY=",
+                      "login": "cloud-fan"
+                    },
+                    "name": "Wenchen Fan",
+                    "email": "wenchen@databricks.com",
+                    "date": "2019-09-16T09:46:34.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1811 @@
+{
+  "data": {
+    "repository": {
+      "ref": {
+        "target": {
+          "history": {
+            "edges": [
+              {
+                "node": {
+                  "messageHeadline": "src: disconnect inspector before exiting out of fatal exception",
+                  "message": "src: disconnect inspector before exiting out of fatal exception\n\nSo that coverage, .etc are properly written in case of a normal\nfatal exception.\n\nPR-URL: https://github.com/nodejs/node/pull/29611\nFixes: https://github.com/nodejs/node/issues/29570\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Ben Coe <bencoe@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQyOTk0MjA=",
+                      "login": "joyeecheung"
+                    },
+                    "name": "Joyee Cheung",
+                    "email": "joyeec9h3@gmail.com",
+                    "date": "2019-09-19T11:36:02.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "events: improve performance of EventEmitter.emit",
+                  "message": "events: improve performance of EventEmitter.emit\n\nThis restore some performance we lost when we introduced primordialias.\nImprovements are up to +100%.\n\nPR-URL: https://github.com/nodejs/node/pull/29633\nReviewed-By: Michaël Zasso <targos@protonmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Yongsheng Zhang <zyszys98@gmail.com>\nReviewed-By: Ruben Bridgewater <ruben@bridgewater.de>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjUyMTk1",
+                      "login": "mcollina"
+                    },
+                    "name": "Matteo Collina",
+                    "email": "hello@matteocollina.com",
+                    "date": "2019-09-20T19:06:20.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "console,util: fix missing recursion end while inspecting prototypes",
+                  "message": "console,util: fix missing recursion end while inspecting prototypes\n\nThis makes sure prototypes won't be inspected infinitely for some\nobscure object creations. The depth is now taken into account and\nthe recursion ends when the depth limit is reached.\n\nPR-URL: https://github.com/nodejs/node/pull/29647\nFixes: https://github.com/nodejs/node/issues/29646\nReviewed-By: Jeremiah Senkpiel <fishrock123@rocketmail.com>\nReviewed-By: Minwoo Jung <minwoo@nodesource.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg4MjI1NzM=",
+                      "login": "BridgeAR"
+                    },
+                    "name": "Ruben Bridgewater",
+                    "email": "ruben@bridgewater.de",
+                    "date": "2019-09-21T21:26:02.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "tls: add option to override signature algorithms",
+                  "message": "tls: add option to override signature algorithms\n\nPasses the list down to SSL_CTX_set1_sigalgs_list.\n\nOption to get the list of shared signature algorithms\nfrom a TLS socket added as well for testing.\n\nSigned-off-by: Anton Gerasimov <agerasimov@twilio.com>\n\nPR-URL: https://github.com/nodejs/node/pull/29598\nReviewed-By: Sam Roberts <vieuxtech@gmail.com>\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Anna Henningsen <anna@addaleax.net>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5MjkxODM=",
+                      "login": "OYTIS"
+                    },
+                    "name": "Anton Gerasimov",
+                    "email": "agerasimov@twilio.com",
+                    "date": "2019-09-18T16:48:44.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "stream: add test for multiple .push(null)",
+                  "message": "stream: add test for multiple .push(null)\n\nPR-URL: https://github.com/nodejs/node/pull/29645\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Yongsheng Zhang <zyszys98@gmail.com>\nReviewed-By: Ruben Bridgewater <ruben@bridgewater.de>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2NDg1OQ==",
+                      "login": "ckarande"
+                    },
+                    "name": "Chetan Karande",
+                    "email": "kchetan.tech@gmail.com",
+                    "date": "2019-09-21T15:20:56.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "stream: cleanup use of internal ended state",
+                  "message": "stream: cleanup use of internal ended state\n\nPR-URL: https://github.com/nodejs/node/pull/29645\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Yongsheng Zhang <zyszys98@gmail.com>\nReviewed-By: Ruben Bridgewater <ruben@bridgewater.de>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2NDg1OQ==",
+                      "login": "ckarande"
+                    },
+                    "name": "Chetan Karande",
+                    "email": "kchetan.tech@gmail.com",
+                    "date": "2019-09-21T10:12:13.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "tools: cleanup getnodeversion.py for readability",
+                  "message": "tools: cleanup getnodeversion.py for readability\n\nPR-URL: https://github.com/nodejs/node/pull/29648\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Michaël Zasso <targos@protonmail.com>\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Richard Lau <riclau@uk.ibm.com>\nReviewed-By: Ruben Bridgewater <ruben@bridgewater.de>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM3MDk3MTU=",
+                      "login": "cclauss"
+                    },
+                    "name": "Christian Clauss",
+                    "email": "cclauss@me.com",
+                    "date": "2019-09-21T21:54:27.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "deps: patch V8 to 7.7.299.11",
+                  "message": "deps: patch V8 to 7.7.299.11\n\nRefs: https://github.com/v8/v8/compare/7.7.299.10...7.7.299.11\n\nPR-URL: https://github.com/nodejs/node/pull/29628\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIzNTI2NjM=",
+                      "login": "targos"
+                    },
+                    "name": "Michaël Zasso",
+                    "email": "targos@protonmail.com",
+                    "date": "2019-09-20T10:23:48.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "bootstrap: add exception handling for profiler bootstrap",
+                  "message": "bootstrap: add exception handling for profiler bootstrap\n\nAdd exception handling for the case when profile is\nnot bootstrapped when coverage is enabled.\n\nFixes: https://github.com/nodejs/node/issues/29542\n\nPR-URL: https://github.com/nodejs/node/pull/29552\nReviewed-By: Joyee Cheung <joyeec9h3@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>",
+                  "author": {
+                    "user": null,
+                    "name": "Shobhit Chittora",
+                    "email": "schittora@paypal.com",
+                    "date": "2019-09-14T05:39:46.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "src: perform check before running in runMicrotasks()",
+                  "message": "src: perform check before running in runMicrotasks()\n\nThis is a continuation of https://github.com/nodejs/node/pull/29434,\nrewriting the last remaining call to RunMicrotasks.\n\nPR-URL: https://github.com/nodejs/node/pull/29581\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Gus Caplan <me@gus.host>\nReviewed-By: Shelley Vohr <codebytere@gmail.com>\nReviewed-By: Minwoo Jung <minwoo@nodesource.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Ruben Bridgewater <ruben@bridgewater.de>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MjgwMA==",
+                      "login": "nornagon"
+                    },
+                    "name": "Jeremy Apthorp",
+                    "email": "jeremya@chromium.org",
+                    "date": "2019-09-16T13:27:39.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "stream: make _write() optional when _writev() is implemented",
+                  "message": "stream: make _write() optional when _writev() is implemented\n\nWhen implementing _writev, _write should be optional.\n\nPR-URL: https://github.com/nodejs/node/pull/29639\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Minwoo Jung <minwoo@nodesource.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMwNjUyMzA=",
+                      "login": "ronag"
+                    },
+                    "name": "Robert Nagy",
+                    "email": "ronagy@icloud.com",
+                    "date": "2019-09-21T01:29:41.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: add code example to process.throwDeprecation property",
+                  "message": "doc: add code example to process.throwDeprecation property\n\nPR-URL: https://github.com/nodejs/node/pull/29495\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MDEzMzAz",
+                      "login": "juanarbol"
+                    },
+                    "name": "Juan José Arboleda",
+                    "email": "soyjuanarbol@gmail.com",
+                    "date": "2019-09-08T13:30:07.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "http: don't emit 'data' after 'error'",
+                  "message": "http: don't emit 'data' after 'error'\n\nPR-URL: https://github.com/nodejs/node/pull/28711\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMwNjUyMzA=",
+                      "login": "ronag"
+                    },
+                    "name": "Robert Nagy",
+                    "email": "ronagy@icloud.com",
+                    "date": "2019-07-16T01:06:01.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "stream: apply special logic in removeListener for readable.off()",
+                  "message": "stream: apply special logic in removeListener for readable.off()\n\nWe have special logic in removeListener() which must apply\nto off() as well.\n\nPR-URL: https://github.com/nodejs/node/pull/29486\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMwNjUyMzA=",
+                      "login": "ronag"
+                    },
+                    "name": "Robert Nagy",
+                    "email": "ronagy@icloud.com",
+                    "date": "2019-09-07T23:29:18.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "events: add support for EventTarget in once",
+                  "message": "events: add support for EventTarget in once\n\nPR-URL: https://github.com/nodejs/node/pull/29498\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: Minwoo Jung <minwoo@nodesource.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExOTkwMjQx",
+                      "login": "JeniaBR"
+                    },
+                    "name": "Jenia",
+                    "email": "jeniabrook@gmail.com",
+                    "date": "2019-08-19T01:13:26.000+03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "src: discard remaining foreground tasks on platform shutdown",
+                  "message": "src: discard remaining foreground tasks on platform shutdown\n\nWhile V8 itself should not have any remaining tasks on the queue\nduring platform shutdown, our inspector implementation may do so.\nThus, the checks verifying that no tasks are queued at that point\nmake some of the inspector tasks flaky.\nRemove the checks and replace them by explicitly destroying all\ntasks that are left.\n\nRefs: https://github.com/nodejs/node/pull/25653\nRefs: https://github.com/nodejs/node/pull/28870#issuecomment-531908090\n\nPR-URL: https://github.com/nodejs/node/pull/29587\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Eugene Ostroukhov <eostroukhov@google.com>\nReviewed-By: Minwoo Jung <minwoo@nodesource.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-09-17T13:52:12.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: fix some signatures of .end() methods",
+                  "message": "doc: fix some signatures of .end() methods\n\nIn `.end()` methods, an optional `encoding` parameter makes sense\nonly if the `data` (`chunk`) parameter is provided.\n\nPR-URL: https://github.com/nodejs/node/pull/29615\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMzkzMTk4",
+                      "login": "vsemozhetbyt"
+                    },
+                    "name": "Vse Mozhet Byt",
+                    "email": "vsemozhetbyt@gmail.com",
+                    "date": "2019-09-19T16:21:36.000+03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "build: do not indent assignments in Makefile",
+                  "message": "build: do not indent assignments in Makefile\n\nIndented assignment in a Makefile can be interpreted\nas a command in e.g. GNU Make 3.81 which results in the\nfollowing error:\n\n```\nmake: CPPLINT_QUIET: No such file or directory\n```\n\nPR-URL: https://github.com/nodejs/node/pull/29623\nReviewed-By: Sam Roberts <vieuxtech@gmail.com>\nReviewed-By: Richard Lau <riclau@uk.ibm.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQyOTk0MjA=",
+                      "login": "joyeecheung"
+                    },
+                    "name": "Joyee Cheung",
+                    "email": "joyeec9h3@gmail.com",
+                    "date": "2019-09-20T10:42:37.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "stream: do not flush destroyed writable",
+                  "message": "stream: do not flush destroyed writable\n\nIt doesn't make much sense to flush a stream which has been destroyed.\n\nPR-URL: https://github.com/nodejs/node/pull/29028\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMwNjUyMzA=",
+                      "login": "ronag"
+                    },
+                    "name": "Robert Nagy",
+                    "email": "ronagy@icloud.com",
+                    "date": "2019-08-06T22:16:05.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "fs: remove unnecessary argument check",
+                  "message": "fs: remove unnecessary argument check\n\nWritable already assures that only Buffer's are passed to _write. Also\nthis is not the \"correct\" way to handle errors inside _write.\n\nPR-URL: https://github.com/nodejs/node/pull/29043\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMwNjUyMzA=",
+                      "login": "ronag"
+                    },
+                    "name": "Robert Nagy",
+                    "email": "ronagy@icloud.com",
+                    "date": "2019-08-08T11:18:39.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "timers: set _destroyed even if there are no destroy-hooks",
+                  "message": "timers: set _destroyed even if there are no destroy-hooks\n\nRequired for other potential changes.\n\nThis should make it so we can always just check _destroyed to\ncheck if a timer has been ended.\n\nPR-URL: https://github.com/nodejs/node/pull/29595\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Ruben Bridgewater <ruben@bridgewater.de>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTM5OTA=",
+                      "login": "Fishrock123"
+                    },
+                    "name": "Jeremiah Senkpiel",
+                    "email": "fishrock123@rocketmail.com",
+                    "date": "2019-09-17T16:20:09.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "stream: do not call _read() after destroy()",
+                  "message": "stream: do not call _read() after destroy()\n\nPR-URL: https://github.com/nodejs/node/pull/29491\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: Minwoo Jung <minwoo@nodesource.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Jeremiah Senkpiel <fishrock123@rocketmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMwNjUyMzA=",
+                      "login": "ronag"
+                    },
+                    "name": "Robert Nagy",
+                    "email": "ronagy@icloud.com",
+                    "date": "2019-09-08T10:35:34.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "stream: use more accurate end-of-stream writable and readable detection",
+                  "message": "stream: use more accurate end-of-stream writable and readable detection\n\nThe value of stream.readable and stream.writable should not\nbe used to detect whether a stream is Writable or Readable.\n\nRefs: https://github.com/nodejs/node/issues/29395\nPR-URL: https://github.com/nodejs/node/pull/29409\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMwNjUyMzA=",
+                      "login": "ronag"
+                    },
+                    "name": "Robert Nagy",
+                    "email": "ronagy@icloud.com",
+                    "date": "2019-09-02T17:30:56.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: remove the suffix number of the anchor link",
+                  "message": "doc: remove the suffix number of the anchor link\n\nRemove the number '11' as the suffix anchor id for the 'Developer's\nCertificate of Origin 1.1'.\n\nPR-URL: https://github.com/nodejs/node/pull/29468\nRefs: https://github.com/nodejs/node/pull/6257\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjUyMDE4NzQ5",
+                      "login": "MaledongGit"
+                    },
+                    "name": "Maledong",
+                    "email": "maledong_github@outlook.com",
+                    "date": "2019-09-06T13:42:37.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "crypto: use BoringSSL-compatible flag getter",
+                  "message": "crypto: use BoringSSL-compatible flag getter\n\nPR-URL: https://github.com/nodejs/node/pull/29604\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Tobias Nießen <tniessen@tnie.de>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIwMzYwNDA=",
+                      "login": "codebytere"
+                    },
+                    "name": "Shelley Vohr",
+                    "email": "shelley.vohr@gmail.com",
+                    "date": "2019-09-18T12:38:24.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: explain stream.finished cleanup",
+                  "message": "doc: explain stream.finished cleanup\n\nPR-URL: https://github.com/nodejs/node/pull/28935\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMwNjUyMzA=",
+                      "login": "ronag"
+                    },
+                    "name": "Robert Nagy",
+                    "email": "ronagy@icloud.com",
+                    "date": "2019-08-02T08:59:44.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: fix require call for spawn() in code example",
+                  "message": "doc: fix require call for spawn() in code example\n\nPR-URL: https://github.com/nodejs/node/pull/29621\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQyMTU1MTc=",
+                      "login": "marian-r"
+                    },
+                    "name": "Marian Rusnak",
+                    "email": "4215517+marian-r@users.noreply.github.com",
+                    "date": "2019-09-19T22:49:55.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: make minor improvements to stream.md",
+                  "message": "doc: make minor improvements to stream.md\n\nPR-URL: https://github.com/nodejs/node/pull/28970\nReviewed-By: Rich Trott <rtrott@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMwNjUyMzA=",
+                      "login": "ronag"
+                    },
+                    "name": "Robert Nagy",
+                    "email": "ronagy@icloud.com",
+                    "date": "2019-08-05T12:01:33.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "stream: optimize creation",
+                  "message": "stream: optimize creation\n\nPR-URL: https://github.com/nodejs/node/pull/29135\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: Yongsheng Zhang <zyszys98@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMwNjUyMzA=",
+                      "login": "ronag"
+                    },
+                    "name": "Robert Nagy",
+                    "email": "ronagy@icloud.com",
+                    "date": "2019-08-15T13:06:51.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "console: skip/strip %c formatting",
+                  "message": "console: skip/strip %c formatting\n\nFixes: https://github.com/nodejs/node/issues/29605\nRefs: https://console.spec.whatwg.org\nPR-URL: https://github.com/nodejs/node/pull/29606\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Michaël Zasso <targos@protonmail.com>\nReviewed-By: Ruben Bridgewater <ruben@bridgewater.de>\nReviewed-By: Yongsheng Zhang <zyszys98@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU5NTI0ODE=",
+                      "login": "devsnek"
+                    },
+                    "name": "Gus Caplan",
+                    "email": "me@gus.host",
+                    "date": "2019-09-18T16:21:47.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "process: initial SourceMap support via NODE_V8_COVERAGE",
+                  "message": "process: initial SourceMap support via NODE_V8_COVERAGE\n\nPR-URL: https://github.com/nodejs/node/pull/28960\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5NDYwOQ==",
+                      "login": "bcoe"
+                    },
+                    "name": "Benjamin Coe",
+                    "email": "bencoe@google.com",
+                    "date": "2019-09-20T11:43:02.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "src: fix closing weak `HandleWrap`s on GC",
+                  "message": "src: fix closing weak `HandleWrap`s on GC\n\nIn 0af62aae07ccbb3783030367ffe4, this was overlooked, with it\npossibly leading to hard crashes.\n\nRefs: https://github.com/nodejs/node/pull/29317\n\nPR-URL: https://github.com/nodejs/node/pull/29640\nReviewed-By: Ben Coe <bencoe@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-09-21T02:15:32.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "deps: V8: cherry-pick deac757",
+                  "message": "deps: V8: cherry-pick deac757\n\nOriginal commit message:\n\n    [debugger] Fix code coverage for break/return inside switch-case\n\n    Case statements have a list of statements associated with them, but are\n    not blocks, and were hence not fixed-up correctly for code coverage.\n    This CL also applies the fix-up to the \"body\" of case statements,\n    in this way removing ranges reported as uncovered between the final\n    break/return in a case and the next case (or end of function).\n\n    Drive-by: Add optional pretty printing to code coverage test results.\n\n    Change-Id: I5f4002d4e17b7253ed516d99f7c389ab2264be10\n    Bug: v8:9705\n    Reviewed-on: https://chromium-review.googlesource.com/c/v8/v8/+/1798426\n    Reviewed-by: Toon Verwaest <verwaest@chromium.org>\n    Reviewed-by: Jakob Gruber <jgruber@chromium.org>\n    Commit-Queue: Sigurd Schneider <sigurds@chromium.org>\n    Cr-Commit-Position: refs/heads/master@{#63719}\n\nRefs: https://github.com/v8/v8/commit/deac757bc76d207845375340bcea090c774ad9d0\n\nPR-URL: https://github.com/nodejs/node/pull/29626\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: Richard Lau <riclau@uk.ibm.com>\nReviewed-By: Shelley Vohr <codebytere@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5NDYwOQ==",
+                      "login": "bcoe"
+                    },
+                    "name": "Benjamin Coe",
+                    "email": "bencoe@google.com",
+                    "date": "2019-09-19T19:50:23.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "build: update minimum Xcode version for macOS",
+                  "message": "build: update minimum Xcode version for macOS\n\nUpdate the minimum Xcode version for macOS to 10. We'll\nneed this level to incorporate future V8 versions.\n\nRefs: https://github.com/nodejs/node/pull/29493\n\nPR-URL: https://github.com/nodejs/node/pull/29622\nReviewed-By: Gus Caplan <me@gus.host>\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>\nReviewed-By: Michaël Zasso <targos@protonmail.com>\nReviewed-By: Rod Vagg <rod@vagg.org>\nReviewed-By: Ruben Bridgewater <ruben@bridgewater.de>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Beth Griggs <Bethany.Griggs@uk.ibm.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjkzNzMwMDI=",
+                      "login": "mhdawson"
+                    },
+                    "name": "Michael Dawson",
+                    "email": "michael_dawson@ca.ibm.com",
+                    "date": "2019-09-19T18:33:15.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "http: remove legacy parser",
+                  "message": "http: remove legacy parser\n\nRemove the legacy `http_parser` implementation as a dependency\nand all code that uses it in favor of llhttp, given that the latter\nhas been the default for all of Node 12 with no outstanding issues.\n\nPR-URL: https://github.com/nodejs/node/pull/29589\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>\nReviewed-By: Ruben Bridgewater <ruben@bridgewater.de>\nReviewed-By: Minwoo Jung <minwoo@nodesource.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-09-17T14:17:08.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "stream: don't emit finish on error",
+                  "message": "stream: don't emit finish on error\n\nAfter 'error' only 'close' should be emitted.\n\nPR-URL: https://github.com/nodejs/node/pull/28979\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMwNjUyMzA=",
+                      "login": "ronag"
+                    },
+                    "name": "Robert Nagy",
+                    "email": "ronagy@icloud.com",
+                    "date": "2019-08-05T16:07:49.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "deps: patch V8 to 7.7.299.10",
+                  "message": "deps: patch V8 to 7.7.299.10\n\nRefs: https://github.com/v8/v8/compare/7.7.299.8...7.7.299.10\n\nPR-URL: https://github.com/nodejs/node/pull/29472\nReviewed-By: Michaël Zasso <targos@protonmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMzk5MTUy",
+                      "login": "Hakerh400"
+                    },
+                    "name": "Thomas",
+                    "email": "hakerh403@gmail.com",
+                    "date": "2019-09-06T13:53:02.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "module: error for CJS .js load within type: module",
+                  "message": "module: error for CJS .js load within type: module\n\nPR-URL: https://github.com/nodejs/node/pull/29492\nReviewed-By: Jan Krems <jan.krems@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU5ODczMA==",
+                      "login": "guybedford"
+                    },
+                    "name": "Guy Bedford",
+                    "email": "guybedford@gmail.com",
+                    "date": "2019-09-08T11:20:43.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "repl: convert var to let and const",
+                  "message": "repl: convert var to let and const\n\nRefs: https://github.com/nodejs/node/pull/29535\n\nThis PR replaces the instances of var with let/const.\n\nPR-URL: https://github.com/nodejs/node/pull/29575\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Ruben Bridgewater <ruben@bridgewater.de>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMzcxMzg=",
+                      "login": "lholmquist"
+                    },
+                    "name": "Lucas Holmquist",
+                    "email": "lholmqui@redhat.com",
+                    "date": "2019-09-16T07:09:26.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "deps: V8: cherry-pick 35c6d4d",
+                  "message": "deps: V8: cherry-pick 35c6d4d\n\nOriginal commit message:\n\n    Make code generator python3.7 compatible (async keyword).\n\n    Change-Id: Ifcd8b8cb1de60a007c7bbd4564d7869e83cb7109\n\nFixes: https://github.com/nodejs/node/issues/29548\nRefs:\n- https://github.com/nodejs/node/issues/29548#issuecomment-531717985\n- https://github.com/nodejs/node/pull/29520\n- https://github.com/nodejs/node/pull/29340\n- https://chromium-review.googlesource.com/c/deps/inspector_protocol/+/1781351\n- https://chromium.googlesource.com/deps/inspector_protocol/+/35c6d4d0d80b42d81bd00bcb1eb2b1093c80ed0a\n\nPR-URL: https://github.com/nodejs/node/pull/29585\nRefs: https://github.com/nodejs/node/pull/29520\nReviewed-By: Christian Clauss <cclauss@me.com>\nReviewed-By: Richard Lau <riclau@uk.ibm.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Ruben Bridgewater <ruben@bridgewater.de>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NjA3",
+                      "login": "sam-github"
+                    },
+                    "name": "Sam Roberts",
+                    "email": "vieuxtech@gmail.com",
+                    "date": "2019-09-16T13:54:01.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "src: use libuv to get env vars",
+                  "message": "src: use libuv to get env vars\n\nThis allows us to remove OS-dependent code.\n\n                                                           confidence improvement accuracy (*)    (**)   (***)\n     process/bench-env.js operation='delete' n=1000000                    3.57 %      ±10.86% ±14.46% ±18.85%\n     process/bench-env.js operation='enumerate' n=1000000        ***    -14.06 %       ±7.46%  ±9.94% ±12.96%\n     process/bench-env.js operation='get' n=1000000                      -7.97 %      ±11.80% ±15.70% ±20.45%\n     process/bench-env.js operation='query' n=1000000                    -1.32 %       ±8.38% ±11.17% ±14.58%\n     process/bench-env.js operation='set' n=1000000                      -0.98 %       ±9.63% ±12.81% ±16.68%\n\nThe drop in enumeration performance is likely due to the large\nnumber of extra allocations that libuv performs. However, enumerating\nprocess.env should generally not be a hot path in most applications.\n\nPR-URL: https://github.com/nodejs/node/pull/29188\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-08-17T23:01:34.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "benchmark: improve process.env benchmarks",
+                  "message": "benchmark: improve process.env benchmarks\n\nBenchmark different types of operations and make results comparable\nby normalizing process.env for enumeartion.\n\nPR-URL: https://github.com/nodejs/node/pull/29188\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-08-17T23:01:10.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "src: re-delete Atomics.wake",
+                  "message": "src: re-delete Atomics.wake\n\nPR-URL: https://github.com/nodejs/node/pull/29586\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Joyee Cheung <joyeec9h3@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU5NTI0ODE=",
+                      "login": "devsnek"
+                    },
+                    "name": "Gus Caplan",
+                    "email": "me@gus.host",
+                    "date": "2019-09-16T16:05:20.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: fix nits in net.md",
+                  "message": "doc: fix nits in net.md\n\n* Add missing types.\n* Fix function signatures.\n* Fix typos.\n* Unify comment style.\n* Fix ASCII sorting of bottom references.\n\nPR-URL: https://github.com/nodejs/node/pull/29577\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Anto Aravinth <anto.aravinth.cse@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMzkzMTk4",
+                      "login": "vsemozhetbyt"
+                    },
+                    "name": "Vse Mozhet Byt",
+                    "email": "vsemozhetbyt@gmail.com",
+                    "date": "2019-09-16T14:38:05.000+03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "bootstrap: provide usable error on missing internal module",
+                  "message": "bootstrap: provide usable error on missing internal module\n\nDue to how bootstrap/loaders.js itself is loaded and invoked,\nstacktraces from it are munged and no longer point back to the error\nsource.\n\nThat resulted in the following unhelpful error if an internal module\nwas missing or misnamed:\n\n```\ninternal/bootstrap/loaders.js:190\n  return mod.compile();\n             ^\n\nTypeError: Cannot read property 'compile' of undefined\n```\n\nThis changes that to at least print the id that was attempted to be\nloaded:\n\n```\ninternal/bootstrap/loaders.js:189\n  if (!mod) throw new TypeError(`Missing internal module '${id}'`);\n            ^\n\nTypeError: Missing internal module 'internal/a'\n```\n\nPR-URL: https://github.com/nodejs/node/pull/29593\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Gus Caplan <me@gus.host>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Ruben Bridgewater <ruben@bridgewater.de>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTM5OTA=",
+                      "login": "Fishrock123"
+                    },
+                    "name": "Jeremiah Senkpiel",
+                    "email": "fishrock123@rocketmail.com",
+                    "date": "2019-09-17T12:45:23.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: correct trivial misspelling in AUTHORS",
+                  "message": "doc: correct trivial misspelling in AUTHORS\n\nmy legal name changed, so i'm removing lingering references\nto my old name from the Internet.\n\nPR-URL: https://github.com/nodejs/node/pull/29597\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ1MjUy",
+                      "login": "gcr"
+                    },
+                    "name": "gcr",
+                    "email": "gcr@users.noreply.github.com",
+                    "date": "2019-09-18T09:36:03.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "http: throw if 'host' agent header is not a string value",
+                  "message": "http: throw if 'host' agent header is not a string value\n\nIf the 'host' agent header is an array or other non-string value, throw.\n\nPR-URL: https://github.com/nodejs/node/pull/29568\nFixes: https://github.com/nodejs/node/issues/29408\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM0MjE2Mjkx",
+                      "login": "gntem"
+                    },
+                    "name": "Giorgos Ntemiris",
+                    "email": "ntemirisgiorgos3@gmail.com",
+                    "date": "2019-09-12T09:22:05.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "tools: update remark-preset-lint-node to 1.10.0",
+                  "message": "tools: update remark-preset-lint-node to 1.10.0\n\nA new version of remark-preset-lint-node adds linting for unordered list\nstyle.\n\nPR-URL: https://github.com/nodejs/node/pull/29594\nReviewed-By: Richard Lau <riclau@uk.ibm.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxODg5OQ==",
+                      "login": "Trott"
+                    },
+                    "name": "Rich Trott",
+                    "email": "rtrott@gmail.com",
+                    "date": "2019-09-17T14:00:02.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: update list style in misc README docs",
+                  "message": "doc: update list style in misc README docs\n\nTo confirm with upcoming markdown lint rule, use `*` for unordered\nlists.\n\nPR-URL: https://github.com/nodejs/node/pull/29594\nReviewed-By: Richard Lau <riclau@uk.ibm.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxODg5OQ==",
+                      "login": "Trott"
+                    },
+                    "name": "Rich Trott",
+                    "email": "rtrott@gmail.com",
+                    "date": "2019-09-17T13:59:32.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: add missing complete property to http2 docs",
+                  "message": "doc: add missing complete property to http2 docs\n\nPR-URL: https://github.com/nodejs/node/pull/29571\nFixes: https://github.com/nodejs/node/issues/28622\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExMjQxMjM5",
+                      "login": "Javierls16"
+                    },
+                    "name": "Javier Ledezma",
+                    "email": "juls0593@gmail.com",
+                    "date": "2019-09-16T11:02:23.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "repl: fix bug in fs module autocompletion",
+                  "message": "repl: fix bug in fs module autocompletion\n\nPR-URL: https://github.com/nodejs/node/pull/29555\nFixes: https://github.com/nodejs/node/issues/29424\nReviewed-By: Anto Aravinth <anto.aravinth.cse@gmail.com>\nReviewed-By: Ruben Bridgewater <ruben@bridgewater.de>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIzMzEzMjY2",
+                      "login": "ZYSzys"
+                    },
+                    "name": "zhangyongsheng",
+                    "email": "zhangyongsheng@youzan.com",
+                    "date": "2019-09-16T17:08:18.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "module: reintroduce package exports dot main",
+                  "message": "module: reintroduce package exports dot main\n\nThis reintroduces the dot main in exports as discussed in the previous\nNode.js modules meeting.\n\nThe implementation includes both CommonJS and ES module resolution with\nthe associated documentation and resolver specification changes.\n\nIn addition to the dot main, \"exports\" as a string or direct fallback\narray is supported as well.\n\nCo-Authored-By: Geoffrey Booth <GeoffreyBooth@users.noreply.github.com>\nPR-URL: https://github.com/nodejs/node/pull/29494\nReviewed-By: Jan Krems <jan.krems@gmail.com>\nReviewed-By: Myles Borins <myles.borins@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU5ODczMA==",
+                      "login": "guybedford"
+                    },
+                    "name": "Guy Bedford",
+                    "email": "guybedford@gmail.com",
+                    "date": "2019-09-08T12:54:19.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "deps: update npm to 6.11.3",
+                  "message": "deps: update npm to 6.11.3\n\nPR-URL: https://github.com/nodejs/node/pull/29430\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Ruben Bridgewater <ruben@bridgewater.de>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2NjA3Njk=",
+                      "login": "claudiahdz"
+                    },
+                    "name": "claudiahdz",
+                    "email": "cghr1990@gmail.com",
+                    "date": "2019-09-03T17:51:04.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "lib: remove the use of util.isFunction",
+                  "message": "lib: remove the use of util.isFunction\n\nPR-URL: https://github.com/nodejs/node/pull/29566\nReviewed-By: Michaël Zasso <targos@protonmail.com>\nReviewed-By: Yongsheng Zhang <zyszys98@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE0MDI2MzYw",
+                      "login": "Himself65"
+                    },
+                    "name": "himself65",
+                    "email": "himself65@outlook.com",
+                    "date": "2019-09-15T21:10:00.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: add leap second behavior notes for napi methods",
+                  "message": "doc: add leap second behavior notes for napi methods\n\nnapi_create_date and napi_get_date_value ignore leap seconds as per\nECMAScript spec that follows POSIX spec for time, comments added to the\ndocumentation where added fo clarify it.\n\nPR-URL: https://github.com/nodejs/node/pull/29569\nFixes: https://github.com/nodejs/node/issues/29439\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIyNTA2Ng==",
+                      "login": "levhita"
+                    },
+                    "name": "Levhita",
+                    "email": "levhita@gmail.com",
+                    "date": "2019-09-15T13:19:07.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: explain esm options for package authors",
+                  "message": "doc: explain esm options for package authors\n\n* organize sections more hierarchically\n\n* recommend always including \"type\" field, per 2019-06-19 meeting\n\nRefs: https://github.com/nodejs/modules/issues/342#issuecomment-503733187\n\n* expand discussion of publishing cjs/esm packages\n\nPR-URL: https://github.com/nodejs/node/pull/29497\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Jan Krems <jan.krems@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ1NjgwMg==",
+                      "login": "GeoffreyBooth"
+                    },
+                    "name": "Geoffrey Booth",
+                    "email": "webmaster@geoffreybooth.com",
+                    "date": "2019-09-02T18:01:03.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "test: fix flaky test-inspector-connect-main-thread",
+                  "message": "test: fix flaky test-inspector-connect-main-thread\n\nUsing `console.log()` likely interferes with the functionality of the\ntest, which also checks the interaction between inspector\nand `console.log()` as part of the test. Using `process._rawDebug()`\nsolves that issue.\n\nRefs: https://github.com/nodejs/node/pull/28870\nRefs: https://github.com/nodejs/node/pull/29582\n\nPR-URL: https://github.com/nodejs/node/pull/29588\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Michaël Zasso <targos@protonmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-09-17T13:50:04.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: update experimental loader hooks example code",
+                  "message": "doc: update experimental loader hooks example code\n\nIt fix 2 issues in provided Loader hooks examples:\n1. Original ``new URL(`${process.cwd()}/`, 'file://');``\nis not cross-platform, it gives wrong URL on windows\n2. Based on `CHECK` in ModuleWrap::Resolve (node 12.9.1,\nhttps://github.com/nodejs/node/blob/v12.9.1/src/module_wrap.cc#L1132)\nthe 2nd parameter should be a `string`, not an `URL` object\n\nPR-URL: https://github.com/nodejs/node/pull/29373\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMjMwMjg0",
+                      "login": "zaverden"
+                    },
+                    "name": "Denis Zavershinskiy",
+                    "email": "zaverden@gmail.com",
+                    "date": "2019-08-30T10:09:08.000+07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: use consistent unordered list style",
+                  "message": "doc: use consistent unordered list style\n\nConvert to asterisks when there are mixed styles in document.\nAddresses Markdownlint MD004 rule\n\nPR-URL: https://github.com/nodejs/node/pull/29516\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyOTc5MDk=",
+                      "login": "nschonni"
+                    },
+                    "name": "Nick Schonning",
+                    "email": "nschonni@gmail.com",
+                    "date": "2019-09-13T00:22:29.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "inspector: new API - Session.connectToMainThread",
+                  "message": "inspector: new API - Session.connectToMainThread\n\nThis API is designed to enable worker threads use Inspector protocol\non main thread (and other workers through NodeWorker domain).\n\nNote that worker can cause dead lock by suspending itself. I will\nwork on a new API that will allow workers to be hidden from the\ninspector.\n\nFixes: https://github.com/nodejs/node/issues/28828\nPR-URL: https://github.com/nodejs/node/pull/28870\nReviewed-By: Aleksei Koziatinskii <ak239spb@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NzkxNw==",
+                      "login": "eugeneo"
+                    },
+                    "name": "Eugene Ostroukhov",
+                    "email": "eostroukhov@gmail.com",
+                    "date": "2019-07-26T10:40:54.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "tty: add color support for mosh",
+                  "message": "tty: add color support for mosh\n\nPR-URL: https://github.com/nodejs/node/pull/27843\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ5MjA2NTky",
+                      "login": "aditya1906"
+                    },
+                    "name": "Aditya",
+                    "email": "adityashnkr5@gmail.com",
+                    "date": "2019-05-24T01:06:51.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "http: refactor responseKeepAlive()",
+                  "message": "http: refactor responseKeepAlive()\n\nThis tries to simplify the code and make it easier to understand. Took\nme a while to get my head around the previous implementation.\n\nAlso minor perf improvement.\n\nPR-URL: https://github.com/nodejs/node/pull/28700\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMwNjUyMzA=",
+                      "login": "ronag"
+                    },
+                    "name": "Robert Nagy",
+                    "email": "ronagy@icloud.com",
+                    "date": "2019-07-15T19:19:12.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "repl: add autocomplete support for fs.promises",
+                  "message": "repl: add autocomplete support for fs.promises\n\nPR-URL: https://github.com/nodejs/node/pull/29400\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Ruben Bridgewater <ruben@bridgewater.de>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Yongsheng Zhang <zyszys98@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyNDE1MTE=",
+                      "login": "antsmartian"
+                    },
+                    "name": "antsmartian",
+                    "email": "anto.aravinth.cse@gmail.com",
+                    "date": "2019-09-09T21:33:10.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "tools: update ESLint to 6.4.0",
+                  "message": "tools: update ESLint to 6.4.0\n\nPR-URL: https://github.com/nodejs/node/pull/29553\nRefs: https://github.com/eslint/eslint/releases/tag/v6.4.0\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Tobias Nießen <tniessen@tnie.de>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>\nReviewed-By: Minwoo Jung <minwoo@nodesource.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIzMzEzMjY2",
+                      "login": "ZYSzys"
+                    },
+                    "name": "zhangyongsheng",
+                    "email": "zhangyongsheng@youzan.com",
+                    "date": "2019-09-14T11:26:23.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "src: print exceptions from PromiseRejectCallback",
+                  "message": "src: print exceptions from PromiseRejectCallback\n\nPreviously, leaving the exception lying around would leave the JS\nengine in an invalid state, as it was not expecting exceptions to\nbe thrown from the C++ `PromiseRejectCallback`, and lead to hard\ncrashes under some conditions (e.g. with coverage enabled).\n\nPR-URL: https://github.com/nodejs/node/pull/29513\nReviewed-By: Gus Caplan <me@gus.host>\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-09-09T23:43:21.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "build: allow clang 10+ in configure.py",
+                  "message": "build: allow clang 10+ in configure.py\n\nDetected on NetBSD/amd64.\n\nFixes: https://github.com/nodejs/node/issues/29536\n\nPR-URL: https://github.com/nodejs/node/pull/29541\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Richard Lau <riclau@uk.ibm.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY2NjU3MzA=",
+                      "login": "krytarowski"
+                    },
+                    "name": "Kamil Rytarowski",
+                    "email": "n54@gmx.com",
+                    "date": "2019-09-13T03:42:24.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "repl: add missing variable declaration",
+                  "message": "repl: add missing variable declaration\n\n* Adds `let` to a variable declaration in a for loop\n  that wasn't using anything.\n\n* Declare the for initial expression in the for loop.\n\n* Remove hoisted variables for loops.\n\nPR-URL: https://github.com/nodejs/node/pull/29535\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMzcxMzg=",
+                      "login": "lholmquist"
+                    },
+                    "name": "Lucas Holmquist",
+                    "email": "lholmqui@redhat.com",
+                    "date": "2019-09-12T06:15:27.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "process: use public readableFlowing property",
+                  "message": "process: use public readableFlowing property\n\nPR-URL: https://github.com/nodejs/node/pull/29502\nRefs: https://github.com/nodejs/node/issues/445\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Yongsheng Zhang <zyszys98@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2NDg1OQ==",
+                      "login": "ckarande"
+                    },
+                    "name": "Chetan Karande",
+                    "email": "kchetan.tech@gmail.com",
+                    "date": "2019-09-08T16:23:56.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "perf_hooks: remove non-existent entries from inspect",
+                  "message": "perf_hooks: remove non-existent entries from inspect\n\nSome of the milestones was removed in PR #21247 but entries not removed\nfrom function for inspect PerformanceNodeTiming.\n\nPR-URL: https://github.com/nodejs/node/pull/29528\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2MzMwNjU=",
+                      "login": "fanatid"
+                    },
+                    "name": "Kirill Fomichev",
+                    "email": "fanatid@ya.ru",
+                    "date": "2019-09-11T21:49:39.000+03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "util: add encodeInto to TextEncoder",
+                  "message": "util: add encodeInto to TextEncoder\n\nAdd function encodeInto to TextEncoder, and add MessageChannel\nto the encodeInto.any.js test.\n\nFixes: https://github.com/nodejs/node/issues/28851\nFixes: https://github.com/nodejs/node/issues/26904\nRefs: https://github.com/nodejs/node/pull/28862\nCo-authored-by: AtticusYang <yyongtai@163.com>\n\nPR-URL: https://github.com/nodejs/node/pull/29524\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Joyee Cheung <joyeec9h3@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-09-11T01:13:01.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "crypto: fix OpenSSL return code handling",
+                  "message": "crypto: fix OpenSSL return code handling\n\nPR-URL: https://github.com/nodejs/node/pull/29489\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Minwoo Jung <minwoo@nodesource.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMxMDkwNzI=",
+                      "login": "tniessen"
+                    },
+                    "name": "Tobias Nießen",
+                    "email": "tniessen@tnie.de",
+                    "date": "2019-09-08T19:19:35.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "crypto: add oaepLabel option",
+                  "message": "crypto: add oaepLabel option\n\nThe label acts as the \"L\" input to the RSA-OAEP algorithm.\n\nPR-URL: https://github.com/nodejs/node/pull/29489\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Minwoo Jung <minwoo@nodesource.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMxMDkwNzI=",
+                      "login": "tniessen"
+                    },
+                    "name": "Tobias Nießen",
+                    "email": "tniessen@tnie.de",
+                    "date": "2019-09-08T04:41:04.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: add Bethany to TSC",
+                  "message": "doc: add Bethany to TSC\n\nRefs: https://github.com/nodejs/TSC/issues/718\n\nPR-URL: https://github.com/nodejs/node/pull/29546\nReviewed-By: Gireesh Punathil <gpunathi@in.ibm.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Richard Lau <riclau@uk.ibm.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Michaël Zasso <targos@protonmail.com>\nReviewed-By: Tobias Nießen <tniessen@tnie.de>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjkzNzMwMDI=",
+                      "login": "mhdawson"
+                    },
+                    "name": "Michael Dawson",
+                    "email": "michael_dawson@ca.ibm.com",
+                    "date": "2019-09-13T09:13:38.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: add Tobias to the TSC",
+                  "message": "doc: add Tobias to the TSC\n\nrefs: https://github.com/nodejs/TSC/issues/746\n\nPR-URL: https://github.com/nodejs/node/pull/29545\nRefs: https://github.com/nodejs/TSC/issues/746\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Gireesh Punathil <gpunathi@in.ibm.com>\nReviewed-By: Richard Lau <riclau@uk.ibm.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Michaël Zasso <targos@protonmail.com>\nReviewed-By: Tobias Nießen <tniessen@tnie.de>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjkzNzMwMDI=",
+                      "login": "mhdawson"
+                    },
+                    "name": "Michael Dawson",
+                    "email": "michael_dawson@ca.ibm.com",
+                    "date": "2019-09-13T09:28:20.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "tools: fix iculslocs to support ICU 65.1",
+                  "message": "tools: fix iculslocs to support ICU 65.1\n\nThe ICU alias table format changed in\nhttps://unicode-org.atlassian.net/browse/ICU-20627\n\nBecause of this, iculslocs.cc needs to handle URES_TABLE format\ncontents in the res_index.txt file.\n\nPR-URL: https://github.com/nodejs/node/pull/29523\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Richard Lau <riclau@uk.ibm.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Michael Dawson <michael_dawson@ca.ibm.com>\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Ujjwal Sharma <usharma1998@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg1NTIxOQ==",
+                      "login": "srl295"
+                    },
+                    "name": "Steven R. Loomis",
+                    "email": "srloomis@us.ibm.com",
+                    "date": "2019-09-10T14:18:17.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: mention unit for process.hrtime.bigint()",
+                  "message": "doc: mention unit for process.hrtime.bigint()\n\nThe example states this already, but I would have expected this to be\npart of the description, too.\n\nPR-URL: https://github.com/nodejs/node/pull/29482\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Michaël Zasso <targos@protonmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-09-07T19:09:17.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "src: modified RealEnvStore methods to use libuv functions",
+                  "message": "src: modified RealEnvStore methods to use libuv functions\n\nModified RealEnvStore::Get, Set, Query and Delete methods\nto use libuv methods environment variables operations instead\nof using os specific logic and switches.\n\nFixes: https://github.com/nodejs/node/issues/27211\nRefs: http://docs.libuv.org/en/v1.x/misc.html\n\nPR-URL: https://github.com/nodejs/node/pull/27310\nReviewed-By: Gus Caplan <me@gus.host>\nReviewed-By: Joyee Cheung <joyeec9h3@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY5NTgwNzY=",
+                      "login": "devasci"
+                    },
+                    "name": "Devendra Satram",
+                    "email": "devendra4sci@gmail.com",
+                    "date": "2019-04-19T18:03:18.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "build: re-run configure on node_version.h change",
+                  "message": "build: re-run configure on node_version.h change\n\nFixes: https://github.com/nodejs/node/issues/29509\n\nPR-URL: https://github.com/nodejs/node/pull/29510\nReviewed-By: Gus Caplan <me@gus.host>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Richard Lau <riclau@uk.ibm.com>\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Michael Dawson <michael_dawson@ca.ibm.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-09-09T22:10:25.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "tools: python3 compat for inspector code generator",
+                  "message": "tools: python3 compat for inspector code generator\n\nThe code generator takes a dict and turns it into a namedtuple. The dict\ncontains the key \"async\", which is a keyword in python 3.7, and rejected\nby the namedtuple constructor. Rename it to \"async_\" to avoid the clash.\n\nFixes: https://github.com/nodejs/node/issues/29326\n\nPR-URL: https://github.com/nodejs/node/pull/29340\nReviewed-By: Christian Clauss <cclauss@me.com>\nReviewed-By: Michaël Zasso <targos@protonmail.com>\nReviewed-By: Richard Lau <riclau@uk.ibm.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI3NTg3MQ==",
+                      "login": "bnoordhuis"
+                    },
+                    "name": "Ben Noordhuis",
+                    "email": "info@bnoordhuis.nl",
+                    "date": "2019-08-27T12:16:31.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "stream: simplify isUint8Array helper",
+                  "message": "stream: simplify isUint8Array helper\n\nThe fallback code is no longer used when exporting to readable-stream.\n\nRefs: https://github.com/nodejs/node/pull/29475\n\nPR-URL: https://github.com/nodejs/node/pull/29514\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-09-09T23:54:59.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: add documentation for stream readableFlowing",
+                  "message": "doc: add documentation for stream readableFlowing\n\nPR-URL: https://github.com/nodejs/node/pull/29506\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2NDg1OQ==",
+                      "login": "ckarande"
+                    },
+                    "name": "Chetan Karande",
+                    "email": "kchetan.tech@gmail.com",
+                    "date": "2019-09-09T11:57:14.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "deps: upgrade to libuv 1.32.0",
+                  "message": "deps: upgrade to libuv 1.32.0\n\nNotable changes:\n\n- `uv_tcp_close_reset()` has been added.\n- `uv_udp_set_source_membership()` has been added.\n- A double free in `uv_free_cpu_info()` on OpenBSD\n  has been fixed.\n- Defined, but empty environment variables can now\n  be read on Windows.\n- Several improvements to the cmake build process.\n- The `EILSEQ` error code is now mapped by libuv.\n\nPR-URL: https://github.com/nodejs/node/pull/29508\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Beth Griggs <Bethany.Griggs@uk.ibm.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI1MTI3NDg=",
+                      "login": "cjihrig"
+                    },
+                    "name": "cjihrig",
+                    "email": "cjihrig@gmail.com",
+                    "date": "2019-09-09T13:08:37.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "test: unmark test-worker-prof as flaky",
+                  "message": "test: unmark test-worker-prof as flaky\n\nThis has no longer been flaky since V8 7.5.\n\nRefs: https://bugs.chromium.org/p/v8/issues/detail?id=9333\nFixes: https://github.com/nodejs/node/issues/26401\n\nPR-URL: https://github.com/nodejs/node/pull/29511\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>\nReviewed-By: Richard Lau <riclau@uk.ibm.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-09-09T22:31:30.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "src,lib: expose memory file mapping flag",
+                  "message": "src,lib: expose memory file mapping flag\n\nSupport for UV_FS_O_FILEMAP was added in libuv in version 1.31.0.\nThis exposes the flag in fs.constants.\n\nRefs: https://github.com/libuv/libuv/pull/2295\nPR-URL: https://github.com/nodejs/node/pull/29260\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Ron Korving <ron@ronkorving.nl>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzNDQ2MA==",
+                      "login": "joaocgreis"
+                    },
+                    "name": "João Reis",
+                    "email": "reis@janeasystems.com",
+                    "date": "2019-08-22T00:40:47.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "worker: mark as stable",
+                  "message": "worker: mark as stable\n\nThis feature is not expected to receive breaking changes to its API\nand is used in real-world applications.\n\nAs discussed at the last collaborator summit (Berlin May 2019),\nthe `worker_threads` module can be considered stable once our\nWeb Messaging implementation is compatible with Web Platform Tests.\nAs of b34f05ecf2014a6a51c455e1bee06586ec81ff83, that is the case.\n\nFixes: https://github.com/nodejs/node/issues/22940\n\nPR-URL: https://github.com/nodejs/node/pull/29512\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: Michaël Zasso <targos@protonmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>\nReviewed-By: Gireesh Punathil <gpunathi@in.ibm.com>\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: Yongsheng Zhang <zyszys98@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Michael Dawson <michael_dawson@ca.ibm.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-09-09T22:34:30.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "build: find Python 3 or Python 2 in configure",
+                  "message": "build: find Python 3 or Python 2 in configure\n\nPR-URL: https://github.com/nodejs/node/pull/25878\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Sakthipriyan Vairamani <thechargingvolcano@gmail.com>\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Sam Roberts <vieuxtech@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM3MDk3MTU=",
+                      "login": "cclauss"
+                    },
+                    "name": "cclauss",
+                    "email": "cclauss@me.com",
+                    "date": "2019-02-01T14:51:37.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "build: improve `make coverage`",
+                  "message": "build: improve `make coverage`\n\nRun cleanup for all relevant subdirectories, and exclude generated\nsource files (e.g. `out/Release/...`) from coverage reporting.\nAlso enable running `make cctest` again (It’s unclear to me why this\nwas disabled, as it does reduce coverage unnecessarily).\n\nPR-URL: https://github.com/nodejs/node/pull/29487\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-09-07T22:20:17.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: indent child list items for remark-lint",
+                  "message": "doc: indent child list items for remark-lint\n\nChild items not aligned to parent are flagged by list-item-bullet-indent\n\nPR-URL: https://github.com/nodejs/node/pull/29488\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyOTc5MDk=",
+                      "login": "nschonni"
+                    },
+                    "name": "Nick Schonning",
+                    "email": "nschonni@gmail.com",
+                    "date": "2019-09-07T22:44:35.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: space around lists",
+                  "message": "doc: space around lists\n\nAddress markdownlint rule MD032.\nFlagged a few mixed list styles.\n\nPR-URL: https://github.com/nodejs/node/pull/29467\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyOTc5MDk=",
+                      "login": "nschonni"
+                    },
+                    "name": "Nick Schonning",
+                    "email": "nschonni@gmail.com",
+                    "date": "2019-09-06T01:42:22.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "build: add comment to .travis.yml on how to test Py3",
+                  "message": "build: add comment to .travis.yml on how to test Py3\n\nPR-URL: https://github.com/nodejs/node/pull/29473\nReviewed-By: Sam Roberts <vieuxtech@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM3MDk3MTU=",
+                      "login": "cclauss"
+                    },
+                    "name": "cclauss",
+                    "email": "cclauss@me.com",
+                    "date": "2019-09-06T13:12:17.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "worker: make terminate() resolve for unref’ed Workers",
+                  "message": "worker: make terminate() resolve for unref’ed Workers\n\nOnce `worker.terminate()` is called, the Worker instance will be\ndestroyed as soon as possible anyway, so in order to make\nthe Promise returned by `worker.terminate()` resolve always,\nit should be okay to just call `.ref()` on it and keep the main\nevent loop alive temporarily.\n\nPR-URL: https://github.com/nodejs/node/pull/29484\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-09-07T21:56:24.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "test: improve test-worker-message-port-message-before-close",
+                  "message": "test: improve test-worker-message-port-message-before-close\n\nReplace a wrong comment with a correct assertion and await all async\noperations inside the async function.\n\nPR-URL: https://github.com/nodejs/node/pull/29483\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-09-07T21:48:43.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "worker: prevent event loop starvation through MessagePorts",
+                  "message": "worker: prevent event loop starvation through MessagePorts\n\nLimit the number of messages processed without interruption on a\ngiven `MessagePort` to prevent event loop starvation, but still\nmake sure that all messages are emitted that were already in the\nqueue when emitting began.\n\nThis aligns the behaviour better with the web.\n\nRefs: https://github.com/nodejs/node/pull/28030\n\nPR-URL: https://github.com/nodejs/node/pull/29315\nReviewed-By: Gus Caplan <me@gus.host>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Jeremiah Senkpiel <fishrock123@rocketmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-06-02T17:23:50.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "test: disable core dumps before running crash test",
+                  "message": "test: disable core dumps before running crash test\n\nThe test spawns a subprocess with the `--abort-on-uncaught-exception`\nflag and expects it to terminate with a SIGABRT signal.\n\nOn systems where core dumps are enabled, that actually generates an\nunnecessary core dump. Set `ulimit -c 0` before spawning the subprocess.\n\nFixes: https://github.com/nodejs/node/issues/29286\n\nPR-URL: https://github.com/nodejs/node/pull/29478\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI3NTg3MQ==",
+                      "login": "bnoordhuis"
+                    },
+                    "name": "Ben Noordhuis",
+                    "email": "info@bnoordhuis.nl",
+                    "date": "2019-09-06T23:25:36.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: exitedAfterDisconnect value can be false",
+                  "message": "doc: exitedAfterDisconnect value can be false\n\nFixed the documentation to reflect the changes in the default value\nof worker.exitedAfterDisconnect\n\nPR-URL: https://github.com/nodejs/node/pull/29404\nFixes: https://github.com/nodejs/node/issues/28837\nRefs: https://github.com/nodejs/node/pull/3743\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Anto Aravinth <anto.aravinth.cse@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE0MDkzNDIw",
+                      "login": "nimit95"
+                    },
+                    "name": "Nimit Aggarwal",
+                    "email": "nimitagg95@gmail.com",
+                    "date": "2019-09-02T13:22:19.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "n-api: delete callback bundle via reference",
+                  "message": "n-api: delete callback bundle via reference\n\nWe should strive to use weak persistent references consistently\nthroughout the code, since using `v8::Persistent` directly results\nin having to change many sites in the code when the way we use it\nchanges.\n\nN-API uses `v8impl::Reference` internally when maintaining a weak\npersistent reference is necessary. So far, `v8impl::CallbackBundle` was\nusing `v8::Persistent` directly in order to weakly reference the JS\nfunction backed by a N-API callback.\n\nThe change introduced here reduces `v8impl::CallbackBundle` to a simple\nstructure and uses a `v8impl::Reference` to weakly reference the N-API\ncallback with which it is associated. The structure is freed by the\n`napi_finalize` callback of the `v8impl::Reference`. This brings\nN-API use of `v8::Persistent` completely under the `v8impl::Reference`\numbrella, rendering our use of weak references consistent.\n\nPR-URL: https://github.com/nodejs/node/pull/29479\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Anna Henningsen <anna@addaleax.net>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjk3NjA4MQ==",
+                      "login": "gabrielschulhof"
+                    },
+                    "name": "Gabriel Schulhof",
+                    "email": "gabriel.schulhof@intel.com",
+                    "date": "2019-09-06T14:09:00.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "doc: remove wrong escapes",
+                  "message": "doc: remove wrong escapes\n\nPR-URL: https://github.com/nodejs/node/pull/29452\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM0OTYyMQ==",
+                      "login": "XhmikosR"
+                    },
+                    "name": "XhmikosR",
+                    "email": "xhmikosr@gmail.com",
+                    "date": "2019-09-05T16:53:53.000+03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "build: update minimum AIX OS level",
+                  "message": "build: update minimum AIX OS level\n\nUpdate minimum AIX OS level to 7.2 TL2. Looks like this\nwill be the version we can get into the CI so should be the\nbase level for 13.X and above and will be in support for the life\nof 13.X.\n\nPR-URL: https://github.com/nodejs/node/pull/29476\nReviewed-By: Richard Lau <riclau@uk.ibm.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: David Carlier <devnexen@gmail.com>\nReviewed-By: Jiawen Geng <technicalcute@gmail.com>\nReviewed-By: Minwoo Jung <minwoo@nodesource.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjkzNzMwMDI=",
+                      "login": "mhdawson"
+                    },
+                    "name": "Michael Dawson",
+                    "email": "michael_dawson@ca.ibm.com",
+                    "date": "2019-09-06T13:21:19.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "test: permit test-signalwrap to work without test runner",
+                  "message": "test: permit test-signalwrap to work without test runner\n\ntest/async-hooks/test-signalwrap.js passes with the test.py test runner\nbut fails if run directly with the `node` executable. Modify the test so\nit passes in both cases.\n\nPR-URL: https://github.com/nodejs/node/pull/28306\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Anna Henningsen <anna@addaleax.net>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxODg5OQ==",
+                      "login": "Trott"
+                    },
+                    "name": "Rich Trott",
+                    "email": "rtrott@gmail.com",
+                    "date": "2019-06-19T13:10:05.000-06:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "http2: do not crash on stream listener removal w/ destroyed session",
+                  "message": "http2: do not crash on stream listener removal w/ destroyed session\n\nDo not crash when the session is no longer available.\n\nFixes: https://github.com/nodejs/node/issues/29457\n\nPR-URL: https://github.com/nodejs/node/pull/29459\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Trivikram Kamat <trivikr.dev@gmail.com>\nReviewed-By: Minwoo Jung <minwoo@nodesource.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5OTQ0NA==",
+                      "login": "addaleax"
+                    },
+                    "name": "Anna Henningsen",
+                    "email": "anna@addaleax.net",
+                    "date": "2019-09-05T20:01:18.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

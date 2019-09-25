@@ -1,0 +1,1870 @@
+{
+  "data": {
+    "repository": {
+      "ref": {
+        "target": {
+          "history": {
+            "edges": [
+              {
+                "node": {
+                  "messageHeadline": "FIX Negative or null sample_weights in SVM (#14286)",
+                  "message": "FIX Negative or null sample_weights in SVM (#14286)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE0ODYzMzI3",
+                      "login": "alexshacked"
+                    },
+                    "name": "alexshacked",
+                    "email": "al.shacked@gmail.com",
+                    "date": "2019-09-25T02:21:00.000+03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "STY Fix the position of 'More testimonials' link in the homepage (#15…",
+                  "message": "STY Fix the position of 'More testimonials' link in the homepage (#15061)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2NjIyNjE=",
+                      "login": "cmarmo"
+                    },
+                    "name": "Chiara Marmo",
+                    "email": "cmarmo@users.noreply.github.com",
+                    "date": "2019-09-24T16:48:03.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[MRG] DOC solve rendering set_params in Voting and Stacking (#15074)",
+                  "message": "[MRG] DOC solve rendering set_params in Voting and Stacking (#15074)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc0NTQwMTU=",
+                      "login": "glemaitre"
+                    },
+                    "name": "Guillaume Lemaitre",
+                    "email": "g.lemaitre58@gmail.com",
+                    "date": "2019-09-24T15:55:13.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "FIX array dtype mismatch in isotonic regression (#14902)",
+                  "message": "FIX array dtype mismatch in isotonic regression (#14902)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjUzNjYyODQ=",
+                      "login": "lostcoaster"
+                    },
+                    "name": "lostcoaster",
+                    "email": "fjy456@gmail.com",
+                    "date": "2019-09-24T21:44:09.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "FEA Add Categorical Naive Bayes (#12569)",
+                  "message": "FEA Add Categorical Naive Bayes (#12569)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4NTc3NzYz",
+                      "login": "timbicker"
+                    },
+                    "name": "Tim Bicker",
+                    "email": "timbicker2010@gmail.com",
+                    "date": "2019-09-23T16:38:22.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "re-license tree._reingold_tilford as BSD (#15070)",
+                  "message": "re-license tree._reingold_tilford as BSD (#15070)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcxNTA=",
+                      "login": "llimllib"
+                    },
+                    "name": "Bill Mill",
+                    "email": "bill@billmill.org",
+                    "date": "2019-09-23T15:47:11.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Adjust style of the footer [doc build] (#15066)",
+                  "message": "DOC Adjust style of the footer [doc build] (#15066)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU0MDI2MzM=",
+                      "login": "thomasjpfan"
+                    },
+                    "name": "Thomas J Fan",
+                    "email": "thomasjpfan@gmail.com",
+                    "date": "2019-09-23T15:46:39.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN remove extraneous statement in ransac.py (#15067)",
+                  "message": "CLN remove extraneous statement in ransac.py (#15067)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIzNzIwNzQ=",
+                      "login": "x-martian"
+                    },
+                    "name": "x-martian",
+                    "email": "x.martian@gmail.com",
+                    "date": "2019-09-23T13:01:24.000-06:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Fix warnings about references and links (#14976)",
+                  "message": "DOC Fix warnings about references and links (#14976)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2NjIyNjE=",
+                      "login": "cmarmo"
+                    },
+                    "name": "Chiara Marmo",
+                    "email": "cmarmo@users.noreply.github.com",
+                    "date": "2019-09-23T17:49:08.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC fix some whats_new/0.22 links and other cleanups (#15059)",
+                  "message": "DOC fix some whats_new/0.22 links and other cleanups (#15059)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2NjM4NjQ=",
+                      "login": "adrinjalali"
+                    },
+                    "name": "Adrin Jalali",
+                    "email": "adrin.jalali@gmail.com",
+                    "date": "2019-09-23T17:38:31.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC adds a random seed to plot_permutation_importance example (#15058)",
+                  "message": "DOC adds a random seed to plot_permutation_importance example (#15058)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2NjM4NjQ=",
+                      "login": "adrinjalali"
+                    },
+                    "name": "Adrin Jalali",
+                    "email": "adrin.jalali@gmail.com",
+                    "date": "2019-09-23T17:11:12.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC link to the new getting started (#15060)",
+                  "message": "DOC link to the new getting started (#15060)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2NjM4NjQ=",
+                      "login": "adrinjalali"
+                    },
+                    "name": "Adrin Jalali",
+                    "email": "adrin.jalali@gmail.com",
+                    "date": "2019-09-23T14:45:46.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "STY Minor style fixes [doc build] (#15052)",
+                  "message": "STY Minor style fixes [doc build] (#15052)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU0MDI2MzM=",
+                      "login": "thomasjpfan"
+                    },
+                    "name": "Thomas J Fan",
+                    "email": "thomasjpfan@gmail.com",
+                    "date": "2019-09-22T18:51:59.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Updates entire website design (#14849)",
+                  "message": "DOC Updates entire website design (#14849)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU0MDI2MzM=",
+                      "login": "thomasjpfan"
+                    },
+                    "name": "Thomas J Fan",
+                    "email": "thomasjpfan@gmail.com",
+                    "date": "2019-09-21T06:22:34.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC fix citation of Neighbourhood Components Analysis (#15046)",
+                  "message": "DOC fix citation of Neighbourhood Components Analysis (#15046)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU0NzM2MDY=",
+                      "login": "micahjsmith"
+                    },
+                    "name": "Micah Smith",
+                    "email": "micahjsmith@gmail.com",
+                    "date": "2019-09-20T13:23:03.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MAINT clean travis install (#15041)",
+                  "message": "MAINT clean travis install (#15041)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM0NjU3NzI1",
+                      "login": "jeremiedbb"
+                    },
+                    "name": "jeremiedbb",
+                    "email": "34657725+jeremiedbb@users.noreply.github.com",
+                    "date": "2019-09-20T18:10:06.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MNT Deprecate {n_}classes_ attribute for tree regressors (#15028)",
+                  "message": "MNT Deprecate {n_}classes_ attribute for tree regressors (#15028)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2NjM4NjQ=",
+                      "login": "adrinjalali"
+                    },
+                    "name": "Adrin Jalali",
+                    "email": "adrin.jalali@gmail.com",
+                    "date": "2019-09-20T13:27:21.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MNT deprecate some more utils in estimator_checks.py (#15029)",
+                  "message": "MNT deprecate some more utils in estimator_checks.py (#15029)\n\n* deprecated notanarray\r\n\r\n* deprecated is_public_parameter\r\n\r\n* deprecated pairwise_estimator_convert_X\r\n\r\n* deprecated checking_parameters\r\n\r\n* pep8\r\n\r\n* use decorator for class",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExOTA0NTA=",
+                      "login": "NicolasHug"
+                    },
+                    "name": "Nicolas Hug",
+                    "email": "contact@nicolas-hug.com",
+                    "date": "2019-09-20T05:35:08.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "FIX raise error for float to int casting with NaN, inf in check_array…",
+                  "message": "FIX raise error for float to int casting with NaN, inf in check_array (#14872)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYzMDkzNg==",
+                      "login": "rth"
+                    },
+                    "name": "Roman Yurchak",
+                    "email": "rth.yurchak@pm.me",
+                    "date": "2019-09-20T11:04:45.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "FEA Adds Plotting API to Partial Dependence (#14646)",
+                  "message": "FEA Adds Plotting API to Partial Dependence (#14646)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU0MDI2MzM=",
+                      "login": "thomasjpfan"
+                    },
+                    "name": "Thomas J Fan",
+                    "email": "thomasjpfan@gmail.com",
+                    "date": "2019-09-20T05:03:00.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "FIX raise error when using categorical_crossentropy in binary problem…",
+                  "message": "FIX raise error when using categorical_crossentropy in binary problem in HGBDT (#14869)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2NjM4NjQ=",
+                      "login": "adrinjalali"
+                    },
+                    "name": "Adrin Jalali",
+                    "email": "adrin.jalali@gmail.com",
+                    "date": "2019-09-20T10:23:34.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "EHN Add max sample size when drawing bootstrap to forest ensembles (#…",
+                  "message": "EHN Add max sample size when drawing bootstrap to forest ensembles (#14682)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1ODg0NTY=",
+                      "login": "notmatthancock"
+                    },
+                    "name": "notmatthancock",
+                    "email": "mhancock743@gmail.com",
+                    "date": "2019-09-20T02:59:00.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Fix changelog for MissingIndicator efficiency (#15027)",
+                  "message": "DOC Fix changelog for MissingIndicator efficiency (#15027)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM5NTYxMDg0",
+                      "login": "harsh020"
+                    },
+                    "name": "Harsh Soni",
+                    "email": "39561084+harsh020@users.noreply.github.com",
+                    "date": "2019-09-20T03:30:31.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MAINT Add CI config to test scikit-learn with latest numpy / scipy / …",
+                  "message": "MAINT Add CI config to test scikit-learn with latest numpy / scipy / mkl from conda defaults channel (#15020)\n\n* FIX debugging OMP crash latest conda\r\n\r\n* hotfix\r\n\r\n* MAINT pin opemp\r\n\r\n* Workaround issue with intel-openmp 2019.5 and multiprocessing\r\n\r\n* MAINT back to latest intel-openmp in CI\r\n\r\n* typo\r\n\r\n* trigger CI\r\n\r\n* [doc build]",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc0NTQwMTU=",
+                      "login": "glemaitre"
+                    },
+                    "name": "Guillaume Lemaitre",
+                    "email": "g.lemaitre58@gmail.com",
+                    "date": "2019-09-19T22:52:12.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC fix link to examples in nearest neighbors doc",
+                  "message": "DOC fix link to examples in nearest neighbors doc",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExMDY1NTk2",
+                      "login": "TomDLT"
+                    },
+                    "name": "Tom Dupré la Tour",
+                    "email": "tom.dupre-la-tour@m4x.org",
+                    "date": "2019-09-19T10:36:45.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[MRG] MNT Use one single random seed for warm start and subsampling i…",
+                  "message": "[MRG] MNT Use one single random seed for warm start and subsampling in HGBDT (#14999)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MDUzOTM0",
+                      "login": "johannfaouzi"
+                    },
+                    "name": "Johann Faouzi",
+                    "email": "johann.faouzi@gmail.com",
+                    "date": "2019-09-19T15:33:36.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MAINT more explicit/less misleading distrib name in azure ci (#15024)",
+                  "message": "MAINT more explicit/less misleading distrib name in azure ci (#15024)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5MDYx",
+                      "login": "ogrisel"
+                    },
+                    "name": "Olivier Grisel",
+                    "email": "olivier.grisel@ensta.org",
+                    "date": "2019-09-19T14:55:36.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Fix Title level inconsistency and orphaned page. (#15002)",
+                  "message": "DOC Fix Title level inconsistency and orphaned page. (#15002)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2NjIyNjE=",
+                      "login": "cmarmo"
+                    },
+                    "name": "Chiara Marmo",
+                    "email": "cmarmo@users.noreply.github.com",
+                    "date": "2019-09-19T14:54:24.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "API Replace scorer brier_score_loss with neg_brier_score (#14898)",
+                  "message": "API Replace scorer brier_score_loss with neg_brier_score (#14898)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIxNjkwMDUy",
+                      "login": "stefan-matcovici"
+                    },
+                    "name": "stefan-matcovici",
+                    "email": "stefan.matcovici@gmail.com",
+                    "date": "2019-09-18T21:37:33.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Improve ngram_range doc (#15016)",
+                  "message": "DOC Improve ngram_range doc (#15016)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ0MDUyOTI4",
+                      "login": "fhaase2"
+                    },
+                    "name": "Frederic Haase",
+                    "email": "44052928+fhaase2@users.noreply.github.com",
+                    "date": "2019-09-19T00:31:48.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[MRG] DOC New Getting Started guide (#14920)",
+                  "message": "[MRG] DOC New Getting Started guide (#14920)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExOTA0NTA=",
+                      "login": "NicolasHug"
+                    },
+                    "name": "Nicolas Hug",
+                    "email": "contact@nicolas-hug.com",
+                    "date": "2019-09-18T18:03:49.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": " FEA: Stacking estimator for classification and regression (#11047)",
+                  "message": " FEA: Stacking estimator for classification and regression (#11047)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc0NTQwMTU=",
+                      "login": "glemaitre"
+                    },
+                    "name": "Guillaume Lemaitre",
+                    "email": "g.lemaitre58@gmail.com",
+                    "date": "2019-09-18T22:06:33.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "ENH Weights parameter of datasets.make_classification changed to arra…",
+                  "message": "ENH Weights parameter of datasets.make_classification changed to array-like from list only - Issue 14760 (#14764)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5NjE3MjE=",
+                      "login": "CatChenal"
+                    },
+                    "name": "Cat Chenal",
+                    "email": "8961721+CatChenal@users.noreply.github.com",
+                    "date": "2019-09-18T14:39:29.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Reorganize plot_nca_illustration example into subsections (#14795)",
+                  "message": "DOC Reorganize plot_nca_illustration example into subsections (#14795)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY4NzQ2NDY=",
+                      "login": "m-clare"
+                    },
+                    "name": "m-clare",
+                    "email": "maryanne.wachter@gmail.com",
+                    "date": "2019-09-18T14:36:30.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "FEA Generalize the use of precomputed sparse distance matr… (#10482)",
+                  "message": "FEA Generalize the use of precomputed sparse distance matr… (#10482)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExMDY1NTk2",
+                      "login": "TomDLT"
+                    },
+                    "name": "Tom Dupré la Tour",
+                    "email": "tom.dupre-la-tour@m4x.org",
+                    "date": "2019-09-18T11:32:59.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[DOC] Adds to the current list of attributes for Bayes ARDRegression …",
+                  "message": "[DOC] Adds to the current list of attributes for Bayes ARDRegression class (#15003)\n\n* Add intercept_ to the current list of attributes for ARDRegression\r\n\r\n* Update bayes.py to resolve flake8 error\r\n\r\n* Update bayes.py",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2MjY0Njcw",
+                      "login": "dakotagrusak"
+                    },
+                    "name": "Dakota Grusak",
+                    "email": "dgrusak@trinity.edu",
+                    "date": "2019-09-18T00:44:15.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MNT Make dbscan call DBSCAN.fit and not the opposite (#14994)",
+                  "message": "MNT Make dbscan call DBSCAN.fit and not the opposite (#14994)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExOTA0NTA=",
+                      "login": "NicolasHug"
+                    },
+                    "name": "Nicolas Hug",
+                    "email": "contact@nicolas-hug.com",
+                    "date": "2019-09-17T20:30:50.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CI/MAINT remove appveyor (#15001)",
+                  "message": "CI/MAINT remove appveyor (#15001)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM0NjU3NzI1",
+                      "login": "jeremiedbb"
+                    },
+                    "name": "jeremiedbb",
+                    "email": "34657725+jeremiedbb@users.noreply.github.com",
+                    "date": "2019-09-17T16:06:51.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC fix shape of intercept_ in LDA (#14991)",
+                  "message": "DOC fix shape of intercept_ in LDA (#14991)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExMTkwNzc0",
+                      "login": "smujjiga"
+                    },
+                    "name": "smujjiga",
+                    "email": "smujjiga@outlook.com",
+                    "date": "2019-09-16T18:38:57.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "FIX implement repr for RepeatedKFold and RepeatedStratifiedKFold (#14…",
+                  "message": "FIX implement repr for RepeatedKFold and RepeatedStratifiedKFold (#14983)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIyOTAxOTM4",
+                      "login": "DrGFreeman"
+                    },
+                    "name": "DrGFreeman",
+                    "email": "DrGFreeman@users.noreply.github.com",
+                    "date": "2019-09-16T07:58:02.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "EHN update lobpcg from scipy master (#14971)",
+                  "message": "EHN update lobpcg from scipy master (#14971)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc0NTQwMTU=",
+                      "login": "glemaitre"
+                    },
+                    "name": "Guillaume Lemaitre",
+                    "email": "g.lemaitre58@gmail.com",
+                    "date": "2019-09-16T13:39:53.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[MRG] Make k_means use KMeans instead (#14985)",
+                  "message": "[MRG] Make k_means use KMeans instead (#14985)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExOTA0NTA=",
+                      "login": "NicolasHug"
+                    },
+                    "name": "Nicolas Hug",
+                    "email": "contact@nicolas-hug.com",
+                    "date": "2019-09-16T04:58:56.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MNT deprecate outputs_2d_ attribute of dummy estimators (#14933)",
+                  "message": "MNT deprecate outputs_2d_ attribute of dummy estimators (#14933)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExOTA0NTA=",
+                      "login": "NicolasHug"
+                    },
+                    "name": "Nicolas Hug",
+                    "email": "contact@nicolas-hug.com",
+                    "date": "2019-09-15T18:09:09.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Change default dataset for `plot_johnson_lindenstrauss_bound.py` …",
+                  "message": "DOC Change default dataset for `plot_johnson_lindenstrauss_bound.py` (#14787)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU5NDkwODY=",
+                      "login": "andreanr"
+                    },
+                    "name": "Andrea Navarrete",
+                    "email": "andrea.navarrete126@gmail.com",
+                    "date": "2019-09-14T17:40:21.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "TST Adjusts rtol for test_lda_predict (#14978)",
+                  "message": "TST Adjusts rtol for test_lda_predict (#14978)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE0MTMxODIz",
+                      "login": "minggli"
+                    },
+                    "name": "Ming Li",
+                    "email": "14131823+minggli@users.noreply.github.com",
+                    "date": "2019-09-14T21:00:58.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC add missing attributes to OneVsRestClassifier (#14783)",
+                  "message": "DOC add missing attributes to OneVsRestClassifier (#14783)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ4NTk5MDE1",
+                      "login": "catajara"
+                    },
+                    "name": "catajara",
+                    "email": "48599015+catajara@users.noreply.github.com",
+                    "date": "2019-09-13T15:19:56.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Add example for GroupShuffleSplit (#14906)",
+                  "message": "DOC Add example for GroupShuffleSplit (#14906)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2MjAzMTY=",
+                      "login": "JesperDramsch"
+                    },
+                    "name": "Jesper Dramsch",
+                    "email": "jesper@dramsch.net",
+                    "date": "2019-09-13T20:29:20.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Adds more docstring standards (#14744)",
+                  "message": "DOC Adds more docstring standards (#14744)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU0MDI2MzM=",
+                      "login": "thomasjpfan"
+                    },
+                    "name": "Thomas J Fan",
+                    "email": "thomasjpfan@gmail.com",
+                    "date": "2019-09-13T13:20:29.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MNT Deprecate enforce_estimator_tags_y (#14945)",
+                  "message": "MNT Deprecate enforce_estimator_tags_y (#14945)\n\n* deprecate choose_check_classifiers_labels\r\n\r\n* made new test file\r\n\r\n* deprecated enforce_estimator_tags_y\r\n\r\n* pep8\r\n\r\n* Added note in whatsnew\r\n\r\n* not sure what went wrong in the merge",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExOTA0NTA=",
+                      "login": "NicolasHug"
+                    },
+                    "name": "Nicolas Hug",
+                    "email": "contact@nicolas-hug.com",
+                    "date": "2019-09-13T09:48:13.000-04:00"
+                  },
+                  "comments": {
+                    "edges": [
+                      {
+                        "node": {
+                          "bodyText": "wasn't this just introduced?",
+                          "createdAt": "2019-09-18T14:48:47Z",
+                          "reactions": {
+                            "edges": []
+                          }
+                        }
+                      },
+                      {
+                        "node": {
+                          "bodyText": "enforce_estimator_tags_y wasn't present in 0.21",
+                          "createdAt": "2019-09-18T14:50:41Z",
+                          "reactions": {
+                            "edges": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MAINT filter deprecation warnings triggered by all_estimators (#14691)",
+                  "message": "MAINT filter deprecation warnings triggered by all_estimators (#14691)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5MDYx",
+                      "login": "ogrisel"
+                    },
+                    "name": "Olivier Grisel",
+                    "email": "olivier.grisel@ensta.org",
+                    "date": "2019-09-13T13:22:33.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Remove GraphViz mention in plot_tree docstring (#14973)",
+                  "message": "DOC Remove GraphViz mention in plot_tree docstring (#14973)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2ODAwNzk=",
+                      "login": "lesteve"
+                    },
+                    "name": "Loïc Estève",
+                    "email": "loic.esteve@ymail.com",
+                    "date": "2019-09-13T11:53:57.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Add missing attributes to SVC and NuSVC (#14930)",
+                  "message": "DOC Add missing attributes to SVC and NuSVC (#14930)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMyNzA0MTIx",
+                      "login": "kwinata"
+                    },
+                    "name": "Kevin Winata",
+                    "email": "32704121+kwinata@users.noreply.github.com",
+                    "date": "2019-09-13T17:16:20.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Fix some sphinx warnings (#14967)",
+                  "message": "DOC Fix some sphinx warnings (#14967)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2NjIyNjE=",
+                      "login": "cmarmo"
+                    },
+                    "name": "Chiara Marmo",
+                    "email": "cmarmo@users.noreply.github.com",
+                    "date": "2019-09-12T22:42:22.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Improved the docstring of TransformedTargetRegressor (#14916)",
+                  "message": "DOC Improved the docstring of TransformedTargetRegressor (#14916)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyMjI1NTM=",
+                      "login": "trbedwards"
+                    },
+                    "name": "Thomas Edwards",
+                    "email": "tom.rb.edwards@gmail.com",
+                    "date": "2019-09-11T16:28:22.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Fix \"Duplicate labels\" & \"Duplicate .. target\" sphinx warn (#14931)",
+                  "message": "DOC Fix \"Duplicate labels\" & \"Duplicate .. target\" sphinx warn (#14931)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2NjIyNjE=",
+                      "login": "cmarmo"
+                    },
+                    "name": "Chiara Marmo",
+                    "email": "cmarmo@users.noreply.github.com",
+                    "date": "2019-09-11T13:51:58.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MAINT Revert changes in test_multiclass.py",
+                  "message": "MAINT Revert changes in test_multiclass.py",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYzMDkzNg==",
+                      "login": "rth"
+                    },
+                    "name": "Roman Yurchak",
+                    "email": "rth.yurchak@pm.me",
+                    "date": "2019-09-11T13:22:54.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Cleaning for what's new",
+                  "message": "DOC Cleaning for what's new",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc4ODI3",
+                      "login": "jnothman"
+                    },
+                    "name": "Joel Nothman",
+                    "email": "joel.nothman@gmail.com",
+                    "date": "2019-09-11T19:08:07.000+10:00"
+                  },
+                  "comments": {
+                    "edges": [
+                      {
+                        "node": {
+                          "bodyText": "Probably accidental additions? They fail in CI, will add a commit to revert.",
+                          "createdAt": "2019-09-11T11:20:55Z",
+                          "reactions": {
+                            "edges": []
+                          }
+                        }
+                      },
+                      {
+                        "node": {
+                          "bodyText": "Probably accidental additions? They fail in CI, will add a commit to revert.\n\nReverted in 411455e",
+                          "createdAt": "2019-09-11T11:24:54Z",
+                          "reactions": {
+                            "edges": []
+                          }
+                        }
+                      },
+                      {
+                        "node": {
+                          "bodyText": "Indeed, thanks, and apologies for not double checking the commit",
+                          "createdAt": "2019-09-11T11:26:42Z",
+                          "reactions": {
+                            "edges": []
+                          }
+                        }
+                      },
+                      {
+                        "node": {
+                          "bodyText": "No worries. Thanks for improving the release notes.",
+                          "createdAt": "2019-09-11T11:27:42Z",
+                          "reactions": {
+                            "edges": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "ENH Adds _MultimetricScorer for Optimized Scoring  (#14593)",
+                  "message": "ENH Adds _MultimetricScorer for Optimized Scoring  (#14593)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU0MDI2MzM=",
+                      "login": "thomasjpfan"
+                    },
+                    "name": "Thomas J Fan",
+                    "email": "thomasjpfan@gmail.com",
+                    "date": "2019-09-10T18:04:16.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[MRG] MNT deprecate choose_check_classifiers_labels (#14909)",
+                  "message": "[MRG] MNT deprecate choose_check_classifiers_labels (#14909)\n\n* deprecate choose_check_classifiers_labels\r\n\r\n* made new test file",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExOTA0NTA=",
+                      "login": "NicolasHug"
+                    },
+                    "name": "Nicolas Hug",
+                    "email": "contact@nicolas-hug.com",
+                    "date": "2019-09-10T16:15:39.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "ENH safe_sparse_dot work on 3D+ arrays (#14538)",
+                  "message": "ENH safe_sparse_dot work on 3D+ arrays (#14538)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM0NjU3NzI1",
+                      "login": "jeremiedbb"
+                    },
+                    "name": "jeremiedbb",
+                    "email": "34657725+jeremiedbb@users.noreply.github.com",
+                    "date": "2019-09-10T21:45:57.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MAINT Deprecate any import that is not from sklearn.neural_net… (#14939)",
+                  "message": "MAINT Deprecate any import that is not from sklearn.neural_net… (#14939)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExOTA0NTA=",
+                      "login": "NicolasHug"
+                    },
+                    "name": "Nicolas Hug",
+                    "email": "contact@nicolas-hug.com",
+                    "date": "2019-09-10T14:57:36.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MNT deprecating presort in DecisionTree* and GradeintBoosting* (#14907)",
+                  "message": "MNT deprecating presort in DecisionTree* and GradeintBoosting* (#14907)\n\n* deprecating presort\r\n\r\n* pep8\r\n\r\n* address comments, add whats_new\r\n\r\n* recomment HistGradientBoosting\r\n\r\n* address comments",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2NjM4NjQ=",
+                      "login": "adrinjalali"
+                    },
+                    "name": "Adrin Jalali",
+                    "email": "adrin.jalali@gmail.com",
+                    "date": "2019-09-10T20:39:52.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC remove extra colon from doc string (#14940)",
+                  "message": "DOC remove extra colon from doc string (#14940)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQyODA4NDM=",
+                      "login": "ingrid88"
+                    },
+                    "name": "Ingrid Spielman",
+                    "email": "ingspi@gmail.com",
+                    "date": "2019-09-10T14:01:13.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC add missing attributes to SVR class (#14773)",
+                  "message": "DOC add missing attributes to SVR class (#14773)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQyODA4NDM=",
+                      "login": "ingrid88"
+                    },
+                    "name": "Ingrid Spielman",
+                    "email": "ingspi@gmail.com",
+                    "date": "2019-09-09T22:58:29.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MAINT correct no_validation tag for FunctionTransformer (#14895)",
+                  "message": "MAINT correct no_validation tag for FunctionTransformer (#14895)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExOTA0NTA=",
+                      "login": "NicolasHug"
+                    },
+                    "name": "Nicolas Hug",
+                    "email": "contact@nicolas-hug.com",
+                    "date": "2019-09-09T20:17:01.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MAINT Removed redundant parameters of 2 classes (#14796)",
+                  "message": "MAINT Removed redundant parameters of 2 classes (#14796)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5OTg4MjY3",
+                      "login": "RuchitaGarde"
+                    },
+                    "name": "RuchitaGarde",
+                    "email": "ruchitagarde@gmail.com",
+                    "date": "2019-09-09T20:04:55.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "TST Improve error message in DummyClassifier (#14908)",
+                  "message": "TST Improve error message in DummyClassifier (#14908)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM3MzM5Mzg0",
+                      "login": "martinagvilas"
+                    },
+                    "name": "Martina G. Vilas",
+                    "email": "martinagonzalezvilas@gmail.com",
+                    "date": "2019-09-09T22:59:11.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "EHN/FIX add parameter skip_complete for IterativeImputer (#14806)",
+                  "message": "EHN/FIX add parameter skip_complete for IterativeImputer (#14806)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE4NzQ2Njg=",
+                      "login": "sergeyf"
+                    },
+                    "name": "Sergey Feldman",
+                    "email": "sergeyfeldman@gmail.com",
+                    "date": "2019-09-09T13:47:56.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC add missing import of parametrize_with_checks (#14938)",
+                  "message": "DOC add missing import of parametrize_with_checks (#14938)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ0OTU1OA==",
+                      "login": "amueller"
+                    },
+                    "name": "Andreas Mueller",
+                    "email": "andreas.mueller@columbia.edu",
+                    "date": "2019-09-09T13:52:57.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN Rename p to power parameter in mean_tweedie_deviance (#14852)",
+                  "message": "CLN Rename p to power parameter in mean_tweedie_deviance (#14852)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYzMDkzNg==",
+                      "login": "rth"
+                    },
+                    "name": "Roman Yurchak",
+                    "email": "rth.yurchak@pm.me",
+                    "date": "2019-09-09T19:45:36.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "EHN Implement least absolute deviation loss in GBDTs (#13896)",
+                  "message": "EHN Implement least absolute deviation loss in GBDTs (#13896)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExOTA0NTA=",
+                      "login": "NicolasHug"
+                    },
+                    "name": "Nicolas Hug",
+                    "email": "contact@nicolas-hug.com",
+                    "date": "2019-09-09T04:26:52.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MAINT CI switch to pypi for the 'latest' env (#14883)",
+                  "message": "MAINT CI switch to pypi for the 'latest' env (#14883)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2NjM4NjQ=",
+                      "login": "adrinjalali"
+                    },
+                    "name": "Adrin Jalali",
+                    "email": "adrin.jalali@gmail.com",
+                    "date": "2019-09-08T15:35:53.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix bug in implementation of scoring in loo `_RidgeGCV` (#14864)",
+                  "message": "Fix bug in implementation of scoring in loo `_RidgeGCV` (#14864)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIwODEyNDA3",
+                      "login": "venkyyuvy"
+                    },
+                    "name": "Venkatachalam N",
+                    "email": "venky.yuvy@gmail.com",
+                    "date": "2019-09-08T18:35:14.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "TST: Fix assert_raises in tests_neural_networks.py (#14716)",
+                  "message": "TST: Fix assert_raises in tests_neural_networks.py (#14716)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQzNzAxNTMw",
+                      "login": "sameshl"
+                    },
+                    "name": "Samesh Lakhotia",
+                    "email": "43701530+sameshl@users.noreply.github.com",
+                    "date": "2019-09-08T17:55:33.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "TST: Fix assert raises in `sklearn/metrics/cluster/tests/` (#14707)",
+                  "message": "TST: Fix assert raises in `sklearn/metrics/cluster/tests/` (#14707)\n\n* MAINT:Fix assert raises in `sklearn/metrics/cluster/tests/`\r\n\r\n* fix `assert_raise_message` in test_unsupervised.py\r\n\r\n* fix `assert_raise_message` in test_supervised.py\r\n\r\n* fix import error\r\n\r\n* fix `assert_raise_message` in test_unsupervised.py\r\n\r\n* remove use of `re.escape` and manually escape string in test_supervised.py\r\n\r\n* remove use of `re.escape` and manually escape string in test_unsupervised.py",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQzNzAxNTMw",
+                      "login": "sameshl"
+                    },
+                    "name": "Samesh Lakhotia",
+                    "email": "43701530+sameshl@users.noreply.github.com",
+                    "date": "2019-09-08T17:42:10.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "TST: Fix assert raises in `sklearn/metrics/tests/` (#14715)",
+                  "message": "TST: Fix assert raises in `sklearn/metrics/tests/` (#14715)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQzNzAxNTMw",
+                      "login": "sameshl"
+                    },
+                    "name": "Samesh Lakhotia",
+                    "email": "43701530+sameshl@users.noreply.github.com",
+                    "date": "2019-09-08T17:39:40.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MAINT Fix assert raises in sklearn/semi_supervised/tests/ (#14841)",
+                  "message": "MAINT Fix assert raises in sklearn/semi_supervised/tests/ (#14841)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQzNzAxNTMw",
+                      "login": "sameshl"
+                    },
+                    "name": "Samesh Lakhotia",
+                    "email": "43701530+sameshl@users.noreply.github.com",
+                    "date": "2019-09-08T07:05:40.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MNT Fixed error in .gitignore file. (#14921)",
+                  "message": "MNT Fixed error in .gitignore file. (#14921)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjUxMDA5NjI4",
+                      "login": "novaya"
+                    },
+                    "name": "novaya",
+                    "email": "51009628+novaya@users.noreply.github.com",
+                    "date": "2019-09-07T05:16:06.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Cleaner docstring module for biclusering. (#14915)",
+                  "message": "DOC Cleaner docstring module for biclusering. (#14915)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExOTA0NTA=",
+                      "login": "NicolasHug"
+                    },
+                    "name": "Nicolas Hug",
+                    "email": "contact@nicolas-hug.com",
+                    "date": "2019-09-06T14:18:39.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Improve syntax in stochastic gradient model (#14918)",
+                  "message": "DOC Improve syntax in stochastic gradient model (#14918)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2MjY0Njcw",
+                      "login": "dakotagrusak"
+                    },
+                    "name": "Dakota Grusak",
+                    "email": "dgrusak@trinity.edu",
+                    "date": "2019-09-06T11:19:01.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Update Windows Advanced Installation Documentation  (#14910)",
+                  "message": "DOC Update Windows Advanced Installation Documentation  (#14910)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU0NzE3NDY0",
+                      "login": "motmoti"
+                    },
+                    "name": "motmoti",
+                    "email": "54717464+motmoti@users.noreply.github.com",
+                    "date": "2019-09-06T17:02:23.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Moved the text around to different subsections for documentation …",
+                  "message": "DOC Moved the text around to different subsections for documentation of \"… (#14899)\n\n* Moved the text around to different subsections for documentation of \"Out-of-core classification of text documents\"\r\n\r\n* Added spaces to #'s to pass pep8 conventions\r\n\r\n* cut lines that were too long\r\n\r\n* cut trailing space",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQwMzcxNjkw",
+                      "login": "kellycarmody"
+                    },
+                    "name": "kellycarmody",
+                    "email": "40371690+kellycarmody@users.noreply.github.com",
+                    "date": "2019-09-06T09:30:28.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[MGR] TransformedTargetRegressor passes fit_params to regressor  (#14…",
+                  "message": "[MGR] TransformedTargetRegressor passes fit_params to regressor  (#14890)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyNTI3",
+                      "login": "mfcabrera"
+                    },
+                    "name": "Miguel Cabrera",
+                    "email": "mfcabrera@gmail.com",
+                    "date": "2019-09-06T12:26:04.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Changed syntax for open interval in BaseSGD (#14904)",
+                  "message": "DOC Changed syntax for open interval in BaseSGD (#14904)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyMjI1NTM=",
+                      "login": "trbedwards"
+                    },
+                    "name": "Thomas Edwards",
+                    "email": "tom.rb.edwards@gmail.com",
+                    "date": "2019-09-06T11:23:20.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "ENH text vectorizers should raise warnings when user params will be u…",
+                  "message": "ENH text vectorizers should raise warnings when user params will be unused (#14602)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ2NjYwMTc=",
+                      "login": "getgaurav2"
+                    },
+                    "name": "getgaurav2",
+                    "email": "get.gaurav2@gmail.com",
+                    "date": "2019-09-05T21:08:38.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MAINT remove inheriting from object (#14891)",
+                  "message": "MAINT remove inheriting from object (#14891)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ0OTU1OA==",
+                      "login": "amueller"
+                    },
+                    "name": "Andreas Mueller",
+                    "email": "andreas.mueller@columbia.edu",
+                    "date": "2019-09-05T14:41:29.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Link items explictly (#14817)",
+                  "message": "DOC Link items explictly (#14817)\n\n* DOC Link items explictly\r\n\r\n* STY\r\n\r\n* DOC Link another",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU0MDI2MzM=",
+                      "login": "thomasjpfan"
+                    },
+                    "name": "Thomas J Fan",
+                    "email": "thomasjpfan@gmail.com",
+                    "date": "2019-09-05T05:37:05.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix mixin inheritance order, allow overwriting tags (#14884)",
+                  "message": "Fix mixin inheritance order, allow overwriting tags (#14884)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ0OTU1OA==",
+                      "login": "amueller"
+                    },
+                    "name": "Andreas Mueller",
+                    "email": "andreas.mueller@columbia.edu",
+                    "date": "2019-09-05T04:13:30.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "ENH Adds roc weighted scorers to SCORERS (#14417)",
+                  "message": "ENH Adds roc weighted scorers to SCORERS (#14417)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU0MDI2MzM=",
+                      "login": "thomasjpfan"
+                    },
+                    "name": "Thomas J Fan",
+                    "email": "thomasjpfan@gmail.com",
+                    "date": "2019-09-04T15:41:29.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[MRG] Write consistent descriptions of the data attribute C in Linear…",
+                  "message": "[MRG] Write consistent descriptions of the data attribute C in LinearSVC, LinearSVR, SVC and SVR  (#14782)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE0OTU5MDkw",
+                      "login": "NahsiN"
+                    },
+                    "name": "Nishan Singh Mann",
+                    "email": "nishan.singh.mann@gmail.com",
+                    "date": "2019-09-04T14:49:37.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[MRG] ENH add support for scalar, slice and mask in safe_indexing axi…",
+                  "message": "[MRG] ENH add support for scalar, slice and mask in safe_indexing axis=0 (#14475)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc0NTQwMTU=",
+                      "login": "glemaitre"
+                    },
+                    "name": "Guillaume Lemaitre",
+                    "email": "g.lemaitre58@gmail.com",
+                    "date": "2019-09-04T11:45:19.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC Fix CF full name in Birch documentation (#14880)",
+                  "message": "DOC Fix CF full name in Birch documentation (#14880)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjkwMjM4Mzg=",
+                      "login": "kevin1kevin1k"
+                    },
+                    "name": "Kevin Yu-Sheng Li",
+                    "email": "r07922087@ntu.edu.tw",
+                    "date": "2019-09-04T14:35:34.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "FEA Adds KNNImputer (#12852)",
+                  "message": "FEA Adds KNNImputer (#12852)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU0MDI2MzM=",
+                      "login": "thomasjpfan"
+                    },
+                    "name": "Thomas J Fan",
+                    "email": "thomasjpfan@gmail.com",
+                    "date": "2019-09-03T19:08:59.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC clarification in docstring for _check_sample_weight (#14870)",
+                  "message": "DOC clarification in docstring for _check_sample_weight (#14870)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExOTA0NTA=",
+                      "login": "NicolasHug"
+                    },
+                    "name": "Nicolas Hug",
+                    "email": "contact@nicolas-hug.com",
+                    "date": "2019-09-02T17:35:30.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MNT Remove preprocessing.base and its test cases (#14866)",
+                  "message": "MNT Remove preprocessing.base and its test cases (#14866)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMyNzA0MTIx",
+                      "login": "kwinata"
+                    },
+                    "name": "Kevin Winata",
+                    "email": "32704121+kevinwinatamichael@users.noreply.github.com",
+                    "date": "2019-09-02T16:21:25.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC improve the PDP example (#14842)",
+                  "message": "DOC improve the PDP example (#14842)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5MDYx",
+                      "login": "ogrisel"
+                    },
+                    "name": "Olivier Grisel",
+                    "email": "olivier.grisel@ensta.org",
+                    "date": "2019-08-29T17:56:03.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix for spectral clustering error when using 'amg' solver (#13707)",
+                  "message": "Fix for spectral clustering error when using 'amg' solver (#13707)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyOTgwMjI=",
+                      "login": "whitews"
+                    },
+                    "name": "Scott White",
+                    "email": "whitews@gmail.com",
+                    "date": "2019-08-29T08:16:37.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MAINT: Remove redundant code in MLP (#14815)",
+                  "message": "MAINT: Remove redundant code in MLP (#14815)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYzMDkzNg==",
+                      "login": "rth"
+                    },
+                    "name": "Roman Yurchak",
+                    "email": "rth.yurchak@pm.me",
+                    "date": "2019-08-29T14:52:45.000+03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[MAINT] Post #14647 cleanups (#14840)",
+                  "message": "[MAINT] Post #14647 cleanups (#14840)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg5MDYx",
+                      "login": "ogrisel"
+                    },
+                    "name": "Olivier Grisel",
+                    "email": "olivier.grisel@ensta.org",
+                    "date": "2019-08-29T11:59:03.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "MAINT:Fix assert raises in `sklearn/preprocessing/tests/` (#14717)",
+                  "message": "MAINT:Fix assert raises in `sklearn/preprocessing/tests/` (#14717)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQzNzAxNTMw",
+                      "login": "sameshl"
+                    },
+                    "name": "Samesh Lakhotia",
+                    "email": "43701530+sameshl@users.noreply.github.com",
+                    "date": "2019-08-29T15:08:54.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1814 @@
+{
+  "data": {
+    "repository": {
+      "ref": {
+        "target": {
+          "history": {
+            "edges": [
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11890 from mfh92/master",
+                  "message": "Merge pull request #11890 from mfh92/master\n\ntypo fix",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1MTkyOQ==",
+                      "login": "minrk"
+                    },
+                    "name": "Min RK",
+                    "email": "benjaminrk@gmail.com",
+                    "date": "2019-09-19T15:48:04.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "typo fix",
+                  "message": "typo fix\n\none double-quote symbol was misplaced.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ4Mjk2NTA5",
+                      "login": "mfh92"
+                    },
+                    "name": "mfh92",
+                    "email": "48296509+mfh92@users.noreply.github.com",
+                    "date": "2019-09-18T10:43:06.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11874 from hugovk/fix-flake8-2020",
+                  "message": "Merge pull request #11874 from hugovk/fix-flake8-2020\n\nFix for Python 4",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-09-08T12:26:21.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11876 from daharn/autoreload-fix-using-gc.get_ref…",
+                  "message": "Merge pull request #11876 from daharn/autoreload-fix-using-gc.get_referrers()\n\nswitching update_instance() to gc.get_referrers()",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-09-08T12:24:30.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "switching to gc.get_referrers() allows for a very simple and (hopeful…",
+                  "message": "switching to gc.get_referrers() allows for a very simple and (hopefully) efficient update of old class instances",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ0NDM5MTA4",
+                      "login": "daharn"
+                    },
+                    "name": "Niclas",
+                    "email": "niclas_hanraths@web.de",
+                    "date": "2019-09-05T01:50:59.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix for Python 4",
+                  "message": "Fix for Python 4",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMjQyMjU=",
+                      "login": "hugovk"
+                    },
+                    "name": "Hugo",
+                    "email": "hugovk@users.noreply.github.com",
+                    "date": "2019-09-03T18:48:55.000+03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "back to development",
+                  "message": "back to development",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-08-30T09:52:21.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "release 7.8.0",
+                  "message": "release 7.8.0",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-08-30T09:49:34.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "update stats",
+                  "message": "update stats",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-08-30T09:44:19.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "update 7.8 what's new",
+                  "message": "update 7.8 what's new",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-08-30T09:41:14.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "update colors",
+                  "message": "update colors",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-08-30T09:34:34.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11859 from terrdavis/master",
+                  "message": "Merge pull request #11859 from terrdavis/master\n\nExpose pdb.Pdb API",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-08-21T22:14:02.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "add whitespace",
+                  "message": "add whitespace",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2ODI5Nzc2",
+                      "login": "terrdavis"
+                    },
+                    "name": "Terry Davis",
+                    "email": "16829776+terrdavis@users.noreply.github.com",
+                    "date": "2019-08-20T12:46:08.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "add pr entry",
+                  "message": "add pr entry",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2ODI5Nzc2",
+                      "login": "terrdavis"
+                    },
+                    "name": "Terry Davis",
+                    "email": "16829776+terrdavis@users.noreply.github.com",
+                    "date": "2019-08-20T12:43:02.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add class-docstring for terminal.debugger.TerminalPdb.",
+                  "message": "Add class-docstring for terminal.debugger.TerminalPdb.\nOverrides inherited docstring.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2ODI5Nzc2",
+                      "login": "terrdavis"
+                    },
+                    "name": "Terry Davis",
+                    "email": "16829776+terrdavis@users.noreply.github.com",
+                    "date": "2019-08-20T12:07:56.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add docstring for core.debugger.Pdb",
+                  "message": "Add docstring for core.debugger.Pdb",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2ODI5Nzc2",
+                      "login": "terrdavis"
+                    },
+                    "name": "Terry Davis",
+                    "email": "16829776+terrdavis@users.noreply.github.com",
+                    "date": "2019-08-20T12:05:52.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add **kwargs to Pdb and pass into base class.",
+                  "message": "Add **kwargs to Pdb and pass into base class.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2ODI5Nzc2",
+                      "login": "terrdavis"
+                    },
+                    "name": "Terry Davis",
+                    "email": "16829776+terrdavis@users.noreply.github.com",
+                    "date": "2019-08-20T10:15:47.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove dead code that also contains an error.",
+                  "message": "Remove dead code that also contains an error.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2ODI5Nzc2",
+                      "login": "terrdavis"
+                    },
+                    "name": "Terry Davis",
+                    "email": "16829776+terrdavis@users.noreply.github.com",
+                    "date": "2019-08-20T10:01:25.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11853 from minho42/Fixed-typos",
+                  "message": "Merge pull request #11853 from minho42/Fixed-typos\n\nFixed typos",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-08-21T15:50:33.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update version7.rst",
+                  "message": "Update version7.rst",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-08-21T14:38:08.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed typos",
+                  "message": "Fixed typos",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1Mjc4NTEy",
+                      "login": "minho42"
+                    },
+                    "name": "Min ho Kim",
+                    "email": "minho42@gmail.com",
+                    "date": "2019-08-14T06:27:48.000+10:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11852 from danielballan/formatter-usage",
+                  "message": "Merge pull request #11852 from danielballan/formatter-usage\n\nFix example usage of BaseFormatter.for_type_by_name.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-08-13T09:33:59.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix example usage of BaseFormatter.for_type_by_name.",
+                  "message": "Fix example usage of BaseFormatter.for_type_by_name.\n\nI propose a small documentation fix for this excellent feature of\nIPython.\n\nThe current example doesn't work because the type module and type name\nare lumped into one string. They must be given as separate strings.\n\nSee docstring:\n\n```\nSignature: BaseFormatter.for_type_by_name(self, type_module, type_name, func=None)\n```\n\nFor extra clarity, I have added a submodule to this made-up example\nmodule so that the pattern is clear.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIyNzk1OTg=",
+                      "login": "danielballan"
+                    },
+                    "name": "Dan Allan",
+                    "email": "dallan@bnl.gov",
+                    "date": "2019-08-13T09:16:21.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11840 from oscargus/enablelatexfontcolor",
+                  "message": "Merge pull request #11840 from oscargus/enablelatexfontcolor\n\nEnable changing the font color for LaTeX rendering",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-08-10T14:59:32.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Use explicit fully qualified name instead of uncommon alias.",
+                  "message": "Use explicit fully qualified name instead of uncommon alias.\n\nWe can't use 'wrap' as there is a kwarg with the same name.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-08-09T10:40:13.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Better color options and added scale",
+                  "message": "Better color options and added scale",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgxMTQ0OTc=",
+                      "login": "oscargus"
+                    },
+                    "name": "Oscar Gustafsson",
+                    "email": "oscar.gustafsson@gmail.com",
+                    "date": "2019-08-01T19:39:05.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Enable changing the font color for LaTeX rendering",
+                  "message": "Enable changing the font color for LaTeX rendering",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgxMTQ0OTc=",
+                      "login": "oscargus"
+                    },
+                    "name": "Oscar Gustafsson",
+                    "email": "oscar.gustafsson@gmail.com",
+                    "date": "2019-07-30T17:27:20.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "back to development",
+                  "message": "back to development",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-07-26T15:15:46.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "release 7.7.0",
+                  "message": "release 7.7.0",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-07-26T15:12:26.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add  stats and some early checks in release script",
+                  "message": "Add  stats and some early checks in release script",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-07-26T15:10:49.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11834 from Carreau/7.7r",
+                  "message": "Merge pull request #11834 from Carreau/7.7r\n\nCreate 7.7.0 release notes",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-07-25T17:34:44.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Create 7.7.0 release notes",
+                  "message": "Create 7.7.0 release notes",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-07-24T15:00:28.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11833 from LittleLightLittleFire/master",
+                  "message": "Merge pull request #11833 from LittleLightLittleFire/master\n\nSets error_before_exec to be the value of the exception instead of th…",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-07-23T17:36:45.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11806 from juanis2112/fix-aliases",
+                  "message": "Merge pull request #11806 from juanis2112/fix-aliases\n\nFixing duplicated definition of magic aliases after reset",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-07-23T15:25:09.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "use explicit checking instead of tr/except",
+                  "message": "use explicit checking instead of tr/except",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-07-23T14:50:42.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add a test for reset behavior",
+                  "message": "Add a test for reset behavior",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-07-23T14:44:54.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Sets error_before_exec to be the value of the exception instead of th…",
+                  "message": "Sets error_before_exec to be the value of the exception instead of the stack trace",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExNjYwMjI=",
+                      "login": "LittleLightLittleFire"
+                    },
+                    "name": "lllf",
+                    "email": "littlelightlittlefire@gmail.com",
+                    "date": "2019-07-23T14:32:27.000+10:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11831 from minho42/Fix-typos",
+                  "message": "Merge pull request #11831 from minho42/Fix-typos\n\nFix typos in docs and comments",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-07-22T19:54:06.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11832 from Carreau/nosetup",
+                  "message": "Merge pull request #11832 from Carreau/nosetup\n\nno mention os setup.py install",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-07-22T19:53:22.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "no mention os setup.py install",
+                  "message": "no mention os setup.py install",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-07-21T20:57:45.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix typos",
+                  "message": "Fix typos",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1Mjc4NTEy",
+                      "login": "minho42"
+                    },
+                    "name": "Min ho Kim",
+                    "email": "minho42@gmail.com",
+                    "date": "2019-07-22T01:57:37.000+10:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "fix instlal link",
+                  "message": "fix instlal link",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-07-15T18:55:17.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11825 from sysadmin75/docs-broken-install-links",
+                  "message": "Merge pull request #11825 from sysadmin75/docs-broken-install-links\n\nFix #11820 - Broken links in tutorial.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-07-15T20:51:27.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix #11820 - Broken links in tutorial.",
+                  "message": "Fix #11820 - Broken links in tutorial.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcwNDg2OTU=",
+                      "login": "techassetskris"
+                    },
+                    "name": "techassetskris",
+                    "email": "knewsome@techassets.com",
+                    "date": "2019-07-14T22:01:21.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11803 from brandonwillard/fix-duplicate-prefix",
+                  "message": "Merge pull request #11803 from brandonwillard/fix-duplicate-prefix\n\nFix duplicate prefix in `all_completions` output",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-07-06T19:41:10.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11808 from sunpoet/master",
+                  "message": "Merge pull request #11808 from sunpoet/master\n\nFix manpage path in FreeBSD",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-07-06T18:12:03.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11814 from OriolAbril/matplotlib-uppercase",
+                  "message": "Merge pull request #11814 from OriolAbril/matplotlib-uppercase\n\nFix %matplotlib",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-07-06T18:11:39.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix %matplotlib",
+                  "message": "Fix %matplotlib\n\nargs.gui may not be a str",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIzNzM4NDAw",
+                      "login": "OriolAbril"
+                    },
+                    "name": "Oriol (Prodesk)",
+                    "email": "oriol.abril.pla@gmail.com",
+                    "date": "2019-07-04T02:17:51.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "back to development",
+                  "message": "back to development",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-07-03T09:44:21.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "release 7.6.1",
+                  "message": "release 7.6.1",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-07-03T09:42:21.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11812 from Carreau/fix-time",
+                  "message": "Merge pull request #11812 from Carreau/fix-time\n\nFix time magic,",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-07-03T09:38:15.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Documetation in WN",
+                  "message": "Documetation in WN",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-07-02T13:19:22.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Only split ast if last item is expression.",
+                  "message": "Only split ast if last item is expression.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-07-02T12:49:44.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "add time test",
+                  "message": "add time test",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-07-02T11:35:55.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix manpage path in FreeBSD",
+                  "message": "Fix manpage path in FreeBSD\n\nFreeBSD stores manpages under ${PREFIX}/man (defaults to /usr/local/man)\nrather than ${PREFIX}/share/man.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY4ODc3Nw==",
+                      "login": "sunpoet"
+                    },
+                    "name": "Po-Chuan Hsieh",
+                    "email": "sunpoet@sunpoet.net",
+                    "date": "2019-06-29T18:06:49.000Z"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "back to development",
+                  "message": "back to development",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-28T16:33:21.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "release 7.6.0",
+                  "message": "release 7.6.0",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-28T16:30:51.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "update stats",
+                  "message": "update stats",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-28T16:16:22.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11805 from Carreau/wn76+",
+                  "message": "Merge pull request #11805 from Carreau/wn76+\n\nWhat's new on 7.6 updates",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-28T15:52:08.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixing duplicated definition of magic aliases after reset",
+                  "message": "Fixing duplicated definition of magic aliases after reset",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE4NTg3ODc5",
+                      "login": "juanis2112"
+                    },
+                    "name": "juanis2112",
+                    "email": "juanitagomezr2112@gmail.com",
+                    "date": "2019-06-28T01:55:33.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "updates to whatsnew in 7.6",
+                  "message": "updates to whatsnew in 7.6",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-06-27T10:32:58.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "update relase toom and mailmap",
+                  "message": "update relase toom and mailmap",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-06-27T10:24:26.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix all_completions output for both Jedi and non-Jedi cases",
+                  "message": "Fix all_completions output for both Jedi and non-Jedi cases\n\nCloses #11802.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjk3MTYwMQ==",
+                      "login": "brandonwillard"
+                    },
+                    "name": "Brandon T. Willard",
+                    "email": "brandonwillard@gmail.com",
+                    "date": "2019-06-26T23:38:39.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix wording in docstrings",
+                  "message": "Fix wording in docstrings",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjk3MTYwMQ==",
+                      "login": "brandonwillard"
+                    },
+                    "name": "Brandon T. Willard",
+                    "email": "brandonwillard@gmail.com",
+                    "date": "2019-06-26T21:41:44.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11800 from Carreau/wn76",
+                  "message": "Merge pull request #11800 from Carreau/wn76\n\nsome updates to WN",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-25T08:57:29.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "some updates to WN",
+                  "message": "some updates to WN",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-06-24T14:48:21.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11760 from Carreau/pytesting",
+                  "message": "Merge pull request #11760 from Carreau/pytesting\n\nSome preparation for pytest runner",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-24T14:49:24.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Also run test with Pytest.",
+                  "message": "Also run test with Pytest.\n\nThis now run many of the tests using pytest.\nMany of previous pull-requests brought pytest compatibility; this now\nactually would run a passing test suite.\n\nThis does not mean we can drop nose; in particular we still have plugins\nfro doctests using iptest; which pytest does not run;\nand we are still limited to pytest 3 (pytest 4 does not support\nyield-test anymore)\n\nThere is thus still much work to do.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-05-29T19:11:18.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11799 from Carreau/pytest-last-streak",
+                  "message": "Merge pull request #11799 from Carreau/pytest-last-streak\n\nMisc modifications for pytest compatibility",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-21T10:15:26.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Misc modifications for pytest comppatibility",
+                  "message": "Misc modifications for pytest comppatibility\n\n1) remove objects creations `ip = get_ipython()` which is anyway\ninjected in builtins.\n\n2) use proper xunit test cases for capturing warnings.\n\n3) Use proper assertWarns instead of assert print, as pytest captures\nwarnings.\n\n4) fix recusrsion limit in pytest whcih need to be higher\n\n5) properly capture context in yielded tests.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-06-21T09:44:55.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11796 from Carreau/more-xunit",
+                  "message": "Merge pull request #11796 from Carreau/more-xunit\n\nFix Mixin Inheritence in Xunit unittest.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-20T13:10:13.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix Mixin Inheritence in Xunit unittest.",
+                  "message": "Fix Mixin Inheritence in Xunit unittest.\n\nSome unittest were weird mixin, properly make the base class an\nTestCase, and use setup/teardown to set local attributes.\n\nThis adds compatibility with PyTest",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-06-19T15:12:29.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11794 from Carreau/proper-unittests",
+                  "message": "Merge pull request #11794 from Carreau/proper-unittests\n\nUse proper xunit format for some test.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-19T14:55:04.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11795 from Carreau/settrace",
+                  "message": "Merge pull request #11795 from Carreau/settrace\n\nRestore trace function after exiting debugger.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-18T19:44:36.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Restore trace function after exiting debugger.",
+                  "message": "Restore trace function after exiting debugger.\n\nThis should bump coverage; as pdb test where removing the coverage\nfunction.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-18T19:31:35.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Use proper xunit format for some test.",
+                  "message": "Use proper xunit format for some test.\n\nIn particular we now can use proper methods to check that some warnings\nare raised instead of making sure the test is printed. As pytest\ncaptures warning by default this add compatibility with pytest.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-18T17:37:12.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11791 from Carreau/prepate-test-comppleter-for-py…",
+                  "message": "Merge pull request #11791 from Carreau/prepate-test-comppleter-for-pytest\n\nPrepate test completer for pytest",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-18T17:30:30.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11792 from Carreau/textiowrapperleak",
+                  "message": "Merge pull request #11792 from Carreau/textiowrapperleak\n\nProperly close some leaked resources.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-18T17:30:08.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Do not return filehandle as unused",
+                  "message": "Do not return filehandle as unused",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-06-18T14:14:18.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "apply black on the file",
+                  "message": "apply black on the file",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-06-18T13:54:49.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Rewrite syntax to be Python 3.5+",
+                  "message": "Rewrite syntax to be Python 3.5+\n\nUsed <https://github.com/asottile/pyupgrade/>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMjU3MDg=",
+                      "login": "alok"
+                    },
+                    "name": "Alok Singh",
+                    "email": "alokbeniwal@gmail.com",
+                    "date": "2019-06-18T13:53:26.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "properly  close resource",
+                  "message": "properly  close resource",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-06-18T13:51:40.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Properly close some leaked resources.",
+                  "message": "Properly close some leaked resources.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-06-18T11:58:33.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "apply black",
+                  "message": "apply black",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-06-18T11:35:46.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "apply pyupgrade",
+                  "message": "apply pyupgrade",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-06-18T11:35:09.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Prepare completer for pytest.",
+                  "message": "Prepare completer for pytest.\n\nuse proper unittest class with setup and teardown methods to capture\ndeprecation warnings; and move support classes and function outside of\nthe testcase definition.\n\nMake all standalone functions methods.\n\nBeyond this no code change.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-06-18T11:32:08.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11790 from Carreau/fix-skip",
+                  "message": "Merge pull request #11790 from Carreau/fix-skip\n\nFix skip decorator.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-18T11:28:11.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix skip decorator.",
+                  "message": "Fix skip decorator.\n\nIf called w/o argument would just skip the function always.\nNow raises if no message is passed.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-06-18T11:07:22.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11789 from Carreau/fix-pytest-4",
+                  "message": "Merge pull request #11789 from Carreau/fix-pytest-4\n\nRemove assignment to ip in test files",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-18T10:53:04.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11788 from Carreau/pytestify-3",
+                  "message": "Merge pull request #11788 from Carreau/pytestify-3\n\nPrepare some test for pytest in completers.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-18T10:52:41.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove assignment to ip in test files",
+                  "message": "Remove assignment to ip in test files\n\nThis is already added in globals by the test runner",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-06-18T10:36:39.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Prepare some test for pytest in completers.",
+                  "message": "Prepare some test for pytest in completers.\n\nswap the context manager and the function definition.\nIt is undefined wither the test are collected and then run at once; or\nran while they are being yielded.\n\nIn the fist case (what pytest does) the function was called outside the\ncontext manager, in the later case (node) it was working as expected.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "mbussonnier@ucmerced.edu",
+                    "date": "2019-06-18T10:29:36.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11644 from daharn/master",
+                  "message": "Merge pull request #11644 from daharn/master\n\nallow type of already existing class instances to be updated",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-18T09:55:37.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "remove debug statement",
+                  "message": "remove debug statement",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-17T19:56:25.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add tests that the class attribute is properly updated",
+                  "message": "Add tests that the class attribute is properly updated",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-17T19:20:44.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11785 from Carreau/pytest_compat_setup_teardown",
+                  "message": "Merge pull request #11785 from Carreau/pytest_compat_setup_teardown\n\nUse module level setup and teardown compatible both nose and pytest.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-17T18:22:09.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11784 from Carreau/clean-iptest",
+                  "message": "Merge pull request #11784 from Carreau/clean-iptest\n\nCleanup iptest controller from old logic.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-17T18:21:24.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11713 from Carreau/async-exec",
+                  "message": "Merge pull request #11713 from Carreau/async-exec\n\nAsync exec in Python 3.8",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-17T18:21:06.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11783 from Carreau/cleanup-support-functions",
+                  "message": "Merge pull request #11783 from Carreau/cleanup-support-functions\n\nRemove leftover from cleanup.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-17T17:03:07.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #11782 from Carreau/unclosed-setupbase",
+                  "message": "Merge pull request #11782 from Carreau/unclosed-setupbase\n\nProperly close file in setupbase",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNTU2Nw==",
+                      "login": "Carreau"
+                    },
+                    "name": "Matthias Bussonnier",
+                    "email": "bussonniermatthias@gmail.com",
+                    "date": "2019-06-17T17:01:52.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1148 @@
+{
+  "data": {
+    "repository": {
+      "ref": {
+        "target": {
+          "history": {
+            "edges": [
+              {
+                "node": {
+                  "messageHeadline": "Add paper author affiliation (#198)",
+                  "message": "Add paper author affiliation (#198)\n\n* Change author affiliation.\r\n\r\n* Fix actual affiliation",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-09-23T08:25:39.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update paper.md",
+                  "message": "Update paper.md",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-09-06T18:49:09.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Tweaks",
+                  "message": "Tweaks\n\n* Minor proof reading\n* Add call back to S. Fixes #188\n* Acknowledge R-core",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-08-09T16:44:37.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Don't include rendered paper",
+                  "message": "Don't include rendered paper",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-08-09T16:19:36.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Paper comments (#192)",
+                  "message": "Paper comments (#192)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NDE2NDM=",
+                      "login": "krlmlr"
+                    },
+                    "name": "Kirill Müller",
+                    "email": "krlmlr@users.noreply.github.com",
+                    "date": "2019-08-09T23:18:39.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "follow up to https://github.com/tidyverse/readr/pull/1012 (#191)",
+                  "message": "follow up to https://github.com/tidyverse/readr/pull/1012 (#191)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2MjU1MjY=",
+                      "login": "romainfrancois"
+                    },
+                    "name": "Romain François",
+                    "email": "romain@rstudio.com",
+                    "date": "2019-08-09T23:18:23.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix typos spotted by @yutannihilation",
+                  "message": "Fix typos spotted by @yutannihilation\n\nFixes #190",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-08-09T16:17:44.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Small tweaks",
+                  "message": "Small tweaks",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-08-09T16:17:06.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "reference fix for tidyverse paper (#189)",
+                  "message": "reference fix for tidyverse paper (#189)\n\n* fixed reference\r\n\r\n* fixed html version",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU3MzEwNDM=",
+                      "login": "topepo"
+                    },
+                    "name": "Max Kuhn",
+                    "email": "mxkuhn@gmail.com",
+                    "date": "2019-08-09T17:16:03.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix typos (#187)",
+                  "message": "Fix typos (#187)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ0NTI2Nzg=",
+                      "login": "karawoo"
+                    },
+                    "name": "Kara Woo",
+                    "email": "karawoo@users.noreply.github.com",
+                    "date": "2019-08-09T14:14:30.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #193 from batpigandme/drob-affil",
+                  "message": "Merge pull request #193 from batpigandme/drob-affil\n\nRemove affiliation, per request",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-08-05T08:49:58.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove affiliation, per request",
+                  "message": "Remove affiliation, per request",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-07-30T11:11:35.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove extra parenthesis",
+                  "message": "Remove extra parenthesis",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU5OTQ1NA==",
+                      "login": "jennybc"
+                    },
+                    "name": "Jennifer (Jenny) Bryan",
+                    "email": "jenny.f.bryan@gmail.com",
+                    "date": "2019-06-29T08:51:29.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #183 from tidyverse/joss-paper",
+                  "message": "Merge pull request #183 from tidyverse/joss-paper\n\nJOSS paper",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-06-29T06:50:49.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge branch 'master' into joss-paper",
+                  "message": "Merge branch 'master' into joss-paper",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-06-29T06:50:41.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "use_tidy_ci()",
+                  "message": "use_tidy_ci()\n\nAnd bump required R version to 3.2",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-06-29T06:46:22.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #158 from batpigandme/joss-mga",
+                  "message": "Merge pull request #158 from batpigandme/joss-mga\n\nJOSS paper draft",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-06-29T06:24:10.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Final polishing",
+                  "message": "Final polishing",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-06-29T06:23:18.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Re-run revdep checks",
+                  "message": "Re-run revdep checks",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-05-15T14:42:51.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Polish news",
+                  "message": "Polish news",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-05-15T12:53:15.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Only look at pacakges when considering conflicts",
+                  "message": "Only look at pacakges when considering conflicts\n\nFixes #136",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-05-15T12:46:41.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "🎉 Successfully render paper to md with `render()`.",
+                  "message": "🎉 Successfully render paper to md with `render()`.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-05-15T13:10:34.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Reformat `keep_md` in YAML",
+                  "message": "Reformat `keep_md` in YAML",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-05-15T09:25:29.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Reference images in markdown format",
+                  "message": "Reference images in markdown format",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-05-15T06:30:45.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Move edits to actual right file.",
+                  "message": "Move edits to actual right file.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-05-14T11:43:32.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add repos option to tidyverse_{deps,update} (#82)",
+                  "message": "Add repos option to tidyverse_{deps,update} (#82)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM2Mzk0NDY=",
+                      "login": "zkamvar"
+                    },
+                    "name": "Zhian N. Kamvar",
+                    "email": "zkamvar@gmail.com",
+                    "date": "2019-05-10T22:07:40.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fail back if package isn't installed",
+                  "message": "Fail back if package isn't installed\n\nFixes #152",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-05-10T16:02:17.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove dead code: core_loaded(). (#166)",
+                  "message": "Remove dead code: core_loaded(). (#166)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU4NTY1NDU=",
+                      "login": "maurolepore"
+                    },
+                    "name": "Mauro Lepore",
+                    "email": "maurolepore@gmail.com",
+                    "date": "2019-05-10T12:09:08.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Attach packages from same lib they were loaded from (#172)",
+                  "message": "Attach packages from same lib they were loaded from (#172)\n\nOtherwise install.packages() test loading might run\r\ninto trouble, if the package versions are different,\r\nand (in some way) incompatible.\r\n\r\nCloses #171.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY2MDI4OA==",
+                      "login": "gaborcsardi"
+                    },
+                    "name": "Gábor Csárdi",
+                    "email": "csardi.gabor@gmail.com",
+                    "date": "2019-05-10T18:08:22.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update for new R version",
+                  "message": "Update for new R version",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-05-10T10:38:49.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Bump required versions",
+                  "message": "Bump required versions\n\nFixes #144",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-05-10T10:37:44.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove author retrieval chunk",
+                  "message": "Remove author retrieval chunk",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-04-24T09:16:30.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove \\proglang and \\pkg tags from bib.",
+                  "message": "Remove \\proglang and \\pkg tags from bib.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-04-24T08:33:57.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "😵 Delete formatting for the WRONG JOURNAL",
+                  "message": "😵 Delete formatting for the WRONG JOURNAL",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-04-24T08:15:38.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Create rticles bib file.",
+                  "message": "Create rticles bib file.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-04-24T07:56:23.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Use rticles jss template.",
+                  "message": "Use rticles jss template.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-04-24T07:56:07.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update bib package versions.",
+                  "message": "Update bib package versions.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-04-24T06:54:39.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add proglang and pkg tags to bib",
+                  "message": "Add proglang and pkg tags to bib",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-04-24T06:42:15.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "More polishing",
+                  "message": "More polishing",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-04-10T20:12:16.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update vignettes/paper.Rmd",
+                  "message": "Update vignettes/paper.Rmd\n\nCo-Authored-By: batpigandme <maraaverick@gmail.com>",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU5OTQ1NA==",
+                      "login": "jennybc"
+                    },
+                    "name": "Jennifer (Jenny) Bryan",
+                    "email": "jenny.f.bryan@gmail.com",
+                    "date": "2019-04-08T11:55:27.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "HW eds with twitter list as yet unmanaged",
+                  "message": "HW eds with twitter list as yet unmanaged",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-04-03T14:54:28.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Alphabetise authors",
+                  "message": "Alphabetise authors",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-04-03T13:35:26.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "More on philosophy",
+                  "message": "More on philosophy",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-04-02T14:44:16.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Major reshaping",
+                  "message": "Major reshaping",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-04-02T14:05:37.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Re-structure paper remove core sections.",
+                  "message": "Re-structure paper remove core sections.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-03-12T11:22:32.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add shiny, rmarkdown, and tidymodels to bib.",
+                  "message": "Add shiny, rmarkdown, and tidymodels to bib.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-03-12T09:48:50.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Reworks contents out of core and non-core (WIP)",
+                  "message": "Reworks contents out of core and non-core (WIP)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-02-27T12:24:22.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "One more placeholder for author",
+                  "message": "One more placeholder for author",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-02-26T13:04:27.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add missing authors from bibliography.",
+                  "message": "Add missing authors from bibliography.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-02-26T11:10:03.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add placeholders for authors not in sheet",
+                  "message": "Add placeholders for authors not in sheet",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-02-26T10:51:41.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add authors and affiliations",
+                  "message": "Add authors and affiliations",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-02-26T10:47:10.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Import a function from pillar",
+                  "message": "Import a function from pillar",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU5OTQ1NA==",
+                      "login": "jennybc"
+                    },
+                    "name": "Jenny Bryan",
+                    "email": "jenny.f.bryan@gmail.com",
+                    "date": "2019-02-14T13:50:52.000-08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Oops, pick a function that is actually in dbplyr",
+                  "message": "Oops, pick a function that is actually in dbplyr",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU5OTQ1NA==",
+                      "login": "jennybc"
+                    },
+                    "name": "Jenny Bryan",
+                    "email": "jenny.f.bryan@gmail.com",
+                    "date": "2019-02-14T13:36:25.000-08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Import a function from dbplyr, reprex, and rlang",
+                  "message": "Import a function from dbplyr, reprex, and rlang\n\nAddresses a CRAN NOTE seen on some platforms:\n\n    Namespaces in Imports field not imported from:\n     ‘dbplyr’ ‘reprex’ ‘rlang’\n     All declared Imports should be used.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU5OTQ1NA==",
+                      "login": "jennybc"
+                    },
+                    "name": "Jenny Bryan",
+                    "email": "jenny.f.bryan@gmail.com",
+                    "date": "2019-02-14T12:54:10.000-08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Re-document",
+                  "message": "Re-document",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU5OTQ1NA==",
+                      "login": "jennybc"
+                    },
+                    "name": "Jenny Bryan",
+                    "email": "jenny.f.bryan@gmail.com",
+                    "date": "2019-02-14T12:47:44.000-08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update URLs",
+                  "message": "Update URLs",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU5OTQ1NA==",
+                      "login": "jennybc"
+                    },
+                    "name": "Jenny Bryan",
+                    "email": "jenny.f.bryan@gmail.com",
+                    "date": "2019-02-14T12:47:21.000-08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update badges",
+                  "message": "Update badges",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-01-05T09:36:41.000-06:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Use retina logo",
+                  "message": "Use retina logo",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-01-05T09:35:34.000-06:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "use_pkgdown_travis()",
+                  "message": "use_pkgdown_travis()",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-01-05T09:08:51.000-06:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove built website",
+                  "message": "Remove built website",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-01-05T09:07:31.000-06:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "use_tidy_ci()",
+                  "message": "use_tidy_ci()",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-01-05T08:19:12.000-06:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "use_tidy_description()",
+                  "message": "use_tidy_description()",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-01-05T08:18:10.000-06:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update roxygen2",
+                  "message": "Update roxygen2",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-01-05T08:17:53.000-06:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

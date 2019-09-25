@@ -1,0 +1,1814 @@
+{
+  "data": {
+    "repository": {
+      "ref": {
+        "target": {
+          "history": {
+            "edges": [
+              {
+                "node": {
+                  "messageHeadline": "TST/CLN: Exception catching (#28587)",
+                  "message": "TST/CLN: Exception catching (#28587)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-24T05:24:03.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: indexing Exception in Series (#28588)",
+                  "message": "CLN: indexing Exception in Series (#28588)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-24T05:07:40.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: remove unused args from _construct_result (#28589)",
+                  "message": "CLN: remove unused args from _construct_result (#28589)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-24T05:06:58.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix typo in class DataFrame (#28586)",
+                  "message": "Fix typo in class DataFrame (#28586)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ0MDMxMzA=",
+                      "login": "felixdivo"
+                    },
+                    "name": "Felix Divo",
+                    "email": "felixdivo@users.noreply.github.com",
+                    "date": "2019-09-24T03:26:12.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG: fix custom xticks in bar() plotting function (#28172)",
+                  "message": "BUG: fix custom xticks in bar() plotting function (#28172)\n\n* Fixing issue #14119",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2NDg0NzAw",
+                      "login": "GiuPassarelli"
+                    },
+                    "name": "GiuPassarelli",
+                    "email": "gb_passarelli@hotmail.com",
+                    "date": "2019-09-23T16:34:55.000Z"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "REF: implement arithmetic, comparison, logical ops on arrays (#28431)",
+                  "message": "REF: implement arithmetic, comparison, logical ops on arrays (#28431)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-23T05:55:01.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "TST/CLN: parametrize and clean test_expressions, test_nanops (#28553)",
+                  "message": "TST/CLN: parametrize and clean test_expressions, test_nanops (#28553)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-23T05:01:38.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: Assorted cleanups (#28563)",
+                  "message": "CLN: Assorted cleanups (#28563)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-23T04:58:41.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BENCH: Add rolling apply benchmarks (#28566)",
+                  "message": "BENCH: Add rolling apply benchmarks (#28566)\n\n* BENCH: Add rolling apply benchmarks\r\n\r\n* black",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwNjQ3MDgy",
+                      "login": "mroeschke"
+                    },
+                    "name": "Matthew Roeschke",
+                    "email": "emailformattr@gmail.com",
+                    "date": "2019-09-22T17:06:18.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG: timedelta64(NaT) incorrectly treated as datetime in some datafra…",
+                  "message": "BUG: timedelta64(NaT) incorrectly treated as datetime in some dataframe ops (#28049)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-20T16:36:13.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Reverted parametrization of test_frame_from_json_to_json (#28510)",
+                  "message": "Reverted parametrization of test_frame_from_json_to_json (#28510)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYwOTg3Mw==",
+                      "login": "WillAyd"
+                    },
+                    "name": "William Ayd",
+                    "email": "william.ayd@gmail.com",
+                    "date": "2019-09-20T10:53:30.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Annotate DataFrame Part 2 (Rendering Methods) (#28453)",
+                  "message": "Annotate DataFrame Part 2 (Rendering Methods) (#28453)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIyNTgyODI4",
+                      "login": "vaibhavhrt"
+                    },
+                    "name": "Vaibhav Vishal",
+                    "email": "vaibhav.hrt@gmail.com",
+                    "date": "2019-09-20T20:02:32.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "REF: Parametrize value_counts tests (#28537)",
+                  "message": "REF: Parametrize value_counts tests (#28537)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2NTg2NjE=",
+                      "login": "dsaxton"
+                    },
+                    "name": "Daniel Saxton",
+                    "email": "2658661+dsaxton@users.noreply.github.com",
+                    "date": "2019-09-20T10:27:59.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "TST: parametrize test_expressions (#28493)",
+                  "message": "TST: parametrize test_expressions (#28493)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-20T05:51:23.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Pandas.io.formats.style.Styler docstring PR02 (#28539)",
+                  "message": "Pandas.io.formats.style.Styler docstring PR02 (#28539)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2NjMwMDAx",
+                      "login": "Genza999"
+                    },
+                    "name": "Kisekka David",
+                    "email": "cartpix@gmail.com",
+                    "date": "2019-09-20T15:45:26.000+03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "COMPAT: ensure no warnings on tab completion with Jedi 0.15 (#28524)",
+                  "message": "COMPAT: ensure no warnings on tab completion with Jedi 0.15 (#28524)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMjA0OTY=",
+                      "login": "jorisvandenbossche"
+                    },
+                    "name": "Joris Van den Bossche",
+                    "email": "jorisvandenbossche@gmail.com",
+                    "date": "2019-09-20T14:43:53.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[PERF] Vectorize select_dtypes (#28447)",
+                  "message": "[PERF] Vectorize select_dtypes (#28447)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExODc2NTQ3",
+                      "login": "datajanko"
+                    },
+                    "name": "Jan Koch",
+                    "email": "Jan.Koch@tu-dortmund.de",
+                    "date": "2019-09-20T14:42:52.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "ENH: Add dta 119 reading to StataReader (#28542)",
+                  "message": "ENH: Add dta 119 reading to StataReader (#28542)\n\nAdd requirements for reading 119 format files",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU1ODUyMjE=",
+                      "login": "bashtage"
+                    },
+                    "name": "Kevin Sheppard",
+                    "email": "bashtage@users.noreply.github.com",
+                    "date": "2019-09-20T13:40:12.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG: fix array_equivalent with mismatched tzawareness (#28508)",
+                  "message": "BUG: fix array_equivalent with mismatched tzawareness (#28508)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-20T05:38:22.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: dont catch Exception when calling maybe_convert_numeric (#28513)",
+                  "message": "CLN: dont catch Exception when calling maybe_convert_numeric (#28513)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-20T05:35:25.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG/CLN: DatetimeTZDtype.construct_from_string Exception (#28505)",
+                  "message": "BUG/CLN: DatetimeTZDtype.construct_from_string Exception (#28505)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-20T05:34:27.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Added version policy (#28415)",
+                  "message": "Added version policy (#28415)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMTI1NDY=",
+                      "login": "TomAugspurger"
+                    },
+                    "name": "Tom Augspurger",
+                    "email": "TomAugspurger@users.noreply.github.com",
+                    "date": "2019-09-20T07:04:13.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: Exception and BaseException in test_nanops (#28544)",
+                  "message": "CLN: Exception and BaseException in test_nanops (#28544)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-19T23:14:58.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG-26214 fix colors parameter in DataFrame.boxplot (#26456)",
+                  "message": "BUG-26214 fix colors parameter in DataFrame.boxplot (#26456)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI5NjE1MDIx",
+                      "login": "JustinZhengBC"
+                    },
+                    "name": "Justin Zheng",
+                    "email": "justinzhengbc@gmail.com",
+                    "date": "2019-09-19T20:36:34.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG: Fix issue with apply on empty DataFrame (#28213)",
+                  "message": "BUG: Fix issue with apply on empty DataFrame (#28213)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2NTg2NjE=",
+                      "login": "dsaxton"
+                    },
+                    "name": "Daniel Saxton",
+                    "email": "2658661+dsaxton@users.noreply.github.com",
+                    "date": "2019-09-19T23:36:05.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "WEB/CI: Fixing target path of the web build (#28543)",
+                  "message": "WEB/CI: Fixing target path of the web build (#28543)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMDU4MjQw",
+                      "login": "datapythonista"
+                    },
+                    "name": "Marc Garcia",
+                    "email": "garcia.marc@gmail.com",
+                    "date": "2019-09-19T23:24:47.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG: wrong exception raised by Week+Day (#28530)",
+                  "message": "BUG: wrong exception raised by Week+Day (#28530)\n\n* BUG: Week+Day raising wrong exception\r\n\r\n* whatsnew",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-19T13:33:51.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "COMPAT: remove Categorical pickle compat with Pandas < 0.16 (#27538)",
+                  "message": "COMPAT: remove Categorical pickle compat with Pandas < 0.16 (#27538)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2MzY0NDE1",
+                      "login": "topper-123"
+                    },
+                    "name": "Terji Petersen",
+                    "email": "contribute@tensortable.com",
+                    "date": "2019-09-19T17:06:40.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "WEB: Fix deployment of the website (#28529)",
+                  "message": "WEB: Fix deployment of the website (#28529)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMDU4MjQw",
+                      "login": "datapythonista"
+                    },
+                    "name": "Marc Garcia",
+                    "email": "garcia.marc@gmail.com",
+                    "date": "2019-09-19T16:58:38.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "TST: suppress 1485 warnings issued by xml parser (#28514)",
+                  "message": "TST: suppress 1485 warnings issued by xml parser (#28514)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-19T08:49:20.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG: Fix FastParquetImpl.write for non-existent file (#28326)",
+                  "message": "BUG: Fix FastParquetImpl.write for non-existent file (#28326)\n\n* Fix `FastParquetImpl.write` for non-existent file",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjkwMzY1NQ==",
+                      "login": "bnaul"
+                    },
+                    "name": "Brett Naul",
+                    "email": "brettnaul@gmail.com",
+                    "date": "2019-09-19T08:46:13.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: Clean up of CI scripts (#28482)",
+                  "message": "CLN: Clean up of CI scripts (#28482)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMDU4MjQw",
+                      "login": "datapythonista"
+                    },
+                    "name": "Marc Garcia",
+                    "email": "garcia.marc@gmail.com",
+                    "date": "2019-09-19T16:19:34.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "REF: Parametrize test (#28515)",
+                  "message": "REF: Parametrize test (#28515)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2NTg2NjE=",
+                      "login": "dsaxton"
+                    },
+                    "name": "Daniel Saxton",
+                    "email": "2658661+dsaxton@users.noreply.github.com",
+                    "date": "2019-09-19T10:32:39.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DEV: skip pandas/__init__.py in isort's pre-commit hook (#28517)",
+                  "message": "DEV: skip pandas/__init__.py in isort's pre-commit hook (#28517)\n\n* DEV: skip pandas/__init__.py in isort's pre-commit hook\r\n\r\n* also add core api",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMjA0OTY=",
+                      "login": "jorisvandenbossche"
+                    },
+                    "name": "Joris Van den Bossche",
+                    "email": "jorisvandenbossche@gmail.com",
+                    "date": "2019-09-19T16:17:24.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "WEB: Deployment of development website with the docs (#28497)",
+                  "message": "WEB: Deployment of development website with the docs (#28497)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMDU4MjQw",
+                      "login": "datapythonista"
+                    },
+                    "name": "Marc Garcia",
+                    "email": "garcia.marc@gmail.com",
+                    "date": "2019-09-19T15:00:02.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "GH26074 (#28498)",
+                  "message": "GH26074 (#28498)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI0NTg4MjE2",
+                      "login": "naveenkaushik2504"
+                    },
+                    "name": "naveenkaushik2504",
+                    "email": "naveenkaushik2504@gmail.com",
+                    "date": "2019-09-19T15:17:21.000+10:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Cleaned up DTA test (#28502)",
+                  "message": "Cleaned up DTA test (#28502)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYwOTg3Mw==",
+                      "login": "WillAyd"
+                    },
+                    "name": "William Ayd",
+                    "email": "william.ayd@gmail.com",
+                    "date": "2019-09-18T09:27:02.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add Indent Support in to_json (#28130)",
+                  "message": "Add Indent Support in to_json (#28130)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYwOTg3Mw==",
+                      "login": "WillAyd"
+                    },
+                    "name": "William Ayd",
+                    "email": "william.ayd@gmail.com",
+                    "date": "2019-09-18T08:10:06.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DEPR: Remove SparseSeries and SparseDataFrame (#28425)",
+                  "message": "DEPR: Remove SparseSeries and SparseDataFrame (#28425)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMTI1NDY=",
+                      "login": "TomAugspurger"
+                    },
+                    "name": "Tom Augspurger",
+                    "email": "TomAugspurger@users.noreply.github.com",
+                    "date": "2019-09-18T09:02:11.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC: add example of pyarrow usage favored over the deprecated to_msgp…",
+                  "message": "DOC: add example of pyarrow usage favored over the deprecated to_msgpack (#28494)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzOTIzMjQ=",
+                      "login": "shadiakiki1986"
+                    },
+                    "name": "Shadi Akiki",
+                    "email": "shadiakiki1986@gmail.com",
+                    "date": "2019-09-18T16:48:44.000+03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "ENH: MultiIndex.from_product infers names from inputs if not explicit…",
+                  "message": "ENH: MultiIndex.from_product infers names from inputs if not explicitly provided (#28417)\n\n* Updated MultiIndex.from_product to infer names\r\n\r\n* Respect None names in from_arrays",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc0MTQ4MDQ=",
+                      "login": "christopherzimmerman"
+                    },
+                    "name": "Chris Zimmerman",
+                    "email": "chris-zimmerman@live.com",
+                    "date": "2019-09-18T08:42:36.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "WEB: Adding new pandas website (#28014)",
+                  "message": "WEB: Adding new pandas website (#28014)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMDU4MjQw",
+                      "login": "datapythonista"
+                    },
+                    "name": "Marc Garcia",
+                    "email": "garcia.marc@gmail.com",
+                    "date": "2019-09-18T14:25:08.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG: Don't cast categorical nan to int (#28438)",
+                  "message": "BUG: Don't cast categorical nan to int (#28438)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2NTg2NjE=",
+                      "login": "dsaxton"
+                    },
+                    "name": "Daniel Saxton",
+                    "email": "2658661+dsaxton@users.noreply.github.com",
+                    "date": "2019-09-18T08:35:03.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG: Raise when casting infinity to int (#28475)",
+                  "message": "BUG: Raise when casting infinity to int (#28475)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2NTg2NjE=",
+                      "login": "dsaxton"
+                    },
+                    "name": "Daniel Saxton",
+                    "email": "2658661+dsaxton@users.noreply.github.com",
+                    "date": "2019-09-17T18:10:53.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN/BUG: array_equivalent on nested objects (#28347)",
+                  "message": "CLN/BUG: array_equivalent on nested objects (#28347)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-17T15:09:46.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Parametrize JSON tests (#27838)",
+                  "message": "Parametrize JSON tests (#27838)\n\n* Parametrized non unique column test\r\n\r\n* Parametrized non-unique index tests\r\n\r\n* Removed skip for values test\r\n\r\n* Blackify\r\n\r\n* Parametrized doubled_encoded_labels test\r\n\r\n* Parametrized 'biggie' test case\r\n\r\n* Parametrized basic test\r\n\r\n* simplified test names\r\n\r\n* int case\r\n\r\n* Parametrized categorical case\r\n\r\n* Parametrized empty test case\r\n\r\n* parametrized ts data\r\n\r\n* Parametrized mixed case\r\n\r\n* Removed unnecessary test\r\n\r\n* Blackify\r\n\r\n* moved position of dtype parametrization\r\n\r\n* Parametrized bad_data_raises test\r\n\r\n* broke off infinity test\r\n\r\n* parametrized precision test\r\n\r\n* parametrized infer words\r\n\r\n* Renamed df_orient to just orient for reuse\r\n\r\n* parametrized basic series test\r\n\r\n* Added default orient test\r\n\r\n* Parametrized empty series test\r\n\r\n* Parametrized series timeseries test\r\n\r\n* parametrized series numeric case\r\n\r\n* Removed unnecessary series roundtrip test\r\n\r\n* Parametrized date unit test\r\n\r\n* Parametrized utc test\r\n\r\n* parametrized ts_range_utc test\r\n\r\n* Removed py2 compat code\r\n\r\n* blackify\r\n\r\n* Parametrized infinity test\r\n\r\n* parametrized missing data test\r\n\r\n* Blackify\r\n\r\n* flake fixup\r\n\r\n* Comment cleanup\r\n\r\n* Fix up astypes\r\n\r\n* Py35 compat\r\n\r\n* 32 bit compat\r\n\r\n* PY35 compat\r\n\r\n* lint fixup\r\n\r\n* Revert Py35 compat\r\n\r\n* 32 bit compat restriction\r\n\r\n* PY35 columns orient sorting\r\n\r\n* Added missing import\r\n\r\n* More Py35 compat\r\n\r\n* Final Py35 compat (hopefully)\r\n\r\n* Final Py35 compat (hopefully) redux\r\n\r\n* Windows int fix\r\n\r\n* Invoke func\r\n\r\n* 32 bit compat fix\r\n\r\n* more 32 bit compat\r\n\r\n* Excepted split from int dtype check\r\n\r\n* Removed windows compat\r\n\r\n* Windows test compat\r\n\r\n* Fixed conftest docstring\r\n\r\n* Added TODO\r\n\r\n* Reverted changes to test_frame_from_json_to_json\r\n\r\n* Removed unused import\r\n\r\n* Added comment for nanosecond -> ms conversion\r\n\r\n* Removed duplicate StringIO usage\r\n\r\n* Used more standard approach for various expected outputs\r\n\r\n* removed numeric underscores",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYwOTg3Mw==",
+                      "login": "WillAyd"
+                    },
+                    "name": "William Ayd",
+                    "email": "william.ayd@gmail.com",
+                    "date": "2019-09-17T14:49:44.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG: Fixed PandasArray.__setitem__ with str (#28119)",
+                  "message": "BUG: Fixed PandasArray.__setitem__ with str (#28119)\n\n* BUG: Fixed PandasArray.__setitem__ with str\r\n\r\nCloses https://github.com/pandas-dev/pandas/issues/28118",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMTI1NDY=",
+                      "login": "TomAugspurger"
+                    },
+                    "name": "Tom Augspurger",
+                    "email": "TomAugspurger@users.noreply.github.com",
+                    "date": "2019-09-17T15:21:23.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "TST: Parametrize and cleanup Exception (#28478)",
+                  "message": "TST: Parametrize and cleanup Exception (#28478)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-17T09:42:30.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "REF: raise scalar_data_error to make mypy happy (#28484)",
+                  "message": "REF: raise scalar_data_error to make mypy happy (#28484)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-17T09:10:42.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG: Avoid duplicating entire exploded column (#28010)",
+                  "message": "BUG: Avoid duplicating entire exploded column (#28010)\n\nCloses #28005",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMzNDkxNjMy",
+                      "login": "MarcoGorelli"
+                    },
+                    "name": "Marco Gorelli",
+                    "email": "33491632+MarcoGorelli@users.noreply.github.com",
+                    "date": "2019-09-17T14:38:13.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "TST: Fix makeObjectSeries data as object type (#28444)",
+                  "message": "TST: Fix makeObjectSeries data as object type (#28444)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjkwNjczMDU=",
+                      "login": "jmg7173"
+                    },
+                    "name": "MinGyo Jung",
+                    "email": "jmg7173@gmail.com",
+                    "date": "2019-09-17T21:59:24.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "REF: standardize usage in DataFrame vs SparseDataFrame ops (#28027)",
+                  "message": "REF: standardize usage in DataFrame vs SparseDataFrame ops (#28027)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-17T05:40:43.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: catch less in Block._astype (#28443)",
+                  "message": "CLN: catch less in Block._astype (#28443)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-17T05:39:30.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: Exception in generic, series (#28434)",
+                  "message": "CLN: Exception in generic, series (#28434)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-17T05:36:34.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: Exception in nanops (#28433)",
+                  "message": "CLN: Exception in nanops (#28433)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-17T05:35:51.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BLD: clean-up sdist creation (#28432)",
+                  "message": "BLD: clean-up sdist creation (#28432)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMTI1NDY=",
+                      "login": "TomAugspurger"
+                    },
+                    "name": "Tom Augspurger",
+                    "email": "TomAugspurger@users.noreply.github.com",
+                    "date": "2019-09-17T00:45:38.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG: to_html() with formatters=<list> and max_cols fixed (#28183)",
+                  "message": "BUG: to_html() with formatters=<list> and max_cols fixed (#28183)\n\n* BUG: issue-25955 fixed",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2NDgyMDk1",
+                      "login": "gabriellm1"
+                    },
+                    "name": "Gabriel Monteiro",
+                    "email": "gabriellopesmonteiro41@gmail.com",
+                    "date": "2019-09-16T17:23:23.000-03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: remove merge-pr script, clean Exception in tm, doc (#28442)",
+                  "message": "CLN: remove merge-pr script, clean Exception in tm, doc (#28442)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-16T13:13:32.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC: Update index parameter in pandas to_parquet (#28217)",
+                  "message": "DOC: Update index parameter in pandas to_parquet (#28217)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMTgwNDQy",
+                      "login": "galuhsahid"
+                    },
+                    "name": "Galuh Sahid",
+                    "email": "galuh.tunggadewi@gmail.com",
+                    "date": "2019-09-16T18:50:19.000+07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC: Fix PR06 errors in Series docstrings (#28253) (#28288)",
+                  "message": "DOC: Fix PR06 errors in Series docstrings (#28253) (#28288)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg3NjcwODg=",
+                      "login": "danielplawrence"
+                    },
+                    "name": "danielplawrence",
+                    "email": "danny.p.lawrence@gmail.com",
+                    "date": "2019-09-15T22:39:30.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Make DataFrame.to_string output full content by default (#28052)",
+                  "message": "Make DataFrame.to_string output full content by default (#28052)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU5OTIz",
+                      "login": "lshepard"
+                    },
+                    "name": "Luke Shepard",
+                    "email": "luke@esparklearning.com",
+                    "date": "2019-09-15T21:33:39.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "TST:  Fix sqlite3 transactions test (#28450)",
+                  "message": "TST:  Fix sqlite3 transactions test (#28450)\n\nThe sqlite connection is already in transaction when the test starts, so\r\nwhen the test intentionally raises an exception, the entire transaction,\r\nincluding the table creation, gets rolled back, so there is no table\r\nto query.  Wrapping the table CREATE statement in its own transaction\r\navoids the issue.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI3NjE4MjI=",
+                      "login": "quintusdias"
+                    },
+                    "name": "John G Evans",
+                    "email": "john.g.evans.ne@gmail.com",
+                    "date": "2019-09-15T09:13:59.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC: fix docstring of core.comon.pipe (PR02) (#28449)",
+                  "message": "DOC: fix docstring of core.comon.pipe (PR02) (#28449)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIyODk0Mzg5",
+                      "login": "AminooZ"
+                    },
+                    "name": "Mohamed Amine ZGHAL",
+                    "email": "aminezghal@gmail.com",
+                    "date": "2019-09-15T15:11:32.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC: fix the editable install command (#28445)",
+                  "message": "DOC: fix the editable install command (#28445)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMjA0OTY=",
+                      "login": "jorisvandenbossche"
+                    },
+                    "name": "Joris Van den Bossche",
+                    "email": "jorisvandenbossche@gmail.com",
+                    "date": "2019-09-14T11:00:44.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: Exception in core.dtypes (#28387)",
+                  "message": "CLN: Exception in core.dtypes (#28387)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-13T13:13:45.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BLD: Add pyproject.toml (#28374)",
+                  "message": "BLD: Add pyproject.toml (#28374)\n\nCloses https://github.com/pandas-dev/pandas/issues/28341",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMTI1NDY=",
+                      "login": "TomAugspurger"
+                    },
+                    "name": "Tom Augspurger",
+                    "email": "TomAugspurger@users.noreply.github.com",
+                    "date": "2019-09-13T11:11:47.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Revert \"TMP: pin openssl for doc build (#28404)\" (#28405)",
+                  "message": "Revert \"TMP: pin openssl for doc build (#28404)\" (#28405)\n\nThis reverts commit 094fb120e3a79d577ca368247f789db41d327f7c.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMjA0OTY=",
+                      "login": "jorisvandenbossche"
+                    },
+                    "name": "Joris Van den Bossche",
+                    "email": "jorisvandenbossche@gmail.com",
+                    "date": "2019-09-13T16:15:22.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "REF: prepare Series arith op to be refactored to array op (#28413)",
+                  "message": "REF: prepare Series arith op to be refactored to array op (#28413)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-13T06:21:10.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Assignment of column via .loc for numpy non-ns datetimes (#27928)",
+                  "message": "Assignment of column via .loc for numpy non-ns datetimes (#27928)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI0ODQzOTk2",
+                      "login": "inmoonlight"
+                    },
+                    "name": "Jihyung Moon",
+                    "email": "mjihyung@gmail.com",
+                    "date": "2019-09-13T22:19:38.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG: Fix Series.append raises TypeError with tuple of Series (#28412)",
+                  "message": "BUG: Fix Series.append raises TypeError with tuple of Series (#28412)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc0MTQ4MDQ=",
+                      "login": "christopherzimmerman"
+                    },
+                    "name": "Chris Zimmerman",
+                    "email": "chris-zimmerman@live.com",
+                    "date": "2019-09-12T20:05:31.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: Update cpython imports in Cython Code GH28382 (#28398)",
+                  "message": "CLN: Update cpython imports in Cython Code GH28382 (#28398)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExMzk0MTkz",
+                      "login": "amunch"
+                    },
+                    "name": "Andrew Munch",
+                    "email": "andy88886@gmail.com",
+                    "date": "2019-09-12T17:56:41.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "ENH: Add IntegerArray.__arrow_array__ for custom conversion to Arrow …",
+                  "message": "ENH: Add IntegerArray.__arrow_array__ for custom conversion to Arrow (#28368)\n\n* ENH: Add IntegerArray.__arrow_array__ for custom conversion to Arrow\r\n\r\n* simplify pyarrow version check in tests\r\n\r\n* add whatsnew",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMjA0OTY=",
+                      "login": "jorisvandenbossche"
+                    },
+                    "name": "Joris Van den Bossche",
+                    "email": "jorisvandenbossche@gmail.com",
+                    "date": "2019-09-12T22:57:00.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Annotate DataFrame (Part 1) (#26867)",
+                  "message": "Annotate DataFrame (Part 1) (#26867)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIyNTgyODI4",
+                      "login": "vaibhavhrt"
+                    },
+                    "name": "Vaibhav Vishal",
+                    "email": "vaibhav.hrt@gmail.com",
+                    "date": "2019-09-13T02:17:54.000+05:30"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: Exception in dtypes.cast (#28420)",
+                  "message": "CLN: Exception in dtypes.cast (#28420)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-12T12:42:19.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG: DataFrame[int] +/- datetime64 (#28362)",
+                  "message": "BUG: DataFrame[int] +/- datetime64 (#28362)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-12T10:00:25.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "REF: prepare Series comparison op to be refactored to array op (#28396)",
+                  "message": "REF: prepare Series comparison op to be refactored to array op (#28396)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-12T06:00:03.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "REF: prepare Series logical op to be refactored to array op (#28395)",
+                  "message": "REF: prepare Series logical op to be refactored to array op (#28395)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-12T05:52:48.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix a typo in \"computation.rst\" in document. (#28400)",
+                  "message": "Fix a typo in \"computation.rst\" in document. (#28400)\n\nThere's `np.random.np.random` in /doc/source/user_guide/computation.rst, which I believe is a typo. But the weird thing is there's actually `np.random.np` in numpy (1.16.4), but not in numpy (1.17.2). That's maybe why the doc build passed before. While I'm trying to build the doc locally with numpy 1.17.2, it failed.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxNzkxMDY=",
+                      "login": "gepcel"
+                    },
+                    "name": "WANG Aiyong",
+                    "email": "gepcelway@gmail.com",
+                    "date": "2019-09-12T20:51:15.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "TST: add test for #9107 (#28386)",
+                  "message": "TST: add test for #9107 (#28386)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzcxMDEx",
+                      "login": "squigmig"
+                    },
+                    "name": "Miguel",
+                    "email": "contact@miguelcortes.co.uk",
+                    "date": "2019-09-12T13:50:28.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DEP: Bump Cython to 0.29.13 (#28391)",
+                  "message": "DEP: Bump Cython to 0.29.13 (#28391)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMTI1NDY=",
+                      "login": "TomAugspurger"
+                    },
+                    "name": "Tom Augspurger",
+                    "email": "TomAugspurger@users.noreply.github.com",
+                    "date": "2019-09-12T07:49:22.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG: Fix to_datetime(errors='coerce') not swallowing all parser excep…",
+                  "message": "BUG: Fix to_datetime(errors='coerce') not swallowing all parser exceptions... (#28367)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzcxMDEx",
+                      "login": "squigmig"
+                    },
+                    "name": "Miguel",
+                    "email": "contact@miguelcortes.co.uk",
+                    "date": "2019-09-12T13:45:21.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "TMP: pin openssl for doc build (#28404)",
+                  "message": "TMP: pin openssl for doc build (#28404)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMjA0OTY=",
+                      "login": "jorisvandenbossche"
+                    },
+                    "name": "Joris Van den Bossche",
+                    "email": "jorisvandenbossche@gmail.com",
+                    "date": "2019-09-12T11:54:44.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "API: Don't fail when plotting Series/DataFrame with no rows (#28226)",
+                  "message": "API: Don't fail when plotting Series/DataFrame with no rows (#28226)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjk0NjcyNw==",
+                      "login": "randomstuff"
+                    },
+                    "name": "Gabriel Corona",
+                    "email": "gabriel.corona@free.fr",
+                    "date": "2019-09-11T21:26:18.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CI: Change conda channel order for Windows builds (#28357)",
+                  "message": "CI: Change conda channel order for Windows builds (#28357)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcwMjc0",
+                      "login": "xhochy"
+                    },
+                    "name": "Uwe L. Korn",
+                    "email": "xhochy@users.noreply.github.com",
+                    "date": "2019-09-11T20:57:06.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add pyjanitor to ecosystem.rst (#28338)",
+                  "message": "Add pyjanitor to ecosystem.rst (#28338)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2MzY0NDE1",
+                      "login": "topper-123"
+                    },
+                    "name": "Terji Petersen",
+                    "email": "contribute@tensortable.com",
+                    "date": "2019-09-11T16:51:33.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: small ops cleanup (#28379)",
+                  "message": "CLN: small ops cleanup (#28379)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-11T05:21:42.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "DOC: Improve compiler installation instructions (#28316)",
+                  "message": "DOC: Improve compiler installation instructions (#28316)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIzMTgyODI5",
+                      "login": "lucyleeow"
+                    },
+                    "name": "lucyleeow",
+                    "email": "jliu176@gmail.com",
+                    "date": "2019-09-11T08:34:14.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: remove unused parts of skiplist (most of it) (#27465)",
+                  "message": "CLN: remove unused parts of skiplist (most of it) (#27465)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-10T19:02:06.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: timeseries in plotting clean up (#28020)",
+                  "message": "CLN: timeseries in plotting clean up (#28020)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjkyNjk4MTY=",
+                      "login": "charlesdong1991"
+                    },
+                    "name": "Kaiqi Dong",
+                    "email": "kaiqi@kth.se",
+                    "date": "2019-09-11T03:43:54.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: avoid catching Exception in generic (#28370)",
+                  "message": "CLN: avoid catching Exception in generic (#28370)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-10T18:10:55.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG: Set na_rep values before converting to string to prevent data tr…",
+                  "message": "BUG: Set na_rep values before converting to string to prevent data truncation (#25103)\n\n* Fix #25099 set na_rep values before converting to string to prevent data truncation",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMwNDc4Ng==",
+                      "login": "kinow"
+                    },
+                    "name": "Bruno P. Kinoshita",
+                    "email": "kinow@users.noreply.github.com",
+                    "date": "2019-09-11T08:35:24.000+12:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: catch stricter in json (#28351)",
+                  "message": "CLN: catch stricter in json (#28351)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-10T13:19:26.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "GH28337: Period index doesn't handle reindexing with a non-period ind…",
+                  "message": "GH28337: Period index doesn't handle reindexing with a non-period index (#28354)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc0MTQ4MDQ=",
+                      "login": "christopherzimmerman"
+                    },
+                    "name": "Chris Zimmerman",
+                    "email": "chris-zimmerman@live.com",
+                    "date": "2019-09-10T07:06:24.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "GH28301 check for non-unique index in stack_multi_columns (#28336)",
+                  "message": "GH28301 check for non-unique index in stack_multi_columns (#28336)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc0MTQ4MDQ=",
+                      "login": "christopherzimmerman"
+                    },
+                    "name": "Chris Zimmerman",
+                    "email": "chris-zimmerman@live.com",
+                    "date": "2019-09-10T07:05:08.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: fix bare excepts on close (#28343)",
+                  "message": "CLN: fix bare excepts on close (#28343)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-10T04:43:52.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG: same behavior for Series/Index vs ndarray/list in Series logical…",
+                  "message": "BUG: same behavior for Series/Index vs ndarray/list in Series logical ops (#28364)\n\n* treat listlikes symmetrically in logical ops\r\n\r\n* add test",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-10T04:42:06.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: Exception catching (#28361)",
+                  "message": "CLN: Exception catching (#28361)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-10T04:41:05.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[ENH] Use default EA repr for IntervalArray (#26316)",
+                  "message": "[ENH] Use default EA repr for IntervalArray (#26316)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE0MzY3ODg3",
+                      "login": "makbigc"
+                    },
+                    "name": "Mak Sze Chun",
+                    "email": "makszechun@gmail.com",
+                    "date": "2019-09-10T10:28:47.000+08:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BUG/TST: fix and test for timezone drop in GroupBy.shift/bfill/ffill …",
+                  "message": "BUG/TST: fix and test for timezone drop in GroupBy.shift/bfill/ffill (#27992)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIwODUw",
+                      "login": "noritada"
+                    },
+                    "name": "Noritada Kobayashi",
+                    "email": "noritada.kobayashi@gmail.com",
+                    "date": "2019-09-09T21:06:00.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "CLN: raise ValueError instead of Exception (#28352)",
+                  "message": "CLN: raise ValueError instead of Exception (#28352)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgwNzg5Njg=",
+                      "login": "jbrockmendel"
+                    },
+                    "name": "jbrockmendel",
+                    "email": "jbrockmendel@gmail.com",
+                    "date": "2019-09-09T04:57:20.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

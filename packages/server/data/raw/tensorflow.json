@@ -1,0 +1,1808 @@
+{
+  "data": {
+    "repository": {
+      "ref": {
+        "target": {
+          "history": {
+            "edges": [
+              {
+                "node": {
+                  "messageHeadline": "Add comment to element wise multiplication in tensor_utils.",
+                  "message": "Add comment to element wise multiplication in tensor_utils.\n\nPiperOrigin-RevId: 271028379",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQzNzk3MzIz",
+                      "login": "jianlijianli"
+                    },
+                    "name": "Jian Li",
+                    "email": "jianlijianli@google.com",
+                    "date": "2019-09-24T18:20:42.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Disabling test until fix is landed.",
+                  "message": "Disabling test until fix is landed.\n\nPiperOrigin-RevId: 271024937",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMzg1MTA0",
+                      "login": "bmzhao"
+                    },
+                    "name": "Brian Zhao",
+                    "email": "bmzhao@google.com",
+                    "date": "2019-09-24T17:54:07.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Clean up Grappler build file.",
+                  "message": "Clean up Grappler build file.\n\nPiperOrigin-RevId: 271020175",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-24T17:21:16.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Give tf.Variable a 2.x-friendly and doctested docstring",
+                  "message": "Give tf.Variable a 2.x-friendly and doctested docstring\n\nPiperOrigin-RevId: 271016646",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM3MzEwMjU=",
+                      "login": "allenlavoie"
+                    },
+                    "name": "Allen Lavoie",
+                    "email": "allenl@google.com",
+                    "date": "2019-09-24T17:01:31.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Support dumping TF graphs to TEST_UNDECLARED_OUTPUTS_DIRS",
+                  "message": "Support dumping TF graphs to TEST_UNDECLARED_OUTPUTS_DIRS\n\nPiperOrigin-RevId: 271015968",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM0ODk1OQ==",
+                      "login": "cheshire"
+                    },
+                    "name": "George Karpenkov",
+                    "email": "cheshire@google.com",
+                    "date": "2019-09-24T16:57:27.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix typo recieve -> receive in hlo computation.",
+                  "message": "Fix typo recieve -> receive in hlo computation.\n\nPiperOrigin-RevId: 270983524",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMyMzE5OQ==",
+                      "login": "mihaimaruseac"
+                    },
+                    "name": "Mihai Maruseac",
+                    "email": "mihaimaruseac@google.com",
+                    "date": "2019-09-24T14:15:23.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Adding tensor_coding target to tensorflow/core/platform/BUILD.",
+                  "message": "Adding tensor_coding target to tensorflow/core/platform/BUILD.\n\nPiperOrigin-RevId: 270976360",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMzg1MTA0",
+                      "login": "bmzhao"
+                    },
+                    "name": "Brian Zhao",
+                    "email": "bmzhao@google.com",
+                    "date": "2019-09-24T13:40:39.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Minor code style fix for TensorListStack conversion",
+                  "message": "Minor code style fix for TensorListStack conversion\n\nPiperOrigin-RevId: 270975500",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYzMTY5MjE=",
+                      "login": "haozha111"
+                    },
+                    "name": "Haoliang Zhang",
+                    "email": "haoliang@google.com",
+                    "date": "2019-09-24T13:35:58.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove a debug log.",
+                  "message": "Remove a debug log.\n\nPiperOrigin-RevId: 270971382",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExNTc0MzI=",
+                      "login": "timshen91"
+                    },
+                    "name": "Tim Shen",
+                    "email": "timshen@google.com",
+                    "date": "2019-09-24T13:16:03.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Allow attaching descriptions to OpInterfaces and InterfaceMethods.",
+                  "message": "Allow attaching descriptions to OpInterfaces and InterfaceMethods.\n\nThis change adds support for documenting interfaces and their methods. A tablegen generator for the interface documentation is also added(gen-op-interface-doc).\n\nDocumentation is added to an OpInterface via the `description` field:\ndef MyOpInterface : OpInterface<\"MyOpInterface\"> {\n  let description = [{\n    My interface is very interesting.\n  }];\n}\n\nDocumentation is added to an InterfaceMethod via a new `description` field that comes right before the optional body:\n\nInterfaceMethod<\"void\", \"foo\", (ins), [{\n  This is the foo method.\n}]>,\n\nPiperOrigin-RevId: 270965485",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI4ODMyOTA5",
+                      "login": "River707"
+                    },
+                    "name": "River Riddle",
+                    "email": "riverriddle@google.com",
+                    "date": "2019-09-24T12:45:11.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Introduce splat op + provide its LLVM lowering",
+                  "message": "Introduce splat op + provide its LLVM lowering\n\n- introduce splat op in standard dialect (currently for int/float/index input\n  type, output type can be vector or statically shaped tensor)\n- implement LLVM lowering (when result type is 1-d vector)\n- add constant folding hook for it\n- while on Ops.cpp, fix some stale names\n\nSigned-off-by: Uday Bondhugula <uday@polymagelabs.com>\n\nCloses #141\n\nCOPYBARA_INTEGRATE_REVIEW=https://github.com/tensorflow/mlir/pull/141 from bondhugula:splat 48976a6aa0a75be6d91187db6418de989e03eb51\nPiperOrigin-RevId: 270965304",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcwMDg0MDE=",
+                      "login": "bondhugula"
+                    },
+                    "name": "Uday Bondhugula",
+                    "email": "udayb@iisc.ac.in",
+                    "date": "2019-09-24T12:44:11.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Automated rollback of commit 347e154882829031ef896c50ac230944b2b4ee8b",
+                  "message": "Automated rollback of commit 347e154882829031ef896c50ac230944b2b4ee8b\n\nPiperOrigin-RevId: 270963700",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-24T12:37:17.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Internal change",
+                  "message": "Internal change\n\nPiperOrigin-RevId: 270958373",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyNjkyOTk=",
+                      "login": "qqfish"
+                    },
+                    "name": "Xiao Yu",
+                    "email": "fishx@google.com",
+                    "date": "2019-09-24T12:10:51.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Patch CUB with http://github.com/NVlabs/cub/pull/170 to build with cl…",
+                  "message": "Patch CUB with http://github.com/NVlabs/cub/pull/170 to build with clang.\n\nPiperOrigin-RevId: 270958366",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc1MjM5ODI=",
+                      "login": "chsigg"
+                    },
+                    "name": "Christian Sigg",
+                    "email": "csigg@google.com",
+                    "date": "2019-09-24T12:10:48.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add bzl_library build target for various Skylark libraries.",
+                  "message": "Add bzl_library build target for various Skylark libraries.\n\nPiperOrigin-RevId: 270958099",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY3NDAyMQ==",
+                      "login": "swegner"
+                    },
+                    "name": "Scott Wegner",
+                    "email": "swegner@google.com",
+                    "date": "2019-09-24T12:09:18.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Do not use deprecated get_shape",
+                  "message": "Do not use deprecated get_shape\n\nPiperOrigin-RevId: 270957229",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjUwNjE=",
+                      "login": "alextp"
+                    },
+                    "name": "Alexandre Passos",
+                    "email": "apassos@google.com",
+                    "date": "2019-09-24T12:05:00.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #31782 from Intel-tensorflow:tenglu/fuse_fp32_matmul",
+                  "message": "Merge pull request #31782 from Intel-tensorflow:tenglu/fuse_fp32_matmul\n\nPiperOrigin-RevId: 270955757",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "TensorFlower Gardener",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-24T12:22:23.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix spurious newlines in docstring for tf.gather.",
+                  "message": "Fix spurious newlines in docstring for tf.gather.\n\nPiperOrigin-RevId: 270955543",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU3OTAzNDg=",
+                      "login": "edloper"
+                    },
+                    "name": "Edward Loper",
+                    "email": "edloper@google.com",
+                    "date": "2019-09-24T11:58:24.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Flush files after writing before closing them and clean up DetermineO…",
+                  "message": "Flush files after writing before closing them and clean up DetermineOpState\n\nPiperOrigin-RevId: 270953068",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY5MTYyOA==",
+                      "login": "frankchn"
+                    },
+                    "name": "Frank Chen",
+                    "email": "frankchn@google.com",
+                    "date": "2019-09-24T11:46:24.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix the TFLite with Select TF Ops build for Android on macOS",
+                  "message": "Fix the TFLite with Select TF Ops build for Android on macOS\n\nThis fixes the following issue:\n#29731\n\nPiperOrigin-RevId: 270949929",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMDk4MTc=",
+                      "login": "yyoon"
+                    },
+                    "name": "YoungSeok Yoon",
+                    "email": "youngseokyoon@google.com",
+                    "date": "2019-09-24T11:32:46.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Adding protobuf_internal and null_file_system targets to tensorflow/c…",
+                  "message": "Adding protobuf_internal and null_file_system targets to tensorflow/core/platform/BUILD.\n\nPiperOrigin-RevId: 270949898",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMzg1MTA0",
+                      "login": "bmzhao"
+                    },
+                    "name": "Brian Zhao",
+                    "email": "bmzhao@google.com",
+                    "date": "2019-09-24T11:32:39.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Declare explicit specializations in the header.",
+                  "message": "Declare explicit specializations in the header.\n\nA program is ill-formed (no diagnostic required) if it defines an explicit specialization that is not visible at some point where the template is used. This is currently the case, as explicit specializations are defined in the .cc file, where they are not visible to users of the header.\n\n(The fact that this code \"works\" is due to limitations of our ABI.) We also define the primary template as deleted, since it is never used.\n\nFound with -Wundefined-func-template.\n\nPiperOrigin-RevId: 270949680",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-24T11:31:48.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Normalize lowering of MemRef types",
+                  "message": "Normalize lowering of MemRef types\n\nThe RFC for unifying Linalg and Affine compilation passes into an end-to-end flow with a predictable ABI and linkage to external function calls raised the question of why we have variable sized descriptors for memrefs depending on whether they have static or dynamic dimensions  (https://groups.google.com/a/tensorflow.org/forum/#!topic/mlir/MaL8m2nXuio).\n\nThis CL standardizes the ABI on the rank of the memrefs.\nThe LLVM struct for a memref becomes equivalent to:\n```\ntemplate <typename Elem, size_t Rank>\nstruct {\n  Elem *ptr;\n  int64_t sizes[Rank];\n};\n```\n\nPiperOrigin-RevId: 270947276",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMTQ4NDY4",
+                      "login": "nicolasvasilache"
+                    },
+                    "name": "Nicolas Vasilache",
+                    "email": "ntv@google.com",
+                    "date": "2019-09-24T11:21:04.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Transform `TensorListStack` to a trivial Reshape op and set output sh…",
+                  "message": "Transform `TensorListStack` to a trivial Reshape op and set output shape properly.\n\nThis is needed because sometimes the tensorlist might lose shape info (e.g. returned from a while body function) during transformation and get passed to an op that expects ranked tensor input. The solution is to rewrite this op into a Reshape op and infer the output shape based on `num_elements` and `element_shape` (if they are compile-time constants). The reshape is just trivial since it doesn't actually change the tensorlist's shape.\n\nPiperOrigin-RevId: 270947000",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYzMTY5MjE=",
+                      "login": "haozha111"
+                    },
+                    "name": "Haoliang Zhang",
+                    "email": "haoliang@google.com",
+                    "date": "2019-09-24T11:20:00.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Export the events_writer functions from C++ to Python with pybind11 i…",
+                  "message": "Export the events_writer functions from C++ to Python with pybind11 instead of swig. This is part of a larger effort to deprecate swig and eventually with modularization break pywrap_tensorflow into smaller components. It will also make exporting C++ ops to Python significantly easier. XLA is using the pybind11 macros already. Please refer to https://github.com/tensorflow/community/blob/master/rfcs/20190208-pybind11.md for more information.\n\nWe are slightly changing the behavior of EventsWriter. Rather than returning a bad status when writing to a deleted file which is often ignored by the user, we are removing the FileStillExists check.\n\nTensorBoard has already been prepared for this change via: https://github.com/tensorflow/tensorboard/pull/2683\n\nPiperOrigin-RevId: 270945727",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU1ODgyNzI=",
+                      "login": "av8ramit"
+                    },
+                    "name": "Amit Patankar",
+                    "email": "amitpatankar@google.com",
+                    "date": "2019-09-24T11:14:39.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Internal cleanup for ByteCount() return type.",
+                  "message": "Internal cleanup for ByteCount() return type.\n\nPiperOrigin-RevId: 270940285",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-24T10:53:53.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Place padding ops on TPUs if the original input nodes has already bee…",
+                  "message": "Place padding ops on TPUs if the original input nodes has already been on TPUs, so XLA op demand mode can be triggered. This will avoid unnecessary data copy between host and device.\n\nPiperOrigin-RevId: 270940275",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYzOTk4NzA=",
+                      "login": "rxsang"
+                    },
+                    "name": "Ruoxin Sang",
+                    "email": "rxsang@google.com",
+                    "date": "2019-09-24T10:53:49.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "iOS GPU delegate: inference context tests added.",
+                  "message": "iOS GPU delegate: inference context tests added.\n\nPiperOrigin-RevId: 270935244",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-24T10:33:24.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add missing declarations for explicit instantiations.",
+                  "message": "Add missing declarations for explicit instantiations.\n\nThe current behaviour (using externally defined instantiations without having seen a declaration of those external instantiations) is undesirable and effectively deprecated, and is warned about by -Wundefined-func-template.\n\nPiperOrigin-RevId: 270932193",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-24T10:19:50.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "remove macro that Google ICU no longer looks at",
+                  "message": "remove macro that Google ICU no longer looks at\n\nPiperOrigin-RevId: 270930340",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-24T10:11:10.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Strip default attributes before sending a function or op to eager ser…",
+                  "message": "Strip default attributes before sending a function or op to eager service\n\nWe don't need to add default attributes back because:\n - function instantiation already adds default attributes\n - conversion from eager AttrBuilder to NodeDef adds default attributes\n\nPiperOrigin-RevId: 270928211",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjkxMjM0MDA=",
+                      "login": "iganichev"
+                    },
+                    "name": "Igor Ganichev",
+                    "email": "iga@google.com",
+                    "date": "2019-09-24T10:02:55.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #32649 from fsx950223:master",
+                  "message": "Merge pull request #32649 from fsx950223:master\n\nPiperOrigin-RevId: 270927439",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "TensorFlower Gardener",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-24T10:13:11.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Move error_codes.proto part 2.",
+                  "message": "Move error_codes.proto part 2.\nMove the usages to protobuf/error_codes.proto\n\nPiperOrigin-RevId: 270927284",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc5NDY4MDk=",
+                      "login": "gunan"
+                    },
+                    "name": "Gunhan Gulsoy",
+                    "email": "gunan@google.com",
+                    "date": "2019-09-24T09:59:36.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Suggest `for element in dataset` when users use old-style iteration i…",
+                  "message": "Suggest `for element in dataset` when users use old-style iteration in eager mode\n\nPiperOrigin-RevId: 270924401",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM0NTUxNzc=",
+                      "login": "aaudiber"
+                    },
+                    "name": "Andrew Audibert",
+                    "email": "aaudibert@google.com",
+                    "date": "2019-09-24T09:46:22.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add a constructor to InputTensorData",
+                  "message": "Add a constructor to InputTensorData\n\nPiperOrigin-RevId: 270923022",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-24T09:39:27.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Automated rollback of commit c1de94204eb0e49b98eb644daf0584856a8a9db3",
+                  "message": "Automated rollback of commit c1de94204eb0e49b98eb644daf0584856a8a9db3\n\nPiperOrigin-RevId: 270922181",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM3MzEwMjU=",
+                      "login": "allenlavoie"
+                    },
+                    "name": "Allen Lavoie",
+                    "email": "allenl@google.com",
+                    "date": "2019-09-24T09:35:37.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Updated doc for tf.random.set_seed",
+                  "message": "Updated doc for tf.random.set_seed\n\nPiperOrigin-RevId: 270921224",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc4MTczNjU=",
+                      "login": "wangpengmit"
+                    },
+                    "name": "Peng Wang",
+                    "email": "wangpeng@google.com",
+                    "date": "2019-09-24T09:30:55.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "* Update RaggedTensor.to_tensor to use a dedicated c++ kernel.  This …",
+                  "message": "* Update RaggedTensor.to_tensor to use a dedicated c++ kernel.  This improves throughput by up to 100% (depending on the tensor shape).\n* Add a `shape` argument to RaggedTensor.to_tensor, which can be used to pad/truncate the result to a desired shape.\n\nPiperOrigin-RevId: 270920630",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU3OTAzNDg=",
+                      "login": "edloper"
+                    },
+                    "name": "Edward Loper",
+                    "email": "edloper@google.com",
+                    "date": "2019-09-24T09:27:56.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[MLIR] Legalize HLO to LHLO.",
+                  "message": "[MLIR] Legalize HLO to LHLO.\n\nPiperOrigin-RevId: 270920214",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMyNTIyMDk1",
+                      "login": "pifon2a"
+                    },
+                    "name": "Alexander Belyaev",
+                    "email": "pifon@google.com",
+                    "date": "2019-09-24T09:25:46.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Implementation of \"implements\" attribute in tf.function",
+                  "message": "Implementation of \"implements\" attribute in tf.function\nRFC: https://github.com/tensorflow/community/blob/master/rfcs/20190610-standardizing-composite_ops.md\nNote: only functions that don't capture any external tensors can \"implement\" something. Also variable modification inside such functions is not supported.\n\nPiperOrigin-RevId: 270914514",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-24T08:56:37.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "In ParseExampleOp: pass example::Result by const reference to WriteOu…",
+                  "message": "In ParseExampleOp: pass example::Result by const reference to WriteOutput().\n\nPiperOrigin-RevId: 270911931",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU3OTAzNDg=",
+                      "login": "edloper"
+                    },
+                    "name": "Edward Loper",
+                    "email": "edloper@google.com",
+                    "date": "2019-09-24T08:41:18.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Clone called functions into nested GPU module.",
+                  "message": "Clone called functions into nested GPU module.\n\nPiperOrigin-RevId: 270891190",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc1MjM5ODI=",
+                      "login": "chsigg"
+                    },
+                    "name": "Christian Sigg",
+                    "email": "csigg@google.com",
+                    "date": "2019-09-24T06:29:25.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Export bfloat16 functions from C++ to Python with pybind11 instead of…",
+                  "message": "Export bfloat16 functions from C++ to Python with pybind11 instead of swig.\n\nPiperOrigin-RevId: 270873857",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyMTg4NzQ=",
+                      "login": "petebu"
+                    },
+                    "name": "Peter Buchlovsky",
+                    "email": "petebu@google.com",
+                    "date": "2019-09-24T04:04:50.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add an \"errno\"-like field to NNAPI delegate for detecting NNAPI error…",
+                  "message": "Add an \"errno\"-like field to NNAPI delegate for detecting NNAPI errors for fallback behaviour\n\nPiperOrigin-RevId: 270866028",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ1NzAzNTM=",
+                      "login": "galarragas"
+                    },
+                    "name": "Stefano Galarraga",
+                    "email": "galarragas@google.com",
+                    "date": "2019-09-24T03:00:43.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update GraphDef version to 168.",
+                  "message": "Update GraphDef version to 168.\n\nPiperOrigin-RevId: 270859009",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-24T02:03:04.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "compat: Update forward compatibility horizon to 2019-09-24",
+                  "message": "compat: Update forward compatibility horizon to 2019-09-24\n\nPiperOrigin-RevId: 270859006",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-24T02:03:04.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[TF:XLA] Cleanup cuda_py_test calls with xla_enable_strict_auto_jit =…",
+                  "message": "[TF:XLA] Cleanup cuda_py_test calls with xla_enable_strict_auto_jit = True.\n\nPiperOrigin-RevId: 270858131",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE0OTEwOTE=",
+                      "login": "tpopp"
+                    },
+                    "name": "Tres Popp",
+                    "email": "tpopp@google.com",
+                    "date": "2019-09-24T01:59:31.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Allow null Attribute for value when building GlobalOp.",
+                  "message": "Allow null Attribute for value when building GlobalOp.\n\nPiperOrigin-RevId: 270853596",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc1MjM5ODI=",
+                      "login": "chsigg"
+                    },
+                    "name": "Christian Sigg",
+                    "email": "csigg@google.com",
+                    "date": "2019-09-24T01:19:21.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update ops-related pbtxt files.",
+                  "message": "Update ops-related pbtxt files.\n\nPiperOrigin-RevId: 270853548",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-24T01:19:00.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Use getSExtValue instead of getLimitedValue to extract int attribute",
+                  "message": "Use getSExtValue instead of getLimitedValue to extract int attribute\n\ngetLimitedValue returns unsigned integer but these attributes in TensorFlow and HLO are signed integers.\n\nAll usages except HLO ConvertOp's folding has 64 bit integers so those didn't have any behavior change and just avoids the implicit cast.\n\nPiperOrigin-RevId: 270847657",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5OTAwNzk=",
+                      "login": "smit-hinsu"
+                    },
+                    "name": "Smit Hinsu",
+                    "email": "hinsu@google.com",
+                    "date": "2019-09-24T00:37:06.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Automated rollback of commit 4db523f7237e2afec3ad65def4d2436fffa5a859",
+                  "message": "Automated rollback of commit 4db523f7237e2afec3ad65def4d2436fffa5a859\n\nPiperOrigin-RevId: 270844365",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-24T00:10:46.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Exported Send/Recv in tf.raw_ops",
+                  "message": "Exported Send/Recv in tf.raw_ops\n\nThis is done to streamline Channel implementation in Lingvo which currently\nrelies on a mutable op_def_registry.\n\nPiperOrigin-RevId: 270841220",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE4NTg1Ng==",
+                      "login": "superbobry"
+                    },
+                    "name": "Sergei Lebedev",
+                    "email": "slebedev@google.com",
+                    "date": "2019-09-23T23:44:33.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Get per-channel bias quantization parameters",
+                  "message": "Get per-channel bias quantization parameters\n\nThe bias quantization parameters are derived from the inputs and weights. When\nthe input is per-tensor and weight is per-channel, the scale of the inputs is\nbroadcasted to each channel. The quantization dimension indexes and dimension\nsizes from the per-channel quantization parametes need to be matched.\nOtherwise, nullptr is returned.\n\nPiperOrigin-RevId: 270840445",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyNzAzMDY4",
+                      "login": "liufengdb"
+                    },
+                    "name": "Feng Liu",
+                    "email": "fengliuai@google.com",
+                    "date": "2019-09-23T23:36:41.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "internal BUILD file cleanup",
+                  "message": "internal BUILD file cleanup\n\nPiperOrigin-RevId: 270835896",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-23T22:51:33.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add memory_space argument to StreamExecuctorInterface::Allocate, whic…",
+                  "message": "Add memory_space argument to StreamExecuctorInterface::Allocate, which corresponds to xla::Layout::memory_space.\n\nPiperOrigin-RevId: 270833932",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-23T22:32:37.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Mark tfl Quantize and Dequantize ops having side effect",
+                  "message": "Mark tfl Quantize and Dequantize ops having side effect\n\nThese ops carry the quantization parameters for other ops, so they shouldn't be\nremoved even their results don't have users. For example, the quantization\nrewrite pass needs to match all the Quantize ops after the tfl.split op to get\nthe quantization parameters, even some of the split results are not used.\n\nThe Quantze and Dequantize ops without any uses are removed in the\npost-quantization pass.\n\nPiperOrigin-RevId: 270825989",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyNzAzMDY4",
+                      "login": "liufengdb"
+                    },
+                    "name": "Feng Liu",
+                    "email": "fengliuai@google.com",
+                    "date": "2019-09-23T21:21:02.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add SavedModelEstimator support for saved models with assets.",
+                  "message": "Add SavedModelEstimator support for saved models with assets.\n\nThe main op execution in SavedModelEstimator did not provide a feed_dict to rewrite asset tensors with their correct filepaths. This change fixes SavedModelEstimator to mirror the logic in SavedModelLoader.run_init_ops.\n\nPiperOrigin-RevId: 270822926",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2NTI3",
+                      "login": "rryan"
+                    },
+                    "name": "RJ Skerry-Ryan",
+                    "email": "rjryan@google.com",
+                    "date": "2019-09-23T20:58:06.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[tfdbg] Check numerics callback fix: Replace _op with for multi-input…",
+                  "message": "[tfdbg] Check numerics callback fix: Replace _op with for multi-input ops\n\n- Some ops (e.g., tf.pad()) checks the `.op.inputs` property of resulting tensors.\n  Some of these ops involve >1 inputs, which is broken by the fact that the\n  CheckNumerics op that instrument the tensor has only one input.\n  - Add a unit test with `tf.pad` to cover the case.\n- Exclude v1 control flow ops.\n  - Add a unit test with the keras LSTM layer under the v1 graph-mode  op to cover the case.\n\nPiperOrigin-RevId: 270819564",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2ODI0NzAy",
+                      "login": "caisq"
+                    },
+                    "name": "Shanqing Cai",
+                    "email": "cais@google.com",
+                    "date": "2019-09-23T20:28:13.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add pfor converter for SelfAdjointEigV2.",
+                  "message": "Add pfor converter for SelfAdjointEigV2.\n\nPiperOrigin-RevId: 270816561",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-23T19:59:01.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add clean_dep for targets. It fixes bazel building errors of third pa…",
+                  "message": "Add clean_dep for targets. It fixes bazel building errors of third party libraries that depend on build_rules \"gen_selected_ops\" and \"tflite_jni_binary\".\n\nPiperOrigin-RevId: 270815633",
+                  "author": {
+                    "user": null,
+                    "name": "Tian Lin",
+                    "email": "tianlin@google.com",
+                    "date": "2019-09-23T19:47:58.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove unnecessary debug statement in flatbuffer_translate.cc.",
+                  "message": "Remove unnecessary debug statement in flatbuffer_translate.cc.\n\nPiperOrigin-RevId: 270813041",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYzMTY5MjE=",
+                      "login": "haozha111"
+                    },
+                    "name": "Haoliang Zhang",
+                    "email": "haoliang@google.com",
+                    "date": "2019-09-23T19:23:07.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixing types target under tensorflow/core/platform/BUILD, in preparat…",
+                  "message": "Fixing types target under tensorflow/core/platform/BUILD, in preparation for adding BUILD files under platform/windows and platform/default. Inline Window's ssize_t definition into platform/types.h.\n\nPiperOrigin-RevId: 270812282",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMzg1MTA0",
+                      "login": "bmzhao"
+                    },
+                    "name": "Brian Zhao",
+                    "email": "bmzhao@google.com",
+                    "date": "2019-09-23T19:14:30.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Deprecate tf.test.is_gpu_available",
+                  "message": "Deprecate tf.test.is_gpu_available\n\nThe tf.config.experimental.list_physical_devices API is preferable as\nthe current API results in an initialization of the runtime which may be\nundesirable.\n\nPiperOrigin-RevId: 270812165",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg0Mzcy",
+                      "login": "jaingaurav"
+                    },
+                    "name": "Gaurav Jain",
+                    "email": "gjn@google.com",
+                    "date": "2019-09-23T19:13:27.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update uses of INSTANTIATE_TEST_SUITE_P and TEST_P that leave the arg…",
+                  "message": "Update uses of INSTANTIATE_TEST_SUITE_P and TEST_P that leave the arguments blank to pass a non empty value (e.g. All).\n\nPiperOrigin-RevId: 270811585",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-23T19:06:59.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add AnyStaticShapeTensor constraint on input for tf.Relu and tf.Relu6…",
+                  "message": "Add AnyStaticShapeTensor constraint on input for tf.Relu and tf.Relu6 XLA lowerings\n\ngetSplat native call from ConstantSplat requires static shaped input to create a corresponding DenseElementsAttr.\n\nPiperOrigin-RevId: 270810555",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5OTAwNzk=",
+                      "login": "smit-hinsu"
+                    },
+                    "name": "Smit Hinsu",
+                    "email": "hinsu@google.com",
+                    "date": "2019-09-23T19:01:04.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Make spirv::RuntimeArrayType part of spirv::CompositeType.",
+                  "message": "Make spirv::RuntimeArrayType part of spirv::CompositeType.\n\nAccording to SPIR-V spec, spirv::CompositeType includes\nspirv::RuntimeArrayType. This allows using objects of\nspirv::RuntimeArrayType with spirv::AccessChainOp.\nPiperOrigin-RevId: 270809492",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-23T18:50:17.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Automated rollback of commit e7698844687e6304b93bb291fa9f62964aecd6c5",
+                  "message": "Automated rollback of commit e7698844687e6304b93bb291fa9f62964aecd6c5\n\nPiperOrigin-RevId: 270809193",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMzg1MTA0",
+                      "login": "bmzhao"
+                    },
+                    "name": "Brian Zhao",
+                    "email": "bmzhao@google.com",
+                    "date": "2019-09-23T18:47:27.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Let mlir-translate support -split-input-file",
+                  "message": "Let mlir-translate support -split-input-file\n\nSimilar to mlir-opt, having a -split-input-file mode is quite useful\nin mlir-translate. It allows to put logically related tests in the\nsame test file for better organization.\n\nPiperOrigin-RevId: 270805467",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ4NzkyOA==",
+                      "login": "antiagainst"
+                    },
+                    "name": "Lei Zhang",
+                    "email": "antiagainst@google.com",
+                    "date": "2019-09-23T18:17:52.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Move TFLite converter 2.0 docs to default.",
+                  "message": "Move TFLite converter 2.0 docs to default.\n\nPiperOrigin-RevId: 270805335",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5MDA2MTI=",
+                      "login": "gargn"
+                    },
+                    "name": "Nupur Garg",
+                    "email": "nupurgarg@google.com",
+                    "date": "2019-09-23T18:16:43.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Adding tfl.prelu op, verifier, and tests",
+                  "message": "Adding tfl.prelu op, verifier, and tests\n\nPiperOrigin-RevId: 270795743",
+                  "author": {
+                    "user": null,
+                    "name": "Abdurrahman Akkas",
+                    "email": "akkas@google.com",
+                    "date": "2019-09-23T17:17:57.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "TF.Rsqrt to xla_hlo.rsqrt lowering",
+                  "message": "TF.Rsqrt to xla_hlo.rsqrt lowering\n\nPiperOrigin-RevId: 270795357",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-23T17:15:37.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Handle OpMemberName instruction in SPIR-V deserializer.",
+                  "message": "Handle OpMemberName instruction in SPIR-V deserializer.\n\nSdd support in deserializer for OpMemberName instruction. For now\nthe name is just processed and not associated with the\nspirv::StructType being built. That needs an enhancement to\nspirv::StructTypes itself.\nAdd tests to check for errors reported during deserialization with\nsome refactoring to common out some utility functions.\nPiperOrigin-RevId: 270794524",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-23T17:10:49.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "BREAKING CHANGE: Change `tfp.utils.DeferredTensor` argument order to …",
+                  "message": "BREAKING CHANGE: Change `tfp.utils.DeferredTensor` argument order to `pretransformed_input`, `transform_fn` for consistency with\n`TransformedVariable` (itself being argument-order consistent with `tf.Variable`).\n\nPiperOrigin-RevId: 270792584",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjExMzcwNzg=",
+                      "login": "jvdillon"
+                    },
+                    "name": "Joshua V. Dillon",
+                    "email": "jvdillon@google.com",
+                    "date": "2019-09-23T17:01:28.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Adding tf_mobile_aware_deps macro.",
+                  "message": "Adding tf_mobile_aware_deps macro.\n\nPiperOrigin-RevId: 270791843",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMzg1MTA0",
+                      "login": "bmzhao"
+                    },
+                    "name": "Brian Zhao",
+                    "email": "bmzhao@google.com",
+                    "date": "2019-09-23T16:57:01.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Adding a default target set for presubmits.",
+                  "message": "Adding a default target set for presubmits.\n\nPiperOrigin-RevId: 270791565",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU1ODgyNzI=",
+                      "login": "av8ramit"
+                    },
+                    "name": "Amit Patankar",
+                    "email": "amitpatankar@google.com",
+                    "date": "2019-09-23T16:55:41.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #32738 from ROCmSoftwarePlatform:google-upstream-p…",
+                  "message": "Merge pull request #32738 from ROCmSoftwarePlatform:google-upstream-pr-xla-no-rocm-tag\n\nPiperOrigin-RevId: 270790979",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "TensorFlower Gardener",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-23T17:07:04.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Some docfixes for random ops.",
+                  "message": "Some docfixes for random ops.\n  - random_normal and random_uniform can take in broadcastable arguments of arbitrary rank. Remove the rank-1 restriction in the doc.\n  - Change broadcasting in random_gamma to use broadcast_dynamic_shape and broadcast_to.\n\nPiperOrigin-RevId: 270789028",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-23T16:42:33.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Lowering of TF.Transpose to XLA-HLO Tranpose lowering.",
+                  "message": "Lowering of TF.Transpose to XLA-HLO Tranpose lowering.\n\nPiperOrigin-RevId: 270788956",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-23T16:42:11.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add recurrent layers compatibility with ragged tensors",
+                  "message": "Add recurrent layers compatibility with ragged tensors\n\nPiperOrigin-RevId: 270788458",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3ODExMDg0",
+                      "login": "IrinaMBejan"
+                    },
+                    "name": "Irina Bejan",
+                    "email": "irinabejan@google.com",
+                    "date": "2019-09-23T16:39:35.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Adding a missing dep to tf/core/platform/default:rocm_rocdl_path_impl.",
+                  "message": "Adding a missing dep to tf/core/platform/default:rocm_rocdl_path_impl.\n\nPiperOrigin-RevId: 270786609",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwMzg1MTA0",
+                      "login": "bmzhao"
+                    },
+                    "name": "Brian Zhao",
+                    "email": "bmzhao@google.com",
+                    "date": "2019-09-23T16:30:48.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Explicitly mark *lstm tests are toco based, in prepare for tfliteconv…",
+                  "message": "Explicitly mark *lstm tests are toco based, in prepare for tfliteconverter/mlir/ophint test\n\nPiperOrigin-RevId: 270784835",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM2MjQ3MTkz",
+                      "login": "renjie-liu"
+                    },
+                    "name": "Renjie Liu",
+                    "email": "renjieliu@google.com",
+                    "date": "2019-09-23T16:21:19.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Quantize non-zero scalars and splat tensors",
+                  "message": "Quantize non-zero scalars and splat tensors\n\nTo get a fully quantized model, scalars and splats tensors are required to be\nquantized. Previously, the scale to quantize scalars and splats are hard-coded\nto 1.0, which causes accuracy issue for non-zero cases. This patch tries to\ncreate a range to cover both 0.0 and the scalar value and derive the scale from\nthe new range. This makes sure both 0.0 and the scalar value can be repreented\nby the fixed-point values.\n\nPiperOrigin-RevId: 270784431",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyNzAzMDY4",
+                      "login": "liufengdb"
+                    },
+                    "name": "Feng Liu",
+                    "email": "fengliuai@google.com",
+                    "date": "2019-09-23T16:19:07.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Use constant's location for reporting errors in parsing of hex constant",
+                  "message": "Use constant's location for reporting errors in parsing of hex constant\n\nBefore this the line following the error would be reported in some cases.\n\nPiperOrigin-RevId: 270778722",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjcwNjc2Ng==",
+                      "login": "jpienaar"
+                    },
+                    "name": "Jacques Pienaar",
+                    "email": "jpienaar@google.com",
+                    "date": "2019-09-23T15:51:11.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix a Markdown format error in clip_by_value doc.",
+                  "message": "Fix a Markdown format error in clip_by_value doc.\n\nPiperOrigin-RevId: 270775250",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ4ODMwNjU=",
+                      "login": "haoyuz"
+                    },
+                    "name": "Haoyu Zhang",
+                    "email": "haoyuzhang@google.com",
+                    "date": "2019-09-23T15:35:40.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Switch to tflite minimal logging.",
+                  "message": "Switch to tflite minimal logging.\n\nPiperOrigin-RevId: 270774667",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQzNzk3MzIz",
+                      "login": "jianlijianli"
+                    },
+                    "name": "Jian Li",
+                    "email": "jianlijianli@google.com",
+                    "date": "2019-09-23T15:32:44.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "[XLA] Ignore fusion parameter/operand memory space match.",
+                  "message": "[XLA] Ignore fusion parameter/operand memory space match.\n\nSince the buffers in fusion aren't materialized, the memory space is determined\nby the operand memory space and we don't propagate these inside the fusion\ncomputations. Ignore memory space matching in HLO verification for fusion\nparameters.\n\nPiperOrigin-RevId: 270774527",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY4OTU5OTM=",
+                      "login": "berkinilbeyi"
+                    },
+                    "name": "Berkin Ilbeyi",
+                    "email": "berkin@google.com",
+                    "date": "2019-09-23T15:32:07.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add missing declarations for explicit instantiations.",
+                  "message": "Add missing declarations for explicit instantiations.\n\nThe current behaviour (using externally defined instantiations without having seen a declaration of those external instantiations) is undesirable and effectively deprecated, and is warned about by -Wundefined-func-template.\n\nPiperOrigin-RevId: 270769585",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-23T15:07:09.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix the issue where `initial_epoch` for multi-worker fault tolerance …",
+                  "message": "Fix the issue where `initial_epoch` for multi-worker fault tolerance purpose is assigned before it's loaded from checkpoint file.\n\nTo recover from the epoch the previous training left at, Keras training loop needs two things to happen before entering the initial epoch: 1) Loading the model weights plus epoch information from the checkpoint, and 2) Update the `initial_epoch` variable within `model.fit()`. 1) has been configured to happen at `on_train_begin` of ModelCheckpoint callback, and 2) is done within `model.fit()`. During recent refactoring, 2) has been moved before 1) and thus we lost the epoch recovery, and this change swaps them back and fixes this issue.\n\nPiperOrigin-RevId: 270766502",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjY1MDU4NjM=",
+                      "login": "rchao"
+                    },
+                    "name": "Rick Chao",
+                    "email": "rchao@google.com",
+                    "date": "2019-09-23T14:53:03.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix the call to NewHostPortGrpcChannel in distributed_runtime/master_…",
+                  "message": "Fix the call to NewHostPortGrpcChannel in distributed_runtime/master_test\n\nPiperOrigin-RevId: 270757646",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjc5NDY4MDk=",
+                      "login": "gunan"
+                    },
+                    "name": "Gunhan Gulsoy",
+                    "email": "gunan@google.com",
+                    "date": "2019-09-23T14:13:44.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Automated rollback of commit 2e361fb75a65c351d3b2eee4b99a64bcc689d7a3",
+                  "message": "Automated rollback of commit 2e361fb75a65c351d3b2eee4b99a64bcc689d7a3\n\nPiperOrigin-RevId: 270757066",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-23T14:10:56.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix ophint-extraction passes order & also add an e2e test to prevent …",
+                  "message": "Fix ophint-extraction passes order & also add an e2e test to prevent this kind of breakage.\n\nPiperOrigin-RevId: 270754087",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM2MjQ3MTkz",
+                      "login": "renjie-liu"
+                    },
+                    "name": "Renjie Liu",
+                    "email": "renjieliu@google.com",
+                    "date": "2019-09-23T13:58:43.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove use of target_ops.",
+                  "message": "Remove use of target_ops.\n\nPiperOrigin-RevId: 270753282",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5MDA2MTI=",
+                      "login": "gargn"
+                    },
+                    "name": "Nupur Garg",
+                    "email": "nupurgarg@google.com",
+                    "date": "2019-09-23T13:55:09.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "cache the forward graph, and use if it exists, otherwise rebuild",
+                  "message": "cache the forward graph, and use if it exists, otherwise rebuild\n\nPiperOrigin-RevId: 270752627",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM5MDEyMDA=",
+                      "login": "sun51"
+                    },
+                    "name": "Yanhua Sun",
+                    "email": "yanhuasun@google.com",
+                    "date": "2019-09-23T13:52:06.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Forwardprop: enforce nesting between gradient tapes and forward accum…",
+                  "message": "Forwardprop: enforce nesting between gradient tapes and forward accumulators\n\nPreviously only accumulators were prevented from watching jvps from \"outer\" accumulators, but GradientTape otherwise ends up watching all jvps for tensors/variables it's watching, meaning forward-over-back isn't efficient.\n\nThis doesn't really fix the issue for functions, where there's a hacky \"is the tape watching any jvps\" flag which only works efficiently if there's a single GradientTape. Once we generate function gradients from tapes this change should apply to them too.\n\nPiperOrigin-RevId: 270751233",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM3MzEwMjU=",
+                      "login": "allenlavoie"
+                    },
+                    "name": "Allen Lavoie",
+                    "email": "allenl@google.com",
+                    "date": "2019-09-23T13:45:51.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Move the eager resnet50 benchmark out of contrib",
+                  "message": "Move the eager resnet50 benchmark out of contrib\n\nCreates tensorflow/python/eager/benchmarks/... for public-ish-API eager benchmarks\n\nInlines a couple small contrib utilities and switches a couple tf.contrib.eager.* calls to internal imports or corresponding public APIs.\n\nPiperOrigin-RevId: 270751203",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM3MzEwMjU=",
+                      "login": "allenlavoie"
+                    },
+                    "name": "Allen Lavoie",
+                    "email": "allenl@google.com",
+                    "date": "2019-09-23T13:45:44.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Ruy ARM32 GEMV kernel",
+                  "message": "Ruy ARM32 GEMV kernel\n\nPiperOrigin-RevId: 270749553",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE4OTE0MTg=",
+                      "login": "talumbau"
+                    },
+                    "name": "T.J. Alumbaugh",
+                    "email": "talumbau@google.com",
+                    "date": "2019-09-23T13:38:15.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Change imported header file to resolve build error.",
+                  "message": "Change imported header file to resolve build error.\n\nPiperOrigin-RevId: 270747194",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIyMjQ5Mzg=",
+                      "login": "jurampark"
+                    },
+                    "name": "Juram Park",
+                    "email": "jurampark@google.com",
+                    "date": "2019-09-23T13:28:07.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Adds --enable_v1_converter to enable 1.X flags in 2.0 tflite_convert.",
+                  "message": "Adds --enable_v1_converter to enable 1.X flags in 2.0 tflite_convert.\n\nPiperOrigin-RevId: 270747173",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5MDA2MTI=",
+                      "login": "gargn"
+                    },
+                    "name": "Nupur Garg",
+                    "email": "nupurgarg@google.com",
+                    "date": "2019-09-23T13:28:01.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix mlir shape test.",
+                  "message": "Fix mlir shape test.\n\nPiperOrigin-RevId: 270745150",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjYzMTY5MjE=",
+                      "login": "haozha111"
+                    },
+                    "name": "Haoliang Zhang",
+                    "email": "haoliang@google.com",
+                    "date": "2019-09-23T13:17:59.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove parameter of stats and step_stats from KernelAndDevice::Run  a…",
+                  "message": "Remove parameter of stats and step_stats from KernelAndDevice::Run  as they are always not used.\nthe usage of StepStatsCollector, especially calling finalize at each op seems dubious.\nThe current approach is to use traceme to get host side op timing and convert them to StepStats in host_tracer.cc\n\nPiperOrigin-RevId: 270743610",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTUxODky",
+                      "login": "tensorflower-gardener"
+                    },
+                    "name": "A. Unique TensorFlower",
+                    "email": "gardener@tensorflow.org",
+                    "date": "2019-09-23T13:10:29.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

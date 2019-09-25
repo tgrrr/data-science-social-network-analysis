@@ -1,0 +1,1824 @@
+{
+  "data": {
+    "repository": {
+      "ref": {
+        "target": {
+          "history": {
+            "edges": [
+              {
+                "node": {
+                  "messageHeadline": "Clarify documentation in mpg: very minor (#3515)",
+                  "message": "Clarify documentation in mpg: very minor (#3515)\n\n* add helpful explanation of mpg$drv",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM5NjczNjk3",
+                      "login": "MaraAlexeev"
+                    },
+                    "name": "Mara Alexeev",
+                    "email": "39673697+MaraAlexeev@users.noreply.github.com",
+                    "date": "2019-09-03T08:26:07.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Adds american spelling to `scale_colour_date/datetime()` (#3510)",
+                  "message": "Adds american spelling to `scale_colour_date/datetime()` (#3510)\n\n* Adds american spellings to scale_colour_date(time)\r\n\r\n* Adds `scale_color_ordinal()`",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjg2MTc1OTU=",
+                      "login": "eliocamp"
+                    },
+                    "name": "Elio Campitelli",
+                    "email": "eliocampitelli@gmail.com",
+                    "date": "2019-08-30T06:35:40.000-03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add setup_params method to Geom (#3509)",
+                  "message": "Add setup_params method to Geom (#3509)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-08-29T19:12:27.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Make plot title position configurable. (#3494)",
+                  "message": "Make plot title position configurable. (#3494)\n\n* add plot.title.position theme element\r\n\r\n* add plot.title.position to all themes, add visual test.\r\n\r\n* Make separate parameter for caption position. Closes #3252.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQyMTA5Mjk=",
+                      "login": "clauswilke"
+                    },
+                    "name": "Claus Wilke",
+                    "email": "wilke@austin.utexas.edu",
+                    "date": "2019-08-27T09:02:27.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "fix title_spec() for vectorized input (#3493)",
+                  "message": "fix title_spec() for vectorized input (#3493)\n\n* make font_descent() not vectorized. closes #3492.\r\n\r\n* work around vectorized angles\r\n\r\n* Add warning when element_text() is used with vectorized input.\r\n\r\n* add news item",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQyMTA5Mjk=",
+                      "login": "clauswilke"
+                    },
+                    "name": "Claus Wilke",
+                    "email": "wilke@austin.utexas.edu",
+                    "date": "2019-08-26T13:27:05.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Handle fine-grained show.legend properly (#3490)",
+                  "message": "Handle fine-grained show.legend properly (#3490)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5Nzg3OTM=",
+                      "login": "yutannihilation"
+                    },
+                    "name": "Hiroaki Yutani",
+                    "email": "yutani.ini@gmail.com",
+                    "date": "2019-08-26T22:48:12.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix the discrete scale when all values are continuous (#3487)",
+                  "message": "Fix the discrete scale when all values are continuous (#3487)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5Nzg3OTM=",
+                      "login": "yutannihilation"
+                    },
+                    "name": "Hiroaki Yutani",
+                    "email": "yutani.ini@gmail.com",
+                    "date": "2019-08-26T20:18:23.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix a typo in NEWS (#3488)",
+                  "message": "Fix a typo in NEWS (#3488)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5Nzg3OTM=",
+                      "login": "yutannihilation"
+                    },
+                    "name": "Hiroaki Yutani",
+                    "email": "yutani.ini@gmail.com",
+                    "date": "2019-08-26T20:17:34.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Force eval_facets() to return a data.frame, not a tibble (#3499)",
+                  "message": "Force eval_facets() to return a data.frame, not a tibble (#3499)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5Nzg3OTM=",
+                      "login": "yutannihilation"
+                    },
+                    "name": "Hiroaki Yutani",
+                    "email": "yutani.ini@gmail.com",
+                    "date": "2019-08-26T20:17:14.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove lazyeval (#3495)",
+                  "message": "Remove lazyeval (#3495)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5Nzg3OTM=",
+                      "login": "yutannihilation"
+                    },
+                    "name": "Hiroaki Yutani",
+                    "email": "yutani.ini@gmail.com",
+                    "date": "2019-08-24T23:56:31.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Let geom_sf() remove rows when shape, size or colour is NA (#3491)",
+                  "message": "Let geom_sf() remove rows when shape, size or colour is NA (#3491)\n\n* Set non_missing_aes on GeomSf",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5Nzg3OTM=",
+                      "login": "yutannihilation"
+                    },
+                    "name": "Hiroaki Yutani",
+                    "email": "yutani.ini@gmail.com",
+                    "date": "2019-08-24T23:49:49.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix typo in ggtheme docs (#3469)",
+                  "message": "Fix typo in ggtheme docs (#3469)\n\n* Fix typo in ggtheme docs\r\n\r\n\"line drawings\" into \"line drawing\".\r\n\r\n* Regenerate ggtheme docs",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2MDc2NTkz",
+                      "login": "daniel-barnett"
+                    },
+                    "name": "Daniel Barnett",
+                    "email": "16076593+daniel-barnett@users.noreply.github.com",
+                    "date": "2019-08-14T17:43:22.000+12:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #3478 from tidyverse/v3.2.1-rc",
+                  "message": "Merge pull request #3478 from tidyverse/v3.2.1-rc\n\nV3.2.1 rc",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-08-12T15:41:07.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge branch 'master' into v3.2.1-rc",
+                  "message": "Merge branch 'master' into v3.2.1-rc",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-08-12T10:15:39.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Increment version number",
+                  "message": "Increment version number",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-08-12T10:13:05.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "update cran comments",
+                  "message": "update cran comments",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-08-09T22:04:36.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Increment version number",
+                  "message": "Increment version number",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-08-09T22:02:37.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update news",
+                  "message": "Update news",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-08-09T22:02:21.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix #3467 Keep missingness of qplot() to label axis nicely (#3473)",
+                  "message": "Fix #3467 Keep missingness of qplot() to label axis nicely (#3473)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5Nzg3OTM=",
+                      "login": "yutannihilation"
+                    },
+                    "name": "Hiroaki Yutani",
+                    "email": "yutani.ini@gmail.com",
+                    "date": "2019-08-10T03:50:48.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Do not change order of positive and negative values in PositionStack …",
+                  "message": "Do not change order of positive and negative values in PositionStack (fixes #3390) (#3471)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-08-09T20:49:32.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "update sf label tests (#3378, fixes #3365) (#3472)",
+                  "message": "update sf label tests (#3378, fixes #3365) (#3472)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-08-09T20:39:05.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add option to center the steps in geom_step() (#3435, closes #3348)",
+                  "message": "Add option to center the steps in geom_step() (#3435, closes #3348)\n\n* Changes the stairstep function to create the option for a \"mid\" direction. In this case, the \"step\" (or vertical deflection) occurs halfway between point A and B.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEyMTE2NTQ0",
+                      "login": "mastropi"
+                    },
+                    "name": "Daniel Mastropietro",
+                    "email": "mastropi@uwalumni.com",
+                    "date": "2019-08-06T13:27:31.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Cleanup Travis config (#3354)",
+                  "message": "Cleanup Travis config (#3354)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIxNjMxOQ==",
+                      "login": "jeroen"
+                    },
+                    "name": "Jeroen Ooms",
+                    "email": "jeroenooms@gmail.com",
+                    "date": "2019-07-24T22:23:43.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Allow use of position_stack() when ymax is NA (#3416, fixes #2709)",
+                  "message": "Allow use of position_stack() when ymax is NA (#3416, fixes #2709)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1MDg2MzA3",
+                      "login": "ikosmidis"
+                    },
+                    "name": "Ioannis Kosmidis",
+                    "email": "i.kosmidis@ucl.ac.uk",
+                    "date": "2019-07-17T19:11:57.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Document breaks/bins/binwidth parameters in stat/geom contour (#3423,…",
+                  "message": "Document breaks/bins/binwidth parameters in stat/geom contour (#3423, fixes #2472)\n\n* Added explicit bins, binwidth + breaks arguments and documented them in stat/geom contour",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ0NTQ3MjY=",
+                      "login": "sinarueeger"
+                    },
+                    "name": "Sina Rüeger",
+                    "email": "sinarueeger@users.noreply.github.com",
+                    "date": "2019-07-17T03:05:23.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "fix documentation for position_dodge and position scales (#3418, fixe…",
+                  "message": "fix documentation for position_dodge and position scales (#3418, fixes 2767)\n\n* added link to sec_axis() in sec.axis parameter documentation and removed it from see also section\r\n\r\n* added documentation on position_dodge2",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIwOTA0MzQ1",
+                      "login": "CateGitau"
+                    },
+                    "name": "Cathy",
+                    "email": "catherinegitau94@gmail.com",
+                    "date": "2019-07-17T03:01:46.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Improve documentation for geom_histogram(). (#3424, fixes #3269)",
+                  "message": "Improve documentation for geom_histogram(). (#3424, fixes #3269)\n\n* Improving documentation for geom_histogram().",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIyMTYxOTc3",
+                      "login": "angelica93"
+                    },
+                    "name": "Angélica Custódio",
+                    "email": "angelica-custodio@hotmail.com",
+                    "date": "2019-07-16T17:08:48.000-03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Allowed reversing of discrete position scales (#3426, fixes #3115)",
+                  "message": "Allowed reversing of discrete position scales (#3426, fixes #3115)\n\n* reverse discrete position scales - get_limits",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTU4NzY5",
+                      "login": "AnneLyng"
+                    },
+                    "name": "Anne Lyngholm",
+                    "email": "als@sund.ku.dk",
+                    "date": "2019-07-16T20:37:54.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Improve scale_(x|y)_continuous docs (#3411, fixes #3298)",
+                  "message": "Improve scale_(x|y)_continuous docs (#3411, fixes #3298)\n\n* added link to scales::squish and scales::squish_infinite in the oob documentation",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIwOTA0MzQ1",
+                      "login": "CateGitau"
+                    },
+                    "name": "Cathy",
+                    "email": "catherinegitau94@gmail.com",
+                    "date": "2019-07-16T19:43:27.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Improve documentation for `scale_*_gradient` (#3407, fixes #3299)",
+                  "message": "Improve documentation for `scale_*_gradient` (#3407, fixes #3299)\n\n* Add examples for na.value = NA\r\n\r\n* Addressed PR documentation changes",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjMxODUzMjM=",
+                      "login": "MeganBeckett"
+                    },
+                    "name": "Megan Beckett",
+                    "email": "megan.beckett13@gmail.com",
+                    "date": "2019-07-16T17:19:47.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Use the isoband package to calculate contour lines and bands (#3439, …",
+                  "message": "Use the isoband package to calculate contour lines and bands (#3439, fixes #3044)\n\n* use isoband instead of contourLines in stat_contour()\r\n\r\n* separate contouring functions into testable functions\r\n\r\n* implement filled_ variants of stat_ and geom_ contour\r\n\r\n* add tests and examples for the _contour_ functions\r\n\r\n* adopt rasterization method from GeomRaster (rather than use tapply()) to create z_matrix",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-07-16T09:56:34.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Improve `stat_function()` documentation and warn informatively (#3415)",
+                  "message": "Improve `stat_function()` documentation and warn informatively (#3415)\n\nFixes #3362",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjI2NjM4MzYx",
+                      "login": "thiyangt"
+                    },
+                    "name": "Thiyanga  Talagala",
+                    "email": "thiyanga.talagala@monash.edu",
+                    "date": "2019-07-09T18:47:17.000+10:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Stat smooth+reml (#3402)",
+                  "message": "Stat smooth+reml (#3402)\n\nIf gam and gam's method is not specified, use REML\r\n\r\nFixes #2630",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE1MDg2MzA3",
+                      "login": "ikosmidis"
+                    },
+                    "name": "Ioannis Kosmidis",
+                    "email": "i.kosmidis@ucl.ac.uk",
+                    "date": "2019-07-09T07:43:51.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "quick fixes to get the CMD check to pass (#3429)",
+                  "message": "quick fixes to get the CMD check to pass (#3429)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-07-08T12:38:11.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "changed rdname of `scale_color_continuous` from `scale_gradient` to `…",
+                  "message": "changed rdname of `scale_color_continuous` from `scale_gradient` to `scale_colour_continuous` (#3430)\n\ncloses issue https://github.com/tidyverse/ggplot2/issues/3422",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ0MTkyNDI4",
+                      "login": "Ahobert"
+                    },
+                    "name": "Ahobert",
+                    "email": "44192428+Ahobert@users.noreply.github.com",
+                    "date": "2019-07-08T18:36:28.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Explicit warning about data removal with limits on positional scales …",
+                  "message": "Explicit warning about data removal with limits on positional scales (#3421)\n\nFixes #2887",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgyMjY2MDE=",
+                      "login": "Elesday"
+                    },
+                    "name": "Joris Falip",
+                    "email": "joris.falip@gmail.com",
+                    "date": "2019-07-08T18:25:52.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Changed border default for theme_grey() (#3414, fixes #3180)",
+                  "message": "Changed border default for theme_grey() (#3414, fixes #3180)\n\n* Changed theme_grey() setting for legend key so that it creates no border (NA) rather than drawing a white one.\r\n\r\n* update visual test cases for theme_gray() updates",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MDY4MDQw",
+                      "login": "annennenne"
+                    },
+                    "name": "Anne Helby Petersen",
+                    "email": "ahpe@sund.ku.dk",
+                    "date": "2019-07-08T16:25:24.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add ggplot_add.by method (#3425)",
+                  "message": "Add ggplot_add.by method (#3425)\n\nFixes #2734",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE0NjYzMjE1",
+                      "login": "Maschette"
+                    },
+                    "name": "Dale Maschette",
+                    "email": "dale.maschette@aad.gov.au",
+                    "date": "2019-07-08T23:56:18.000+10:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "advice users regarding colourblindness (#3417, closes #2863)",
+                  "message": "advice users regarding colourblindness (#3417, closes #2863)\n\n* added section on color blindness to scale-continuous\r\n\r\n* added section on colour blindness to scale-manual",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ0MTkyNDI4",
+                      "login": "Ahobert"
+                    },
+                    "name": "Ahobert",
+                    "email": "44192428+Ahobert@users.noreply.github.com",
+                    "date": "2019-07-08T15:47:15.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Deprecate ggdep (#3412)",
+                  "message": "Deprecate ggdep (#3412)\n\nFixes #3382",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE2Mjc4OTA5",
+                      "login": "perezp44"
+                    },
+                    "name": "Pedro Perez",
+                    "email": "pedro.j.perez@uv.es",
+                    "date": "2019-07-08T15:02:01.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Improved lims() documentation (#3406)",
+                  "message": "Improved lims() documentation (#3406)\n\nFixes #3292",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjIwMzExODE4",
+                      "login": "pridiltal"
+                    },
+                    "name": "Priyanga Dilini Talagala",
+                    "email": "pridiltal@users.noreply.github.com",
+                    "date": "2019-07-08T22:57:59.000+10:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add `adjust` param to `stat_density2d()`  (#3419)",
+                  "message": "Add `adjust` param to `stat_density2d()`  (#3419)\n\nFixes #2860",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjk2MjA1NTI=",
+                      "login": "haleyjeppson"
+                    },
+                    "name": "Haley Jeppson",
+                    "email": "hjeppson@iastate.edu",
+                    "date": "2019-07-08T14:57:02.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Cross-linked the palette argument with the Palette section (#3413)",
+                  "message": "Cross-linked the palette argument with the Palette section (#3413)\n\nCloses #3300.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjM3NDQ5NjI0",
+                      "login": "Shelmith-Kariuki"
+                    },
+                    "name": "Shelmith",
+                    "email": "37449624+Shelmith-Kariuki@users.noreply.github.com",
+                    "date": "2019-07-08T08:48:08.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "fix stat_ellipse misleading documentation (#3410)",
+                  "message": "fix stat_ellipse misleading documentation (#3410)\n\nFixes #2776",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjkyNzczMDg=",
+                      "login": "violetr"
+                    },
+                    "name": "Viole",
+                    "email": "violetr@users.noreply.github.com",
+                    "date": "2019-07-08T08:41:27.000-03:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Improved geom_area() docs (#3408)",
+                  "message": "Improved geom_area() docs (#3408)\n\nFixes #2873",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MTU4NzY5",
+                      "login": "AnneLyng"
+                    },
+                    "name": "Anne Lyngholm",
+                    "email": "als@sund.ku.dk",
+                    "date": "2019-07-08T13:39:24.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Improve handling of weight in stat_density() (#3409)",
+                  "message": "Improve handling of weight in stat_density() (#3409)\n\nFixes #2902",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3MDY4MDQw",
+                      "login": "annennenne"
+                    },
+                    "name": "Anne Helby Petersen",
+                    "email": "ahpe@sund.ku.dk",
+                    "date": "2019-07-08T13:33:21.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Improve facet_grid and facet_wrap documentation (#3405)",
+                  "message": "Improve facet_grid and facet_wrap documentation (#3405)\n\nFixes #3290",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEzMDM0NzAz",
+                      "login": "andrasberczi"
+                    },
+                    "name": "andrasberczi",
+                    "email": "13034703+andrasberczi@users.noreply.github.com",
+                    "date": "2019-07-08T13:17:35.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Clarified difference between filename and path arguments in `ggsave()…",
+                  "message": "Clarified difference between filename and path arguments in `ggsave()` (#3404)\n\nFixes #3295",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgyMjY2MDE=",
+                      "login": "Elesday"
+                    },
+                    "name": "Joris Falip",
+                    "email": "joris.falip@gmail.com",
+                    "date": "2019-07-08T12:19:02.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "add link to labs() and lims() in scale_(x|y)_discrete documentation T…",
+                  "message": "add link to labs() and lims() in scale_(x|y)_discrete documentation TDD (#3403)\n\nAnd improve opening sentence",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE0NjYzMjE1",
+                      "login": "Maschette"
+                    },
+                    "name": "Dale Maschette",
+                    "email": "dale.maschette@aad.gov.au",
+                    "date": "2019-07-08T19:29:14.000+10:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Consolidate coordinate scale expansion and limiting code (#3380)",
+                  "message": "Consolidate coordinate scale expansion and limiting code (#3380)\n\n* move expantion-related functions to scale-expansion.r\r\n\r\n* allow NA for xlim and/or ylim in coord functions\r\n\r\n* get second axes to work with coord_trans()\r\n\r\n* ensure that the reverse/reciprocal transformations work with coord_trans()\r\n\r\n* mention removal of `xtrans` and `ytrans` arguments in `coord_trans()`\r\n\r\n* rename `expand_scale()` to `expansion()`",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-07-01T18:20:07.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "update sf label tests (#3378, fixes #3365)",
+                  "message": "update sf label tests (#3378, fixes #3365)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-07-01T16:43:38.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "ensure that draw_axis() works with element_text() subclasses (#3381)",
+                  "message": "ensure that draw_axis() works with element_text() subclasses (#3381)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-06-24T10:37:12.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add strategies to deal with overlapping text in draw_axis() (#3375)",
+                  "message": "Add strategies to deal with overlapping text in draw_axis() (#3375)\n\n* add visual test cases for basic axis drawing\r\n\r\n* add check.overlap option for removing overlapping axis labels (recursively prioritizing the \"middle\" label)\r\n\r\n* add axis label rotation and heuristics to set best hjust and vjust to draw_axis()\r\n\r\n* add support for axis label dodging into multiple rows/cols\r\n\r\n* update documentation for new axis options",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-06-22T10:43:44.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Kill site search",
+                  "message": "Kill site search",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-06-19T13:28:31.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Kill site search",
+                  "message": "Kill site search\n\n* Wasn't actually searching the right site.\n* Was harshing our vibe in the navbar.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-06-19T13:16:40.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Set locale explicitly before testing visual cases (#3287)",
+                  "message": "Set locale explicitly before testing visual cases (#3287)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE5Nzg3OTM=",
+                      "login": "yutannihilation"
+                    },
+                    "name": "Hiroaki Yutani",
+                    "email": "yutani.ini@gmail.com",
+                    "date": "2019-06-19T22:45:49.000+09:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add docsearch.",
+                  "message": "Add docsearch.",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-06-18T18:28:01.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add docsearch.",
+                  "message": "Add docsearch.\n* Fixes #2789",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjgzMTczMg==",
+                      "login": "batpigandme"
+                    },
+                    "name": "Mara Averick",
+                    "email": "maraaverick@gmail.com",
+                    "date": "2019-06-18T10:50:06.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Implement immutable scales in the panel_params for CoordCartesian (#3…",
+                  "message": "Implement immutable scales in the panel_params for CoordCartesian (#3356, part of #3322)\n\n* remove assumption that the panel_params contain any particular element in any coord code, update structure of panel_params in CoordCartesian to use scale syntax in preparation for updated guides\r\n\r\n* move scale_range to coord_sf(), since it is no longer used in coord_cartesian()\r\n\r\n* Update scales documentation, tidy styling of Scales methods\r\n\r\n* finish tidy styling of scale-.r\r\n\r\n* small modifications to scales such that ViewScales can be applied generically to all scales\r\n\r\n* move view scale construction outside coord-cartesian.R\r\n\r\n* move view scale to separate file\r\n\r\n* move all view scale code to scale-view.r, rename constructors to view_scale_*\r\n\r\n* Better documentation of ViewScale objects\r\n\r\n* make view_scale_secondary() return a ViewScale subclass",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-06-18T08:55:59.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix coord_sf() regression introduced in draw_axis rewrite (#3361)",
+                  "message": "Fix coord_sf() regression introduced in draw_axis rewrite (#3361)\n\n* fix regression introduced in draw_axis rewrite\r\n\r\n* Update sf dopplegangers, stop skipping sf visual test cases (fixes #2684)\r\n\r\n* use manually generated sf object for tests rather than sf object read from disk",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-06-18T08:31:51.000-04:00"
+                  },
+                  "comments": {
+                    "edges": [
+                      {
+                        "node": {
+                          "bodyText": "woot!",
+                          "createdAt": "2019-06-18T12:33:21Z",
+                          "reactions": {
+                            "edges": []
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #3366 from tidyverse/v3.2.0-rc",
+                  "message": "Merge pull request #3366 from tidyverse/v3.2.0-rc",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-06-18T13:20:10.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge branch 'master' into v3.2.0-rc",
+                  "message": "Merge branch 'master' into v3.2.0-rc",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-06-17T21:29:50.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "resolve conflicts with master",
+                  "message": "resolve conflicts with master",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-06-17T21:26:56.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "add blog post",
+                  "message": "add blog post",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-06-17T21:11:14.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "bump to dev version",
+                  "message": "bump to dev version",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-06-17T21:09:08.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "published to cran",
+                  "message": "published to cran",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-06-17T20:42:22.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "resubmit",
+                  "message": "resubmit",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-06-12T14:02:14.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "reduce examples of coord_map so it runs faster on 32bit windows cran …",
+                  "message": "reduce examples of coord_map so it runs faster on 32bit windows cran machine",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-06-12T13:56:04.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Remove broken link to colour overview",
+                  "message": "Remove broken link to colour overview",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-06-12T13:55:21.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update cran-comments.md",
+                  "message": "Update cran-comments.md",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-06-11T09:47:48.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "revdeps (#3352)",
+                  "message": "revdeps (#3352)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjU3MzEwNDM=",
+                      "login": "topepo"
+                    },
+                    "name": "Max Kuhn",
+                    "email": "mxkuhn@gmail.com",
+                    "date": "2019-06-11T03:20:05.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "warn about discouraged $ and [[ usage in usage within aes() (#3346, f…",
+                  "message": "warn about discouraged $ and [[ usage in usage within aes() (#3346, fixes #2693)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-06-04T18:33:28.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "fix tidy styling in extract_target_is_likey_data(), improve parameter…",
+                  "message": "fix tidy styling in extract_target_is_likey_data(), improve parameter documentation for aes()",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-06-04T18:14:51.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix behaviour of combine_vars() with more than one facet variable (#3…",
+                  "message": "Fix behaviour of combine_vars() with more than one facet variable (#3302, fixes #2810)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-06-04T15:51:35.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Rewrite guide_axis() and rename to draw_axis() (#3349)",
+                  "message": "Rewrite guide_axis() and rename to draw_axis() (#3349)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-06-04T15:26:26.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "apply tidy styling to combine_elements()",
+                  "message": "apply tidy styling to combine_elements()",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-06-04T15:07:33.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "implement changes from review: better organized tests, improved argum…",
+                  "message": "implement changes from review: better organized tests, improved argument documentation in aes(), improved the name of the warning functions, improved function detecting whether or not an expression refers to the plot data",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-06-04T14:37:09.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update _pkgdown.yml so new articles automatically appear",
+                  "message": "Update _pkgdown.yml so new articles automatically appear",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-06-04T14:28:44.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Add vignette about using ggplot2 in packages (#3344, fixes #3319)",
+                  "message": "Add vignette about using ggplot2 in packages (#3344, fixes #3319)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-06-04T13:28:37.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "implement suggestions from code review: make links refer to pkgdown w…",
+                  "message": "implement suggestions from code review: make links refer to pkgdown websites if they exist, clarify usage of .data; improve overall consistency",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-06-04T12:54:11.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge pull request #3286 from paleolimbot/issue-3090-warn-data-hline-…",
+                  "message": "Merge pull request #3286 from paleolimbot/issue-3090-warn-data-hline-vline-abline\n\nredo warnings for overwritten arguments in abline, hline, and vline (fixes #3090)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-06-04T11:52:19.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge branch 'master' into issue-3090-warn-data-hline-vline-abline",
+                  "message": "Merge branch 'master' into issue-3090-warn-data-hline-vline-abline",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-06-04T11:33:29.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fixed broken link to CODE_OF_CONDUCT.md (#3288)",
+                  "message": "Fixed broken link to CODE_OF_CONDUCT.md (#3288)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxMjAyNTg1",
+                      "login": "mcguinlu"
+                    },
+                    "name": "Luke McGuinness",
+                    "email": "luke.mcguinness@bristol.ac.uk",
+                    "date": "2019-06-04T16:59:51.000+01:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Increment version number",
+                  "message": "Increment version number",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQxOTY=",
+                      "login": "hadley"
+                    },
+                    "name": "Hadley Wickham",
+                    "email": "h.wickham@gmail.com",
+                    "date": "2019-06-04T10:11:00.000-05:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "remove aes() no column reference warning, improve error message code …",
+                  "message": "remove aes() no column reference warning, improve error message code for extract usage",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-06-03T10:52:02.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Implement suggestions from review",
+                  "message": "Implement suggestions from review",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-06-03T09:25:07.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Merge branch 'v3.2.0-rc' of https://github.com/tidyverse/ggplot2 into…",
+                  "message": "Merge branch 'v3.2.0-rc' of https://github.com/tidyverse/ggplot2 into v3.2.0-rc",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-06-03T15:01:45.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "version bump",
+                  "message": "version bump",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-06-03T15:01:38.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Update docs",
+                  "message": "Update docs",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-06-03T15:01:29.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "Fix position_dodge2() example (#3340)",
+                  "message": "Fix position_dodge2() example (#3340)",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjQ0NTI2Nzg=",
+                      "login": "karawoo"
+                    },
+                    "name": "Kara Woo",
+                    "email": "karawoo@users.noreply.github.com",
+                    "date": "2019-06-03T01:41:03.000-07:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "avoid using with() when resolving axis.ticks.length as it won't allow…",
+                  "message": "avoid using with() when resolving axis.ticks.length as it won't allow NULL elements in theme",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjE3NzUzMTY=",
+                      "login": "thomasp85"
+                    },
+                    "name": "Thomas Lin Pedersen",
+                    "email": "thomasp85@gmail.com",
+                    "date": "2019-06-03T09:23:36.000+02:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "fix non-element theme inheritance in R 3.1 and 3.2",
+                  "message": "fix non-element theme inheritance in R 3.1 and 3.2",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-05-31T14:22:11.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "use rlang::exec() for function calls whose argument names vary with a…",
+                  "message": "use rlang::exec() for function calls whose argument names vary with axis position",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-05-31T12:07:04.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "apply tidyverse styling to conditional parameter assignments",
+                  "message": "apply tidyverse styling to conditional parameter assignments",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-05-31T11:13:51.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "condense and reorganize conditional parameter assignments",
+                  "message": "condense and reorganize conditional parameter assignments",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-05-31T11:07:42.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "rewrite draw_axis for readability and reduced duplication",
+                  "message": "rewrite draw_axis for readability and reduced duplication",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-05-31T10:07:18.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "rename guide_axis to draw_axis",
+                  "message": "rename guide_axis to draw_axis",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-05-31T09:26:01.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "finish removing redundant rlang imports",
+                  "message": "finish removing redundant rlang imports",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-05-31T08:04:10.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "remove redundant rlang imports",
+                  "message": "remove redundant rlang imports",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-05-30T20:13:22.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              },
+              {
+                "node": {
+                  "messageHeadline": "implement mapping checks in Layer",
+                  "message": "implement mapping checks in Layer",
+                  "author": {
+                    "user": {
+                      "id": "MDQ6VXNlcjEwOTk1NzYy",
+                      "login": "paleolimbot"
+                    },
+                    "name": "Dewey Dunnington",
+                    "email": "dewey@fishandwhistle.net",
+                    "date": "2019-05-30T17:20:46.000-04:00"
+                  },
+                  "comments": {
+                    "edges": []
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

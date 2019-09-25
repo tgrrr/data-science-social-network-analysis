@@ -1,12 +1,25 @@
 # https://developer.github.com/v4/explorer/
-# Example query to pull commit info from Tensorflow repo from 20/09/19
+# Only latest 100 commits are returned
+
+# Repos
+# name: "tensorflow", owner: "tensorflow"
+# name: "keras", owner: "keras-team"
+# name: "scikit-learn", owner: "scikit-learn"
+# name: "ipython", owner: "ipython"
+# name: "spark", owner: "apache"
+# name: "django", "owner: "django"
+# name: "scikit-learn", owner: "scikit-learn"
+# name: "tidyverse", owner: "tidyverse"
+# name: "linux", owner: "torvalds"
+# name: "node", owner: "nodejs"
+ 
 
 {
   repository(name: "tensorflow", owner: "tensorflow") {
     ref(qualifiedName: "master") {
       target {
         ... on Commit {
-          history(since:"2019-09-20T00:00:00Z") {
+          history(since:"2019-01-01T00:00:00Z") {
             edges {
               node {
                 messageHeadline

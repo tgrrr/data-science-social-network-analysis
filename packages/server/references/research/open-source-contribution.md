@@ -1,3 +1,10 @@
+# Data Science Network Analysis
+
+## Getting Setup
+
+`git clone https://github.com/tgrrr/data-science-social-network-analysis.git`
+
+
 ## First Issues
 
 - Eg. [Tensorflow first issues](https://github.com/tensorflow/tensorflow/labels/good%20first%20issue)

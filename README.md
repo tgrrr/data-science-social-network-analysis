@@ -1,12 +1,18 @@
 # Data Science Scoial Network Analysis
 
-github api v4 graphql python3
+What it includes:
+
+- github api v4 
+- graphql 
+- python3
+- TODO: Presentation slides
+
+[Project todos](./TODO.md) are here
 
 ## Getting Started
 
 To set a project directory:
-Navigate to:
-`packages/server/src/config/constants.py`
+Navigate to: `packages/server/src/config/constants.py`
 
 You might need to set it here as well:
 `packages/server/notebooks/social_network_graph_analysis.py`
@@ -17,11 +23,32 @@ Make a copy of:
 
 And update the file to include your [Personal Access Token from Github](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line)
 
-## Howto guides:
+## How to guides:
 
 - [Python requests guide](https://www.twilio.com/blog/2016/12/http-requests-in-python-3.html)
 - [Using the github api](https://developer.github.com/apps/quickstart-guides/using-the-github-api-in-your-app/)
 - [Authentication](https://developer.github.com/v4/guides/forming-calls/#authenticating-with-graphql)
+
+## Collaborating with Notebooks:
+
+Export from Jupyter Notebooks as python
+Commits nicely with github
+
+Import back into Jupyter Notebooks:
+
+How it works:
+
+```markdown
+# %%
+Python/R code goes here
+
+# %% markdown
+#
+# Text goes here
+```
+
+Then it can converted back with Atom Hydrogren OR VS Code Python Package
+
 
 ### Github docs
 

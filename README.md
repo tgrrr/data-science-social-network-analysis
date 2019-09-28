@@ -7,7 +7,9 @@ What it includes:
 - python3
 - TODO: Presentation slides
 
-[Project todos](./TODO.md) are here
+- [Main Notebook](packages/server/notebooks/social_network_graph_analysis.ipynb)
+- [Project todos](./TODO.md) are here
+- [Github repo](https://github.com/tgrrr/data-science-social-network-analysis)
 
 ## Getting Started
 
@@ -48,7 +50,6 @@ Python/R code goes here
 ```
 
 Then it can converted back with Atom Hydrogren OR VS Code Python Package
-
 
 ### Github docs
 

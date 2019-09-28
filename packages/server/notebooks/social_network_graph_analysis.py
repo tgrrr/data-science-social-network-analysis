@@ -15,6 +15,31 @@
 
 # ----------------------------------------------------------------------------
 
+# %% markdown
+#
+# # Introduction
+# ## Describe what/who is your selected entity
+# ## Describe why it is interesting to find the sentiment and topics (answer questions) of this entity
+#
+# #### RUBRIC: Problem Formulation (15%)
+# - [ ] The proposed problem/question is interesting, well-motivated and non-trivial. 
+# - [ ] Problem and success criteria are well designed and thought out, 
+#   - [ ] and scope is realistic.
+#
+# ## Problem or Question Construction
+#
+# - [ ] Must include at least one source of social media and networks.
+# - [ ] Must include a graph or network and its analysis/processing to solve a problem.
+# - [ ] Must include some element of analysis using social media and networks, and something we learnt in class. It cannot be all machine learning for example.
+# - [ ] Your analyst or solution is in Python (no R, including visualisation), but parts of it could be done in other languages, e.g., Javascript if you decide to prototype a front end on website.
+# - [ ] All code should be your own, you can leverage packages such as `networkx` etc., but it shouldn’t be copied from an existing solution.
+
+# %% markdown
+#
+# # Data Collection
+# ## Describe how you collected the data, and briefly why you chose that approach (restful vs stream)
+# ## Report some statistics of your collected data
+
 # %%
 import os
 
@@ -22,15 +47,19 @@ PATH = '/Users/phil/code/data-science-next/uni/social-media/ass02_datascience_so
 os.chdir(PATH)
 
 from src.data import * # fetch_github_query, Auth.HEADERS
+from src.data.auth import * # fetch_github_query, Auth.HEADERS
 from src.config import * # Constants, including URL, PATH
 from src.data.queries import queries
 
 # %% markdown
 #
-# How many repos:
+# What it includes:
+#
+# - github api v4 
+# - graphql queries
+# - python 3.7
 
 # %%
-
 result_charity = do_fetch_github_query(queries.query_repo, queries.variables_repo)
 
 # %% markdown
@@ -41,7 +70,6 @@ result_charity = do_fetch_github_query(queries.query_repo, queries.variables_rep
 
 repos_charity_count = result_charity['search']['repositoryCount']
 print(repos_charity_count)
-
 
 # %% markdown
 #
@@ -68,7 +96,15 @@ for i in repos_charity:
 # repo_arr = [i['node']['name'] for i in repos_charity]
 # repo_arr
 
+# %% markdown
+#
+# # TODO: Pre-processing and Data Cleaning
+# ## TODO: Describe  what pre-processing you performed
+# ## TODO: Show examples of noisy data, plot some graphs, etc to show why you decided to do those pre-processing
+
+# %%
 # Convert to obj to make data easier to access:
+# FIXME:
 from collections import namedtuple
 def _json_object_hook(d): return namedtuple('X', d.keys())(*d.values())
 def json2obj(data): return json.loads(data, object_hook=_json_object_hook)
@@ -84,16 +120,15 @@ result_charity_obj.search.edges[1].node.stargazers.totalCount
 
 # Have we gone over the query count?
 
-result_rate_limit = fetch_github_query(queries.query_rate_limit, Constants.URL, Auth.HEADERS) # Execute the query
+result_rate_limit = fetch_github_query(queries.query_rate_limit) # Execute the query
 remaining_rate_limit = result_rate_limit["rateLimit"]["remaining"] # Drill down the dictionary
 print("Remaining rate limit - {}".format(remaining_rate_limit))
 
 # WIP: Query about charities
 # see: https://developer.github.com/v4/explorer/
 # queries: https://developer.github.com/v4/query/
-result_nonprofit = fetch_github_query(query_nonprofit)
-
-
+# FIXME: KeyError: data
+result_nonprofit = fetch_github_query(queries.query_nonprofit)
 
 # %% markdown
 #
@@ -233,3 +268,46 @@ plt.savefig(FIGURES_PATH + 'network_no_weight.png', bbox_inches='tight')
 plt.show()
 
 # %% markdown
+#
+# # TODO: Analysis Approach
+#### RUBRIC: Approach (20%)
+#
+# - [ ] The approach is an appropriate method to take to solve the problem or answer the analytical question. 
+# - [ ] Approach taken goes beyond using the tools provided in class. 
+# - [ ] Team justifies and explains their approach well. Approach includes data collected and techniques used.
+#
+# ## TODO: Describe what analysis you performed to answer the questions
+# ## TODO: What type of sentiment analysis did you do?  Briefly explain your rationale for doing it as such.
+# ## TODO: What type of topic modelling did you do?  Again, briefly explain your rationale for your approach.
+
+# %% markdown
+#
+#### RUBRIC: Analysis/result & Discussion (20%)
+#
+# - [ ] Problem solving: The solution solves the problem well and all the success criteria are satisfied. 
+# - [ ] Team is able to provide analytical and/or empirical evidence of this.
+# - [ ] Answering analytical question & Analysis component: 
+#   - [ ] Excellent discussion of results that answers the question proposed 
+#     - [ ] or contributes towards solving the problem. 
+#   - [ ] Conclusions are supported by analytical and/or empirical evidence. 
+#   - [ ] All success criteria are answered.
+# 
+# # TODO: Analysis & Insights
+# ## TODO: Present your analysis, to answer the questions 
+# ## TODO: Present and discuss your insights
+# ## TODO: Use plots, tables, example of prints, visualisation, word clouds etc that supports your analysis and insights
+
+# %% markdown
+#
+# #  Conclusion
+# ##  Provide a short conclusion about your entity, analysis and what you found
+
+# %% markdown
+#
+# ### Team Management & Mentoring
+#
+# - [ ] Use timesheets
+# - [ ] Set up regular meetings within your team
+# - [ ] We've setup a slack channel
+# - [ ] [Github repo](https://github.com/tgrrr/data-science-social-network-analysis)
+# - [ ] Meet lecturers 3 times before assignment due

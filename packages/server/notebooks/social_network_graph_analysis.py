@@ -9,7 +9,7 @@
 # # COSC2671 Social Media and Network Analytics
 # ## Assignment 2
 # ### @author Phil Steinke, student: s3725547 github: tgrrr
-# ### @author Oli FIXME, student: FIXME github: shaggycamel
+# ### @author Oliver Eaton, student: s3641518 github: shaggycamel
 # ### @author FIXME Aidan Cowie, student: s3429481 github: aidancowie
 # ### Due FIXME
 

@@ -47,3 +47,34 @@ query_nonprofit = """
     }
   }
 """
+
+# @focus NEW!
+query_issues = """
+  repository(owner:"tensorflow", name:"tensorflow") {
+    issues(last:20, states:CLOSED) {
+      edges {
+        node {
+          title
+          url
+          comments(first:10) {
+            edges {
+              node {
+                author {
+                  login
+                }
+                body
+              }
+            }
+          }
+          labels(first:5) {
+            edges {
+              node {
+                name
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+"""

@@ -12,7 +12,7 @@
 # ### @author Oliver Eaton, student: s3641518 github: shaggycamel
 # ### @author FIXME Aidan Cowie, student: s3429481 github: aidancowie
 # ### Due FIXME
-
+# 
 # ----------------------------------------------------------------------------
 
 # %% markdown
@@ -42,6 +42,7 @@
 
 # %%
 import os
+import json
 
 PATH = '/Users/phil/code/data-science-next/uni/social-media/ass02_datascience_social_network_analysis/packages/server'
 os.chdir(PATH)
@@ -124,9 +125,11 @@ result_rate_limit = fetch_github_query(queries.query_rate_limit) # Execute the q
 remaining_rate_limit = result_rate_limit["rateLimit"]["remaining"] # Drill down the dictionary
 print("Remaining rate limit - {}".format(remaining_rate_limit))
 
+# %%
 # WIP: Query about charities
 # see: https://developer.github.com/v4/explorer/
 # queries: https://developer.github.com/v4/query/
+
 # FIXME: KeyError: data
 result_nonprofit = fetch_github_query(queries.query_nonprofit)
 
@@ -153,9 +156,13 @@ import json
 from os import listdir
 import networkx as nx
 import matplotlib.pyplot as plt
+from matplotlib.pyplot import figure
+import matplotlib
 from collections import Counter
 import pandas as pd
-
+import numpy as np
+import sys
+import altair as alt
 # %% markdown
 #
 # Get list of json files in directory
@@ -170,7 +177,8 @@ os.chdir(PATH)
 matplotlib.rc('figure', figsize=(10, 10))
 
 # From Oli's Jupyter notebook:
-files_in_drive = listdir(PATH)
+# Get list of json files in directory
+files_in_drive = listdir()
 json_files = []
 for ix, file in enumerate(files_in_drive):
     if('.json' in file):
@@ -189,11 +197,11 @@ json_files
 # Prepare keys for dictionary
 
 # %%
+# Prepare keys for dictionary
 file_names = []
 for file in json_files:
     start = file.find('.')
     file_names.append(file[0:start])
-
 # %% markdown
 #
 # Put all json data into dictionary
@@ -208,65 +216,146 @@ for ix, file in enumerate(json_files):
 # ## Graph with weight
 
 # %%
-repo_weight = []
-user_list = []
+# Data Helpers
 repo_user_list = {}
-network_weight = nx.Graph()
+repo_weight = {}
 
 for repo in data:
     ix = 0
-    network_weight.add_node(repo)
+    user_list = []
+    weight = []
     while ix < len(data[repo]):
         try:
             user = data[repo][ix]['node']['author']['user']['login']
-            network_weight.add_node(user)
-            repo_weight.append(repo + " " + user)
+            weight.append(user)
             user_list.append(user)
         except:
             pass
         ix += 1
     repo_user_list[repo] = list(set(user_list))
-
-repo_weight = Counter(repo_weight)
+    repo_weight[repo] = Counter(weight)
 # %%
-for weight in repo_weight:
-    space = weight.find(' ')
-    r = weight[0:space].strip()
-    u = weight[space+1:len(weight)].strip()
-    w = repo_weight[weight]
-    network_weight.add_edge(r, u, weight=w)
+print("Top contributors for each repo\n")
+for repo in repo_weight:
+    print(repo + ": " + str(repo_weight[repo].most_common(5)))
+    # TODO: pretty print
 # %%
-nx.draw(network_weight, with_labels=True, pos=nx.kamada_kawai_layout(network_weight, scale=10))
-plt.axis('off')
-plt.rcParams["figure.figsize"] = (10,10) # new
-plt.savefig(FIGURES_PATH + 'network_with_weight.png', bbox_inches='tight') # new
-
-plt.show()
-
-# %% markdown
-# ## Graph without weight
-
+print("Number of unique contributors for each Repo\n")
+for repo in repo_weight:
+    print(repo + ": " + str(len(repo_weight[repo])))
 # %%
-network_no_weight = nx.Graph()
+user_contributions = {}
 
-for repo in data:
-    network_no_weight.add_node(repo)
-    ix = 0
-    while ix < len(data[repo]):
-        try:
-            user = data[repo][ix]['node']['author']['user']['login']
-            network_no_weight.add_node(user)
-            network_no_weight.add_edge(repo, user)
-        except:
-            pass
-        ix += 1
+for repo in repo_user_list:
+    for user in repo_user_list[repo]:
+        if (user not in user_contributions):
+            user_contributions[user] = str(repo)
+        else:
+            tmp = str(user_contributions[user] + " " + repo).split(" ")
+            user_contributions[user] = tmp
+
+print("Coders who contribute to more than one repo\n")
+for user in user_contributions:
+    if type(user_contributions[user]) != str:
+        print(user + ": " + str(user_contributions[user]))
 # %%
-nx.draw(network_no_weight, pos=nx.kamada_kawai_layout(network_no_weight, scale=10), with_labels=False)
-plt.axis('off')
-plt.rcParams["figure.figsize"] = (20,20) # new
-plt.savefig(FIGURES_PATH + 'network_no_weight.png', bbox_inches='tight')
-plt.show()
+number_of_contributions = Counter()
+for repo in repo_weight:
+    for user in repo_weight[repo]:
+        number_of_contributions[user] += repo_weight[repo][user]
+# %%
+network_weight = nx.Graph()
 
+for repo in repo_weight:
+    size = sum(repo_weight[repo].values())
+    network_weight.add_node(repo, repo=repo, size=size, l=repo)
+
+for user in user_contributions:
+    repo = user_contributions[user]
+    if type(repo) == str:
+#         size = number_of_contributions[user]
+        weight = repo_weight[repo][user]
+        network_weight.add_node(user, repo=repo)
+        network_weight.add_edge(repo, user, weight=weight)
+    else:
+#         size = number_of_contributions[user]
+        network_weight.add_node(user, repo='multiple', size = 20, l=user)
+        for contribution in repo:              
+            weight = repo_weight[contribution][user]
+            network_weight.add_edge(contribution, user, weight=weight)
+# %%
+network_weight = nx.Graph()
+
+for repo in repo_weight:
+    network_weight.add_node(repo, repo=repo)
+    for user in repo_weight[repo]:
+        if (network_weight.has_node(user)) == False:
+            network_weight.add_node(user, repo='multiple')
+            network_weight.add_edge(repo, user, weight=repo_weight[repo][user])
+        else:
+            network_weight.add_node(user, repo=repo)
+            network_weight.add_edge(repo, user, weight=repo_weight[repo][user])
+# %%
+# degree centrality
+lDegCentrality = nx.degree_centrality(network_weight)
+for nodeId, cent in lDegCentrality.items():
+    network_weight.node[nodeId]['degree'] = float(cent)
+    
+# eigenvector centrality
+# eigen vector centrality make sno sense on bi-partite graphs
+# https://stackoverflow.com/questions/43208737/using-networkx-to-calculate-eigenvector-centrality?rq=1
+lEigenVectorCentrality = nx.eigenvector_centrality_numpy(network_weight)
+for nodeId, cent in lEigenVectorCentrality.items():
+    network_weight.node[nodeId]['eigen'] = float(cent)
+    
+# katz centrality
+lKatzCentrality = nx.katz_centrality(network_weight)    
+for nodeId, cent in lKatzCentrality.items():
+    network_weight.node[nodeId]['katz'] = float(cent)
+
+# Betweeness centrality
+lBetCentrality = nx.betweenness_centrality(network_weight)
+for nodeId, cent in lBetCentrality.items():
+    network_weight.node[nodeId]['betweenness'] = float(cent)
+# %%
+for g in nx.local_bridges(network_weight, with_span=True, weight=None):
+    if g[2] < 100:
+        print(g)
+# %%
+import altair as alt
+alt.renderers.enable('notebook')
+# %%
+# Generating Data
+source = pd.DataFrame({
+    'Degree Centrality': list(lDegCentrality.values()),
+#     'Eigenvector Centrality': list(lEigenVectorCentrality.values()),
+    'Betweenness Centrality': list(lBetCentrality.values()),
+    'Katz Centrality': list(lKatzCentrality.values())
+})
+
+chart = alt.Chart(source).transform_fold(
+    ['Degree Centrality', 'Betweenness Centrality', 'Katz Centrality'],
+    as_=['Centrality', 'Measurement']
+).mark_area(
+    opacity=0.7,
+    interpolate='step'
+).encode(
+    alt.X('Measurement:Q', bin=alt.Bin(maxbins=50)),
+    alt.Y('count()', stack=None),
+    alt.Color('Centrality:N')
+)
+
+chart.configure_legend(
+    strokeColor='gray',
+    fillColor='#EEEEEE',
+    padding=10,
+    cornerRadius=10,
+    orient='top-right'
+)
+# %%
+weight_graphFile='weight_repo.graphml'
+with open(weight_graphFile, 'wb') as fOut:
+    nx.write_graphml(network_weight, fOut)
 # %% markdown
 #
 # # TODO: Analysis Approach

@@ -36,10 +36,17 @@ query_nonprofit = """
   }
 """
 
-import src.data.queries.graphql_query.graphql
+
 
 result_nonprofit = fetch_github_query(query_nonprofit)
 
+
+def do_fetch_github_query(query, variable):
+    result_charity = fetch_github_query(query.format(**variable))
+    return(result_charity)
+
+
+result_repo = fetch_github_query(query_repo)
 
 def do_fetch_github_query(query, variable):
     result_charity = fetch_github_query(query.format(**variable))

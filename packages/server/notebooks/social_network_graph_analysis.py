@@ -178,7 +178,7 @@ matplotlib.rc('figure', figsize=(10, 10))
 
 # From Oli's Jupyter notebook:
 # Get list of json files in directory
-files_in_drive = listdir()
+files_in_drive = listdir(PATH)
 json_files = []
 for ix, file in enumerate(files_in_drive):
     if('.json' in file):

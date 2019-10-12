@@ -1,3 +1,4 @@
+# %%
 #
 # TODO:
 # Make nodes bigger/another colour
@@ -358,33 +359,33 @@ with open(weight_graphFile, 'wb') as fOut:
     nx.write_graphml(network_weight, fOut)
 # %% markdown
 #
-# # TODO: Analysis Approach
-#### RUBRIC: Approach (20%)
+#  # TODO: Analysis Approach
+# ### RUBRIC: Approach (20%)
 #
-# - [ ] The approach is an appropriate method to take to solve the problem or answer the analytical question. 
-# - [ ] Approach taken goes beyond using the tools provided in class. 
-# - [ ] Team justifies and explains their approach well. Approach includes data collected and techniques used.
+#  - [ ] The approach is an appropriate method to take to solve the problem or answer the analytical question. 
+#  - [ ] Approach taken goes beyond using the tools provided in class. 
+#  - [ ] Team justifies and explains their approach well. Approach includes data collected and techniques used.
 #
-# ## TODO: Describe what analysis you performed to answer the questions
-# ## TODO: What type of sentiment analysis did you do?  Briefly explain your rationale for doing it as such.
-# ## TODO: What type of topic modelling did you do?  Again, briefly explain your rationale for your approach.
+#  ## TODO: Describe what analysis you performed to answer the questions
+#  ## TODO: What type of sentiment analysis did you do?  Briefly explain your rationale for doing it as such.
+#  ## TODO: What type of topic modelling did you do?  Again, briefly explain your rationale for your approach.
 
 # %% markdown
 #
-#### RUBRIC: Analysis/result & Discussion (20%)
+# ### RUBRIC: Analysis/result & Discussion (20%)
 #
-# - [ ] Problem solving: The solution solves the problem well and all the success criteria are satisfied. 
-# - [ ] Team is able to provide analytical and/or empirical evidence of this.
-# - [ ] Answering analytical question & Analysis component: 
-#   - [ ] Excellent discussion of results that answers the question proposed 
-#     - [ ] or contributes towards solving the problem. 
-#   - [ ] Conclusions are supported by analytical and/or empirical evidence. 
-#   - [ ] All success criteria are answered.
+#  - [ ] Problem solving: The solution solves the problem well and all the success criteria are satisfied. 
+#  - [ ] Team is able to provide analytical and/or empirical evidence of this.
+#  - [ ] Answering analytical question & Analysis component: 
+#    - [ ] Excellent discussion of results that answers the question proposed 
+#      - [ ] or contributes towards solving the problem. 
+#    - [ ] Conclusions are supported by analytical and/or empirical evidence. 
+#    - [ ] All success criteria are answered.
 # 
-# # TODO: Analysis & Insights
-# ## TODO: Present your analysis, to answer the questions 
-# ## TODO: Present and discuss your insights
-# ## TODO: Use plots, tables, example of prints, visualisation, word clouds etc that supports your analysis and insights
+#  # TODO: Analysis & Insights
+#  ## TODO: Present your analysis, to answer the questions 
+#  ## TODO: Present and discuss your insights
+#  ## TODO: Use plots, tables, example of prints, visualisation, word clouds etc that supports your analysis and insights
 
 # %% markdown
 #

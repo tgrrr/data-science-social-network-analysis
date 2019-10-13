@@ -1,10 +1,3 @@
-# %%
-#
-# TODO:
-# Make nodes bigger/another colour
-
-# ----------------------------------------------------------------------------
-
 # %% markdown
 #
 # # COSC2671 Social Media and Network Analytics
@@ -62,69 +55,64 @@ from src.data.queries import queries
 # - python 3.7
 
 # %%
-result_charity = do_fetch_github_query(queries.query_repo, queries.variables_repo)
+
+# fetch top repositories from github
+# AND remove first part of json:
+
+repos_results = do_fetch_github_query(queries.query_repo, queries.variables_repo)['data']['search']
 
 # %% markdown
 #
 # How many repos:
 
 # %%
-
-repos_charity_count = result_charity['search']['repositoryCount']
-print(repos_charity_count)
+print(repos_results['repositoryCount'])
 
 # %% markdown
 #
-# What are the top repos?
+# What are the top 5 repos by stars?
 
 # %%
 
-repos_charity = result_charity['search']['edges']
-
-# import json
-for i in repos_charity:
-    _name = i['node']['name']
-    _url = i['node']['url']
-    _stars = str(i['node']['stargazers']['totalCount'])
-    print("Name: %(n)s \nstars: %(s)s \nurl: %(u)s\n" 
-        % {'n': _name, 'u': _url, 's': _stars})
-    # print(json.dumps(i))
-
-# get values from repo results for #1
-# for key, value in repos_charity[1]['node'].items():
-#     print(key, value)
-
-# more concise code:
-# repo_arr = [i['node']['name'] for i in repos_charity]
-# repo_arr
+top_repos = repos_results['edges']
+for repo in top_repos:
+    _name = repo['node']['name']
+    _url = repo['node']['url']
+    _stars = str(repo['node']['stargazers']['totalCount'])
+    print(
+        "Name: %(n)s \nstars: %(s)s \nurl: %(u)s\n" 
+        % {'n': _name, 'u': _url, 's': _stars}
+        )
 
 # %% markdown
 #
 # # TODO: Pre-processing and Data Cleaning
-# ## TODO: Describe  what pre-processing you performed
 # ## TODO: Show examples of noisy data, plot some graphs, etc to show why you decided to do those pre-processing
 
+# ## Describe  what pre-processing you performed
+#
+# - By switching to a graphql API call, we only get the results we want back
+# from the server. Which leaves less json to clean
+# - cleaned `node` and `edges` from the json results
+#
+# ### Convert to obj to make data easier to access:
+
 # %%
-# Convert to obj to make data easier to access:
-# FIXME:
+
+# functions to convert json to objects:
 from collections import namedtuple
 def _json_object_hook(d): return namedtuple('X', d.keys())(*d.values())
 def json2obj(data): return json.loads(data, object_hook=_json_object_hook)
-result_charity_obj = json2obj(json.dumps(result_charity))
-# dir(result_charity_obj.search.edges[1])
+
+result_obj = json2obj(json.dumps(repos_results))
 
 # before:
-result_charity['search']['repositoryCount']
-#after:
-result_charity_obj.search.repositoryCount
+repos_results
+result_obj.repositoryCount
 
-result_charity_obj.search.edges[1].node.stargazers.totalCount
-
-# Have we gone over the query count?
-
-result_rate_limit = fetch_github_query(queries.query_rate_limit) # Execute the query
-remaining_rate_limit = result_rate_limit["rateLimit"]["remaining"] # Drill down the dictionary
-print("Remaining rate limit - {}".format(remaining_rate_limit))
+# total stars for each package:
+result_obj.edges[3].node.name
+result_obj.edges[3].node.stargazers.totalCount
 
 # %%
 # WIP: Query about charities
@@ -132,7 +120,87 @@ print("Remaining rate limit - {}".format(remaining_rate_limit))
 # queries: https://developer.github.com/v4/query/
 
 # FIXME: KeyError: data
-result_nonprofit = fetch_github_query(queries.query_nonprofit)
+# result_nonprofit = fetch_github_query(queries.query_nonprofit)
+
+issues_results = fetch_github_query(queries.query_issues)
+# Kill the first few json objects:
+issues_results = issues_results['data']['repository']['issues']['edges']
+
+# Output from first issue:
+first_issues_title = issues_results[1]['node']['title']
+first_issues_comment = issues_results[1]['node']['comments']['edges'][1]['node']['body']
+first_issues_author = issues_results[1]['node']['comments']['edges'][1]['node']['author']['login']
+
+print("Title:   %s \nAuthor:  %s\nComment: %s" 
+    % (first_issues_title, first_issues_author, first_issues_comment))
+
+do_and_save_query_with_variables_to_file(
+    FILENAME = 'data.json',
+    query = queries.query_issues_dynamic,
+    variables = queries.variables_issues,
+    indent = 4,
+    )
+
+# ###################################
+
+def do_and_save_query_to_file(
+    FILENAME = 'data.json',
+    query = None,
+    indent = 4,
+    ):
+
+    repo = 'tensorflow'
+
+    data = {}
+
+    rate_limit = get_rate_limit()
+    
+    if (rate_limit > 100):
+
+        results = fetch_github_query(query)
+        
+        with open(FILENAME) as data_file:
+            print('open file')
+            is_file_empty = (os.stat(FILENAME).st_size == 0)
+            os.stat(FILENAME).st_size
+
+            try:
+                # Check if file not empty
+                if is_file_empty: 
+                    old_data = json.load(data_file)
+                    # Merge old_data with new results:
+                    print('appending to data') 
+                    data[repo].update(results)
+                
+            except:
+                print('file is empty')
+                data[repo]=results
+    
+        data_file.close()
+
+    else:
+        print('rate limit exceeded')
+
+    with open(FILENAME, 'w') as outfile:
+        print('saving...')
+        # print(data)
+        json.dump(
+        data, 
+        outfile,
+        indent=indent
+        )
+
+
+do_and_save_query_to_file(
+    FILENAME = 'data.json',
+    query = queries.query_repos_tensorflow,
+    )
+
+query_repos
+
+# issues_title = issues_results[1]['node']['title']
+# issues_comment = issues_results[1]['node']['comments']['edges'][1]['node']['body']
+# issues_author = issues_results[1]['node']['comments']['edges'][1]['node']['author']['login']
 
 # %% markdown
 #
@@ -151,6 +219,7 @@ result_nonprofit = fetch_github_query(queries.query_nonprofit)
 # - tensorflow
 # - TODO: FreeCodeCamp https://github.com/freeCodeCamp/freeCodeCamp
 # - TODO: Linux
+
 
 # %%
 import json

@@ -134,6 +134,7 @@ first_issues_author = issues_results[1]['node']['comments']['edges'][1]['node'][
 print("Title:   %s \nAuthor:  %s\nComment: %s" 
     % (first_issues_title, first_issues_author, first_issues_comment))
 
+# Expensive query:
 do_and_save_query_with_variables_to_file(
     FILENAME = 'data.json',
     query = queries.query_issues_dynamic,
@@ -143,64 +144,10 @@ do_and_save_query_with_variables_to_file(
 
 # ###################################
 
-def do_and_save_query_to_file(
-    FILENAME = 'data.json',
-    query = None,
-    indent = 4,
-    ):
-
-    repo = 'tensorflow'
-
-    data = {}
-
-    rate_limit = get_rate_limit()
-    
-    if (rate_limit > 100):
-
-        results = fetch_github_query(query)
-        
-        with open(FILENAME) as data_file:
-            print('open file')
-            is_file_empty = (os.stat(FILENAME).st_size == 0)
-            os.stat(FILENAME).st_size
-
-            try:
-                # Check if file not empty
-                if is_file_empty: 
-                    old_data = json.load(data_file)
-                    # Merge old_data with new results:
-                    print('appending to data') 
-                    data[repo].update(results)
-                
-            except:
-                print('file is empty')
-                data[repo]=results
-    
-        data_file.close()
-
-    else:
-        print('rate limit exceeded')
-
-    with open(FILENAME, 'w') as outfile:
-        print('saving...')
-        # print(data)
-        json.dump(
-        data, 
-        outfile,
-        indent=indent
-        )
-
-
 do_and_save_query_to_file(
     FILENAME = 'data.json',
     query = queries.query_repos_tensorflow,
     )
-
-query_repos
-
-# issues_title = issues_results[1]['node']['title']
-# issues_comment = issues_results[1]['node']['comments']['edges'][1]['node']['body']
-# issues_author = issues_results[1]['node']['comments']['edges'][1]['node']['author']['login']
 
 # %% markdown
 #
@@ -223,7 +170,7 @@ query_repos
 
 # %%
 import json
-from os import listdir
+import os
 import networkx as nx
 import matplotlib.pyplot as plt
 from matplotlib.pyplot import figure
@@ -233,6 +180,7 @@ import pandas as pd
 import numpy as np
 import sys
 import altair as alt
+
 # %% markdown
 #
 # Get list of json files in directory
@@ -248,7 +196,7 @@ matplotlib.rc('figure', figsize=(10, 10))
 
 # From Oli's Jupyter notebook:
 # Get list of json files in directory
-files_in_drive = listdir(PATH)
+files_in_drive = os.listdir(PATH)
 json_files = []
 for ix, file in enumerate(files_in_drive):
     if('.json' in file):
@@ -272,6 +220,7 @@ file_names = []
 for file in json_files:
     start = file.find('.')
     file_names.append(file[0:start])
+
 # %% markdown
 #
 # Put all json data into dictionary
@@ -281,6 +230,8 @@ data = {}
 for ix, file in enumerate(json_files):
     tmp = json.loads(open(file, encoding="utf-8").read())
     data[file_names[ix]] = tmp['data']['repository']['ref']['target']['history']['edges']
+
+data.keys()
 
 # %% markdown
 # ## Graph with weight

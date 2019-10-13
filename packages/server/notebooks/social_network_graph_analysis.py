@@ -374,6 +374,7 @@ chart.configure_legend(
     orient='top-right'
 )
 # %%
+# export graphml file
 weight_graphFile='weight_repo.graphml'
 with open(weight_graphFile, 'wb') as fOut:
     nx.write_graphml(network_weight, fOut)

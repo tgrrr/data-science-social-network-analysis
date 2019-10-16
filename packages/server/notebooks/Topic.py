@@ -246,13 +246,15 @@ ax = resize.plot()
 ax.set_xlabel("Date Time")
 ax.set_ylabel("Sentiment Count")
 ax.legend(["Avg Sentiment"])
-
+plt.savefig('average-sentiment.png')
 # Ploting the total sentiment per hour
 az =newSeries.plot()
 az.set_xlabel("Date Time")
 az.set_ylabel("Sentiment Count")
 az.legend(["Tot Sentiment"])
-plt.show()
+# plt.show()
+plt.savefig('tot_sentiment.png')
+
 # %%
 # Printing out the top 50 words in a word cloud
 all_words = ' '.join([text for text in df['Message Headline']])
